@@ -183,6 +183,41 @@ void RotateMatrix(vector<vector<int>> &matrix)
 #pragma endregion
 
 #pragma region Поиск
+///<summary>
+///Копирует часть указанного вектора
+///</summary>
+///<param name="source">исходый вектор</param>
+///<param name="start">начальный индекс</param>
+///<param name="end">конечный индекс</param>
+vector<int> Copy(vector<int> source, int start, int end)
+{
+	vector<int>result;
+	if (start >= 0 && end <= source.size())
+	{
+		for (int i = start;i < end;i++)
+			result.push_back(source[i]);
+	}
+	return result;
+}
+///<summary>
+///Вектор в указанном векторе
+///</summary>
+///<param name="values">значения для поиска</param>
+///<param name="row">исходный вектор</param>
+///<param name="rowIndex">индекс строки</param>
+///<param name="entryCounter">счетчик вхождений</param>
+void LinearSearch_2(vector<int>values, vector<int>row, int rowIndex,int &entryCounter)
+{
+	for (int i = 0;i <= row.size() - values.size();i++)
+	{
+		vector<int>temp = Copy(row, i, values.size()+i);
+		if (values == temp)
+		{
+			entryCounter++;
+			printf("(%i ,%i)\n", rowIndex + 1, i + 1);
+		}
+	}
+}
 int BinarySearch(int value, vector<int> values)
 {
 	int left = 0, right = values.size(), mid;
@@ -223,17 +258,28 @@ void binarySearch(vector<int>a, int value, int &entryCounter)
 		entryCounter += (R - ps + 1);
 	}
 }
-void LinearSearch(int value, vector<int> values, int &entryCounter)
+void LinearSearch(int value,int row, vector<int> values, int &entryCounter)
 {
-	for each (int item in values)
+	/*for each (int item in values)
 	{
-		if (value == item) entryCounter++;
+		if (value == item) 
+		{
+			entryCounter++; 
+		}
+	}*/
+	for (int i = 0;i < values.size();i++)
+	{
+		if (values[i] == value)
+		{
+			entryCounter++;
+			printf("(%i ,%i)\n",row+1, i+1);
+		}
 	}
 }
 #pragma endregion
+
 int main()
 {
-
 	setlocale(LC_ALL, "Russian");
 
 	/*
@@ -273,17 +319,14 @@ int main()
 	PrintMessage("Последовательный поиск:");
 
 	int entryCounter = 0;
-	for each (int item in items)
-	{
-		for (int i = 0;i < rows; i += 2)
-			LinearSearch(item, matrix[i], entryCounter);
-	}
+	for (int i = 0;i < rows; i += 2)
+		LinearSearch_2(items, matrix[i], i, entryCounter);
+			//LinearSearch(item,i, matrix[i], entryCounter);
 	RotateMatrix(matrix);
-	for each (int item in items)
-	{
 		for (int i = 0;i < rows; i+=2)
-			LinearSearch(item, matrix[i], entryCounter);
-	}
+			LinearSearch_2(items, matrix[i], i, entryCounter);
+			//LinearSearch(item,i, matrix[i], entryCounter);
+
 	RotateMatrix(matrix);
 
 	if (entryCounter == 0)
@@ -298,25 +341,23 @@ int main()
 
 	PrintMessage("Бинарный поиск:");
 	entryCounter = 0;
-	for each (int item in items)
-	{
+
 		for (int i = 0;i < rows; i += 2)
 		{
 			vector<int> temp = matrix[i];
 			sort(temp.begin(), temp.end());
-			binarySearch(temp, item, entryCounter);
+			binarySearch(temp, items[0], entryCounter);
 		}
-	}
+	
 	RotateMatrix(matrix);
-	for each (int item in items)
-	{
+
 		for (int i = 0;i < rows; i += 2)
 		{
 			vector<int> temp = matrix[i];
 			sort(temp.begin(), temp.end());
-			binarySearch(temp, item, entryCounter);
+			binarySearch(temp, items[0], entryCounter);
 		}
-	}
+
 	if (entryCounter == 0)
 		PrintMessage("Вхождений нет");
 	else
