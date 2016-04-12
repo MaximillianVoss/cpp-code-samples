@@ -1,0 +1,5 @@
+original/** -text -diff
+preservation/*.csv text eol=lf
+preservation/*.txt text eol=lf
+preservation/*.json text eol=lf
+*.md text eol=lf
