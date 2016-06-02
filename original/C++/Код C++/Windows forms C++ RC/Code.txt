@@ -1,0 +1,151 @@
+#pragma region LOGICS
+		float ConvertAngle(float angle)
+		{
+			return angle *  PI / 180;
+		}
+		float GetAceleration(float m1, float m2, float mu, float angle)
+		{
+			return ((m2 - mu*m1*sin(ConvertAngle(angle)))*G) / (m1 + m2);
+			//return pow(mu, 2) + mu + 4;//sin(ConvertAngle(mu));
+		}
+		float GetT(float m1, float m2, float mu, float angle)
+		{
+			return (m2*G + mu*m1*G*cos(ConvertAngle(angle)) + m1*G*sin(ConvertAngle(angle))) / 2;
+		}
+		float GetForce(float T, float angle)
+		{
+			return sqrt(2 * T*T + 2 * T*T*cos(ConvertAngle(angle)));
+		}
+		void ConvertString(String ^ s, std::string& os) {
+			using namespace Runtime::InteropServices;
+			const char* chars =
+				(const char*)(Marshal::StringToHGlobalAnsi(s)).ToPointer();
+			os = chars;
+			Marshal::FreeHGlobal(IntPtr((void*)chars));
+		}
+#pragma endregion
+
+
+
+		//String^ userinput =massTextBox->Text;	
+		std::string str;
+		ConvertString(massTextBox->Text, str);
+		double mass = atof(str.c_str());
+		ConvertString(uTextBox->Text, str);
+		double mu = atof(str.c_str());
+		ConvertString(angleTextBox->Text, str);
+		double angle = atof(str.c_str());
+
+		firstPlot->Refresh();
+
+
+		private: System::Void firstPlot_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e)
+	{
+
+		/*std::vector<int> temp;*/
+		//зависимость ускорения от u
+		/*std::vector<PlotPoint> accelerationPoints;
+		std::string str;
+		ConvertString(massTextBox->Text, str);
+		double mass = atof(str.c_str());
+		ConvertString(uTextBox->Text, str);
+		double mu = atof(str.c_str());
+		ConvertString(angleTextBox->Text, str);
+		double angle = atof(str.c_str());
+
+		for (float i = 1;i < 50;i++)
+		{
+			accelerationPoints.push_back(PlotPoint(i, GetAceleration(mass, mass / 2, i, angle)));
+
+		}*/
+		//listBox1->Items->Add(accelerationPoints.at(accelerationPoints.size()-1).x.ToString() +  accelerationPoints.at(accelerationPoints.size() - 1).y.ToString());
+		//points.push_back(PlotPoint(10, 90));
+		//points.push_back(PlotPoint(100, 80));
+		//PlotPoint mas [3];
+
+		//TODO сделать заполнение точек
+		//e->Graphics->TranslateTransform(100.0F, 0.0F);
+		
+		Results *res = new Results(massTextBox->Text, uTextBox->Text, angleTextBox->Text, 1,  firstPlot->Height-1,1);
+		//e->Graphics->TranslateTransform(250.0F, 250.0F);
+		//e->Graphics->RotateTransform(0);
+		DrawMultiLine(e->Graphics, res->accWithMu,System::Drawing::Pens::OrangeRed);
+		//e->Graphics->RotateTransform(10.0F);
+		DrawMultiLine(e->Graphics, res->axisX, System::Drawing::Pens::Black);
+	    DrawMultiLine(e->Graphics, res->axisY, System::Drawing::Pens::Black);
+		
+		//firstPlot->Image->RotateFlip(RotateFlipType::Rotate180FlipY);
+		/*Graphics^ g = e->Graphics;
+		
+
+		if (res->mu > 0)
+		{
+			listBox1->Items->Clear();
+			for (int i = 0;i < res->accWithMu.size() - 1;i++)
+			{
+				listBox1->Items->Add(res->accWithMu[i].x.ToString() + ' ' + res->accWithMu[i].y.ToString());
+				g->DrawLine(System::Drawing::Pens::Red, res->accWithMu[i].x, res->accWithMu[i].y,
+					res->accWithMu[i + 1].x, res->accWithMu[i + 1].y);
+			}
+		}*/
+
+		// Draw a string on the PictureBox.
+		/*g->DrawString("This is a diagonal line drawn on the control",
+			gcnew System::Drawing::Font("Arial", 10), System::Drawing::Brushes::Blue, Point(30, 30));*/
+
+			// Draw a line in the PictureBox.
+			/*g->DrawLine(System::Drawing::Pens::Red, firstPlot->Left, firstPlot->Top,
+				firstPlot->Right, firstPlot->Bottom);*/
+	}
+
+	////
+	//Results *res = new Results(massTextBox->Text, uTextBox->Text, angleTextBox->Text, 1, firstPlot->Height - 1, 1, 500);
+	/////////////////////////////////////////////////////////
+		Results(String ^masString, String^ muString, String^ angleString)
+	{
+		std::string str;
+		ConvertString(masString, str);
+		firstMass = atof(str.c_str());
+		secondMass = firstMass / 2;
+		ConvertString(muString, str);
+		mu = atof(str.c_str());
+		ConvertString(angleString, str);
+		angle = atof(str.c_str());
+		GetPoints();
+		//GetAxis();
+	}
+	Results(String ^masString, String^ muString, String^ angleString, int scale, int offset)
+	{
+		std::string str;
+		ConvertString(masString, str);
+		firstMass = atof(str.c_str());
+		secondMass = firstMass / 2;
+		ConvertString(muString, str);
+		mu = atof(str.c_str());
+		ConvertString(angleString, str);
+		angle = atof(str.c_str());
+		plotScale = scale;
+		//plotOffset = offset;
+		GetPoints();
+		//GetAxis();
+	}
+	Results(String ^masString, String^ muString, String^ angleString, int scale, int offsetX, int offsetY, int axesLength)
+	{
+		enum marksTypes { vertical = 1, horizontal = 2 };
+		enum marksScale { small = 15, meduim = 30, large = 50 };
+		std::string str;
+		ConvertString(masString, str);
+		firstMass = atof(str.c_str());
+		secondMass = firstMass / 2;
+		ConvertString(muString, str);
+		mu = atof(str.c_str());
+		ConvertString(angleString, str);
+		angle = atof(str.c_str());
+		plotScale = scale;
+		plotOffsetX = offsetX;
+		plotOffsetY = offsetX;
+		GetAxis(axesLength);
+		GetPoints();
+		SetMarks(axisY[0], axisY[1], small, vertical);
+		SetMarks(axisX[0], axisX[1], small, horizontal);
+	}
