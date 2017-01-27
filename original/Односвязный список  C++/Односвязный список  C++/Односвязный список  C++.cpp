@@ -117,6 +117,16 @@ public:
 
 int main()
 {
+
+	item *root = new item();
+	root->next= new item();
+	root->next->next = new item();
+	item * l = root->next;
+	l = NULL;
+
+
+
+
 	setlocale(LC_ALL, "rus");
 	List *firstList = new List();
 	for (int i = 0;i < 10;i++)
