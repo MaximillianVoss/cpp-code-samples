@@ -1,0 +1,53 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (CommonLib Tests.vcxproj, Tests.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Main.cpp
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\unittest\generator.h(19): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\unittest\generator.h(105): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\io.h(199): error C2679: бинарный "<<": не найден оператор, принимающий правый операнд типа "std::vector<int,std::allocator<_Ty>>" (или приемлемое преобразование отсутствует)
+          with
+          [
+              _Ty=int
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(495): note: может быть "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(475): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(455): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(435): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(415): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(395): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(375): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(355): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(335): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(315): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(290): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(270): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(236): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(216): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(209): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(202): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(196): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\thread(246): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,std::thread::id)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(1019): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(981): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,T>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty &)"
+          with
+          [
+              T=std::vector<int,std::allocator<int>>,
+              _Ty=std::vector<int,std::allocator<int>>
+          ]
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(971): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(964): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(957): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(950): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(824): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(777): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(739): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)"
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(692): note: или       "std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)"
+  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\io.h(199): note: при попытке сопоставить список аргументов "(std::ostream, std::vector<int,std::allocator<_Ty>>)"
+          with
+          [
+              _Ty=int
+          ]
+  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\iotests.h(123): note: выполняется компиляция ссылки на экземпляр шаблон функции "void IO::Print<std::vector<int,std::allocator<_Ty>>>(T,bool)"
+          with
+          [
+              _Ty=int,
+              T=std::vector<int,std::allocator<int>>
+          ]

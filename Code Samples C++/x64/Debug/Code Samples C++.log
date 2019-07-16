@@ -1,0 +1,89 @@
+﻿  ArrayHelper.cpp
+  BinarySearch.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\ArrayHelper.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BinaryTree.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BinarySearch.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BSBot.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BinaryTree.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BSGame.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BSBot.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BShip.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BSGame.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BSInGameMenu.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BShip.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BSMainMenu.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BSInGameMenu.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  BSSettingMenu.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BSMainMenu.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Calculator.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\BSSettingMenu.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Cell.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Calculator.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Chess.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Cell.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  ChessFigure.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Chess.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Code Samples C++.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\ChessFigure.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Converter.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Code Samples C++.cpp(4,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Field.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Converter.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  FileIO.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Field.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Hamming.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\FileIO.cpp(293,1): error C1010:  непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "stdafx.h"" в источник.
+  infoIO.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Hamming.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Knight.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\infoIO.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Создание кода...
+  Компиляция...
+  LongCalc.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Knight.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  LongVal.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\LongCalc.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  MapArray.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\LongVal.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Matrix.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\MapArray.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Menu.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Matrix.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  NumberSystems.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Menu.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Obfuscator.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\NumberSystems.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  PairStr.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Obfuscator.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Player.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\PairStr.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  PolandStr.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Player.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Random.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\PolandStr.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Serializator.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Random.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Sorts.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Serializator.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  SortsAdvanced.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Sorts.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Stack.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\SortsAdvanced.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  StackWithCommands.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Stack.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  StrHelper.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\StackWithCommands.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  SumArray.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\StrHelper.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  TemplateClass.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\SumArray.cpp(3,1): error C1010:  непредвиденный конец файла во время поиска предкомпилированного заголовка. Возможно, вы забыли добавить директиву "#include "stdafx.h"" в источник.
+  TreeNode.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\TemplateClass.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Создание кода...
+  Компиляция...
+  XOGame.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\TreeNode.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Zebra.cpp
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\XOGame.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,
+  Создание кода...
+C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\Code Samples C++\Zebra.cpp(1,10): error C1083:  Не удается открыть файл предкомпилированный заголовок: x64\Debug\Code Samples C++.pch: No such file or directory,

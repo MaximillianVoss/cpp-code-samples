@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes">
+      <UniqueIdentifier>{92ac149b-966a-4299-a28f-e890f6bb78d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Main">
+      <UniqueIdentifier>{a2f94c8f-a8cf-4aad-8a31-e6f48b3d4885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Работа с файлами">
+      <UniqueIdentifier>{09e87c47-e999-4565-ae1b-d17a5ecd4d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Строки">
+      <UniqueIdentifier>{09f1f089-b648-4fb5-94a1-3da13719a7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Калькулятор">
+      <UniqueIdentifier>{9838e99f-580b-4624-af91-f28e8a56f826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Ввод/вывод">
+      <UniqueIdentifier>{0b10a5df-1f30-4947-b720-b94ba2e11a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных">
+      <UniqueIdentifier>{779cb0b8-7c8f-42f1-a858-3a6ff4c12138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Деревья">
+      <UniqueIdentifier>{75366d78-ce73-4376-9ef8-34cc53ca1023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Стек">
+      <UniqueIdentifier>{75c6033e-ce88-4d75-b8b7-adb82d6a6a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Матрица">
+      <UniqueIdentifier>{62db0bc3-81a4-474c-847e-d2d6a63565a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Стек с коммандами">
+      <UniqueIdentifier>{3e6a05dc-8ffd-4833-a88d-f94fe8f9e974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы">
+      <UniqueIdentifier>{3ff498a8-4418-4be8-8c55-06b9d5cab387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Бинарный поиск">
+      <UniqueIdentifier>{2d9a3851-5188-4ffc-a30c-85be7fee542e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Сортировки">
+      <UniqueIdentifier>{ca270b96-ab25-4f09-91fa-e4191190d480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Сортировки\Стандартные">
+      <UniqueIdentifier>{6e5dc8e3-4d29-44fc-a1a9-b298af286c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Сортировки\Со счетчиком">
+      <UniqueIdentifier>{9b647e9b-8f92-45d1-9a2a-64a6e3bf5156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Перевод в системы счисления">
+      <UniqueIdentifier>{2f1355bc-db6f-4ab0-84a9-c1bff57d7b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Обратная польская запись">
+      <UniqueIdentifier>{63fe7c6d-757c-43ad-827d-1c311f4acf0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры">
+      <UniqueIdentifier>{8ae4ae30-de71-4516-9382-499467f28229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Крестики-нолики">
+      <UniqueIdentifier>{c114cdca-1267-4529-bc8d-51e82fae71b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой">
+      <UniqueIdentifier>{04884071-81ce-470d-9f0d-87059b221224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Ход конем">
+      <UniqueIdentifier>{0df09727-0d07-4a8a-86ab-6d975dc310ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Массивы">
+      <UniqueIdentifier>{3029b33c-0efb-4963-8094-eec57c14c6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Деревья\Двоичное без балансировки">
+      <UniqueIdentifier>{3fb36a00-306f-447a-bba3-451492e26e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Код Хэмминга">
+      <UniqueIdentifier>{2ce9290d-03b7-4ca5-b1cd-e40dc6e25218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Алгоритмы\Длинная арифметика">
+      <UniqueIdentifier>{096d84d5-f0b8-47b0-9834-debf8a809e10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Поле для игр">
+      <UniqueIdentifier>{ec745e23-327e-41a2-9a2f-f49ffdfd2a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Конвертер">
+      <UniqueIdentifier>{9a74ac69-22ad-4ee0-ba5c-8520012a196b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Обфускатор">
+      <UniqueIdentifier>{089a28f8-4e4a-4b8b-8b7b-8fb98997da2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Пары">
+      <UniqueIdentifier>{18e86326-0c9c-4a27-8dd9-b171ca0b1b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Меню">
+      <UniqueIdentifier>{5c6eb61e-5257-44eb-9ef4-5033b81c7a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Ядро">
+      <UniqueIdentifier>{6ebfa958-7951-401f-bdc1-d2455f37a9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Классы">
+      <UniqueIdentifier>{0993e43a-b15b-4adf-a623-5bee0bd3b869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Шахматы">
+      <UniqueIdentifier>{5a19dac6-c064-490e-bf66-9d43946714dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Шахматы\Фигуры">
+      <UniqueIdentifier>{d26691b1-4544-4019-a331-08da56503905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Шахматы\Фигуры\Стандартные">
+      <UniqueIdentifier>{a380c38e-9446-48ea-a42e-c01b3dc2c66e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Шахматы\Фигуры\Нестандартные">
+      <UniqueIdentifier>{7c799ecc-966a-453f-af77-1af686b690c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Шахматы\Перечисления">
+      <UniqueIdentifier>{94b93111-1212-4fb8-9a59-c700f095ded4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Поле для игр\Клетка поля">
+      <UniqueIdentifier>{f753325b-5f22-485f-87b9-41663bcd4bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Перечисления">
+      <UniqueIdentifier>{fe8eb06f-ee51-4a31-bb9e-50779c781635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Сериализатор">
+      <UniqueIdentifier>{795f8054-0b3b-4399-a9ed-ae6907be78a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Шаблоны">
+      <UniqueIdentifier>{372b36ef-b634-4165-8d6d-ff617ab9cdd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Меню\Главное">
+      <UniqueIdentifier>{e12d5821-117c-4621-baff-51b158d1099b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Меню\Игровое">
+      <UniqueIdentifier>{b84042f2-ab00-437f-b2a8-ad3baa1d89b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Меню\Настройки">
+      <UniqueIdentifier>{627443a8-9a75-437b-8803-40fe119377b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Ядро\Бот">
+      <UniqueIdentifier>{62c88296-e894-4a1c-8c1a-36c8c131b5de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Структуры данных\Массивы\Ассоциативный массив">
+      <UniqueIdentifier>{182783b5-8c06-46e9-87e8-ca0512959a81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Ядро\Игрок">
+      <UniqueIdentifier>{59db086b-d94a-4333-96f5-1517df96d5ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Игры\Морской бой\Ядро\Корабль">
+      <UniqueIdentifier>{3ca27576-7faa-4983-954e-bdb28637223a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Рандомизатор">
+      <UniqueIdentifier>{397bbfdd-800d-4f4b-b114-7798d2efc8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Ассемблерные вставки">
+      <UniqueIdentifier>{567aaad4-104f-4082-ba95-cc8cf9c67559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Classes\Сообщения">
+      <UniqueIdentifier>{bd94a282-d33d-42f3-8223-50333d6634a2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO.h">
+      <Filter>Исходные файлы\Classes\Работа с файлами</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Стек</Filter>
+    </ClInclude>
+    <ClInclude Include="Calculator.h">
+      <Filter>Исходные файлы\Classes\Калькулятор</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Матрица</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorts.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Сортировки\Стандартные</Filter>
+    </ClInclude>
+    <ClInclude Include="SortsAdvanced.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Сортировки\Со счетчиком</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Бинарный поиск</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryTree.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Деревья\Двоичное без балансировки</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Деревья\Двоичное без балансировки</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberSystems.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Перевод в системы счисления</Filter>
+    </ClInclude>
+    <ClInclude Include="PolandStr.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Обратная польская запись</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayHelper.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Массивы</Filter>
+    </ClInclude>
+    <ClInclude Include="StrHelper.h">
+      <Filter>Исходные файлы\Classes\Строки</Filter>
+    </ClInclude>
+    <ClInclude Include="LongCalc.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Длинная арифметика</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Исходные файлы\Classes\Игры\Поле для игр</Filter>
+    </ClInclude>
+    <ClInclude Include="XOGame.h">
+      <Filter>Исходные файлы\Classes\Игры\Крестики-нолики</Filter>
+    </ClInclude>
+    <ClInclude Include="Hamming.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Код Хэмминга</Filter>
+    </ClInclude>
+    <ClInclude Include="InfoIO.h">
+      <Filter>Исходные файлы\Classes\Ввод/вывод</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Исходные файлы\Classes\Конвертер</Filter>
+    </ClInclude>
+    <ClInclude Include="Obfuscator.h">
+      <Filter>Исходные файлы\Classes\Обфускатор</Filter>
+    </ClInclude>
+    <ClInclude Include="BSGame.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро</Filter>
+    </ClInclude>
+    <ClInclude Include="LongVal.h">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Длинная арифметика</Filter>
+    </ClInclude>
+    <ClInclude Include="Chess.h">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы</Filter>
+    </ClInclude>
+    <ClInclude Include="ChessFigure.h">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Фигуры</Filter>
+    </ClInclude>
+    <ClInclude Include="Zebra.h">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Фигуры\Нестандартные</Filter>
+    </ClInclude>
+    <ClInclude Include="Knight.h">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Фигуры\Нестандартные</Filter>
+    </ClInclude>
+    <ClInclude Include="ChessEnums.h">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Перечисления</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Исходные файлы\Classes\Игры\Поле для игр\Клетка поля</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Исходные файлы\Classes\Перечисления</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializator.h">
+      <Filter>Исходные файлы\Classes\Сериализатор</Filter>
+    </ClInclude>
+    <ClInclude Include="TemplateClass.h">
+      <Filter>Исходные файлы\Classes\Шаблоны</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuITem.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню</Filter>
+    </ClInclude>
+    <ClInclude Include="BSInGameMenu.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню\Игровое</Filter>
+    </ClInclude>
+    <ClInclude Include="BSMainMenu.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню\Главное</Filter>
+    </ClInclude>
+    <ClInclude Include="BSSettingMenu.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню\Настройки</Filter>
+    </ClInclude>
+    <ClInclude Include="BSBot.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро\Бот</Filter>
+    </ClInclude>
+    <ClInclude Include="MapArray.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Массивы\Ассоциативный массив</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро\Игрок</Filter>
+    </ClInclude>
+    <ClInclude Include="BShip.h">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро\Корабль</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Исходные файлы\Classes\Рандомизатор</Filter>
+    </ClInclude>
+    <ClInclude Include="Messages.h">
+      <Filter>Исходные файлы\Classes\Сообщения</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Исходные файлы\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PairStr.h">
+      <Filter>Исходные файлы\Classes\Пары</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code Samples C++.cpp">
+      <Filter>Исходные файлы\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Исходные файлы\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIO.cpp">
+      <Filter>Исходные файлы\Classes\Работа с файлами</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Стек</Filter>
+    </ClCompile>
+    <ClCompile Include="Calculator.cpp">
+      <Filter>Исходные файлы\Classes\Калькулятор</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Матрица</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorts.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Сортировки\Стандартные</Filter>
+    </ClCompile>
+    <ClCompile Include="SortsAdvanced.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Сортировки\Со счетчиком</Filter>
+    </ClCompile>
+    <ClCompile Include="StackWithCommands.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Стек с коммандами</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Бинарный поиск</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTree.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Деревья\Двоичное без балансировки</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeNode.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Деревья\Двоичное без балансировки</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberSystems.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Перевод в системы счисления</Filter>
+    </ClCompile>
+    <ClCompile Include="PolandStr.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Обратная польская запись</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayHelper.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Массивы</Filter>
+    </ClCompile>
+    <ClCompile Include="StrHelper.cpp">
+      <Filter>Исходные файлы\Classes\Строки</Filter>
+    </ClCompile>
+    <ClCompile Include="LongCalc.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Длинная арифметика</Filter>
+    </ClCompile>
+    <ClCompile Include="XOGame.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Крестики-нолики</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Поле для игр</Filter>
+    </ClCompile>
+    <ClCompile Include="Hamming.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Код Хэмминга</Filter>
+    </ClCompile>
+    <ClCompile Include="infoIO.cpp">
+      <Filter>Исходные файлы\Classes\Ввод/вывод</Filter>
+    </ClCompile>
+    <ClCompile Include="Converter.cpp">
+      <Filter>Исходные файлы\Classes\Конвертер</Filter>
+    </ClCompile>
+    <ClCompile Include="Obfuscator.cpp">
+      <Filter>Исходные файлы\Classes\Обфускатор</Filter>
+    </ClCompile>
+    <ClCompile Include="BSGame.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро</Filter>
+    </ClCompile>
+    <ClCompile Include="LongVal.cpp">
+      <Filter>Исходные файлы\Classes\Алгоритмы\Длинная арифметика</Filter>
+    </ClCompile>
+    <ClCompile Include="Chess.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы</Filter>
+    </ClCompile>
+    <ClCompile Include="ChessFigure.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Фигуры</Filter>
+    </ClCompile>
+    <ClCompile Include="Zebra.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Фигуры\Нестандартные</Filter>
+    </ClCompile>
+    <ClCompile Include="Knight.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Шахматы\Фигуры\Нестандартные</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Поле для игр\Клетка поля</Filter>
+    </ClCompile>
+    <ClCompile Include="Serializator.cpp">
+      <Filter>Исходные файлы\Classes\Сериализатор</Filter>
+    </ClCompile>
+    <ClCompile Include="TemplateClass.cpp">
+      <Filter>Исходные файлы\Classes\Шаблоны</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню</Filter>
+    </ClCompile>
+    <ClCompile Include="BSInGameMenu.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню\Игровое</Filter>
+    </ClCompile>
+    <ClCompile Include="BSMainMenu.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню\Главное</Filter>
+    </ClCompile>
+    <ClCompile Include="BSSettingMenu.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Меню\Настройки</Filter>
+    </ClCompile>
+    <ClCompile Include="BSBot.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро\Бот</Filter>
+    </ClCompile>
+    <ClCompile Include="MapArray.cpp">
+      <Filter>Исходные файлы\Classes\Структуры данных\Массивы\Ассоциативный массив</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро\Игрок</Filter>
+    </ClCompile>
+    <ClCompile Include="BShip.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Морской бой\Ядро\Корабль</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Исходные файлы\Classes\Рандомизатор</Filter>
+    </ClCompile>
+    <ClCompile Include="SumArray.cpp">
+      <Filter>Исходные файлы\Classes\Ассемблерные вставки</Filter>
+    </ClCompile>
+    <ClCompile Include="PairStr.cpp">
+      <Filter>Исходные файлы\Classes\Пары</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
