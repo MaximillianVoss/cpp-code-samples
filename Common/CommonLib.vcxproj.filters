@@ -42,6 +42,9 @@
     <ClInclude Include="ListItem.h">
       <Filter>Исходные файлы\Lists</Filter>
     </ClInclude>
+    <ClInclude Include="LL.h">
+      <Filter>Исходные файлы\Lists</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Простой односвязный список.cpp">
