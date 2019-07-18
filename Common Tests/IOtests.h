@@ -16,9 +16,9 @@ public:
 	void Test() override {
 		string input = Constants::Strings::Messages::Inputs::inputValue;
 		input += " ";
-		this->actual.push_back(io.Get<int>(input + "1"));
-		this->actual.push_back(io.Get<int>(input + "22"));
-		this->actual.push_back(io.Get<int>(input + "333"));
+		this->actual.push_back(io.Get<int>(input + "1" + io.endInstruction));
+		this->actual.push_back(io.Get<int>(input + "22" + io.endInstruction));
+		this->actual.push_back(io.Get<int>(input + "333" + io.endInstruction));
 		UnitTest::Compare();
 	}
 };
@@ -32,9 +32,9 @@ public:
 	void Test() override {
 		string input = Constants::Strings::Messages::Inputs::inputValue;
 		input += " ";
-		this->actual.push_back(io.Get<double>(input + "1.0"));
-		this->actual.push_back(io.Get<double>(input + "2.3"));
-		this->actual.push_back(io.Get<double>(input + "4.55"));
+		this->actual.push_back(io.Get<double>(input + "1.0" + io.endInstruction));
+		this->actual.push_back(io.Get<double>(input + "2.3" + io.endInstruction));
+		this->actual.push_back(io.Get<double>(input + "4.55" + io.endInstruction));
 		UnitTest::Compare();
 	}
 };
@@ -48,9 +48,9 @@ public:
 	void Test() override {
 		string input = Constants::Strings::Messages::Inputs::inputValue;
 		input += " ";
-		this->actual.push_back(io.Get<string>(input + "hello"));
-		this->actual.push_back(io.Get<string>(input + "lol"));
-		this->actual.push_back(io.GetLine(input + "abc defgh"));
+		this->actual.push_back(io.Get<string>(input + "hello" + io.endInstruction));
+		this->actual.push_back(io.Get<string>(input + "lol" + io.endInstruction));
+		this->actual.push_back(io.GetLine(input + "abc def" + io.endInstruction));
 		UnitTest::Compare();
 	}
 };
@@ -108,19 +108,25 @@ public:
 
 	void Test() override {
 		io.SetColor(ConsoleColor::dark_red, ConsoleColor::black);
-		io.Print("Красная строка на черном фоне");
+		io.Print("Красная строка на черном фоне", true);
 		io.SetColor(ConsoleColor::dark_green, ConsoleColor::white);
-		io.Print("Зеленая строка на белом фоне");
+		io.Print("Зеленая строка на белом фоне", true);
 		io.SetColor(ConsoleColor::black, ConsoleColor::dark_red);
-		io.Print("Черная строка на красном фоне");
+		io.Print("Черная строка на красном фоне", true);
 		io.SetColor(ConsoleColor::white, ConsoleColor::black);
-		io.Print("По умолчанию:белый текст на черном фоне");
+		io.Print("По умолчанию:белый текст на черном фоне", true);
 		vector<int>items;
 		for (int i = 0; i < 10; i++)
 			items.push_back(i);
-		//io.Print(items, "Вывод вектора 1-10:", true);
-		io.Print(items);
-		io.Print(items, "Вывод вектора 1-10:");
+		io.Print(items, "Вывод вектора 1-10:", false, false, ",");
+		io.Print(items, "Вывод вектора 1-10:", true, true);
+		vector<vector<int>> matrix;
+		for (int i = 0; i < 10; i++) {
+			matrix.push_back(vector<int>());
+			for (int j = 0; j < 10; j++)
+				matrix[i].push_back(rand() % 100);
+		}
+		io.Print(matrix, "Вывод матрицы:");
 		UnitTest::Compare();
 	}
 };
@@ -129,17 +135,15 @@ public:
 	IOTests() {
 	}
 	void Start() {
+		//Тесты на вывод данных
 		FileCreateRemoveTest("Создание и удаление файлов", { true,true,false }).Start();
 		FileIOTest("Запись чтение файлов", { "hello","lol","abc defgh" }).Start();
 		FileAppendTest("Добавление строк в файл", { "hello","lol","abc defgh" }).Start();
 		OutTest("Вывод в консоль", {}).Start();
-		//InIntTest intTest = InIntTest("Ввод целочисленных данных", { 1,22,333 });
-		//intTest.Start();
-		//InDoubleTest doubleTest = InDoubleTest("Ввод вещественных данных", { 1.0,2.3,4.55 });
-		//doubleTest.Start();
-		//InStringTest stringTest = InStringTest("Ввод строковых данных", { "hello","lol","abc defgh" });
-		//stringTest.Start();
-		//OutTest outTests = OutTest();
-		//outTests.Start();
+		//Тесты на ввод данных
+		//InIntTest("Ввод целочисленных данных", { 1,22,333 }).Start();
+		//InDoubleTest("Ввод вещественных данных", { 1.0,2.3,4.55 }).Start();
+		//InStringTest("Ввод строковых данных", { "hello","lol","abc def" }).Start();
+
 	}
 };

@@ -19,7 +19,7 @@ private:
 	///<param name="message">сообщение</param>
 	template<typename T>
 	bool Get(T& value, string message = "") {
-		this->Print(message);
+		this->Print(message, true);
 		cin >> value;
 		if (!cin.good()) {
 			cin.clear();
@@ -29,7 +29,7 @@ private:
 		return true;
 	}
 	bool Get(string& value, string message = "") {
-		this->Print(message);
+		this->Print(message, true);
 		cin.clear();
 		cin.ignore();
 		char buffer[Constants::Ints::strMaxLength];
@@ -53,6 +53,7 @@ private:
 public:
 #pragma region Поля
 	string txtExtension = ".txt";
+	string endInstruction = ":";
 #pragma endregion
 #pragma region Конструктор/Деструктор
 	/// <summary>
@@ -179,21 +180,32 @@ public:
 			printf("%s", message);
 		}
 	}
-
-	template<typename T>
-	vector<T> operator<<(const vector<T>& v)
-	{
-		for (int i = 0; i < v.size(); i++)
-			cout << v[i];
-	}
-
-	template<typename T>
 	/// <summary>
-	/// вывести значение 
-	/// любого типа в консоль
+	/// вывести значение целого типа в консоль
 	/// </summary>
 	/// <param name="value">значение</param>
-	void Print(T value, bool newLine = false) {
+	/// <param name="newLine">true - добавить перенос на новую строку</param>
+	void Print(int value, bool newLine = false) {
+		if (newLine)
+			cout << endl;
+		cout << value;
+	}
+	/// <summary>
+	/// вывести значение вещественного типа в консоль
+	/// </summary>
+	/// <param name="value">значение</param>
+	/// <param name="newLine">true - добавить перенос на новую строку</param>
+	void Print(float value, bool newLine = false) {
+		if (newLine)
+			cout << endl;
+		cout << value;
+	}
+	/// <summary>
+	/// вывести значение вещественного типа в консоль
+	/// </summary>
+	/// <param name="value">значение</param>
+	/// <param name="newLine">true - добавить перенос на новую строку</param>
+	void Print(double value, bool newLine = false) {
 		if (newLine)
 			cout << endl;
 		cout << value;
@@ -205,12 +217,19 @@ public:
 	/// </summary>
 	/// <param name="a">массив</param>
 	/// <param name="size">размер</param>	
-	void Print(T* a, int size, string message = "", bool newLine = false, bool numerate = false)
+	void Print(T* a, int size, string message = "", bool newLine = false, bool numerate = false, string separator = "")
 	{
-		this->Print(message);
+		this->Print(message, true);
 		for (size_t i = 0; i < size; i++) {
-			this->Print1(to_string(i + 1) + '.');
-			this->Print1(a[i], newLine);
+			if (numerate) {
+				this->Print(to_string(i + 1) + '.', newLine);
+				this->Print(a[i], !newLine);
+			}
+			else {
+				this->Print(a[i], newLine);
+			}
+			if (i < size - 1)
+				this->Print(separator);
 		}
 		cout << endl;
 	}
@@ -221,10 +240,11 @@ public:
 	/// <param name="a">матрица</param>
 	/// <param name="row">строки</param>
 	/// <param name="cols">столбцы</param>
-	void Print(T** a, size_t rows, size_t cols, string message = "") {
-		this->Print(message);
-		for (size_t i = 0; i < rows; i++)
-			this->Print(a[i], cols, "", true);
+	void Print(T** a, size_t rows, size_t cols, string message = "", string separator = "") {
+		this->Print(message, true);
+		throw exception(Constants::Strings::Errors::notImplemented);
+		//for (size_t i = 0; i < rows; i++)
+		//	this->Print(a[i], cols, "", true, separator);
 	}
 	template <typename T>
 	/// <summary>
@@ -232,25 +252,26 @@ public:
 	/// </summary>
 	/// <param name="a">вектор для вывода</param>
 	/// <param name="message">сообщение</param>
-	void Print(vector<T> a, string message = "", bool newLine = false, bool numerate = false)
+	void Print(vector<T> a, string message = "", bool newLine = false, bool numerate = false, string separator = "")
 	{
-		this->Print(message);
-		for (size_t i = 0; i < a.size(); i++)
-			cout << a[i];
-		//this->Print(&a[0], a.size(), message, newLine, numerate);
+		this->Print(&a[0], a.size(), message, newLine, numerate, separator);
 	}
 	template <typename T>
 	/// <summary>
 	/// выводим матрицу на экран в квадратном виде
 	/// </summary>
 	/// <param name="matrix">матрица для вывода</param>
-	void Print(vector<vector<T>> matrix, string message = "")
+	void Print(vector<vector<T>> matrix, string message = "", string separator = "")
 	{
-		this->Print(message);
-		for (size_t i = 0; i < matrix.size(); i++)
-			for (size_t j = 0; j < matrix[i].size(); j++)
-				cout << matrix[i][j] << ' ';
-		//this->Print(matrix[i][j]);
+		this->Print(message, true);
+		throw exception(Constants::Strings::Errors::notImplemented);
+		//if (matrix.size() > 0)
+		//	this->Print(&matrix[0], (size_t)matrix.size(),(size_t) matrix[0].size(), message, separator);
+		//this->Print(message, true);
+		//cout << endl;
+		//for (size_t i = 0; i < matrix.size(); i++) {
+		//	this->Print(matrix[i], "", false, false, separator);
+		//}
 	}
 #pragma endregion
 #pragma region Файлы

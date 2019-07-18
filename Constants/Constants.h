@@ -32,6 +32,7 @@ public:
 		};
 		class Errors {
 		public:
+			static constexpr const char* notImplemented = "Отсутствует реализация метода";
 			class IO {
 			public:
 				static constexpr const char* input = "Ошибка ввода, повторите ввод";
