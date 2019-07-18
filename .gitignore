@@ -1,3 +1,5 @@
 *.ipch
 *.ipch
 .vs/Code Samples C++/v16/ipch/AutoPCH/e103853b57077c/UNITTEST.ipch
+*.ipch
+.vs/Code Samples C++/v16/ipch/AutoPCH/f4168b3dd78e9975/MAIN.ipch
