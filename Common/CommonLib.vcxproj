@@ -129,10 +129,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="IO.h" />
-    <ClInclude Include="ListItem.h" />
+    <ClInclude Include="LLItem.h" />
     <ClInclude Include="LL.h" />
     <ClInclude Include="OWLL.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Polynom.h" />
+    <ClInclude Include="StrHelper.h" />
     <ClInclude Include="TWLL.h" />
   </ItemGroup>
   <ItemGroup>

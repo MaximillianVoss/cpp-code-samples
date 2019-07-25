@@ -29,5 +29,8 @@
     <ClInclude Include="LLTests.h">
       <Filter>Исходные файлы\Tests</Filter>
     </ClInclude>
+    <ClInclude Include="StrHelperTests.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

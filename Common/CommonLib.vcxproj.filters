@@ -25,6 +25,9 @@
     <Filter Include="Исходные файлы\Lists">
       <UniqueIdentifier>{2103b9bf-85ec-4c79-a6e1-6ffcd187544f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Polynom">
+      <UniqueIdentifier>{00b48078-fd8a-4048-9fea-dc2463fef1f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -39,11 +42,17 @@
     <ClInclude Include="TWLL.h">
       <Filter>Исходные файлы\Lists</Filter>
     </ClInclude>
-    <ClInclude Include="ListItem.h">
-      <Filter>Исходные файлы\Lists</Filter>
-    </ClInclude>
     <ClInclude Include="LL.h">
       <Filter>Исходные файлы\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="LLItem.h">
+      <Filter>Исходные файлы\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="StrHelper.h">
+      <Filter>Исходные файлы\Strings</Filter>
+    </ClInclude>
+    <ClInclude Include="Polynom.h">
+      <Filter>Исходные файлы\Polynom</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

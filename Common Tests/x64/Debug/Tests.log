@@ -2,6 +2,26 @@
   Main.cpp
 c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\unittest\generator.h(19): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
 c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\unittest\generator.h(105): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\lltests.h(40): warning C4311: приведение типов: усечение указателя из "LLItem<T> *" в "int"
+          with
+          [
+              T=int
+          ]
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\lltests.h(40): warning C4302: приведение типов: усечение из "LLItem<T> *" к "int"
+          with
+          [
+              T=int
+          ]
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\lltests.h(42): warning C4311: приведение типов: усечение указателя из "LLItem<T> *" в "int"
+          with
+          [
+              T=int
+          ]
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\lltests.h(42): warning C4302: приведение типов: усечение из "LLItem<T> *" к "int"
+          with
+          [
+              T=int
+          ]
 c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\io.h(257): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
   c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\iotests.h(121): note: выполняется компиляция ссылки на экземпляр шаблон функции "void IO::Print<int>(std::vector<int,std::allocator<_Ty>>,std::string,bool,bool,std::string)"
           with
