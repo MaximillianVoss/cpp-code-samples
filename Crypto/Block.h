@@ -43,16 +43,26 @@ public:
 	/// 
 	/// </summary>
 	/// <returns></returns>
-	string ToString() {
+	string ToString(bool detailed = false) {
 		stringstream ss;
-		ss << this->id << Constants::Strings::Separators::space << this->ownerId;
+		if (!detailed)
+			ss << this->id << Constants::Strings::Separators::space << this->ownerId;
+		else
+			ss << this->idStr << this->id << Constants::Strings::Separators::space << this->ownerIdStr << this->ownerId;
 		return ss.str();
 	}
 
 
 };
+
+
+#pragma region Операторы
+bool operator==(Block& b1, Block& b2) {
+	return b1.id == b2.id && b1.ownerId == b2.ownerId;
+}
 ostream& operator<<(ostream& os, Block block)
 {
 	os << block.ToString();
 	return os;
 }
+#pragma endregion

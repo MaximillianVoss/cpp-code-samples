@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Unit Test Main</Title>
+            <Shortcut>Unit Test Main</Shortcut>
+            <Description>Фрагмент кода для класса главного юнит теста</Description>
+            <Author>Microsoft Corporation</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>name</ID>
+                    <ToolTip>Имя класса</ToolTip>
+                    <Default>UnitTestItemClass</Default>
+                </Literal>
+                <Literal>
+                    <ID>title</ID>
+                    <ToolTip>название</ToolTip>
+                    <Default>Неизвестный тест</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp"><![CDATA[
+            #pragma once
+            #include "UnitTest.h"
+            #pragma region Тесты
+
+            #pragma endregion
+            #pragma region $title$
+            ///<summary>
+            /// $title$
+            ///</summary>
+            class $name$ :UnitTests {
+            public:
+                $name$() : UnitTests("$title$") {}
+                void Start()override {
+                    //Запуск одного теста: TestsClassName(vector<type>items).Start();
+                }
+            };
+            #pragma endregion
+            #pragma endregion
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

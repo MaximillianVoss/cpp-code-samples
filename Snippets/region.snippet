@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Region for code</Title>
+            <Shortcut>Region for code</Shortcut>
+            <Description>Подраздел #region с кодом</Description>
+            <Author>Microsoft Corporation</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>name</ID>
+                    <ToolTip>Имя класса</ToolTip>
+                    <Default>MyClass</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp"><![CDATA[
+            #pragma region $name$
+
+            #pragma endregion
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

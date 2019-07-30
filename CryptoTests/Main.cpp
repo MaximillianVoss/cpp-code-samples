@@ -1,11 +1,14 @@
 #include"IO.h"
-#include "ShamirSecretSharingTests.h"
+#include"ShamirSecretTests.h"
 #include"BlockchainTests.h"
+#include"SHATests.h"
 int main() {
 	IO io = IO();
 	io.SetRusIO();
 	srand(time(NULL));
 	//SSSTests().Start();
-	BlockchainTests().Start();
+	SHA1Tests().Start();
+	BlockChainTests().Start();
+	
 	io.Pause();
 }

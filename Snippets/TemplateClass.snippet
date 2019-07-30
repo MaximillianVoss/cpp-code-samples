@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Template class</Title>
+            <Shortcut>Template class</Shortcut>
+            <Description>Фрагмент кода для шаблонного класса</Description>
+            <Author>Microsoft Corporation</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>name</ID>
+                    <ToolTip>Имя класса</ToolTip>
+                    <Default>MyClass</Default>
+                </Literal>
+                <Literal>
+                    <ID>includeFile</ID>
+                    <ToolTip>Имя подключаемого файла</ToolTip>
+                    <Default>pch.h</Default>
+                </Literal>
+                <Literal>
+                    <ID>type</ID>
+                    <ToolTip>Тип шаблонного класса</ToolTip>
+                    <Default>T</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp"><![CDATA[
+            #pragma once
+            #include "$includeFile$"
+            template<typename $type$>
+            ///<summary>
+	        /// Описание_класса
+	        ///</summary>
+            class $name$
+            {
+            private:
+
+            #pragma region Поля
+
+            #pragma endregion
+
+            #pragma region Методы
+
+            #pragma endregion
+
+            public:
+
+            #pragma region Поля
+
+            #pragma endregion
+
+            #pragma region Методы
+
+            #pragma endregion
+
+            #pragma region Конструкторы/Деструкторы
+
+            #pragma endregion
+
+            #pragma region Операторы
+
+            #pragma endregion
+
+            #pragma region Обработчики событий
+
+            #pragma endregion
+
+                $name$(){};
+                ~$name$(){};
+
+            };
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

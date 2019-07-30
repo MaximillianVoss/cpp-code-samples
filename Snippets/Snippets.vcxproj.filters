@@ -13,24 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Исходные файлы\Tests">
-      <UniqueIdentifier>{9fd041ad-ebd2-4cce-85de-5e0327c588e6}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <None Include="UTItem.snippet">
       <Filter>Исходные файлы</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BlockChainTests.h">
-      <Filter>Исходные файлы\Tests</Filter>
-    </ClInclude>
-    <ClInclude Include="SHATests.h">
-      <Filter>Исходные файлы\Tests</Filter>
-    </ClInclude>
-    <ClInclude Include="ShamirSecretTests.h">
-      <Filter>Исходные файлы\Tests</Filter>
-    </ClInclude>
+    </None>
+    <None Include="SimpleClass.snippet">
+      <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="TemplateClass.snippet">
+      <Filter>Исходные файлы</Filter>
+    </None>
+    <None Include="UTMain.snippet">
+      <Filter>Исходные файлы</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -2,27 +2,23 @@
 #include "TWLL.h"
 #include "Block.h"
 #include "Client.h"
-class BlockChain :TWLList<Block>
+#include "SHA1.h"
+class BlockChain
 {
 private:
 	/// <summary>
 	/// 
 	/// </summary>
-	int clientId = 0;
+	TWLList<Block> blocks;
 	/// <summary>
 	/// 
 	/// </summary>
-	TWLList blocks;
-	/// <summary>
-	/// 
-	/// </summary>
-	//TWLList<Client> clients;
-	vector<Client> clients;
+	TWLList<Client> clients;
+	//vector<Client> clients;
 public:
 #pragma region Конструкторы
 	BlockChain() {
 	}
-
 	~BlockChain() {
 	}
 #pragma endregion
@@ -32,35 +28,57 @@ public:
 /// 
 /// </summary>
 /// <param name="block"></param>
-	void Add(Block* block) {
-		this->Voting(this->clients, block);
-		this->blocks.Add(*block);
+	Block Add(Block block) {
+		LLItem<Block>* found = this->blocks.Find(block);
+		if (!found) {
+			size_t clientIndex = this->Voting(this->GetOnlineCount());
+			block.ownerId = this->clients.Find(clientIndex)->data.GetKey();
+			this->blocks.Add(block);
+			return block;
+		}
+		return block;
 	}
 	/// <summary>
 	/// 
 	/// </summary>
 	/// <param name="client"></param>
-	void Add(Client client) {
-		//this->clients.Add(client);
-		this->clients.push_back(client);
+	Client Add(Client client) {
+		SHA1 sha;
+		//если нет ключа, но есть фраза, то регистрируем как нового
+		if (client.GetKey() == "") {
+			if (client.GetPhrase() != "") {
+				client.SetKey(sha.GetHash(this->GetRandStr(10) + client.GetPhrase()));
+				this->clients.Add(client);
+				return client;
+			}
+		}
+		return Client();
 	}
-
 #pragma endregion
 #pragma region Соединение
-	void Connect(Client* client) {
-		this->clientId++;
-		client->id = to_string(this->clientId);
-		client->isOnline = true;
-		this->Add(*client);
-		this->clients.push_back(*client);
+	bool Connect(Client client) {
+		if (!client.isOnline) {
+			LLItem<Client>* found = this->clients.Find(client);
+			if (found) {
+				found->data.isOnline = true;
+				return true;
+			}
+		}
+		return false;
 	}
-	void Disconnect(Client* client) {
-		client->isOnline = true;
-		//this->clients.Delete(*client);
+	bool Disconnect(Client client) {
+		if (client.isOnline) {
+			LLItem<Client>* found = this->clients.Find(client);
+			if (found) {
+				found->data.isOnline = false;
+				return true;
+			}
+		}
+		return false;
 	}
 	vector<Client> GetClientList() {
 		//return this->clients.ToList();
-		return this->clients;
+		//return this->clients;
 	}
 #pragma endregion
 #pragma region Сериализация
@@ -74,7 +92,7 @@ public:
 /// </summary>
 /// <returns></returns>
 	vector<Client> GetActive() {
-		return this->clients;
+		//return this->clients;
 	}
 	/// <summary>
 	/// Голосование по распределению блоков
@@ -109,7 +127,8 @@ public:
 	/// <param name="clients"></param>
 	/// <returns></returns>
 	void Voting(vector<Client> clients, Block* block) {
-		block->ownerId = StageB(StageA(clients)).id;
+		//block->ownerId = StageB(StageA(clients)).id;
+		//block->ownerId = 
 	}
 	/// <summary>
 	/// Верификация
@@ -119,8 +138,12 @@ public:
 	bool Verification(Client client) {
 
 	}
-
-	int VotingAlpha(int N) {
+	/// <summary>
+	/// Голосование освнованное на случайной величине
+	/// </summary>
+	/// <param name="N"></param>
+	/// <returns></returns>
+	int Voting(int N) {
 		vector<vector<int>> items;
 		for (int i = 0; i < N; i++) {
 			items.push_back(vector<int>());
@@ -139,6 +162,31 @@ public:
 			}
 		}
 		return index;
+	}
+#pragma endregion
+#pragma region Прочее
+	string GetRandStr(int length) {
+		string eng = Constants::Strings::Alphabets::eng;
+		stringstream ss;
+		for (size_t i = 0; i < length; i++)
+			ss << rand() % eng.size();
+		return ss.str();
+	}
+	int  GetClientsCount() {
+		return this->clients.GetLength();
+	}
+	int GetOnlineCount() {
+		LLItem<Client>* current = this->clients.head;
+		int onlineCounter = 0;
+		while (current) {
+			if (current->data.isOnline)
+				onlineCounter++;
+			current = current->next;
+		}
+		return onlineCounter;
+	}
+	int GetBlocksCount() {
+		return this->blocks.GetLength();
 	}
 #pragma endregion
 #pragma endregion

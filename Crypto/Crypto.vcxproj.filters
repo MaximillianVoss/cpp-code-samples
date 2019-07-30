@@ -19,6 +19,9 @@
     <Filter Include="Исходные файлы\Blockchain">
       <UniqueIdentifier>{eb5499e3-b84b-4674-9ffb-2af640ef3da2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\SHA">
+      <UniqueIdentifier>{73d85be4-290f-46b3-8fcf-372703d611b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShamirsSecretSharing.h">
@@ -32,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="Client.h">
       <Filter>Исходные файлы\Blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA1.h">
+      <Filter>Исходные файлы\SHA</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿  Main.cpp
 c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\unittest\generator.h(19): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
 c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\unittest\generator.h(105): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\cryptotests\main.cpp(7): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\cryptotests\main.cpp(8): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   CryptoTests.vcxproj -> C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\x64\Debug\Crypto Tests.exe
   CryptoTests.vcxproj -> C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\x64\Debug\Crypto Tests.pdb (Partial PDB)

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>Unit Test Item</Title>
+            <Shortcut>Unit Test Item</Shortcut>
+            <Description>Фрагмент кода для класса одиночного юнит теста</Description>
+            <Author>Microsoft Corporation</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+                <SnippetType>SurroundsWith</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>name</ID>
+                    <ToolTip>Имя класса</ToolTip>
+                    <Default>UnitTestItemClass</Default>
+                </Literal>
+                <Literal>
+                    <ID>type</ID>
+                    <ToolTip>Тип выходных данных</ToolTip>
+                    <Default>string</Default>
+                </Literal>
+                <Literal>
+                    <ID>title</ID>
+                    <ToolTip>название</ToolTip>
+                    <Default>Неизвестный тест</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="cpp"><![CDATA[
+            #pragma region $title$
+            ///<summary>
+	        /// $title$
+	        ///</summary>
+            class $name$ :public UnitTest<$type$> {
+            public:
+            $name$(vector<$type$>values) :UnitTest("$title$", values) {
+
+                }   
+                void Test() override {
+
+                    //this->Add(vector<$type$>items) для добавления результатов
+                    //сравнение результатов в конце 
+                    UnitTest::Compare();
+                }
+            };
+            #pragma endregion]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

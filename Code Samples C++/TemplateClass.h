@@ -1,10 +1,7 @@
 #pragma once
+#include "pch.h"
 class TemplateCall
 {
-
-
-
-
 private:
 
 #pragma region Поля
@@ -33,12 +30,9 @@ public:
 
 #pragma endregion
 
-
 #pragma region Обработчики событий
 
 #pragma endregion
-
-
 
 	TemplateCall();
 	~TemplateCall();
