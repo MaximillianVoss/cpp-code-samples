@@ -15,12 +15,12 @@ public:
 	}
 	void Test() override {
 		BlockChain bc;
+		string fileName = this->name + ".txt";
 		this->Add(bc.GetClientsCount());
 		bc.Add(Client("", "qwerty"));
 		bc.Add(Client("", "12345678"));
 		this->Add(bc.GetClientsCount());
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		IO().Append(fileName, { bc.GetLogStr() });
 		UnitTest::Compare();
 	}
 };
@@ -37,12 +37,12 @@ public:
 	}
 	void Test() override {
 		BlockChain bc;
+		string fileName = this->name + ".txt";
 		Client c1 = bc.Add(Client("", "qwerty"));
 		Client c2 = Client("", "12345678");
 		this->Add(bc.Connect(c1));
 		this->Add(bc.Connect(c2));
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		IO().Append(fileName, { bc.GetLogStr() });
 		UnitTest::Compare();
 	}
 };
@@ -59,6 +59,7 @@ public:
 	}
 	void Test() override {
 		BlockChain bc;
+		string fileName = this->name + ".txt";
 		Client c1 = Client("", "qwerty");
 		Client c2 = Client("", "12345678");
 		c1 = bc.Add(c1);
@@ -68,8 +69,7 @@ public:
 		this->Add(bc.Disconnect(c2));
 		c2.isOnline = bc.Connect(c2);
 		this->Add(bc.Disconnect(c2));
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		IO().Append(fileName, { bc.GetLogStr() });
 		UnitTest::Compare();
 	}
 };
@@ -84,33 +84,35 @@ public:
 	BlockChainAddTest1(vector<int>values) :UnitTest("Добавление Блока с ручной подписью", values) {
 
 	}
-	string GetTime() {
-		auto t = std::time(nullptr);
-		auto tm = *std::localtime(&t);
-		ostringstream oss;
-		oss << std::put_time(&tm, "%d-%m-%Y %H:%M:%S");
-		return oss.str();
-	}
+
 	void Test() override {
 		BlockChain bc;
-		IO io = IO();
-		string fileName = "BC add log.txt";
-		for (size_t i = 0; i < 100; i++)
+		string fileName = this->name + ".txt";
+		for (size_t i = 0; i < 10; i++)
 		{
 			Client c = Client("", to_string(i));
 			c = bc.Add(c);
 			c.isOnline = bc.Connect(c);
 		}
 		this->Add(bc.GetBlocksCount());
+		IO io;
+		vector<string> lines;
 		for (size_t i = 0; i < 100; i++)
 		{
+			auto start = high_resolution_clock::now();
+
 			Block b = Block(to_string(i), "");
 			b = bc.Add(b);
-			io.Append(fileName, { "_____________", GetTime(),"Добавление блока",b.ToString(true) }, true);
+
+			auto stop = high_resolution_clock::now();
+			auto duration = duration_cast<microseconds>(stop - start);
+			stringstream ss;
+			ss << duration.count() / 1000 << ";" << "\n";
+			lines.push_back(ss.str());
 		}
+		io.WriteLines("AddTestTime.csv", lines);
 		this->Add(bc.GetBlocksCount());
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		IO().Append(fileName, { bc.GetLogStr() });
 		UnitTest::Compare();
 	}
 };
@@ -128,7 +130,7 @@ public:
 		BlockChainAddWallet({ 0,2 }).Start();
 		BlockChainConnectTest({ true,false }).Start();
 		BlockChainDicsonnectTest({ true,false,true }).Start();
-		BlockChainAddTest1({ 0,100 }).Start();
+		BlockChainAddTest1({ 0,10 }).Start();
 	}
 };
 #pragma endregion

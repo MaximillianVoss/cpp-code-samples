@@ -3,18 +3,43 @@
 #include "Block.h"
 #include "Client.h"
 #include "SHA1.h"
+//перенести Log.h LogItem.h в проект Log
+#include "Log.h"
+/// <summary>
+/// Блокчейн
+/// </summary>
 class BlockChain
 {
 private:
+
+#pragma region Поля
 	/// <summary>
 	/// 
 	/// </summary>
 	TWLList<Block> blocks;
 	/// <summary>
-	/// 
+	/// Список клиентов
 	/// </summary>
 	TWLList<Client> clients;
-	//vector<Client> clients;
+	/// <summary>
+	/// Минимальный порог для победы
+	/// </summary>
+	size_t voteMin = 60;
+	/// <summary>
+	/// Максимальное значение для голосования
+	/// </summary>
+	size_t voteMax = 100;
+	/// <summary>
+	/// Лог событий
+	/// </summary>
+	Log log;
+#pragma endregion
+
+#pragma region Методы
+
+
+
+#pragma endregion
 public:
 #pragma region Конструкторы
 	BlockChain() {
@@ -31,9 +56,16 @@ public:
 	Block Add(Block block) {
 		LLItem<Block>* found = this->blocks.Find(block);
 		if (!found) {
-			size_t clientIndex = this->Voting(this->GetOnlineCount());
-			block.ownerId = this->clients.Find(clientIndex)->data.GetKey();
-			this->blocks.Add(block);
+			size_t clientIndex = this->Voting(this->GetOnlineCount(), voteMin, voteMax);
+			if (clientIndex != -1) {
+				block.ownerId = this->clients.Find(clientIndex)->data.GetKey();
+				this->blocks.Add(block);
+				log.Add(Constants::Strings::BlockChain::blockAdded);
+			}
+			else {
+				log.Add((Constants::Strings::BlockChain::voitingRestarted));
+				return this->Add(block);
+			}
 			return block;
 		}
 		return block;
@@ -48,6 +80,7 @@ public:
 		if (client.GetKey() == "") {
 			if (client.GetPhrase() != "") {
 				client.SetKey(sha.GetHash(this->GetRandStr(10) + client.GetPhrase()));
+				log.Add((Constants::Strings::BlockChain::clientAdded));
 				this->clients.Add(client);
 				return client;
 			}
@@ -143,12 +176,13 @@ public:
 	/// </summary>
 	/// <param name="N"></param>
 	/// <returns></returns>
-	int Voting(int N) {
+	int Voting(int N, int limit, int maxValue) {
+		log.Add((Constants::Strings::BlockChain::votingStarted));
 		vector<vector<int>> items;
 		for (int i = 0; i < N; i++) {
 			items.push_back(vector<int>());
 			for (int j = 0; j < N; j++)
-				items[i].push_back(rand() % 100);
+				items[i].push_back(rand() % maxValue);
 		}
 		int max = 0;
 		int index = -1;
@@ -161,9 +195,13 @@ public:
 				index = i;
 			}
 		}
-		return index;
+		log.Add((Constants::Strings::BlockChain::voitingEnded));
+		if (max > limit * N)
+			return index;
+		return -1;
 	}
 #pragma endregion
+
 #pragma region Прочее
 	string GetRandStr(int length) {
 		string eng = Constants::Strings::Alphabets::eng;
@@ -187,6 +225,9 @@ public:
 	}
 	int GetBlocksCount() {
 		return this->blocks.GetLength();
+	}
+	string GetLogStr() {
+		return this->log.ToString();
 	}
 #pragma endregion
 #pragma endregion

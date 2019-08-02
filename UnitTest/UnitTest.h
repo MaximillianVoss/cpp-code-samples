@@ -12,7 +12,7 @@ private:
 	/// <summary>
 	/// Префикс
 	/// </summary>
-	string prefixName = "Test:";
+	string prefixName = "Тест ";
 	/// <summary>
 	/// Печатает вектор в консоли
 	/// </summary>

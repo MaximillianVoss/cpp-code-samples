@@ -18,6 +18,22 @@ public:
 		/// </summary>
 		static constexpr const char* undefined = "undefined";
 		/// <summary>
+		/// Блокчейн
+		/// </summary>
+		class BlockChain {
+		public:
+			static constexpr const char* logCleared = "Лог очищен";
+			static constexpr const char* blockAdded = "Блок добавлен";
+			static constexpr const char* blockDeleted = "Блок удален";
+			static constexpr const char* clientAdded = "Клиент добавлен";
+			static constexpr const char* clientDeleted = "Клиент удален";
+			static constexpr const char* clientConnected = "Клиент соединился";
+			static constexpr const char* clientDisconnected = "Клиент отсоединился";
+			static constexpr const char* votingStarted = "Голосование началось";
+			static constexpr const char* voitingRestarted = "Голосование перезапущено";
+			static constexpr const char* voitingEnded = "Голосование окончено";
+		};
+		/// <summary>
 		/// Алфавиты
 		/// </summary>
 		class Alphabets {
