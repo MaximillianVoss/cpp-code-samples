@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Stack.h"
 
 #pragma region Конструктор/Деструктор

@@ -32,5 +32,14 @@
     <ClInclude Include="StrHelperTests.h">
       <Filter>Исходные файлы\Tests</Filter>
     </ClInclude>
+    <ClInclude Include="GraphTests.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SortsTests.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchTests.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

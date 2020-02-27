@@ -157,8 +157,6 @@
     <ClInclude Include="Block.h" />
     <ClInclude Include="BlockChain.h" />
     <ClInclude Include="Client.h" />
-    <ClInclude Include="Log.h" />
-    <ClInclude Include="LogItem.h" />
     <ClInclude Include="SHA1.h" />
     <ClInclude Include="ShamirsSecretSharing.h" />
   </ItemGroup>

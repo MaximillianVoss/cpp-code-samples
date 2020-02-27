@@ -3,33 +3,26 @@
 class Block
 {
 private:
-	string idStr = "ID:";
-	string ownerIdStr = "onwer id:";
-public:
 	/// <summary>
-	/// ИД
+	/// ID в виде хэш SHA-1
 	/// </summary>
 	string id;
 	/// <summary>
-	/// ИД владельца
+	/// ID владельца в виде хэш SHA-1 
 	/// </summary>
 	string ownerId;
-	/// <summary>
-	/// 
-	/// </summary>
+	string idStr = "ID:";
+	string ownerIdStr = "onwer id:";
+public:
 	Block() {
+		this->id = "";
+		this->ownerId = "";
 	}
 	/// <summary>
-	/// 
+	/// Создает блок с указанным ID и ID владельца
 	/// </summary>
-	/// <param name="id"></param>
-	Block(string id) {
-		this->id = id;
-	}
-	/// <summary>
-	/// 
-	/// </summary>
-	/// <param name="id"></param>
+	/// <param name="id">ID в виде хэш SHA-1</param>
+	/// <param name="ownerId">ID владельца в виде хэш SHA-1 </param>
 	Block(string id, string ownerId) {
 		this->id = id;
 		this->ownerId = ownerId;
@@ -51,14 +44,40 @@ public:
 			ss << this->idStr << this->id << Constants::Strings::Separators::space << this->ownerIdStr << this->ownerId;
 		return ss.str();
 	}
-
-
+	/// <summary>
+	/// Задает ID в виде хэш SHA-1
+	/// </summary>
+	/// <param name="id">ID в виде хэш SHA-1</param>
+	void SetId(string id) {
+		this->id = id;
+	}
+	/// <summary>
+	/// Получает ID в виде хэш SHA-1
+	/// </summary>
+	/// <returns></returns>
+	string GetId() {
+		return this->id;
+	}
+	/// <summary>
+	/// Задает ID владельца в виде хэш SHA-1
+	/// </summary>
+	/// <param name="ownerId">ID владельца в виде хэш SHA-1 </param>
+	void SetOwnerId(string ownerId) {
+		this->ownerId = ownerId;
+	}
+	/// <summary>
+	/// Получает ID владельца в виде хэш SHA-1
+	/// </summary>
+	/// <returns></returns>
+	string GetOwnerId() {
+		return this->ownerId;
+	}
 };
 
 
 #pragma region Операторы
 bool operator==(Block& b1, Block& b2) {
-	return b1.id == b2.id && b1.ownerId == b2.ownerId;
+	return b1.GetId() == b2.GetId();
 }
 ostream& operator<<(ostream& os, Block block)
 {

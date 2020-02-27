@@ -76,3 +76,27 @@ enum ConsoleColor {
 	/// </summary>
 	white
 };
+/// <summary>
+/// формат сериализации объектов
+/// </summary>
+enum OutputFormat {
+	/// <summary>
+	/// выводить поля и их значения
+	/// </summary>
+	fields,
+	/// <summary>
+	/// вывести в формете xml
+	/// </summary>
+	xml
+};
+/// <summary>
+/// Направления
+/// </summary>
+enum Direction {
+	ascending,
+	descending,
+	up,
+	down,
+	left,
+	right
+};

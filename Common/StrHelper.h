@@ -163,5 +163,26 @@ public:
 				result.push_back(item);
 		return result;
 	}
+	/// <summary>
+	/// —тавит строку в кавычки: строка -> "строка"
+	/// </summary>
+	/// <param name="str">строка</param>
+	/// <returns></returns>
+	string AddQoute(string str) {
+		stringstream ss;
+		ss << '"' << str << '"';
+		return ss.str();
+	}
+	/// <summary>
+	///  онвертирует булевское значение в строку
+	/// </summary>
+	/// <param name="value">булевское значение</param>
+	/// <returns>строки true/false</returns>
+	string BoolToStr(bool value) {
+		if (value)
+			return "true";
+		else
+			return "false";
+	}
 #pragma endregion
 };

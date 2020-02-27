@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "PairStr.h"
 
 #pragma region Конструкторы/Деструкторы
