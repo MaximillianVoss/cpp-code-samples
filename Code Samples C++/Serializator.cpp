@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "Serializator.h"
 
 #pragma region Ìועמהû

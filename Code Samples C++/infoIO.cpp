@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "InfoIO.h"
 
 #pragma region Конструктор/Деструктор

@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "Obfuscator.h"
 #include "StrHelper.h"
 #include "FileIO.h"

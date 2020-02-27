@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "ChessFigure.h"
 #pragma once
 class Zebra : public ChessFigure

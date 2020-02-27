@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "LongVal.h"
 #pragma region Конструкторы/Деструкторы
 LongVal::LongVal()

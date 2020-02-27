@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "Converter.h"
 
 #pragma region Конструктор/Деструктор

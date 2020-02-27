@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "InfoIO.h"
 #include "FileIO.h"
 #include "BSGame.h"

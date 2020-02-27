@@ -18,9 +18,6 @@
 #include <mutex>
 #include <regex>
 #include <chrono>
-#include <thread>
-#include <ppl.h>
 #define _CRT_SECURE_NO_WARNINGS
 #pragma warning(disable : 4996)
 using namespace std;
-using namespace concurrency;

@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "Field.h"
 
 bool Field::Check(int coord)

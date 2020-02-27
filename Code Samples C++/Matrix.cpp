@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "Matrix.h"
 
 #pragma region Контсруктор

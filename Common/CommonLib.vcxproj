@@ -128,33 +128,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BinarySearch.h" />
-    <ClInclude Include="BinarySortAdv.h" />
-    <ClInclude Include="Container.h" />
-    <ClInclude Include="DataPack.h" />
-    <ClInclude Include="Edge.h" />
-    <ClInclude Include="Graph.h" />
-    <ClInclude Include="GraphItem.h" />
     <ClInclude Include="IO.h" />
     <ClInclude Include="LLItem.h" />
     <ClInclude Include="LL.h" />
-    <ClInclude Include="Log.h" />
-    <ClInclude Include="LogItem.h" />
-    <ClInclude Include="Node.h" />
-    <ClInclude Include="Operators.h" />
     <ClInclude Include="OWLL.h" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Plotter.h" />
     <ClInclude Include="Polynom.h" />
-    <ClInclude Include="QuckSortAdv.h" />
-    <ClInclude Include="QuickSort.h" />
-    <ClInclude Include="Sorts.h" />
-    <ClInclude Include="SortsAdv.h" />
     <ClInclude Include="StrHelper.h" />
     <ClInclude Include="TWLL.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Node.cpp" />
     <ClCompile Include="Простой односвязный список.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

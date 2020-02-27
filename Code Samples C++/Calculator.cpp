@@ -1,4 +1,4 @@
-#include "pch.h"
+#include "stdafx.h"
 #include "Calculator.h"
 #include "PolandStr.h"
 

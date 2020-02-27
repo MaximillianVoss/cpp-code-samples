@@ -28,30 +28,6 @@
     <Filter Include="Исходные файлы\Polynom">
       <UniqueIdentifier>{00b48078-fd8a-4048-9fea-dc2463fef1f0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Исходные файлы\Graph">
-      <UniqueIdentifier>{17c0afd1-2412-4c7c-89f2-f9c7881b5211}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Tree">
-      <UniqueIdentifier>{eeea643f-6134-453d-9e2a-7f8f37de1f99}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Search">
-      <UniqueIdentifier>{fa62f632-82e4-4f69-ad82-391916f42cd1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Sorts">
-      <UniqueIdentifier>{fc656e48-5bda-4bd1-8acf-f1eed9bf8160}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Contianer">
-      <UniqueIdentifier>{2559d138-a431-46fc-b970-f308de4de45f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Log">
-      <UniqueIdentifier>{afb814e2-4656-49cd-88b5-48d60a744819}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Plot">
-      <UniqueIdentifier>{e405421d-16da-4891-98b5-398c6516b250}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Исходные файлы\Operators">
-      <UniqueIdentifier>{7a6746ac-fa00-42cd-9d4a-80b8e7928a58}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -78,61 +54,10 @@
     <ClInclude Include="Polynom.h">
       <Filter>Исходные файлы\Polynom</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>Исходные файлы\Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Graph.h">
-      <Filter>Исходные файлы\Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Edge.h">
-      <Filter>Исходные файлы\Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySearch.h">
-      <Filter>Исходные файлы\Search</Filter>
-    </ClInclude>
-    <ClInclude Include="QuickSort.h">
-      <Filter>Исходные файлы\Sorts</Filter>
-    </ClInclude>
-    <ClInclude Include="Container.h">
-      <Filter>Исходные файлы\Contianer</Filter>
-    </ClInclude>
-    <ClInclude Include="QuckSortAdv.h">
-      <Filter>Исходные файлы\Sorts</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySortAdv.h">
-      <Filter>Исходные файлы\Search</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorts.h">
-      <Filter>Исходные файлы\Sorts</Filter>
-    </ClInclude>
-    <ClInclude Include="SortsAdv.h">
-      <Filter>Исходные файлы\Sorts</Filter>
-    </ClInclude>
-    <ClInclude Include="GraphItem.h">
-      <Filter>Исходные файлы\Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Log.h">
-      <Filter>Исходные файлы\Log</Filter>
-    </ClInclude>
-    <ClInclude Include="LogItem.h">
-      <Filter>Исходные файлы\Log</Filter>
-    </ClInclude>
-    <ClInclude Include="DataPack.h">
-      <Filter>Исходные файлы\Plot</Filter>
-    </ClInclude>
-    <ClInclude Include="Operators.h">
-      <Filter>Исходные файлы\Operators</Filter>
-    </ClInclude>
-    <ClInclude Include="Plotter.h">
-      <Filter>Исходные файлы\Plot</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Простой односвязный список.cpp">
       <Filter>Исходные файлы\Lists</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

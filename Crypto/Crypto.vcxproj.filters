@@ -39,5 +39,11 @@
     <ClInclude Include="SHA1.h">
       <Filter>Исходные файлы\SHA</Filter>
     </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Исходные файлы\Blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="LogItem.h">
+      <Filter>Исходные файлы\Blockchain</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

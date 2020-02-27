@@ -22,38 +22,6 @@ c:\users\александр\onedrive\репетиторство\программ
           [
               T=int
           ]
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\graphtests.h(18): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\graphtests.h(75): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\main.cpp(10): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\graph.h(397): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\graph.h(375): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\graphtests.h(153): note: выполняется компиляция ссылки на экземпляр шаблон функции "std::string Graph<int>::ToString(OutputFormat)"
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\graphtests.h(15): note: См. ссылку на компилируемый экземпляр "<Нет данных>" класса <Нет данных>
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\sorts.h(108): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\sorts.h(107): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\sortstests.h(19): note: выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<int,std::allocator<_Ty>> Sorts<int>::QuickSort(std::vector<_Ty,std::allocator<_Ty>>,Direction)"
-          with
-          [
-              _Ty=int
-          ]
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\sortstests.h(17): note: См. ссылку на компилируемый экземпляр "<Нет данных>" класса <Нет данных>
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\binarysearch.h(31): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\binarysearch.h(27): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\binarysearch.h(56): note: выполняется компиляция ссылки на экземпляр шаблон функции "int BinarySearch<int>::SubFind(std::vector<int,std::allocator<_Ty>>,T,int)"
-          with
-          [
-              _Ty=int,
-              T=int
-          ]
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\searchtests.h(17): note: См. ссылку на компилируемый экземпляр "<Нет данных>" класса <Нет данных>
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\binarysearch.h(38): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\sorts.h(47): warning C4101: t: неиспользованная локальная переменная
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\sorts.h(44): note: при компиляции функции-члена "<Нет данных>" класса <Нет данных>
-  c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\sorts.h(67): note: выполняется компиляция ссылки на экземпляр шаблон функции "int Sorts<int>::Partition(T *,int,int,Direction)"
-          with
-          [
-              T=int
-          ]
 c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common\io.h(257): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
   c:\users\александр\onedrive\репетиторство\программирование\c++\code samples c++\common tests\iotests.h(121): note: выполняется компиляция ссылки на экземпляр шаблон функции "void IO::Print<int>(std::vector<int,std::allocator<_Ty>>,std::string,bool,bool,std::string)"
           with
