@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "BShip.h"
 #include "Field.h"
 #include "Enums.h"

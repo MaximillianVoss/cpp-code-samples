@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "ArrayHelper.h"
 
 #pragma region Конструкторы

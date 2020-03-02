@@ -65,6 +65,7 @@ public:
 		class Errors {
 		public:
 			static constexpr const char* notImplemented = "Отсутствует реализация метода";
+			static constexpr const char* objectIsNULL = "Объект не существует(NULL)!";
 			class IO {
 			public:
 				static constexpr const char* input = "Ошибка ввода, повторите ввод";
@@ -74,7 +75,14 @@ public:
 			public:
 				static constexpr const char* empty = "Список пуст";
 				static constexpr const char* incorrectIndex = "Некорректный иднекс";
+				static constexpr const char* incorrectSize = "Некорректный размер списка! \nОжидалось элементов:%i\nПолучено элементов:%i\n";
 				static constexpr const char* notFound = "Элемент не найден";
+				static constexpr const char* tooSmall = "Список слишком мал!";
+				static constexpr const char* tooLarge = "Список слишком большой!";
+			};
+			class Points {
+			public:
+				static constexpr const char* notPoint = "Не явялется точкой!";
 			};
 		};
 		/// <summary>

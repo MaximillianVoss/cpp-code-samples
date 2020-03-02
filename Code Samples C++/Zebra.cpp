@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Zebra.h"
 
 bool Zebra::Attack(Cell cell)

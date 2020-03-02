@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "BShip.h"
 
 bool BShip::Check(Cell cell)

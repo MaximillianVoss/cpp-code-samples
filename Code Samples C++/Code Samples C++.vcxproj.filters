@@ -300,18 +300,18 @@
     <ClInclude Include="Messages.h">
       <Filter>Исходные файлы\Classes\Сообщения</Filter>
     </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>Исходные файлы\Main</Filter>
-    </ClInclude>
     <ClInclude Include="PairStr.h">
       <Filter>Исходные файлы\Classes\Пары</Filter>
+    </ClInclude>
+    <ClInclude Include="Pair.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code Samples C++.cpp">
-      <Filter>Исходные файлы\Main</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
       <Filter>Исходные файлы\Main</Filter>
     </ClCompile>
     <ClCompile Include="FileIO.cpp">
