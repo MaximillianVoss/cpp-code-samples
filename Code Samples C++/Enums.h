@@ -1,54 +1,54 @@
 #pragma once
-#pragma region Перечисления
+#pragma region РџРµСЂРµС‡РёСЃР»РµРЅРёСЏ
 #pragma region Menu
 /// <summary>
-/// действия в главном меню
+/// РґРµР№СЃС‚РІРёСЏ РІ РіР»Р°РІРЅРѕРј РјРµРЅСЋ
 /// </summary>
 enum ActionsMain {
 	/// <summary>
-	/// новая игра
+	/// РЅРѕРІР°СЏ РёРіСЂР°
 	/// </summary>
 	newgame = 1,
 	/// <summary>
-	/// загрузить
+	/// Р·Р°РіСЂСѓР·РёС‚СЊ
 	/// </summary>
 	load,
 	/// <summary>
-	/// насройки
+	/// РЅР°СЃСЂРѕР№РєРё
 	/// </summary>
 	settings,
 	/// <summary>
-	/// закрытие меню
+	/// Р·Р°РєСЂС‹С‚РёРµ РјРµРЅСЋ
 	/// </summary>
 	close
 };
 /// <summary>
-/// действия в игровом меню
+/// РґРµР№СЃС‚РІРёСЏ РІ РёРіСЂРѕРІРѕРј РјРµРЅСЋ
 /// </summary>
 enum ActionsInGame {
 	/// <summary>
-	/// выстрелить
+	/// РІС‹СЃС‚СЂРµР»РёС‚СЊ
 	/// </summary>
 	shoot = 1,
 	/// <summary>
-	/// сохранить игру
+	/// СЃРѕС…СЂР°РЅРёС‚СЊ РёРіСЂСѓ
 	/// </summary>
 	save,
 	/// <summary>
-	/// назад
+	/// РЅР°Р·Р°Рґ
 	/// </summary>
 	goBack
 };
 /// <summary>
-/// действия в меню настроек
+/// РґРµР№СЃС‚РІРёСЏ РІ РјРµРЅСЋ РЅР°СЃС‚СЂРѕРµРє
 /// </summary>
 enum ActionsSettings {
 	/// <summary>
-	/// отлкадка(настройки)
+	/// РѕС‚Р»РєР°РґРєР°(РЅР°СЃС‚СЂРѕР№РєРё)
 	/// </summary>
 	debug = 1,
 	/// <summary>
-	/// размер поля(настройки)
+	/// СЂР°Р·РјРµСЂ РїРѕР»СЏ(РЅР°СЃС‚СЂРѕР№РєРё)
 	/// </summary>
 	fieldSize,
 	setAI,
@@ -59,7 +59,7 @@ enum ActionsSettings {
 /// </summary>
 enum ActionsCommon {
 	/// <summary>
-	/// назад
+	/// РЅР°Р·Р°Рґ
 	/// </summary>
 	back
 };
@@ -67,7 +67,7 @@ enum ActionsCommon {
 
 #pragma region Other
 /// <summary>
-/// типы клеток
+/// С‚РёРїС‹ РєР»РµС‚РѕРє
 /// </summary>
 enum CellTypes {
 	empty,
@@ -78,20 +78,20 @@ enum CellTypes {
 	notFound
 };
 /// <summary>
-/// типы кораблей
+/// С‚РёРїС‹ РєРѕСЂР°Р±Р»РµР№
 /// </summary>
 enum ShipTypes {
 
 };
 /// <summary>
-/// счет игроков
+/// СЃС‡РµС‚ РёРіСЂРѕРєРѕРІ
 /// </summary>
 enum Players {
 	first,
 	second
 };
 /// <summary>
-/// Цвета в консоли
+/// Р¦РІРµС‚Р° РІ РєРѕРЅСЃРѕР»Рё
 /// </summary>
 enum ConsoleColor
 {
@@ -113,15 +113,15 @@ enum ConsoleColor
 	White = 15
 };
 /// <summary>
-/// список полей игры Морской бой
+/// СЃРїРёСЃРѕРє РїРѕР»РµР№ РёРіСЂС‹ РњРѕСЂСЃРєРѕР№ Р±РѕР№
 /// </summary>
 enum FieldsBS {
 	/// <summary>
-	/// размер поля
+	/// СЂР°Р·РјРµСЂ РїРѕР»СЏ
 	/// </summary>
 	size,
 	/// <summary>
-	/// игрок который ходит
+	/// РёРіСЂРѕРє РєРѕС‚РѕСЂС‹Р№ С…РѕРґРёС‚
 	/// </summary>
 	player,
 	shipsRemain,

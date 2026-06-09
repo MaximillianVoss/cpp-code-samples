@@ -1,163 +1,163 @@
 #pragma once
 /// <summary>
-/// Константы
+/// РљРѕРЅСЃС‚Р°РЅС‚С‹
 /// </summary>
 class Constants {
 public:
 	/// <summary>
-	/// Строковые константы
+	/// РЎС‚СЂРѕРєРѕРІС‹Рµ РєРѕРЅСЃС‚Р°РЅС‚С‹
 	/// </summary>
 	class Strings {
 	public:
 		/// <summary>
-		/// Пустая строка
+		/// РџСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР°
 		/// </summary>
 		static constexpr const char* strEmpty = "";
 		/// <summary>
-		/// Непределенное значение-заглушка
+		/// РќРµРїСЂРµРґРµР»РµРЅРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ-Р·Р°РіР»СѓС€РєР°
 		/// </summary>
 		static constexpr const char* undefined = "undefined";
 		/// <summary>
-		/// Блокчейн
+		/// Р‘Р»РѕРєС‡РµР№РЅ
 		/// </summary>
 		class BlockChain {
 		public:
-			static constexpr const char* logCleared = "Лог очищен";
-			static constexpr const char* blockAdded = "Блок добавлен";
-			static constexpr const char* blockDeleted = "Блок удален";
-			static constexpr const char* clientAdded = "Клиент добавлен";
-			static constexpr const char* clientDeleted = "Клиент удален";
-			static constexpr const char* clientConnected = "Клиент соединился";
-			static constexpr const char* clientDisconnected = "Клиент отсоединился";
-			static constexpr const char* votingStarted = "Голосование началось";
-			static constexpr const char* voitingRestarted = "Голосование перезапущено";
-			static constexpr const char* voitingEnded = "Голосование окончено";
+			static constexpr const char* logCleared = "Р›РѕРі РѕС‡РёС‰РµРЅ";
+			static constexpr const char* blockAdded = "Р‘Р»РѕРє РґРѕР±Р°РІР»РµРЅ";
+			static constexpr const char* blockDeleted = "Р‘Р»РѕРє СѓРґР°Р»РµРЅ";
+			static constexpr const char* clientAdded = "РљР»РёРµРЅС‚ РґРѕР±Р°РІР»РµРЅ";
+			static constexpr const char* clientDeleted = "РљР»РёРµРЅС‚ СѓРґР°Р»РµРЅ";
+			static constexpr const char* clientConnected = "РљР»РёРµРЅС‚ СЃРѕРµРґРёРЅРёР»СЃСЏ";
+			static constexpr const char* clientDisconnected = "РљР»РёРµРЅС‚ РѕС‚СЃРѕРµРґРёРЅРёР»СЃСЏ";
+			static constexpr const char* votingStarted = "Р“РѕР»РѕСЃРѕРІР°РЅРёРµ РЅР°С‡Р°Р»РѕСЃСЊ";
+			static constexpr const char* voitingRestarted = "Р“РѕР»РѕСЃРѕРІР°РЅРёРµ РїРµСЂРµР·Р°РїСѓС‰РµРЅРѕ";
+			static constexpr const char* voitingEnded = "Р“РѕР»РѕСЃРѕРІР°РЅРёРµ РѕРєРѕРЅС‡РµРЅРѕ";
 		};
 		/// <summary>
-		/// Алфавиты
+		/// РђР»С„Р°РІРёС‚С‹
 		/// </summary>
 		class Alphabets {
 		public:
-			static constexpr const char* rus = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+			static constexpr const char* rus = "Р°Р±РІРіРґРµС‘Р¶Р·РёР№РєР»РјРЅРѕРїСЂСЃС‚СѓС„С…С†С‡С€С‰СЉС‹СЊСЌСЋСЏ";
 			static constexpr const char* eng = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		};
 		/// <summary>
-		/// Сообщения/Инструкции
+		/// РЎРѕРѕР±С‰РµРЅРёСЏ/РРЅСЃС‚СЂСѓРєС†РёРё
 		/// </summary>
 		class Messages {
 		public:
 			class Inputs {
 			public:
-				static constexpr const char* inputValue = "Введите значение";
+				static constexpr const char* inputValue = "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ";
 
 			};
 			class UnitTest {
 			public:
-				static constexpr const char* passed = "тест пройден!";
-				static constexpr const char* failed = "тест провален!";
-				static constexpr const char* expected = "ожидалось";
-				static constexpr const char* actual = "получено";
+				static constexpr const char* passed = "С‚РµСЃС‚ РїСЂРѕР№РґРµРЅ!";
+				static constexpr const char* failed = "С‚РµСЃС‚ РїСЂРѕРІР°Р»РµРЅ!";
+				static constexpr const char* expected = "РѕР¶РёРґР°Р»РѕСЃСЊ";
+				static constexpr const char* actual = "РїРѕР»СѓС‡РµРЅРѕ";
 			};
 		};
 		/// <summary>
-		/// Сообщения об ошибках/исключения
+		/// РЎРѕРѕР±С‰РµРЅРёСЏ РѕР± РѕС€РёР±РєР°С…/РёСЃРєР»СЋС‡РµРЅРёСЏ
 		/// </summary>
 		class Errors {
 		public:
-			static constexpr const char* notImplemented = "Отсутствует реализация метода";
-			static constexpr const char* objectIsNULL = "Объект не существует(NULL)!";
+			static constexpr const char* notImplemented = "РћС‚СЃСѓС‚СЃС‚РІСѓРµС‚ СЂРµР°Р»РёР·Р°С†РёСЏ РјРµС‚РѕРґР°";
+			static constexpr const char* objectIsNULL = "РћР±СЉРµРєС‚ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚(NULL)!";
 			/// <summary>
-			/// Ввод/вывод
+			/// Р’РІРѕРґ/РІС‹РІРѕРґ
 			/// </summary>
 			class IO {
 			public:
-				static constexpr const char* input = "Ошибка ввода, повторите ввод";
-				static constexpr const char* format = "Ошибка форматирования, проверьте формат данных  повторите ввод";
+				static constexpr const char* input = "РћС€РёР±РєР° РІРІРѕРґР°, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ";
+				static constexpr const char* format = "РћС€РёР±РєР° С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёСЏ, РїСЂРѕРІРµСЂСЊС‚Рµ С„РѕСЂРјР°С‚ РґР°РЅРЅС‹С…  РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ";
 			};
 			/// <summary>
-			/// Списки
+			/// РЎРїРёСЃРєРё
 			/// </summary>
 			class Lists {
 			public:
-				static constexpr const char* elementAlreadyExists = "Элемент уже существует!";
-				static constexpr const char* empty = "Список пуст";
-				static constexpr const char* incorrectIndex = "Некорректный иднекс";
-				static constexpr const char* incorrectSize = "Некорректный размер списка!";
-				static constexpr const char* incorrectSizeTemplate = "Некорректный размер списка! \nОжидалось элементов:%i\nПолучено элементов:%i\n";
-				static constexpr const char* notFound = "Элемент не найден";
-				static constexpr const char* tooSmall = "Список слишком мал!";
-				static constexpr const char* tooLarge = "Список слишком большой!";
+				static constexpr const char* elementAlreadyExists = "Р­Р»РµРјРµРЅС‚ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!";
+				static constexpr const char* empty = "РЎРїРёСЃРѕРє РїСѓСЃС‚";
+				static constexpr const char* incorrectIndex = "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РёРґРЅРµРєСЃ";
+				static constexpr const char* incorrectSize = "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ СЂР°Р·РјРµСЂ СЃРїРёСЃРєР°!";
+				static constexpr const char* incorrectSizeTemplate = "РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ СЂР°Р·РјРµСЂ СЃРїРёСЃРєР°! \nРћР¶РёРґР°Р»РѕСЃСЊ СЌР»РµРјРµРЅС‚РѕРІ:%i\nРџРѕР»СѓС‡РµРЅРѕ СЌР»РµРјРµРЅС‚РѕРІ:%i\n";
+				static constexpr const char* notFound = "Р­Р»РµРјРµРЅС‚ РЅРµ РЅР°Р№РґРµРЅ";
+				static constexpr const char* tooSmall = "РЎРїРёСЃРѕРє СЃР»РёС€РєРѕРј РјР°Р»!";
+				static constexpr const char* tooLarge = "РЎРїРёСЃРѕРє СЃР»РёС€РєРѕРј Р±РѕР»СЊС€РѕР№!";
 			};
 			/// <summary>
-			/// Точки
+			/// РўРѕС‡РєРё
 			/// </summary>
 			class Points {
 			public:
-				static constexpr const char* notPoint = "Не явялется точкой!";
+				static constexpr const char* notPoint = "РќРµ СЏРІСЏР»РµС‚СЃСЏ С‚РѕС‡РєРѕР№!";
 			};
 		};
 		/// <summary>
-		/// Разделители
+		/// Р Р°Р·РґРµР»РёС‚РµР»Рё
 		/// </summary>
 		class Separators {
 		public:
 			/// <summary>
-			/// стрелка вправо
+			/// СЃС‚СЂРµР»РєР° РІРїСЂР°РІРѕ
 			/// </summary>
 			static constexpr const char* arrowRight = "->";
 			/// <summary>
-			/// стрелка влево
+			/// СЃС‚СЂРµР»РєР° РІР»РµРІРѕ
 			/// </summary>
 			static constexpr const char* arrowLeft = "<-";
 			/// <summary>
-			/// точка с запятой
+			/// С‚РѕС‡РєР° СЃ Р·Р°РїСЏС‚РѕР№
 			/// </summary>
 			static constexpr const char* semicolon = ";";
 			/// <summary>
-			/// двоеточие
+			/// РґРІРѕРµС‚РѕС‡РёРµ
 			/// </summary>
 			static constexpr const char* colon = ":";
 			/// <summary>
-			/// пробел
+			/// РїСЂРѕР±РµР»
 			/// </summary>
 			static constexpr const char* space = " ";
 			/// <summary>
-			/// запятая
+			/// Р·Р°РїСЏС‚Р°СЏ
 			/// </summary>
 			static constexpr const char* comma = ",";
 		};
 		/// <summary>
-		/// Префиксы
+		/// РџСЂРµС„РёРєСЃС‹
 		/// </summary>
 		class Prefixes {
 		public:
 			/// <summary>
-			/// открывающая квадратная скобка 
+			/// РѕС‚РєСЂС‹РІР°СЋС‰Р°СЏ РєРІР°РґСЂР°С‚РЅР°СЏ СЃРєРѕР±РєР° 
 			/// </summary>
 			static constexpr const char* squareBracket = "[";
 			/// <summary>
-			/// открывающая фигурная скобка 
+			/// РѕС‚РєСЂС‹РІР°СЋС‰Р°СЏ С„РёРіСѓСЂРЅР°СЏ СЃРєРѕР±РєР° 
 			/// </summary>
 			static constexpr const char* brace = "{";
 
 		};
 		/// <summary>
-		/// Постфиксы
+		/// РџРѕСЃС‚С„РёРєСЃС‹
 		/// </summary>
 		class Postfixes {
 		public:
 			/// <summary>
-			/// закрывающая фигурная скобка 
+			/// Р·Р°РєСЂС‹РІР°СЋС‰Р°СЏ С„РёРіСѓСЂРЅР°СЏ СЃРєРѕР±РєР° 
 			/// </summary>
 			static constexpr const char* brace = "}";
 			/// <summary>
-			/// закрывающая квадратная скобка 
+			/// Р·Р°РєСЂС‹РІР°СЋС‰Р°СЏ РєРІР°РґСЂР°С‚РЅР°СЏ СЃРєРѕР±РєР° 
 			/// </summary>
 			static constexpr const char* squareBracket = "]";
 		};
 	};
 	/// <summary>
-	/// Целочисленные константы
+	/// Р¦РµР»РѕС‡РёСЃР»РµРЅРЅС‹Рµ РєРѕРЅСЃС‚Р°РЅС‚С‹
 	/// </summary>
 	class Ints {
 	public:
@@ -171,7 +171,7 @@ public:
 		};
 	};
 	/// <summary>
-	/// Дробные константы
+	/// Р”СЂРѕР±РЅС‹Рµ РєРѕРЅСЃС‚Р°РЅС‚С‹
 	/// </summary>
 	class Doubles {
 	public:

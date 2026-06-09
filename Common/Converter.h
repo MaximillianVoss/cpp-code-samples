@@ -5,23 +5,23 @@
 #include "Constants.h"
 template<typename T>
 ///<summary>
-/// Описание_класса
+/// РћРїРёСЃР°РЅРёРµ_РєР»Р°СЃСЃР°
 ///</summary>
 class Converter
 {
 public:
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 
 
 #pragma endregion
 
-#pragma region Дочерние классы
+#pragma region Р”РѕС‡РµСЂРЅРёРµ РєР»Р°СЃСЃС‹
 	class Paths {
 	public:
 		/// <summary>
-		/// Получает путь из массива и преобразует в строку
+		/// РџРѕР»СѓС‡Р°РµС‚ РїСѓС‚СЊ РёР· РјР°СЃСЃРёРІР° Рё РїСЂРµРѕР±СЂР°Р·СѓРµС‚ РІ СЃС‚СЂРѕРєСѓ
 		/// [C,somefile.txt] -> C:\\somegfile.txt 
 		/// </summary>
 		/// <param name="items"></param>
@@ -36,7 +36,7 @@ public:
 			return path;
 		}
 		/// <summary>
-		/// Преобразует путь и строки в массив:
+		/// РџСЂРµРѕР±СЂР°Р·СѓРµС‚ РїСѓС‚СЊ Рё СЃС‚СЂРѕРєРё РІ РјР°СЃСЃРёРІ:
 		/// C:\\somegfile.txt -> [C,somefile.txt]
 		/// </summary>
 		/// <param name="path"></param>

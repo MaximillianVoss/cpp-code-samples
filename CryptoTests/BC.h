@@ -46,7 +46,7 @@ public:
 	void Test() override {
 		BlockChain blockChain;
 		int n = 15;
-		cout << "Номер победителя голосования:" << blockChain.VotingAlpha(n) << " из " << n << endl;
+		cout << "РќРѕРјРµСЂ РїРѕР±РµРґРёС‚РµР»СЏ РіРѕР»РѕСЃРѕРІР°РЅРёСЏ:" << blockChain.VotingAlpha(n) << " РёР· " << n << endl;
 		UnitTest::Compare();
 	}
 };
@@ -54,10 +54,10 @@ public:
 
 class BlockchainTests :UnitTests {
 public:
-	BlockchainTests() : UnitTests("Тесты блок чейна") {}
+	BlockchainTests() : UnitTests("РўРµСЃС‚С‹ Р±Р»РѕРє С‡РµР№РЅР°") {}
 	void Start()override {
-		//BCAddBLockTest1("Добавление блоков", { "0 1->1 1->2 1->3 1->4 1->5 1" }).Start();
-		//BCConnectTest1("Соединение клиента", { "1","2","3","4","5","6" }).Start();
-		BCVotingAlpha("Тестирование голосования", {}).Start();
+		//BCAddBLockTest1("Р”РѕР±Р°РІР»РµРЅРёРµ Р±Р»РѕРєРѕРІ", { "0 1->1 1->2 1->3 1->4 1->5 1" }).Start();
+		//BCConnectTest1("РЎРѕРµРґРёРЅРµРЅРёРµ РєР»РёРµРЅС‚Р°", { "1","2","3","4","5","6" }).Start();
+		BCVotingAlpha("РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ РіРѕР»РѕСЃРѕРІР°РЅРёСЏ", {}).Start();
 	}
 };

@@ -2,38 +2,38 @@
 #include "pch.h"
 template<typename TData, typename TValue>
 ///<summary>
-/// Контейнер для элементов коллекций
+/// РљРѕРЅС‚РµР№РЅРµСЂ РґР»СЏ СЌР»РµРјРµРЅС‚РѕРІ РєРѕР»Р»РµРєС†РёР№
 ///</summary>
 class Container
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Хранимый объект
+	/// РҐСЂР°РЅРёРјС‹Р№ РѕР±СЉРµРєС‚
 	/// </summary>
 	TData data;
 	/// <summary>
-	/// Поля объекта для сравнения/поиска
+	/// РџРѕР»СЏ РѕР±СЉРµРєС‚Р° РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ/РїРѕРёСЃРєР°
 	/// </summary>
 	TValue value;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	Container(TData data, TValue value) {
 		this->data = data;
 		this->value = value;
@@ -42,11 +42,11 @@ public:
 	~Container() {};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

@@ -11,11 +11,11 @@ class String
 
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	int GetCharIndex(char* str, char c)
 	{
 		if (str != NULL)
@@ -47,12 +47,12 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	char* symbols;
 	size_t length;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 	int GetLength()
 	{
@@ -137,7 +137,7 @@ public:
 		for (size_t i = 0; i < this->GetLength(); i++)
 		{
 			char currentChar = this->symbols[i];
-#pragma region Знаки
+#pragma region Р—РЅР°РєРё
 			if (IsStringSimpleContains(signs.symbols, currentChar))
 			{
 				signsCount++;
@@ -150,7 +150,7 @@ public:
 			}
 #pragma endregion
 
-#pragma region Разделители
+#pragma region Р Р°Р·РґРµР»РёС‚РµР»Рё
 			if (IsStringSimpleContains(delimiters.symbols, currentChar))
 			{
 				delimitersCount++;
@@ -165,7 +165,7 @@ public:
 			}
 #pragma endregion
 
-#pragma region Цифры
+#pragma region Р¦РёС„СЂС‹
 			if (currentChar == '0' && digitCount == 0)
 				return false;
 			if (IsStringSimpleContains(digits.symbols, this->symbols[i]))
@@ -183,7 +183,7 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	String(size_t length = 0)
 	{
 		this->symbols = (char*)calloc(length, sizeof(char));
@@ -199,11 +199,11 @@ public:
 	}
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

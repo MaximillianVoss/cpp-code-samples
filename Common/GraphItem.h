@@ -2,32 +2,32 @@
 #pragma once
 #include "pch.h"
 ///<summary>
-/// Базовый класс элемента графа
+/// Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ СЌР»РµРјРµРЅС‚Р° РіСЂР°С„Р°
 ///</summary>
 class GraphItem
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
 	/// ID
 	/// </summary>
 	string id;
 	/// <summary>
-	/// Длина ID для длинного формата
+	/// Р”Р»РёРЅР° ID РґР»СЏ РґР»РёРЅРЅРѕРіРѕ С„РѕСЂРјР°С‚Р°
 	/// </summary>
 	size_t idLength = 32;
 	/// <summary>
-	/// Задан ли ID в длинном формате
+	/// Р—Р°РґР°РЅ Р»Рё ID РІ РґР»РёРЅРЅРѕРј С„РѕСЂРјР°С‚Рµ
 	/// </summary>
 	bool longFormat;
 	/// <summary>
-	/// является ли элемент удаленным из графа
+	/// СЏРІР»СЏРµС‚СЃСЏ Р»Рё СЌР»РµРјРµРЅС‚ СѓРґР°Р»РµРЅРЅС‹Рј РёР· РіСЂР°С„Р°
 	/// </summary>
 	bool isDeleted;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
 	/// 
 	/// </summary>
@@ -52,12 +52,12 @@ private:
 			return value;
 		}
 		else
-			throw exception(("Строка больше " + to_string(this->idLength) + " символов!").c_str());
+			throw exception(("РЎС‚СЂРѕРєР° Р±РѕР»СЊС€Рµ " + to_string(this->idLength) + " СЃРёРјРІРѕР»РѕРІ!").c_str());
 	}
 	/// <summary>
-	/// Проверяет является ли строка числом
+	/// РџСЂРѕРІРµСЂСЏРµС‚ СЏРІР»СЏРµС‚СЃСЏ Р»Рё СЃС‚СЂРѕРєР° С‡РёСЃР»РѕРј
 	/// </summary>
-	/// <param name="s">строка</param>
+	/// <param name="s">СЃС‚СЂРѕРєР°</param>
 	/// <returns></returns>
 	bool IsNumber(const std::string& s)
 	{
@@ -67,16 +67,16 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Получает ID вершины
+	/// РџРѕР»СѓС‡Р°РµС‚ ID РІРµСЂС€РёРЅС‹
 	/// </summary>
 	/// <param name="id">ID</param>
-	/// <param name="longFormat">Длиный формат, true - ID будут в 32 разрядном представлении</param>
+	/// <param name="longFormat">Р”Р»РёРЅС‹Р№ С„РѕСЂРјР°С‚, true - ID Р±СѓРґСѓС‚ РІ 32 СЂР°Р·СЂСЏРґРЅРѕРј РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРё</param>
 	void SetId(string id, bool longFormat) {
 		this->longFormat = longFormat;
 		if (longFormat)
@@ -90,28 +90,28 @@ public:
 			this->id = id;
 	}
 	/// <summary>
-	/// Устанавливает ID вершины
+	/// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ ID РІРµСЂС€РёРЅС‹
 	/// </summary>
 	/// <returns></returns>
 	string GetId() {
 		return this->id;
 	}
 	/// <summary>
-	/// Получает формат id - true длинный формат
+	/// РџРѕР»СѓС‡Р°РµС‚ С„РѕСЂРјР°С‚ id - true РґР»РёРЅРЅС‹Р№ С„РѕСЂРјР°С‚
 	/// </summary>
 	/// <returns></returns>
 	bool GetIdFormat() {
 		return this->longFormat;
 	}
 	/// <summary>
-	/// Помечает элемент как удаленный
+	/// РџРѕРјРµС‡Р°РµС‚ СЌР»РµРјРµРЅС‚ РєР°Рє СѓРґР°Р»РµРЅРЅС‹Р№
 	/// </summary>
-	/// <param name="isDeleted">true - элемент считается удаленным</param>
+	/// <param name="isDeleted">true - СЌР»РµРјРµРЅС‚ СЃС‡РёС‚Р°РµС‚СЃСЏ СѓРґР°Р»РµРЅРЅС‹Рј</param>
 	void SetDeleted(bool isDeleted) {
 		this->isDeleted = isDeleted;
 	}
 	/// <summary>
-	/// Возвращает значение поля "удалено"
+	/// Р’РѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ РїРѕР»СЏ "СѓРґР°Р»РµРЅРѕ"
 	/// </summary>
 	bool GetDeleted()
 	{
@@ -119,18 +119,18 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	GraphItem(string id, bool longFromat = true, bool isDeleted = false) {
 		this->SetId(id, longFromat);
 		this->SetDeleted(isDeleted);
 	}
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

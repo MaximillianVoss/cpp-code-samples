@@ -1,16 +1,16 @@
 #pragma once
 #include "UnitTest.h"
 #include "DataPack.h"
-#pragma region Тесты
+#pragma region РўРµСЃС‚С‹
 
 
-#pragma region Тест создания и сериализации
+#pragma region РўРµСЃС‚ СЃРѕР·РґР°РЅРёСЏ Рё СЃРµСЂРёР°Р»РёР·Р°С†РёРё
 ///<summary>
-/// Тест создания и сериализации
+/// РўРµСЃС‚ СЃРѕР·РґР°РЅРёСЏ Рё СЃРµСЂРёР°Р»РёР·Р°С†РёРё
 ///</summary>
 class CreateSerialisationTest :public UnitTest<bool> {
 public:
-	CreateSerialisationTest(vector<bool>values) :UnitTest("Тест создания и сериализации", values) {
+	CreateSerialisationTest(vector<bool>values) :UnitTest("РўРµСЃС‚ СЃРѕР·РґР°РЅРёСЏ Рё СЃРµСЂРёР°Р»РёР·Р°С†РёРё", values) {
 
 	}
 	void Test() override {
@@ -19,25 +19,25 @@ public:
 		DataPack<int> dataPackLoaded = DataPack<int>(str);
 		string str1 = dataPack.ToString();
 		string str2 = dataPackLoaded.ToString();
-		//для добавления результатов
+		//РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
 		this->Add(dataPack.ToString() == dataPackLoaded.ToString());
 		IO().WriteLines("C:\\TestDataPack.txt", { dataPack.ToString() });
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
 #pragma endregion
-#pragma region Тесты набора данных
+#pragma region РўРµСЃС‚С‹ РЅР°Р±РѕСЂР° РґР°РЅРЅС‹С…
 ///<summary>
-/// Тесты набора данных
+/// РўРµСЃС‚С‹ РЅР°Р±РѕСЂР° РґР°РЅРЅС‹С…
 ///</summary>
 class DataPackTests :UnitTests {
 public:
-	DataPackTests() : UnitTests("Тесты набора данных") {}
+	DataPackTests() : UnitTests("РўРµСЃС‚С‹ РЅР°Р±РѕСЂР° РґР°РЅРЅС‹С…") {}
 	void Start()override {
-		//Запуск одного теста: TestsClassName(vector<type>items).Start();
+		//Р—Р°РїСѓСЃРє РѕРґРЅРѕРіРѕ С‚РµСЃС‚Р°: TestsClassName(vector<type>items).Start();
 		CreateSerialisationTest({ true }).Start();
 	}
 };

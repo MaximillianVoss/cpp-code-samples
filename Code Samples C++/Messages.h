@@ -1,18 +1,18 @@
 #include "pch.h"
 #pragma once
 /// <summary>
-/// Строки для сообщений
+/// РЎС‚СЂРѕРєРё РґР»СЏ СЃРѕРѕР±С‰РµРЅРёР№
 /// </summary>
 class Messages {
 
 };
 /// <summary>
-/// Строки для исключений
+/// РЎС‚СЂРѕРєРё РґР»СЏ РёСЃРєР»СЋС‡РµРЅРёР№
 /// </summary>
 class Exceptions {
 public:
-	static constexpr const char* notImplemented = "метод не раелизован";
-	static constexpr const char* incorrectIndex = "некоррекнтый индекс";
-	static constexpr const char* incorrectSize = "некорректный размер";
-	static constexpr const char* incorrectValue = "некорректное значение";
+	static constexpr const char* notImplemented = "РјРµС‚РѕРґ РЅРµ СЂР°РµР»РёР·РѕРІР°РЅ";
+	static constexpr const char* incorrectIndex = "РЅРµРєРѕСЂСЂРµРєРЅС‚С‹Р№ РёРЅРґРµРєСЃ";
+	static constexpr const char* incorrectSize = "РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ СЂР°Р·РјРµСЂ";
+	static constexpr const char* incorrectValue = "РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ";
 };

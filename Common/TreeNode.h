@@ -3,7 +3,7 @@
 #define compLT(a,b) (a < b)
 #define compEQ(a,b) (a == b)
 /// <summary>
-/// Φβεςΰ δεπεβΰ
+/// Π¦Π²ΠµΡ‚Π° Π΄ΠµΡ€ΠµΠ²Π°
 /// </summary>
 enum TreeNodeColor {
 	BLACK,

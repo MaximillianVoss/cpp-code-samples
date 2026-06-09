@@ -18,23 +18,23 @@ public:
 	vector<int> Code(int a);
 	/// <summary>
 	/// https://teckphile.wordpress.com/2017/10/27/hamming-code-c-implementation-for-n-bits/
-	/// Кодирует информацию кодо Хэмминга
+	/// РљРѕРґРёСЂСѓРµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ РєРѕРґРѕ РҐСЌРјРјРёРЅРіР°
 	/// </summary>
 	vector<int> Code(vector<int>bits);
 	/// <summary>
-	/// кодирует строку
+	/// РєРѕРґРёСЂСѓРµС‚ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="str">строка</param>
+	/// <param name="str">СЃС‚СЂРѕРєР°</param>
 	/// <returns></returns>
 	vector<int>Code(string str);
 	/// <summary>
-	/// кодирует список строк
+	/// РєРѕРґРёСЂСѓРµС‚ СЃРїРёСЃРѕРє СЃС‚СЂРѕРє
 	/// </summary>
-	/// <param name="strs">список строк</param>
+	/// <param name="strs">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 	/// <returns></returns>
 	vector<int> Code(vector<string> strs);
 	/// <summary>
-	/// Декодирует информацию
+	/// Р”РµРєРѕРґРёСЂСѓРµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ
 	/// </summary>
 	void Decode();
 };

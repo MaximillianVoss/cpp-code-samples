@@ -61,7 +61,7 @@ public:
 	}
 	void Test() override {
 		this->actual.push_back(sh.IsNumber("12345"));
-		this->actual.push_back(sh.IsNumber("ф12345"));
+		this->actual.push_back(sh.IsNumber("С„12345"));
 		this->actual.push_back(sh.IsNumber("-1.2345"));
 		this->actual.push_back(sh.IsNumber("+1__2345"));
 		this->actual.push_back(sh.IsNumber("+1.34456779"));
@@ -108,7 +108,7 @@ public:
 };
 class StrHelperTests :UnitTests {
 public:
-	StrHelperTests() : UnitTests("Тесты класса для строк") {}
+	StrHelperTests() : UnitTests("РўРµСЃС‚С‹ РєР»Р°СЃСЃР° РґР»СЏ СЃС‚СЂРѕРє") {}
 	void Start()override {
 		SHJoinTest("Join", { "lol-,-kek-,-cheburek","1,2,3,4,5,6,7,8,9" }).Start();
 		SHReplaceTest("Replace", { "kekekeke","1234111890" }).Start();

@@ -2,46 +2,46 @@
 #include "pch.h"
 template<typename T>
 ///<summary>
-/// Набор данных
+/// РќР°Р±РѕСЂ РґР°РЅРЅС‹С…
 ///</summary>
 class DataPack
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Название набора данных
+	/// РќР°Р·РІР°РЅРёРµ РЅР°Р±РѕСЂР° РґР°РЅРЅС‹С…
 	/// </summary>
 	string titleFieldName;
 	/// <summary>
-	/// Подпись оси X
+	/// РџРѕРґРїРёСЃСЊ РѕСЃРё X
 	/// </summary>
 	string xTitleFieldName;
 	/// <summary>
-	/// Подпись оси Y
+	/// РџРѕРґРїРёСЃСЊ РѕСЃРё Y
 	/// </summary>
 	string yTitleFieldName;
 	/// <summary>
-	/// Данные по X
+	/// Р”Р°РЅРЅС‹Рµ РїРѕ X
 	/// </summary>
 	vector<T>xValues;
 	/// <summary>
-	/// Данные по Y
+	/// Р”Р°РЅРЅС‹Рµ РїРѕ Y
 	/// </summary>
 	vector<T>yValues;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma region Get
 	string GetTitle() {
@@ -116,25 +116,25 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 	/// <summary>
-	/// Создает набор данных с указанными значениями
+	/// РЎРѕР·РґР°РµС‚ РЅР°Р±РѕСЂ РґР°РЅРЅС‹С… СЃ СѓРєР°Р·Р°РЅРЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё
 	/// </summary>
-	/// <param name="title">Название набора данных</param>
-	/// <param name="xTitle">Подпись оси X</param>
-	/// <param name="yTitle">Подпись оси Y</param>
-	/// <param name="xValues">Данные по X</param>
-	/// <param name="yValues">Данные по Y</param>
+	/// <param name="title">РќР°Р·РІР°РЅРёРµ РЅР°Р±РѕСЂР° РґР°РЅРЅС‹С…</param>
+	/// <param name="xTitle">РџРѕРґРїРёСЃСЊ РѕСЃРё X</param>
+	/// <param name="yTitle">РџРѕРґРїРёСЃСЊ РѕСЃРё Y</param>
+	/// <param name="xValues">Р”Р°РЅРЅС‹Рµ РїРѕ X</param>
+	/// <param name="yValues">Р”Р°РЅРЅС‹Рµ РїРѕ Y</param>
 	DataPack(string title, string xTitle, string yTitle, vector<T>xValues = {}, vector<T>yValues = {}) {
 		this->titleFieldName = title;
 		this->xTitleFieldName = xTitle;
@@ -143,11 +143,11 @@ public:
 		this->yValues = yValues;
 	};
 	/// <summary>
-	/// Создает набор данных по умолчанию
+	/// РЎРѕР·РґР°РµС‚ РЅР°Р±РѕСЂ РґР°РЅРЅС‹С… РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	DataPack() :DataPack(Constants::Strings::undefined, Constants::Strings::undefined, Constants::Strings::undefined, {}, {}) {};
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~DataPack() {};
 

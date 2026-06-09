@@ -38,7 +38,7 @@ ChessFigure::ChessFigure()
 	Init(-1, -1);
 }
 
-ChessFigure::ChessFigure(string _name, Cell cell, Field _moves)
+ChessFigure::ChessFigure(string _name, Cell cell, GameField _moves)
 {
 	name = _name;
 	Init(cell.row, cell.column);

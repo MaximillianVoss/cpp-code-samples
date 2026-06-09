@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Stack.h"
 
-#pragma region Конструктор/Деструктор
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 Stack::Stack()
 {
 }
@@ -9,7 +9,7 @@ Stack::~Stack()
 {
 }
 #pragma endregion
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 string Stack::Pop() {
 	if (!isEmpty()) {

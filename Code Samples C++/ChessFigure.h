@@ -5,66 +5,66 @@ class ChessFigure
 {
 protected:
 	/// <summary>
-	/// получить строку
+	/// РїРѕР»СѓС‡РёС‚СЊ СЃС‚СЂРѕРєСѓ
 	/// </summary>
 	int GetRow();
 	/// <summary>
-	/// получить столбец
+	/// РїРѕР»СѓС‡РёС‚СЊ СЃС‚РѕР»Р±РµС†
 	/// </summary>
 	int GetColumn();
 	/// <summary>
-	/// задать строку
+	/// Р·Р°РґР°С‚СЊ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="_row">строка</param>
+	/// <param name="_row">СЃС‚СЂРѕРєР°</param>
 	void SetRow(int _row);
 	/// <summary>
-	/// задать столбец
+	/// Р·Р°РґР°С‚СЊ СЃС‚РѕР»Р±РµС†
 	/// </summary>
-	/// <param name="_col">столбец</param>
+	/// <param name="_col">СЃС‚РѕР»Р±РµС†</param>
 	void SetColumn(int _col);
 	/// <summary>
-	/// инциализирует позицию фигуры
+	/// РёРЅС†РёР°Р»РёР·РёСЂСѓРµС‚ РїРѕР·РёС†РёСЋ С„РёРіСѓСЂС‹
 	/// </summary>
-	/// <param name="_row">строка</param>
-	/// <param name="_col">столбец</param>
+	/// <param name="_row">СЃС‚СЂРѕРєР°</param>
+	/// <param name="_col">СЃС‚РѕР»Р±РµС†</param>
 	void Init(int _row, int _col);
 	/// <summary>
-	/// имя или символ отображаемы на доске
+	/// РёРјСЏ РёР»Рё СЃРёРјРІРѕР» РѕС‚РѕР±СЂР°Р¶Р°РµРјС‹ РЅР° РґРѕСЃРєРµ
 	/// </summary>
 	string name;
 private:
 	/// <summary>
-	/// строка
+	/// СЃС‚СЂРѕРєР°
 	/// </summary>
 	int row;
 	/// <summary>
-	/// столбец
+	/// СЃС‚РѕР»Р±РµС†
 	/// </summary>
 	int column;
 	/// <summary>
-	/// строка в матрице ходов по умолчанию
+	/// СЃС‚СЂРѕРєР° РІ РјР°С‚СЂРёС†Рµ С…РѕРґРѕРІ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	int rowMatrix = 3;
 	/// <summary>
-	/// столбец в матрице ходов по умолчанию
+	/// СЃС‚РѕР»Р±РµС† РІ РјР°С‚СЂРёС†Рµ С…РѕРґРѕРІ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	int colMatrix = 3;
 public:
 	/// <summary>
-	/// доступные ходы для фигуры
+	/// РґРѕСЃС‚СѓРїРЅС‹Рµ С…РѕРґС‹ РґР»СЏ С„РёРіСѓСЂС‹
 	/// </summary>
-	Field moves;
+	GameField moves;
 	/// <summary>
-	/// атака по указанной клетке
+	/// Р°С‚Р°РєР° РїРѕ СѓРєР°Р·Р°РЅРЅРѕР№ РєР»РµС‚РєРµ
 	/// </summary>
-	/// <param name="cell">клетка</param>
+	/// <param name="cell">РєР»РµС‚РєР°</param>
 	virtual bool Attack(Cell cell);
 	/// <summary>
-	/// получает доступные ходы дл фигуры
+	/// РїРѕР»СѓС‡Р°РµС‚ РґРѕСЃС‚СѓРїРЅС‹Рµ С…РѕРґС‹ РґР» С„РёРіСѓСЂС‹
 	/// </summary>
 	/// <returns></returns>
-	Field GetPossibleMoves(Cell cell) {
-		Field res = Field(moves);
+	GameField GetPossibleMoves(Cell cell) {
+		GameField res = GameField(moves);
 		while (cell.row > rowMatrix) {
 			res = res.Shift(Directions::down);
 			cell.row--;
@@ -84,9 +84,9 @@ public:
 		return res;
 	}
 	/// <summary>
-	/// оператор суммирования
+	/// РѕРїРµСЂР°С‚РѕСЂ СЃСѓРјРјРёСЂРѕРІР°РЅРёСЏ
 	/// </summary>
-	/// <param name="f">вторая фигура для сложения</param>
+	/// <param name="f">РІС‚РѕСЂР°СЏ С„РёРіСѓСЂР° РґР»СЏ СЃР»РѕР¶РµРЅРёСЏ</param>
 	/// <returns></returns>
 	ChessFigure operator+(ChessFigure f) {
 		ChessFigure res = ChessFigure(*this);
@@ -94,20 +94,20 @@ public:
 		return res;
 	}
 	/// <summary>
-	/// конструктор по умолчанию
+	/// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	ChessFigure();
 	/// <summary>
-	/// создает фигуру с указанными координатами
+	/// СЃРѕР·РґР°РµС‚ С„РёРіСѓСЂСѓ СЃ СѓРєР°Р·Р°РЅРЅС‹РјРё РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё
 	/// </summary>
-	ChessFigure(string _name, Cell cell, Field _moves);
+	ChessFigure(string _name, Cell cell, GameField _moves);
 	/// <summary>
-	/// делает копию фигуры
+	/// РґРµР»Р°РµС‚ РєРѕРїРёСЋ С„РёРіСѓСЂС‹
 	/// </summary>
-	/// <param name="figure">образец</param>
+	/// <param name="figure">РѕР±СЂР°Р·РµС†</param>
 	ChessFigure(ChessFigure *figure);
 	/// <summary>
-	/// деструктор
+	/// РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~ChessFigure();
 

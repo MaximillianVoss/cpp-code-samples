@@ -7,10 +7,10 @@ BSSettingMenu::BSSettingMenu(BSGame * _game)
 {
 	game = _game;
 	menuItems = {
-		{ ActionsSettings::debug,"Режим отладки" },
-		{ ActionsSettings::fieldSize, "Изменить размер поля" },
-		{ ActionsSettings::setAI, "Включить бота" },
-		{ ActionsSettings::goBackToMain,"Назад" }
+		{ ActionsSettings::debug,"Р РµР¶РёРј РѕС‚Р»Р°РґРєРё" },
+		{ ActionsSettings::fieldSize, "РР·РјРµРЅРёС‚СЊ СЂР°Р·РјРµСЂ РїРѕР»СЏ" },
+		{ ActionsSettings::setAI, "Р’РєР»СЋС‡РёС‚СЊ Р±РѕС‚Р°" },
+		{ ActionsSettings::goBackToMain,"РќР°Р·Р°Рґ" }
 	};
 }
 
@@ -33,7 +33,7 @@ bool BSSettingMenu::Action(int action)
 		game->SetDebugMode(flag);
 		return false;
 	case ActionsSettings::fieldSize:
-		io.Get(size, "Введите размер поля:");
+		io.Get(size, "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РїРѕР»СЏ:");
 		game = new BSGame(size);
 		return false;
 	case ActionsSettings::goBackToMain:

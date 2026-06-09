@@ -9,7 +9,7 @@ bool Knight::Attack(Cell cell)
 	return false;
 }
 
-Knight::Knight(string _name, Cell cell, Field _moves)
+Knight::Knight(string _name, Cell cell, GameField _moves)
 {
 	name = _name;
 	Init(cell.row, cell.column);

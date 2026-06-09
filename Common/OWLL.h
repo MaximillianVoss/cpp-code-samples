@@ -28,7 +28,7 @@ public:
 	/// </summary>
 	/// <param name="data"></param>
 	void Add(T data) override {
-		if (!head)
+		if (!this->head)
 			this->head = new  LLItem<T>(data);
 		else
 			this->GetLast()->next = new LLItem<T>(data);
@@ -60,7 +60,7 @@ public:
 	/// </summary>
 	/// <param name="item"></param>
 	void Add(LLItem<T>* item)override {
-		if (!head)
+		if (!this->head)
 			this->head = item;
 		else
 			this->GetLast()->next = item;

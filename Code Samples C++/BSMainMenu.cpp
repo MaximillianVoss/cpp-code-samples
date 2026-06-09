@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "BSMainMenu.h"
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 BSMainMenu::BSMainMenu(BSGame *_game)
 {
 	game = _game;
@@ -20,7 +20,7 @@ BSMainMenu::~BSMainMenu()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 bool  BSMainMenu::Action(int action) {
 	BSInGameMenu inMenu = BSInGameMenu(game);
@@ -50,10 +50,10 @@ bool  BSMainMenu::Action(int action) {
 		game = settingsMenu.game;
 		return true;
 	case ActionsMain::close:
-		io.Print("До свидания!");
+		io.Print("Р”Рѕ СЃРІРёРґР°РЅРёСЏ!");
 		return false;
 	default:
-		io.Print("Некорректный пукт меню!");
+		io.Print("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РїСѓРєС‚ РјРµРЅСЋ!");
 		return true;
 	}
 }
@@ -62,10 +62,10 @@ void BSMainMenu::Init()
 {
 	menuItems =
 	{
-	{ ActionsMain::newgame,"Новая игра" },
-	{ ActionsMain::load,"Загрузить игру" },
-	{ ActionsMain::settings,"Настройки" },
-	{ ActionsMain::close,"Выход" }
+	{ ActionsMain::newgame,"РќРѕРІР°СЏ РёРіСЂР°" },
+	{ ActionsMain::load,"Р—Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ" },
+	{ ActionsMain::settings,"РќР°СЃС‚СЂРѕР№РєРё" },
+	{ ActionsMain::close,"Р’С‹С…РѕРґ" }
 	};
 }
 

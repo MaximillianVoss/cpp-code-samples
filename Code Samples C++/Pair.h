@@ -1,21 +1,28 @@
 #pragma once
 #include "pch.h"
-template<class T1, class T2>
 class Pair
 {
-private:
-	T1 key;
-	T2 value;
 public:
-	Pair(T1 key, T2 value) {
+	string key;
+	string value;
+
+	Pair() = default;
+
+	Pair(string key, string value) {
 		this->key = key;
 		this->value = value;
 	}
-	T2 GetValue() {
+
+	string GetValue() const {
 		return this->value;
 	}
-	T1 GetKey() {
+
+	string GetKey() const {
 		return this->key;
+	}
+
+	string GetStr() const {
+		return this->key + ":" + this->value;
 	}
 };
 

@@ -2,48 +2,48 @@
 #include "pch.h"
 template<typename T>
 ///<summary>
-/// Описание_класса
+/// РћРїРёСЃР°РЅРёРµ_РєР»Р°СЃСЃР°
 ///</summary>
 class SField
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Название поля
+	/// РќР°Р·РІР°РЅРёРµ РїРѕР»СЏ
 	/// </summary>
 	string name;
 	/// <summary>
-	/// Значение поля
+	/// Р—РЅР°С‡РµРЅРёРµ РїРѕР»СЏ
 	/// </summary>
 	T value;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	string ToString() {
 		sstream 
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 	SField(string name, T value) {

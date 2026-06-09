@@ -49,7 +49,7 @@ bool Menu::GetAction()
 	if (game->GetPlayer(game->GetPlayer())->GetIsAI())
 		action = ActionsInGame::shoot;
 	else
-		io.Get(action, "Выберите действие");
+		io.Get(action, "Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ");
 	return Action(action);
 }
 
@@ -68,13 +68,13 @@ Menu::~Menu()
 
 void Menu::PrintField(int player, map<CellTypes, ConsoleColor> colorsMap)
 {
-	io.Print("Поле игрока " + to_string(player + 1));
+	io.Print("РџРѕР»Рµ РёРіСЂРѕРєР° " + to_string(player + 1));
 	io.Print(game->GetField(player), colorsMap);
 }
 
 void Menu::PrintField(int player)
 {
-	io.Print("Поле игрока " + to_string(player + 1));
+	io.Print("РџРѕР»Рµ РёРіСЂРѕРєР° " + to_string(player + 1));
 	if (game->isInDebugMode())
 		io.Print(game->GetField(player), game->colorsMap);
 	else
@@ -84,6 +84,6 @@ void Menu::PrintField(int player)
 void Menu::PrintPlayer(int player)
 {
 	io.PrintSeparator(22);
-	io.Print("Ход игрока: " + to_string(game->GetPlayer() + 1));
+	io.Print("РҐРѕРґ РёРіСЂРѕРєР°: " + to_string(game->GetPlayer() + 1));
 	io.PrintSeparator(22);
 }

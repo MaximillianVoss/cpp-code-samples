@@ -17,7 +17,7 @@ namespace omfl
     {
     private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
         bool isArray;
         std::string section;
         std::string key;
@@ -25,7 +25,7 @@ namespace omfl
         std::vector<Argument> subValues;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
         std::string GetPath()
         {
@@ -36,11 +36,11 @@ namespace omfl
 
     public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma region Array
 
@@ -175,7 +175,7 @@ namespace omfl
 
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 
         Argument()
         {
@@ -205,7 +205,7 @@ namespace omfl
             if (strHelper.Contains(value, "[],") && value[0] == '[' && value[value.size() - 1] == ']')
             {
                 isArray = true;
-#pragma region Обход строки
+#pragma region РћР±С…РѕРґ СЃС‚СЂРѕРєРё
                 std::stack<Argument> argStack;
                 std::string buffer = "";
                 Argument* currentArg = this;
@@ -285,7 +285,7 @@ namespace omfl
 
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
         Argument& operator[](int index)
         {
@@ -294,7 +294,7 @@ namespace omfl
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
     };
@@ -308,21 +308,21 @@ namespace omfl
 
     private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
     public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
         Parser _parse(const std::filesystem::path& path) const
         {
@@ -347,15 +347,15 @@ namespace omfl
 
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

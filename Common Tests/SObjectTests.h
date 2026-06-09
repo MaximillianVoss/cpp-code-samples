@@ -3,15 +3,15 @@
 #include "UnitTest.h"
 #include "SObject.h"
 #include "SLoader.h"
-#pragma region Тесты
+#pragma region РўРµСЃС‚С‹
 
-#pragma region Добавление полей
+#pragma region Р”РѕР±Р°РІР»РµРЅРёРµ РїРѕР»РµР№
 ///<summary>
-/// Добавление полей
+/// Р”РѕР±Р°РІР»РµРЅРёРµ РїРѕР»РµР№
 ///</summary>
 class AddFieldsTest :public UnitTest<int> {
 public:
-	AddFieldsTest(vector<int>values) :UnitTest("Добавление полей", values) {
+	AddFieldsTest(vector<int>values) :UnitTest("Р”РѕР±Р°РІР»РµРЅРёРµ РїРѕР»РµР№", values) {
 
 	}
 	void Test() override {
@@ -25,19 +25,19 @@ public:
 		catch (exception ex) {
 			this->Add(1);
 		}
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
-#pragma region Удаление полей
+#pragma region РЈРґР°Р»РµРЅРёРµ РїРѕР»РµР№
 ///<summary>
-/// Удаление полей
+/// РЈРґР°Р»РµРЅРёРµ РїРѕР»РµР№
 ///</summary>
 class DeleteFieldsTest :public UnitTest<int> {
 public:
-	DeleteFieldsTest(vector<int>values) :UnitTest("Удаление полей", values) {
+	DeleteFieldsTest(vector<int>values) :UnitTest("РЈРґР°Р»РµРЅРёРµ РїРѕР»РµР№", values) {
 		SObject<string> obj;
 		for (int i = 0; i < 100; i++)
 			obj.Add("field" + to_string(i), to_string(i));
@@ -63,56 +63,56 @@ public:
 	}
 	void Test() override {
 
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		//this->Add(vector<string>items) РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
-#pragma region SET полей
+#pragma region SET РїРѕР»РµР№
 ///<summary>
-/// SET полей
+/// SET РїРѕР»РµР№
 ///</summary>
 class SetFieldsTest :public UnitTest<string> {
 public:
-	SetFieldsTest(vector<string>values) :UnitTest("SET полей", values) {
+	SetFieldsTest(vector<string>values) :UnitTest("SET РїРѕР»РµР№", values) {
 
 	}
 	void Test() override {
 
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		//this->Add(vector<string>items) РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
-#pragma region GET полей
+#pragma region GET РїРѕР»РµР№
 ///<summary>
-/// GET полей
+/// GET РїРѕР»РµР№
 ///</summary>
 class GetFieldsTest :public UnitTest<string> {
 public:
-	GetFieldsTest(vector<string>values) :UnitTest("GET полей", values) {
+	GetFieldsTest(vector<string>values) :UnitTest("GET РїРѕР»РµР№", values) {
 
 	}
 	void Test() override {
 
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		//this->Add(vector<string>items) РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
-#pragma region Сохранение
+#pragma region РЎРѕС…СЂР°РЅРµРЅРёРµ
 ///<summary>
-/// Сохранение
+/// РЎРѕС…СЂР°РЅРµРЅРёРµ
 ///</summary>
 class SaveTest :public UnitTest<string> {
 public:
-	SaveTest(vector<string>values) :UnitTest("Сохранение", values) {
+	SaveTest(vector<string>values) :UnitTest("РЎРѕС…СЂР°РЅРµРЅРёРµ", values) {
 
 	}
 	void Test() override {
@@ -121,19 +121,19 @@ public:
 		obj.Add("age", "123");
 		obj.Add("details", "LOL");
 		this->Add(obj.ToString());
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
-#pragma region Загрузка
+#pragma region Р—Р°РіСЂСѓР·РєР°
 ///<summary>
-/// Загрузка
+/// Р—Р°РіСЂСѓР·РєР°
 ///</summary>
 class LoadTest :public UnitTest<string> {
 public:
-	LoadTest(vector<string>values) :UnitTest("Загрузка", values) {
+	LoadTest(vector<string>values) :UnitTest("Р—Р°РіСЂСѓР·РєР°", values) {
 
 	}
 	void Test() override {
@@ -148,13 +148,13 @@ public:
 };
 #pragma endregion
 
-#pragma region Тест операторов
+#pragma region РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂРѕРІ
 ///<summary>
-/// Тест операторов
+/// РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂРѕРІ
 ///</summary>
 class SObjectOperatorsTest :public UnitTest<bool> {
 public:
-	SObjectOperatorsTest(vector<bool>values) :UnitTest("Тест операторов", values) {
+	SObjectOperatorsTest(vector<bool>values) :UnitTest("РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂРѕРІ", values) {
 
 	}
 	void Test() override {
@@ -166,20 +166,20 @@ public:
 		this->Add(obj == objAnother);
 		this->Add(obj != objAnother);
 		this->Add(obj != objSame);
-		//this->Add(vector<bool>items) для добавления результатов
-		//сравнение результатов в конце 
+		//this->Add(vector<bool>items) РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
-#pragma region Тестирование загрузчика
+#pragma region РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РіСЂСѓР·С‡РёРєР°
 ///<summary>
-/// Тестирование загрузчика
+/// РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РіСЂСѓР·С‡РёРєР°
 ///</summary>
 class SLoaderTest :public UnitTest<bool> {
 public:
-	SLoaderTest(vector<bool>values) :UnitTest("Тестирование загрузчика", values) {
+	SLoaderTest(vector<bool>values) :UnitTest("РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РіСЂСѓР·С‡РёРєР°", values) {
 
 	}
 	void Test() override {
@@ -204,15 +204,15 @@ public:
 #pragma endregion
 
 #pragma endregion
-#pragma region Тесты сериализуемого объекта
+#pragma region РўРµСЃС‚С‹ СЃРµСЂРёР°Р»РёР·СѓРµРјРѕРіРѕ РѕР±СЉРµРєС‚Р°
 ///<summary>
-/// Тесты сериализуемого объекта
+/// РўРµСЃС‚С‹ СЃРµСЂРёР°Р»РёР·СѓРµРјРѕРіРѕ РѕР±СЉРµРєС‚Р°
 ///</summary>
 class SObjectsTests :UnitTests {
 public:
-	SObjectsTests() : UnitTests("Тесты сериализуемого объекта") {}
+	SObjectsTests() : UnitTests("РўРµСЃС‚С‹ СЃРµСЂРёР°Р»РёР·СѓРµРјРѕРіРѕ РѕР±СЉРµРєС‚Р°") {}
 	void Start()override {
-		//Запуск одного теста: TestsClassName(vector<type>items).Start();
+		//Р—Р°РїСѓСЃРє РѕРґРЅРѕРіРѕ С‚РµСЃС‚Р°: TestsClassName(vector<type>items).Start();
 		AddFieldsTest({ 100,1 }).Start();
 		DeleteFieldsTest({ 100,80,1,1 }).Start();
 		SaveTest({ "{name:Alex;age:123;details:LOL;}" }).Start();

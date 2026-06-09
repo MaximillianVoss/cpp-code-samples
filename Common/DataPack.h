@@ -5,13 +5,13 @@
 #include "Converter.h"
 template<typename T>
 ///<summary>
-/// Описание_класса
+/// РћРїРёСЃР°РЅРёРµ_РєР»Р°СЃСЃР°
 ///</summary>
 class DataPack : public  SObject<string>
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	vector<string> fieldsName = {
 		"title",
 		"xTitle",
@@ -28,7 +28,7 @@ private:
 	string yDataFieldName = this->fieldsName[5];
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	vector<T> ConvertVector(string vectorStr) {
 		vector<T>result;
 		vector<string> itemsStr = StrHelper().Split(vectorStr);
@@ -46,7 +46,7 @@ private:
 	bool Find(string fieldName) {
 		for (string name : this->fieldsName)
 			if (name == fieldName)
-				reuturn true;
+				return true;
 		return false;
 	}
 	void Init(string title, string xTitle, string yTitle, int group, vector<T> xData, vector<T> yData) {
@@ -70,11 +70,11 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma region SET
 	void SetTitle(string value) {
@@ -127,7 +127,7 @@ public:
 
 
 
-#pragma region Десериализация
+#pragma region Р”РµСЃРµСЂРёР°Р»РёР·Р°С†РёСЏ
 	void FromString(string str) {
 		SObject<string> obj = SObject<string>(str);
 		string val = obj.Get(this->groupFieldName)->value;
@@ -146,15 +146,15 @@ public:
 
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "InfoIO.h"
 
-#pragma region Конструктор/Деструктор
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 IO::IO()
 {
 }
@@ -10,7 +10,7 @@ IO::~IO()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma region Out
 void IO::SetColor(int text, int background)
@@ -41,40 +41,34 @@ void IO::Print(vector<vector<int>> matrix, string message)
 	for (size_t i = 0; i < matrix.size(); i++)
 		Print(matrix[i]);
 }
-//void InfoIO::Print(Field field, map<CellTypes, ConsoleColors> colorsMap) {
-//	//system("cls");
-//	map<CellTypes, ConsoleColors>::iterator it;
-//	ConsoleColors headerText = ConsoleColors::Black;
-//	ConsoleColors headerBackground = ConsoleColors::White;
-//	SetColor(headerBackground, headerBackground);
-//	printf("%.2i", 0);
-//	SetColor(headerText, headerBackground);
-//	for (int i = 0; i < field.size; i++)
-//		cout << setw(2) << i + 1;
-//	//printf("%.2i", i+1);
-//	printf("\n");
-//
-//	for (int i = 0; i < field.size; i++) {
-//		SetColor(headerText, headerBackground);
-//		cout << setw(2) << i + 1;
-//		//printf("%.2i", i + 1);
-//		for (int j = 0; j < field.size; j++) {
-//			it = colorsMap.find(field.a[i][j].type);
-//			if (it != colorsMap.end())
-//			{
-//				SetColor(it->second);
-//				printf("%.2i", field.a[i][j].value);
-//			}
-//		}
-//		printf("\n");
-//	}
-//	//возвращаем цвет по умолчанию
-//	it = colorsMap.find(CellTypes::default);
-//	if (it != colorsMap.end())
-//		SetColor(ConsoleColors::White, it->second);
-//	else
-//		SetColor(ConsoleColors::White, ConsoleColors::Black);
-//}
+void IO::Print(GameField field, map<CellTypes, ConsoleColor> colorsMap) {
+	map<CellTypes, ConsoleColor>::iterator it;
+	ConsoleColor headerText = ConsoleColor::Black;
+	ConsoleColor headerBackground = ConsoleColor::White;
+	SetColor(headerText, headerBackground);
+	cout << setw(2) << 0;
+	for (int i = 0; i < field.size; i++)
+		cout << setw(2) << i + 1;
+	cout << endl;
+
+	for (int i = 0; i < field.size; i++) {
+		SetColor(headerText, headerBackground);
+		cout << setw(2) << i + 1;
+		for (int j = 0; j < field.size; j++) {
+			it = colorsMap.find(field.a[i][j].type);
+			if (it != colorsMap.end())
+				SetColor(it->second);
+			cout << setw(2) << field.a[i][j].value;
+		}
+		cout << endl;
+	}
+
+	it = colorsMap.find(CellTypes::default);
+	if (it != colorsMap.end())
+		SetColor(ConsoleColor::White, it->second);
+	else
+		SetColor(ConsoleColor::White, ConsoleColor::Black);
+}
 void IO::PrintSeparator(int count)
 {
 	for (int i = 0; i < count; i++)
@@ -101,12 +95,12 @@ bool IO::Get(int& value, string message)
 	if (cin >> value)
 		return true;
 	else if (cin.bad()) {
-		Print("Ошибка ввода, повторите ввод");
+		Print("РћС€РёР±РєР° РІРІРѕРґР°, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
 		Get(value, message);
 		return false;
 	}
 	else {
-		Print("Ошибка форматирования, проверьте формат данных  повторите ввод");
+		Print("РћС€РёР±РєР° С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёСЏ, РїСЂРѕРІРµСЂСЊС‚Рµ С„РѕСЂРјР°С‚ РґР°РЅРЅС‹С…  РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
 		Get(value, message);
 		return false;
 	}
@@ -117,12 +111,12 @@ bool IO::Get(double& value, string message)
 	if (cin >> value)
 		return true;
 	else if (cin.bad()) {
-		Print("Ошибка ввода, повторите ввод");
+		Print("РћС€РёР±РєР° РІРІРѕРґР°, РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
 		Get(value, message);
 		return false;
 	}
 	else {
-		Print("Ошибка форматирования, проверьте формат данных  повторите ввод");
+		Print("РћС€РёР±РєР° С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёСЏ, РїСЂРѕРІРµСЂСЊС‚Рµ С„РѕСЂРјР°С‚ РґР°РЅРЅС‹С…  РїРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ");
 		Get(value, message);
 		return false;
 	}
@@ -130,12 +124,12 @@ bool IO::Get(double& value, string message)
 void IO::Get(int* a, int n) {
 	a = new int[n];
 	for (size_t i = 0; i < n; i++)
-		Get(a[i], "Введите " + to_string(i + 1) + "элемент массива");
+		Get(a[i], "Р’РІРµРґРёС‚Рµ " + to_string(i + 1) + "СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°");
 }
 void IO::Get(double* a, int n) {
 	a = new double[n];
 	for (size_t i = 0; i < n; i++)
-		Get(a[i], "Введите " + to_string(i + 1) + "элемент массива");
+		Get(a[i], "Р’РІРµРґРёС‚Рµ " + to_string(i + 1) + "СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°");
 }
 void IO::Get(string * str, string message) {
 	Print(message);
@@ -147,8 +141,8 @@ void IO::Get(string * str) {
 void IO::Get(bool* b)
 {
 	string str;
-	Get(&str, "Введите значение да/нет:");
-	if (str == "да")
+	Get(&str, "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ РґР°/РЅРµС‚:");
+	if (str == "РґР°")
 		* b = true;
 	else
 		*b = false;
@@ -162,7 +156,7 @@ int IO::GetInt()
 int IO::GetInt(string message)
 {
 	this->Print(message);
-	this->GetInt();
+	return this->GetInt();
 }
 double IO::GetDouble()
 {

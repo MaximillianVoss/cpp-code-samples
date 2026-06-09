@@ -2,29 +2,29 @@
 #include "DynamicArray.h"
 template<typename T>
 ///<summary>
-/// Стек-контейнер
+/// РЎС‚РµРє-РєРѕРЅС‚РµР№РЅРµСЂ
 ///</summary>
 class Stack :public DynamicArray<T>
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-/// Добавляет элемент в верхушку стека
+/// Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РІРµСЂС…СѓС€РєСѓ СЃС‚РµРєР°
 /// </summary>
 /// <param name="item"></param>
 	void Push(T item) {
@@ -32,7 +32,7 @@ public:
 		this->Add(item);
 	}
 	/// <summary>
-	/// Извлекает элемент из верхушки стека с удалением
+	/// РР·РІР»РµРєР°РµС‚ СЌР»РµРјРµРЅС‚ РёР· РІРµСЂС…СѓС€РєРё СЃС‚РµРєР° СЃ СѓРґР°Р»РµРЅРёРµРј
 	/// </summary>
 	/// <returns></returns>
 	T Pop() {
@@ -44,7 +44,7 @@ public:
 		throw exception(Constants::Strings::Errors::Lists::empty);
 	}
 	/// <summary>
-	/// Просмотреть верхушку стека(без удаления)
+	/// РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РІРµСЂС…СѓС€РєСѓ СЃС‚РµРєР°(Р±РµР· СѓРґР°Р»РµРЅРёСЏ)
 	/// </summary>
 	T Peek() {
 		if (!this->IsEmpty())
@@ -52,7 +52,7 @@ public:
 		throw exception(Constants::Strings::Errors::Lists::empty);
 	}
 	/// <summary>
-	/// Проверяет, является ли список пустым
+	/// РџСЂРѕРІРµСЂСЏРµС‚, СЏРІР»СЏРµС‚СЃСЏ Р»Рё СЃРїРёСЃРѕРє РїСѓСЃС‚С‹Рј
 	/// </summary>
 	/// <returns></returns>
 	bool IsEmpty() {
@@ -60,18 +60,18 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	Stack() :DynamicArray<T>() {
 
 	};
 	~Stack() {};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

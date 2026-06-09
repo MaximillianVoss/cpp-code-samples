@@ -1,18 +1,18 @@
 #include "pch.h"
 #include "BSGame.h"
 
-#pragma region Списки
+#pragma region РЎРїРёСЃРєРё
 /// <summary>
-/// типы клеток по которым можно стрелять
+/// С‚РёРїС‹ РєР»РµС‚РѕРє РїРѕ РєРѕС‚РѕСЂС‹Рј РјРѕР¶РЅРѕ СЃС‚СЂРµР»СЏС‚СЊ
 /// </summary>
 vector<CellTypes> success = { CellTypes::empty,CellTypes::ship };
 /// <summary>
-/// типы клеток, по которым уже нельзя вытсрелить
+/// С‚РёРїС‹ РєР»РµС‚РѕРє, РїРѕ РєРѕС‚РѕСЂС‹Рј СѓР¶Рµ РЅРµР»СЊР·СЏ РІС‹С‚СЃСЂРµР»РёС‚СЊ
 /// </summary>
 vector<CellTypes> fail = { CellTypes::miss,CellTypes::hit };
 #pragma endregion
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 BSGame::BSGame()
 {
@@ -37,7 +37,7 @@ BSGame::~BSGame()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 void BSGame::Start() {
 	Init(size);
 	gameStarted = true;
@@ -61,17 +61,17 @@ void BSGame::Init(int _size) {
 	size = _size;
 	fields.clear();
 	players.clear();
-	//добавляет двух игроков
+	//РґРѕР±Р°РІР»СЏРµС‚ РґРІСѓС… РёРіСЂРѕРєРѕРІ
 	for (int i = 0; i < 2; i++) {
-		Field *field = new  Field(size);
+		GameField *field = new  GameField(size);
 		fields.push_back(*field);
 		Player *player = new Player(startShips, field);
 		players.push_back(*player);
 		SetShips(i);
 	}
-	//Для теста
+	//Р”Р»СЏ С‚РµСЃС‚Р°
 	//EnableBot(Players::first);
-	//TODO: добавить в ноастройки
+	//TODO: РґРѕР±Р°РІРёС‚СЊ РІ РЅРѕР°СЃС‚СЂРѕР№РєРё
 	EnableBot(Players::second);
 	colorsMap =
 	{
@@ -122,12 +122,12 @@ bool BSGame::isInDebugMode()
 	return debugMode;
 }
 
-Field BSGame::GetField(int player)
+GameField BSGame::GetField(int player)
 {
 	if (player > -1 && player < fields.size())
 		return fields[player];
 	else
-		return Field();
+		return GameField();
 }
 
 int GetRadInt(int start, int end) {
@@ -255,9 +255,9 @@ void BSGame::Load() {
 		if (values[i].key == fieldNames[6])
 			startShips = atoi(values[i].value.c_str());
 		if (values[i].key == fieldNames[3] + '0')
-			fields[0] = Field(values[i].value);
+			fields[0] = GameField(values[i].value);
 		if (values[i].key == fieldNames[3] + '1')
-			fields[1] = Field(values[i].value);
+			fields[1] = GameField(values[i].value);
 	}
 }
 

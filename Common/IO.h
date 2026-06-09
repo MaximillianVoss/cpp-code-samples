@@ -109,7 +109,7 @@ public:
 	}
 	string GetFilePath()
 	{
-		OPENFILENAME ofn;       // common dialog box structure
+		OPENFILENAMEA ofn;       // common dialog box structure
 		char szFile[260];       // buffer for file name
 		HWND hwnd;              // owner window
 		HANDLE hf;              // file handle
@@ -129,7 +129,7 @@ public:
 		ofn.lpstrInitialDir = NULL;
 		ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST;
 		// Display the Open dialog box. 
-		if (GetOpenFileName(&ofn) == TRUE)
+		if (GetOpenFileNameA(&ofn) == TRUE)
 			return ofn.lpstrFile;
 		else
 			return "";

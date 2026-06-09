@@ -1,18 +1,18 @@
 #include "pch.h"
 #pragma once
 /// <summary>
-/// Упрощает работу со строками
+/// РЈРїСЂРѕС‰Р°РµС‚ СЂР°Р±РѕС‚Сѓ СЃРѕ СЃС‚СЂРѕРєР°РјРё
 /// </summary>
 class StrHelper
 {
 private:
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Ищет вхождение указанноу подстроки в коллекции
+	/// РС‰РµС‚ РІС…РѕР¶РґРµРЅРёРµ СѓРєР°Р·Р°РЅРЅРѕСѓ РїРѕРґСЃС‚СЂРѕРєРё РІ РєРѕР»Р»РµРєС†РёРё
 	/// </summary>
-	/// <param name="items">коллекция строк</param>
-	/// <param name="str">подстрока</param>
+	/// <param name="items">РєРѕР»Р»РµРєС†РёСЏ СЃС‚СЂРѕРє</param>
+	/// <param name="str">РїРѕРґСЃС‚СЂРѕРєР°</param>
 	/// <returns></returns>
 	bool Find(vector<string> items, string str) {
 		for (string item : items)
@@ -24,12 +24,12 @@ private:
 
 public:
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Объединяет строки с списке в одну строку
+	/// РћР±СЉРµРґРёРЅСЏРµС‚ СЃС‚СЂРѕРєРё СЃ СЃРїРёСЃРєРµ РІ РѕРґРЅСѓ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="lines">список</param>
-	/// <param name="spacer">разделитель</param>
+	/// <param name="lines">СЃРїРёСЃРѕРє</param>
+	/// <param name="spacer">СЂР°Р·РґРµР»РёС‚РµР»СЊ</param>
 	/// <returns></returns>
 	string Join(vector<string> lines, string spacer = "") {
 		stringstream ss;
@@ -42,12 +42,12 @@ public:
 		return ss.str();
 	}
 	/// <summary>
-	/// Заменяет все вхождения 
-	/// указанной подстроки в строке
+	/// Р—Р°РјРµРЅСЏРµС‚ РІСЃРµ РІС…РѕР¶РґРµРЅРёСЏ 
+	/// СѓРєР°Р·Р°РЅРЅРѕР№ РїРѕРґСЃС‚СЂРѕРєРё РІ СЃС‚СЂРѕРєРµ
 	/// </summary>
-	/// <param name="str">исходная строка</param>
-	/// <param name="what">что заменять</param>
-	/// <param name="replace">на что заменять</param>
+	/// <param name="str">РёСЃС…РѕРґРЅР°СЏ СЃС‚СЂРѕРєР°</param>
+	/// <param name="what">С‡С‚Рѕ Р·Р°РјРµРЅСЏС‚СЊ</param>
+	/// <param name="replace">РЅР° С‡С‚Рѕ Р·Р°РјРµРЅСЏС‚СЊ</param>
 	/// <returns></returns>
 	string Replace(string str, string what, string replace) {
 		while (str.find(what) != -1)
@@ -55,11 +55,11 @@ public:
 		return str;
 	}
 	/// <summary>
-	/// Удаляет вхождения данной подстроки в строке
+	/// РЈРґР°Р»СЏРµС‚ РІС…РѕР¶РґРµРЅРёСЏ РґР°РЅРЅРѕР№ РїРѕРґСЃС‚СЂРѕРєРё РІ СЃС‚СЂРѕРєРµ
 	/// </summary>
-	/// <param name="str">строка</param>
-	/// <param name="subStr">подстрока для удаления</param>
-	/// <returns>строка с удаленными символами</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР°</param>
+	/// <param name="subStr">РїРѕРґСЃС‚СЂРѕРєР° РґР»СЏ СѓРґР°Р»РµРЅРёСЏ</param>
+	/// <returns>СЃС‚СЂРѕРєР° СЃ СѓРґР°Р»РµРЅРЅС‹РјРё СЃРёРјРІРѕР»Р°РјРё</returns>
 	string Remove(string str, string subStr) {
 		size_t pos = string::npos;
 		while ((pos = str.find(subStr)) != std::string::npos)
@@ -67,22 +67,22 @@ public:
 		return str;
 	}
 	/// <summary>
-	/// Удаляет вхождения данного символа в строке
+	/// РЈРґР°Р»СЏРµС‚ РІС…РѕР¶РґРµРЅРёСЏ РґР°РЅРЅРѕРіРѕ СЃРёРјРІРѕР»Р° РІ СЃС‚СЂРѕРєРµ
 	/// </summary>
-	/// <param name="str">строка</param>
-	/// <param name="subStr">символ для удаления</param>
-	/// <returns>строка с удаленными символами</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР°</param>
+	/// <param name="subStr">СЃРёРјРІРѕР» РґР»СЏ СѓРґР°Р»РµРЅРёСЏ</param>
+	/// <returns>СЃС‚СЂРѕРєР° СЃ СѓРґР°Р»РµРЅРЅС‹РјРё СЃРёРјРІРѕР»Р°РјРё</returns>
 	string Remove(string str, char c) {
 		string subStr = "";
 		subStr += c;
 		return this->Remove(str, subStr);
 	}
 	/// <summary>
-	/// Проверяет содержит ли строка указанную коллекцию строк
+	/// РџСЂРѕРІРµСЂСЏРµС‚ СЃРѕРґРµСЂР¶РёС‚ Р»Рё СЃС‚СЂРѕРєР° СѓРєР°Р·Р°РЅРЅСѓСЋ РєРѕР»Р»РµРєС†РёСЋ СЃС‚СЂРѕРє
 	/// </summary>
-	/// <param name="str">строка для проверки</param>
-	/// <param name="collection">коллекция строк</param>
-	/// <returns>true - если содержит все символы</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР° РґР»СЏ РїСЂРѕРІРµСЂРєРё</param>
+	/// <param name="collection">РєРѕР»Р»РµРєС†РёСЏ СЃС‚СЂРѕРє</param>
+	/// <returns>true - РµСЃР»Рё СЃРѕРґРµСЂР¶РёС‚ РІСЃРµ СЃРёРјРІРѕР»С‹</returns>
 	bool Contains(string str, vector<string> collection) {
 		for (int i = 0; i < collection.size(); i++)
 			if (!this->Contains(str, collection[i]))
@@ -90,19 +90,19 @@ public:
 		return true;
 	}
 	/// <summary>
-	/// Проверяет содержит ли строка указанную подстроку
+	/// РџСЂРѕРІРµСЂСЏРµС‚ СЃРѕРґРµСЂР¶РёС‚ Р»Рё СЃС‚СЂРѕРєР° СѓРєР°Р·Р°РЅРЅСѓСЋ РїРѕРґСЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="str">строка для проверки</param>
-	/// <param name="strFind">подстрока</param>
-	/// <returns>true - если содержит</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР° РґР»СЏ РїСЂРѕРІРµСЂРєРё</param>
+	/// <param name="strFind">РїРѕРґСЃС‚СЂРѕРєР°</param>
+	/// <returns>true - РµСЃР»Рё СЃРѕРґРµСЂР¶РёС‚</returns>
 	bool Contains(string str, string subStr) {
 		return (str.find(subStr) != std::string::npos);
 	}
 	/// <summary>
-	/// Поверяет, является ли строка числом
+	/// РџРѕРІРµСЂСЏРµС‚, СЏРІР»СЏРµС‚СЃСЏ Р»Рё СЃС‚СЂРѕРєР° С‡РёСЃР»РѕРј
 	/// </summary>
-	/// <param name="s">строка</param>
-	/// <returns>true - если является числом</returns>
+	/// <param name="s">СЃС‚СЂРѕРєР°</param>
+	/// <returns>true - РµСЃР»Рё СЏРІР»СЏРµС‚СЃСЏ С‡РёСЃР»РѕРј</returns>
 	bool IsNumber(string str) {
 		/*if (str.empty() || ((!isdigit(str[0])) && (str[0] != '-') && (str[0] != '+')))
 			return false;
@@ -112,10 +112,10 @@ public:
 		return this->GetNumbers(str).size() == 1;
 	}
 	/// <summary>
-	/// находит все числа в указанной строке
+	/// РЅР°С…РѕРґРёС‚ РІСЃРµ С‡РёСЃР»Р° РІ СѓРєР°Р·Р°РЅРЅРѕР№ СЃС‚СЂРѕРєРµ
 	/// </summary>
-	/// <param name="str">строка с числами и другими литералами</param>
-	/// <returns>список чисел</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР° СЃ С‡РёСЃР»Р°РјРё Рё РґСЂСѓРіРёРјРё Р»РёС‚РµСЂР°Р»Р°РјРё</param>
+	/// <returns>СЃРїРёСЃРѕРє С‡РёСЃРµР»</returns>
 	vector<string> GetNumbers(string str) {
 		vector<string>result;
 		regex rx(R"((?:^|\s)([+-]?[[:digit:]]+(?:\.[[:digit:]]+)?)(?=$|\s))");
@@ -127,12 +127,12 @@ public:
 		return result;
 	}
 	/// <summary>
-	/// разбивает строку по разделителям
+	/// СЂР°Р·Р±РёРІР°РµС‚ СЃС‚СЂРѕРєСѓ РїРѕ СЂР°Р·РґРµР»РёС‚РµР»СЏРј
 	/// </summary>
-	/// <param name="str">строка</param>
-	/// <param name="delimiters">строка с разделителями</param>
-	/// /// <param name="notDelete">строка с элементами, которые не нужно удалять</param>
-	/// <returns>массив строк</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР°</param>
+	/// <param name="delimiters">СЃС‚СЂРѕРєР° СЃ СЂР°Р·РґРµР»РёС‚РµР»СЏРјРё</param>
+	/// /// <param name="notDelete">СЃС‚СЂРѕРєР° СЃ СЌР»РµРјРµРЅС‚Р°РјРё, РєРѕС‚РѕСЂС‹Рµ РЅРµ РЅСѓР¶РЅРѕ СѓРґР°Р»СЏС‚СЊ</param>
+	/// <returns>РјР°СЃСЃРёРІ СЃС‚СЂРѕРє</returns>
 	vector<string> Split(string str, string delimiters, string notDelete = "") {
 		string buffer = "";
 		vector<string> res;
@@ -158,12 +158,12 @@ public:
 		return res;
 	}
 	/// <summary>
-	/// разбивает строку по разделителям
+	/// СЂР°Р·Р±РёРІР°РµС‚ СЃС‚СЂРѕРєСѓ РїРѕ СЂР°Р·РґРµР»РёС‚РµР»СЏРј
 	/// </summary>
-	/// <param name="str">строка</param>
-	/// <param name="delimiter">разделитель</param>
-	/// /// <param name="notDelete">строка с элементами, которые не нужно удалять</param>
-	/// <returns>массив строк</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР°</param>
+	/// <param name="delimiter">СЂР°Р·РґРµР»РёС‚РµР»СЊ</param>
+	/// /// <param name="notDelete">СЃС‚СЂРѕРєР° СЃ СЌР»РµРјРµРЅС‚Р°РјРё, РєРѕС‚РѕСЂС‹Рµ РЅРµ РЅСѓР¶РЅРѕ СѓРґР°Р»СЏС‚СЊ</param>
+	/// <returns>РјР°СЃСЃРёРІ СЃС‚СЂРѕРє</returns>
 	vector<string>Split(string str, char delimiter = ' ', string notDelete = "") {
 		string strDelimeter = "";
 		strDelimeter += delimiter;
@@ -182,9 +182,9 @@ public:
 		return result;
 	}
 	/// <summary>
-	/// Ставит строку в кавычки: строка -> "строка"
+	/// РЎС‚Р°РІРёС‚ СЃС‚СЂРѕРєСѓ РІ РєР°РІС‹С‡РєРё: СЃС‚СЂРѕРєР° -> "СЃС‚СЂРѕРєР°"
 	/// </summary>
-	/// <param name="str">строка</param>
+	/// <param name="str">СЃС‚СЂРѕРєР°</param>
 	/// <returns></returns>
 	string AddQoute(string str) {
 		stringstream ss;
@@ -192,10 +192,10 @@ public:
 		return ss.str();
 	}
 	/// <summary>
-	/// Конвертирует булевское значение в строку
+	/// РљРѕРЅРІРµСЂС‚РёСЂСѓРµС‚ Р±СѓР»РµРІСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="value">булевское значение</param>
-	/// <returns>строки true/false</returns>
+	/// <param name="value">Р±СѓР»РµРІСЃРєРѕРµ Р·РЅР°С‡РµРЅРёРµ</param>
+	/// <returns>СЃС‚СЂРѕРєРё true/false</returns>
 	string BoolToStr(bool value) {
 		if (value)
 			return "true";
@@ -204,13 +204,13 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// Конструктор
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	StrHelper() {}
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~StrHelper() {}
 #pragma endregion

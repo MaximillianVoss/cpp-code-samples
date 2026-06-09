@@ -3,21 +3,21 @@
 #include "StrHelper.h"
 template <class T>
 /// <summary>
-/// Полином
+/// РџРѕР»РёРЅРѕРј
 /// </summary>
 class Polynom {
 	/// <summary>
-	/// Элемент полинома - коэфффициент, степень
+	/// Р­Р»РµРјРµРЅС‚ РїРѕР»РёРЅРѕРјР° - РєРѕСЌС„С„С„РёС†РёРµРЅС‚, СЃС‚РµРїРµРЅСЊ
 	/// </summary>
 	typedef pair< double, int > Item;
 private:
 #pragma region Fields
 	/// <summary>
-	/// коэффициенты
+	/// РєРѕСЌС„С„РёС†РёРµРЅС‚С‹
 	/// </summary>
 	vector<T> items;
 	/// <summary>
-	/// значение независимой переменной
+	/// Р·РЅР°С‡РµРЅРёРµ РЅРµР·Р°РІРёСЃРёРјРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№
 	/// </summary>
 	T x;
 #pragma endregion
@@ -90,9 +90,9 @@ public:
 	Polynom() :Polynom(0, 0) {
 	}
 	/// <summary>
-	/// Создает полином из строки
+	/// РЎРѕР·РґР°РµС‚ РїРѕР»РёРЅРѕРј РёР· СЃС‚СЂРѕРєРё
 	/// </summary>
-	/// <param name="str"> строка вида: x^3+2*x^2 + x^1 +x^0 , x^0 указывать обязательно</param>
+	/// <param name="str"> СЃС‚СЂРѕРєР° РІРёРґР°: x^3+2*x^2 + x^1 +x^0 , x^0 СѓРєР°Р·С‹РІР°С‚СЊ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ</param>
 	Polynom(string str) {
 		this->x = 0;
 		StrHelper strHelper = StrHelper();
@@ -103,17 +103,17 @@ public:
 		{
 			vector<string> subtems = strHelper.Split(items[i], "*^", "");
 			if (subtems.size() == 2) {
-				//если имеет вид x^6
+				//РµСЃР»Рё РёРјРµРµС‚ РІРёРґ x^6
 				if (!strHelper.IsNumber(subtems[0]) && strHelper.IsNumber(subtems[1]))
 					pitems.push_back(Item(1.0, atoi(subtems[1].c_str())));
 			}
 			else if (subtems.size() == 3) {
-				//если имеет вид 7*x^6
+				//РµСЃР»Рё РёРјРµРµС‚ РІРёРґ 7*x^6
 				if (strHelper.IsNumber(subtems[0]) && !strHelper.IsNumber(subtems[1]) && strHelper.IsNumber(subtems[2]))
 					pitems.push_back(Item(atof(subtems[0].c_str()), atoi(subtems[2].c_str())));
 			}
 			else
-				throw exception("Некорректная запись полинома!");
+				throw exception("РќРµРєРѕСЂСЂРµРєС‚РЅР°СЏ Р·Р°РїРёСЃСЊ РїРѕР»РёРЅРѕРјР°!");
 		}
 		sort(pitems.begin(), pitems.end());
 		this->items = vector<double>(pitems[pitems.size() - 1].second + 1);
@@ -161,7 +161,7 @@ public:
 	}
 	vector<Pair<double, double>> GetValues(double from, double to, double step) {
 		if (from > to)
-			throw exception("неправильно указан промежуток!");
+			throw exception("РЅРµРїСЂР°РІРёР»СЊРЅРѕ СѓРєР°Р·Р°РЅ РїСЂРѕРјРµР¶СѓС‚РѕРє!");
 		vector<Pair<double, double>> result;
 		for (double i = from; i < to; i += step) {
 			Pair<double, double> pair = Pair<double, double>(i, (double)this->GetValue(i));
@@ -264,7 +264,7 @@ public:
 				for (int i = 0; i < dLength; i++)
 					items.push_back(0);
 				items.push_back(k);
-				//ПРОВЕРИТЬ ЦЕЛОЕ ОТ ДЕЛЕНИЯ!
+				//РџР РћР’Р•Р РРўР¬ Р¦Р•Р›РћР• РћРў Р”Р•Р›Р•РќРРЇ!
 				Polynom<T> multiplier = Polynom<T>(Reverse(items));
 				if (quotientItems.size() < multiplier.GetLength())
 					quotientItems = multiplier.items;
@@ -287,16 +287,16 @@ public:
 		return result;
 	}
 	/// <summary>
-	/// Удаляет незначащие нули
+	/// РЈРґР°Р»СЏРµС‚ РЅРµР·РЅР°С‡Р°С‰РёРµ РЅСѓР»Рё
 	/// </summary>
 	void Update() {
 		while (this->items.size() > 0 && this->items[this->items.size() - 1] == 0)
 			this->items.erase(this->items.begin() + this->items.size() - 1);
 	}
 	/// <summary>
-	/// Ищет вхождение указанного коэффициента в полиноме
+	/// РС‰РµС‚ РІС…РѕР¶РґРµРЅРёРµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ РєРѕСЌС„С„РёС†РёРµРЅС‚Р° РІ РїРѕР»РёРЅРѕРјРµ
 	/// </summary>
-	/// <param name="a">коэффицент</param>
+	/// <param name="a">РєРѕСЌС„С„РёС†РµРЅС‚</param>
 	/// <returns></returns>
 	bool Find(T a) {
 		for (int i = 0; i < this->items.size(); i++)

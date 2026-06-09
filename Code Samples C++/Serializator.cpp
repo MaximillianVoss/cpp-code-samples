@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Serializator.h"
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 void SerializatorOld::Serialize(string fileName, vector<Pair>fieldsValues)
 {
 	vector<string> values;
@@ -26,7 +26,7 @@ vector<Pair> SerializatorOld::Deserialize(string fileName)
 }
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 SerializatorOld::SerializatorOld()
 {
 }

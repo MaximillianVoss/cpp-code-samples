@@ -4,7 +4,7 @@
 #include "FileIO.h"
 #include "Pair.h"
 
-#pragma region Конструктор/Деструктор 
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ 
 Obfuscator::Obfuscator(string _configFileName)
 {
 	configFileName = _configFileName;
@@ -31,11 +31,11 @@ Obfuscator::~Obfuscator()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 /// <summary>
-/// удаление табуляции
+/// СѓРґР°Р»РµРЅРёРµ С‚Р°Р±СѓР»СЏС†РёРё
 /// </summary>
-/// <param name="a">список строк</param>
+/// <param name="a">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 /// <returns></returns>
 vector<string> Obfuscator::RemoveTabs(vector<string> a) {
 	StrHelper strHelper;
@@ -44,9 +44,9 @@ vector<string> Obfuscator::RemoveTabs(vector<string> a) {
 	return a;
 }
 /// <summary>
-/// переименование переменных
+/// РїРµСЂРµРёРјРµРЅРѕРІР°РЅРёРµ РїРµСЂРµРјРµРЅРЅС‹С…
 /// </summary>
-/// <param name="a">список строк</param>
+/// <param name="a">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 /// <returns></returns>
 vector<string>Obfuscator::RenameVariables(vector<string> a) {
 	FileIO fileIO = FileIO();
@@ -88,9 +88,9 @@ vector<string>Obfuscator::RenameVariables(vector<string> a) {
 	return res;
 }
 /// <summary>
-/// Добавляет подставные функции и переменные
+/// Р”РѕР±Р°РІР»СЏРµС‚ РїРѕРґСЃС‚Р°РІРЅС‹Рµ С„СѓРЅРєС†РёРё Рё РїРµСЂРµРјРµРЅРЅС‹Рµ
 /// </summary>
-/// <param name="a">список строк</param>
+/// <param name="a">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 /// <returns></returns>
 vector<string> Obfuscator::AddDummyVariables(vector<string> a)
 {
@@ -101,9 +101,9 @@ vector<string> Obfuscator::AddDummyVariables(vector<string> a)
 	return a;
 }
 /// <summary>
-/// Обфусцирует код
+/// РћР±С„СѓСЃС†РёСЂСѓРµС‚ РєРѕРґ
 /// </summary>
-/// <param name="a">список строк</param>
+/// <param name="a">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 /// <returns></returns>
 vector<string> Obfuscator::Obfuscate(vector<string> a)
 {
@@ -114,10 +114,10 @@ vector<string> Obfuscator::Obfuscate(vector<string> a)
 	return res;
 }
 /// <summary>
-/// Обфусцирует указанный файл с кодом
+/// РћР±С„СѓСЃС†РёСЂСѓРµС‚ СѓРєР°Р·Р°РЅРЅС‹Р№ С„Р°Р№Р» СЃ РєРѕРґРѕРј
 /// </summary>
-/// <param name="inFileName">имя входного файла</param>
-/// <param name="outFileName">имя выходного файла</param>
+/// <param name="inFileName">РёРјСЏ РІС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°</param>
+/// <param name="outFileName">РёРјСЏ РІС‹С…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°</param>
 void Obfuscator::Obfuscate()
 {
 	FileIO fileIO = FileIO();

@@ -3,28 +3,28 @@
 #include "pch.h"
 using namespace chrono;
 ///<summary>
-/// Залогированное сообщение
+/// Р—Р°Р»РѕРіРёСЂРѕРІР°РЅРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ
 ///</summary>
 class LogItem
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// ИД
+	/// РР”
 	/// </summary>
 	int id;
 	/// <summary>
-	/// время записи
+	/// РІСЂРµРјСЏ Р·Р°РїРёСЃРё
 	/// </summary>
 	string time;
 	/// <summary>
-	/// строки сообщения
+	/// СЃС‚СЂРѕРєРё СЃРѕРѕР±С‰РµРЅРёСЏ
 	/// </summary>
 	vector<string>lines;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	string GetTime() {
 		auto t = std::time(nullptr);
 		auto tm = *std::localtime(&t);
@@ -40,11 +40,11 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	string ToString() {
 		stringstream ss;
 		ss << this->time << endl;
@@ -54,7 +54,7 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	LogItem() {
 		this->id = -1;
 		this->lines = {};
@@ -74,11 +74,11 @@ public:
 	};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 
@@ -86,7 +86,7 @@ public:
 
 };
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 ostream& operator<<(ostream& os, LogItem item)
 {
 	os << item.ToString();

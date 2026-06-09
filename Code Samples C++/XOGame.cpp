@@ -43,7 +43,7 @@
 //	}
 //
 //	void setX() {
-//		cout << "Ââåäèòå êîîðäèíàòû : " << endl;
+//		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ : " << endl;
 //		int x, y;
 //		cin >> x;
 //		cin >> y;
@@ -51,7 +51,7 @@
 //		--y;
 //		if (x < 0 || y < 0 || y >= field_size || x >= field_size || field[y][x] != '.') {
 //			showField();
-//			cout << "Êîîðäèíàòû ââåäåíû íåâåðíî" << endl;
+//			cout << "ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ Ð²Ð²ÐµÐ´ÐµÐ½Ñ‹ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾" << endl;
 //			setX();
 //		}
 //		else {
@@ -174,7 +174,7 @@
 //	bool checkWin() {
 //		if (turns >= field_size) {
 //			if (turns == field_size * field_size) {
-//				cout << "Íè÷üÿ" << endl;
+//				cout << "ÐÐ¸Ñ‡ÑŒÑ" << endl;
 //				return true;
 //			}
 //			if (checkFirstDiagonal()) {
@@ -211,7 +211,7 @@
 //				return b;
 //			}
 //		}
-//		cout << "Ïîáåäà " << field[0][n] << endl;
+//		cout << "ÐŸÐ¾Ð±ÐµÐ´Ð° " << field[0][n] << endl;
 //		return b;
 //	}
 //
@@ -223,7 +223,7 @@
 //				return b;
 //			}
 //		}
-//		cout << "Ïîáåäà " << field[n][0] << endl;
+//		cout << "ÐŸÐ¾Ð±ÐµÐ´Ð° " << field[n][0] << endl;
 //		return b;
 //	}
 //
@@ -235,7 +235,7 @@
 //				return b;
 //			}
 //		}
-//		cout << "Ïîáåäà " << field[0][0] << endl;
+//		cout << "ÐŸÐ¾Ð±ÐµÐ´Ð° " << field[0][0] << endl;
 //		return b;
 //	}
 //
@@ -247,7 +247,7 @@
 //				return b;
 //			}
 //		}
-//		cout << "Ïîáåäà " << field[field_size - 1][0] << endl;
+//		cout << "ÐŸÐ¾Ð±ÐµÐ´Ð° " << field[field_size - 1][0] << endl;
 //		return b;
 //	}
 //

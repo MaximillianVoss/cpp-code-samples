@@ -2,15 +2,15 @@
 #pragma once
 #include "UnitTest.h"
 #include "SField.h"
-#pragma region Тесты
+#pragma region РўРµСЃС‚С‹
 
-#pragma region Тест сериализации
+#pragma region РўРµСЃС‚ СЃРµСЂРёР°Р»РёР·Р°С†РёРё
 ///<summary>
-/// Тест сериализации
+/// РўРµСЃС‚ СЃРµСЂРёР°Р»РёР·Р°С†РёРё
 ///</summary>
 class SerializationTest :public UnitTest<string> {
 public:
-	SerializationTest(vector<string>values) :UnitTest("Тест сериализации", values) {
+	SerializationTest(vector<string>values) :UnitTest("РўРµСЃС‚ СЃРµСЂРёР°Р»РёР·Р°С†РёРё", values) {
 
 	}
 	void Test() override {
@@ -22,32 +22,32 @@ public:
 #pragma endregion
 
 
-#pragma region Тест десериализации
+#pragma region РўРµСЃС‚ РґРµСЃРµСЂРёР°Р»РёР·Р°С†РёРё
 ///<summary>
-/// Тест десериализации
+/// РўРµСЃС‚ РґРµСЃРµСЂРёР°Р»РёР·Р°С†РёРё
 ///</summary>
 class DeserializationTest :public UnitTest<string> {
 public:
-	DeserializationTest(vector<string>values) :UnitTest("Тест десериализации", values) {
+	DeserializationTest(vector<string>values) :UnitTest("РўРµСЃС‚ РґРµСЃРµСЂРёР°Р»РёР·Р°С†РёРё", values) {
 
 	}
 	void Test() override {
 		SField<string> field = SField<string>("someName:someValue;");
 		this->Add(field.ToString());
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
 
-#pragma region Тест операторов
+#pragma region РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂРѕРІ
 ///<summary>
-/// Тест операторов
+/// РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂРѕРІ
 ///</summary>
 class SFieldOperatorsTest :public UnitTest<bool> {
 public:
-	SFieldOperatorsTest(vector<bool>values) :UnitTest("Тест операторов", values) {
+	SFieldOperatorsTest(vector<bool>values) :UnitTest("РўРµСЃС‚ РѕРїРµСЂР°С‚РѕСЂРѕРІ", values) {
 
 	}
 	void Test() override {
@@ -61,20 +61,20 @@ public:
 		this->Add(field != fieldSame);
 		ss << field;
 		this->Add(ss.str() == "someName:someValue;");
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 
 #pragma endregion
-#pragma region Тесты сериализуемого поля
+#pragma region РўРµСЃС‚С‹ СЃРµСЂРёР°Р»РёР·СѓРµРјРѕРіРѕ РїРѕР»СЏ
 ///<summary>
-/// Тесты сериализуемого поля
+/// РўРµСЃС‚С‹ СЃРµСЂРёР°Р»РёР·СѓРµРјРѕРіРѕ РїРѕР»СЏ
 ///</summary>
 class SFieldTests :UnitTests {
 public:
-	SFieldTests() : UnitTests("Тесты сериализуемого поля") {}
+	SFieldTests() : UnitTests("РўРµСЃС‚С‹ СЃРµСЂРёР°Р»РёР·СѓРµРјРѕРіРѕ РїРѕР»СЏ") {}
 	void Start()override {
 		SerializationTest({ "someName:someValue;" }).Start();
 		DeserializationTest({ "someName:someValue;" }).Start();

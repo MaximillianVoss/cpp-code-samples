@@ -3,25 +3,25 @@
 #include "Enums.h"
 template<typename T>
 ///<summary>
-/// Основные сортировки
+/// РћСЃРЅРѕРІРЅС‹Рµ СЃРѕСЂС‚РёСЂРѕРІРєРё
 ///</summary>
 class Sorts
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Сравнивает два элемента:
-	/// "0"  -если элементы равны
-	/// "1"  -если A больше
-	/// "-1" -если B больше
+	/// РЎСЂР°РІРЅРёРІР°РµС‚ РґРІР° СЌР»РµРјРµРЅС‚Р°:
+	/// "0"  -РµСЃР»Рё СЌР»РµРјРµРЅС‚С‹ СЂР°РІРЅС‹
+	/// "1"  -РµСЃР»Рё A Р±РѕР»СЊС€Рµ
+	/// "-1" -РµСЃР»Рё B Р±РѕР»СЊС€Рµ
 	/// </summary>
-	/// <param name="a">первый элемент</param>
-	/// <param name="b">второй элемент</param>
+	/// <param name="a">РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚</param>
+	/// <param name="b">РІС‚РѕСЂРѕР№ СЌР»РµРјРµРЅС‚</param>
 	/// <returns></returns>
 	int Compare(T a, T b) {
 		if (a == b)
@@ -74,34 +74,34 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-/// сортировка пузырьком: 
+/// СЃРѕСЂС‚РёСЂРѕРІРєР° РїСѓР·С‹СЂСЊРєРѕРј: 
 /// </summary>
-/// <param name="a">массив</param>
-/// <param name="length">размер</param>
+/// <param name="a">РјР°СЃСЃРёРІ</param>
+/// <param name="length">СЂР°Р·РјРµСЂ</param>
 	void BubbleSort(int* a, size_t length);
 	/// <summary>
-	/// Сортировка вставками
+	/// РЎРѕСЂС‚РёСЂРѕРІРєР° РІСЃС‚Р°РІРєР°РјРё
 	/// </summary>
 	/// <param name="a"></param>
 	/// <param name="n"></param>
 	void InsertionSort(int* a, size_t n);
 	/// <summary>
-	/// Сортировка слиянием
+	/// РЎРѕСЂС‚РёСЂРѕРІРєР° СЃР»РёСЏРЅРёРµРј
 	/// </summary>
-	/// <param name="array">массив</param>
-	/// <param name="size">размер</param>
+	/// <param name="array">РјР°СЃСЃРёРІ</param>
+	/// <param name="size">СЂР°Р·РјРµСЂ</param>
 	void MergerSort(T array[], size_t size);
 	/// <summary>
-	/// Быстрая сортировка
+	/// Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°
 	/// </summary>
-	/// <param name="items">массив для сортировки</param>
-	/// <param name="direction">направление сортировки:по возрастанию/убыванию</param>
+	/// <param name="items">РјР°СЃСЃРёРІ РґР»СЏ СЃРѕСЂС‚РёСЂРѕРІРєРё</param>
+	/// <param name="direction">РЅР°РїСЂР°РІР»РµРЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё:РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ/СѓР±С‹РІР°РЅРёСЋ</param>
 	/// <returns></returns>
 	vector<T>QuickSort(vector<T>items, Direction direction = Direction::ascending)
 	{
@@ -111,16 +111,16 @@ public:
 
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	Sorts() {};
 	~Sorts() {};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

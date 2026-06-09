@@ -2,15 +2,15 @@
 #pragma once
 #include "UnitTest.h"
 #include "BinarySearch.h"
-#pragma region Тесты
+#pragma region РўРµСЃС‚С‹
 
 #pragma region 
 ///<summary>
-/// Тест двоичного поиска
+/// РўРµСЃС‚ РґРІРѕРёС‡РЅРѕРіРѕ РїРѕРёСЃРєР°
 ///</summary>
 class BinarySearchTest1 :public UnitTest<int> {
 public:
-	BinarySearchTest1(vector<int>values) :UnitTest("Тест двоичного поиска 1", values) {
+	BinarySearchTest1(vector<int>values) :UnitTest("РўРµСЃС‚ РґРІРѕРёС‡РЅРѕРіРѕ РїРѕРёСЃРєР° 1", values) {
 
 	}
 	void Test() override {
@@ -22,18 +22,18 @@ public:
 			bs.Find({0,1,2,3,4,5,6},5),
 			bs.Find({0,1,2,3,4,5,6},2)
 			});
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 
-#pragma region Тест двоичного поиска
+#pragma region РўРµСЃС‚ РґРІРѕРёС‡РЅРѕРіРѕ РїРѕРёСЃРєР°
 ///<summary>
-/// Тест двоичного поиска
+/// РўРµСЃС‚ РґРІРѕРёС‡РЅРѕРіРѕ РїРѕРёСЃРєР°
 ///</summary>
 class BinarySearchTest2 :public UnitTest<bool> {
 public:
-	BinarySearchTest2(vector<bool>values) :UnitTest("Тест двоичного поиска 2", values) {
+	BinarySearchTest2(vector<bool>values) :UnitTest("РўРµСЃС‚ РґРІРѕРёС‡РЅРѕРіРѕ РїРѕРёСЃРєР° 2", values) {
 
 	}
 	void Test() override {
@@ -45,22 +45,22 @@ public:
 			bs.IsExist({0,1,2,3,4,5,6},5),
 			bs.IsExist({0,1,2,3,4,5,6},99)
 			});
-		//сравнение результатов в конце 
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 #pragma endregion
 #pragma endregion
-#pragma region Тест поиска
+#pragma region РўРµСЃС‚ РїРѕРёСЃРєР°
 ///<summary>
-/// Тест поиска
+/// РўРµСЃС‚ РїРѕРёСЃРєР°
 ///</summary>
 class SearchTests :UnitTests {
 public:
-	SearchTests() : UnitTests("Тест поиска") {}
+	SearchTests() : UnitTests("РўРµСЃС‚ РїРѕРёСЃРєР°") {}
 	void Start()override {
-		//Запуск одного теста: TestsClassName(vector<type>items).Start();
+		//Р—Р°РїСѓСЃРє РѕРґРЅРѕРіРѕ С‚РµСЃС‚Р°: TestsClassName(vector<type>items).Start();
 		BinarySearchTest1({ 0,1,-1,5,2 }).Start();
 		BinarySearchTest2({ true,true,false,true,false }).Start();
 	}

@@ -1,72 +1,72 @@
 #pragma once
 #include "pch.h"
 /// <summary>
-/// Клиент блокчейна
+/// РљР»РёРµРЅС‚ Р±Р»РѕРєС‡РµР№РЅР°
 /// </summary>
 class Client
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// ID в виде хэш SHA-1
+	/// ID РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
 	string id;
 	/// <summary>
-	/// Пароль в виде хэш SHA-1
+	/// РџР°СЂРѕР»СЊ РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
 	string hash;
 	/// <summary>
-	/// количество токенов на счету
+	/// РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРєРµРЅРѕРІ РЅР° СЃС‡РµС‚Сѓ
 	/// </summary>
 	int tokensCount;
 	/// <summary>
-	/// Статус в сети:да/нет
+	/// РЎС‚Р°С‚СѓСЃ РІ СЃРµС‚Рё:РґР°/РЅРµС‚
 	/// </summary>
 	bool isOnline;
 	/// <summary>
-	/// Количество голосов за данного клиента (используется в голосовании)
+	/// РљРѕР»РёС‡РµСЃС‚РІРѕ РіРѕР»РѕСЃРѕРІ Р·Р° РґР°РЅРЅРѕРіРѕ РєР»РёРµРЅС‚Р° (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
 	size_t votesCount;
 	/// <summary>
-	/// Процент голосов, 
-	/// который набрал клиент в голосовании
+	/// РџСЂРѕС†РµРЅС‚ РіРѕР»РѕСЃРѕРІ, 
+	/// РєРѕС‚РѕСЂС‹Р№ РЅР°Р±СЂР°Р» РєР»РёРµРЅС‚ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё
 	/// </summary>
 	float votesPercent;
 	/// <summary>
-	/// Вероятность получения токена (используется в голосовании)
-	/// Например: от 0.2
+	/// Р’РµСЂРѕСЏС‚РЅРѕСЃС‚СЊ РїРѕР»СѓС‡РµРЅРёСЏ С‚РѕРєРµРЅР° (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
+	/// РќР°РїСЂРёРјРµСЂ: РѕС‚ 0.2
 	/// </summary>
 	float probability;
 	/// <summary>
-	/// Начало промежутка в цепочке вероятностей (используется в голосовании)
-	/// Например: от 0.1
+	/// РќР°С‡Р°Р»Рѕ РїСЂРѕРјРµР¶СѓС‚РєР° РІ С†РµРїРѕС‡РєРµ РІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№ (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
+	/// РќР°РїСЂРёРјРµСЂ: РѕС‚ 0.1
 	/// </summary>
 	float probabilityFrom;
 	/// <summary>
-	/// Конец промежутка в цепочке вероятностей (используется в голосовании)
-	/// Например: до 0.3
+	/// РљРѕРЅРµС† РїСЂРѕРјРµР¶СѓС‚РєР° РІ С†РµРїРѕС‡РєРµ РІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№ (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
+	/// РќР°РїСЂРёРјРµСЂ: РґРѕ 0.3
 	/// </summary>
 	float probabilityTo;
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// Конструктор по умолчанию
+	/// РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	Client() :Client("", "") {
 	}
 	/// <summary>
-	/// Создает клиента с указанным ID
+	/// РЎРѕР·РґР°РµС‚ РєР»РёРµРЅС‚Р° СЃ СѓРєР°Р·Р°РЅРЅС‹Рј ID
 	/// </summary>
-	/// <param name="id">ID в виде хэш SHA-1</param>
-	/// /// <param name="hash">Пароль в виде хэш SHA-1</param>
+	/// <param name="id">ID РІ РІРёРґРµ С…СЌС€ SHA-1</param>
+	/// /// <param name="hash">РџР°СЂРѕР»СЊ РІ РІРёРґРµ С…СЌС€ SHA-1</param>
 	Client(string id, string hash) {
 		this->isOnline = false;
 		this->id = id;
@@ -79,75 +79,75 @@ public:
 		this->votesPercent = 0;
 	}
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~Client() {}
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma region Set
 	/// <summary>
-	/// Задает хэш ID
+	/// Р—Р°РґР°РµС‚ С…СЌС€ ID
 	/// </summary>
 	/// <param name="id"></param>
 	void SetId(string id) {
 		this->id = id;
 	}
 	/// <summary>
-	/// Задает хэш пароля
+	/// Р—Р°РґР°РµС‚ С…СЌС€ РїР°СЂРѕР»СЏ
 	/// </summary>
 	/// <param name="key"></param>
 	void SetHash(string hash) {
 		this->hash = hash;
 	}
 	/// <summary>
-	/// Задает количество токенов в кошельке
+	/// Р—Р°РґР°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРєРµРЅРѕРІ РІ РєРѕС€РµР»СЊРєРµ
 	/// </summary>
 	/// <param name="tokensCount"></param>
 	void SetTokensCount(int tokensCount) {
 		this->tokensCount = tokensCount;
 	}
 	/// <summary>
-	/// Устанавливает статус "в сети"
+	/// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЃС‚Р°С‚СѓСЃ "РІ СЃРµС‚Рё"
 	/// </summary>
-	/// <param name="isOnline">true - онлайн</param>
+	/// <param name="isOnline">true - РѕРЅР»Р°Р№РЅ</param>
 	void SetOnline(bool isOnline) {
 		this->isOnline = isOnline;
 	}
 	/// <summary>
-	/// Устанавливает указанное количество голосов
+	/// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СѓРєР°Р·Р°РЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РіРѕР»РѕСЃРѕРІ
 	/// </summary>
-	/// <param name="votesCount">количество голосов</param>
+	/// <param name="votesCount">РєРѕР»РёС‡РµСЃС‚РІРѕ РіРѕР»РѕСЃРѕРІ</param>
 	void SetVotes(size_t votesCount) {
 		this->votesCount = votesCount;
 	}
 	/// <summary>
-	/// Задает вероятность получения токена (используется в голосовании)
+	/// Р—Р°РґР°РµС‚ РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ РїРѕР»СѓС‡РµРЅРёСЏ С‚РѕРєРµРЅР° (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
-	/// <param name="probability">вероятность</param>
+	/// <param name="probability">РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ</param>
 	void SetProbability(float probability) {
 		this->probability = probability;
 	}
 	/// <summary>
-	/// Задает начало промежутка в цепочке вероятностей (используется в голосовании)
+	/// Р—Р°РґР°РµС‚ РЅР°С‡Р°Р»Рѕ РїСЂРѕРјРµР¶СѓС‚РєР° РІ С†РµРїРѕС‡РєРµ РІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№ (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
-	/// <param name="probability">вероятность</param>
+	/// <param name="probability">РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ</param>
 	void SetProbabilityFrom(float probability) {
 		this->probabilityFrom = probability;
 	}
 	/// <summary>
-	/// Задает конец промежутка в цепочке вероятностей (используется в голосовании)
+	/// Р—Р°РґР°РµС‚ РєРѕРЅРµС† РїСЂРѕРјРµР¶СѓС‚РєР° РІ С†РµРїРѕС‡РєРµ РІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№ (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
-	/// <param name="probability">вероятность</param>
+	/// <param name="probability">РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ</param>
 	void SetProbabilityTo(float probability) {
 		this->probabilityTo = probability;
 	}
 	/// <summary>
-	/// Задает процент голосов, 
-	/// который набрал клиент в голосовании
+	/// Р—Р°РґР°РµС‚ РїСЂРѕС†РµРЅС‚ РіРѕР»РѕСЃРѕРІ, 
+	/// РєРѕС‚РѕСЂС‹Р№ РЅР°Р±СЂР°Р» РєР»РёРµРЅС‚ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё
 	/// </summary>
-	/// <param name="votesPercent">процент голосов</param>
+	/// <param name="votesPercent">РїСЂРѕС†РµРЅС‚ РіРѕР»РѕСЃРѕРІ</param>
 	void SetVotesPercent(float votesPercent) {
 		this->votesPercent = votesPercent;
 	}
@@ -155,64 +155,64 @@ public:
 
 #pragma region Get
 	/// <summary>
-	/// Возвращает хэш ID
+	/// Р’РѕР·РІСЂР°С‰Р°РµС‚ С…СЌС€ ID
 	/// </summary>
 	/// <returns></returns>
-	string GetId() {
+	string GetId() const {
 		return this->id;
 	}
 	/// <summary>
-	/// Получает хэш пароля
+	/// РџРѕР»СѓС‡Р°РµС‚ С…СЌС€ РїР°СЂРѕР»СЏ
 	/// </summary>
 	/// <returns></returns>
 	string GetHash() {
 		return this->hash;
 	}
 	/// <summary>
-	/// Получает количество токенов в кошельке
+	/// РџРѕР»СѓС‡Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРєРµРЅРѕРІ РІ РєРѕС€РµР»СЊРєРµ
 	/// </summary>
 	/// <returns></returns>
 	int GetTokensCount() {
 		return this->tokensCount;
 	}
 	/// <summary>
-	/// Возвращает статус "в сети"
+	/// Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃС‚Р°С‚СѓСЃ "РІ СЃРµС‚Рё"
 	/// </summary>
 	/// <returns></returns>
 	bool GetOnline() {
 		return this->isOnline;
 	}
 	/// <summary>
-	/// Возвращает количество голосов
+	/// Р’РѕР·РІСЂР°С‰Р°РµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ РіРѕР»РѕСЃРѕРІ
 	/// </summary>
 	/// <returns></returns>
 	size_t GetVotes() {
 		return this->votesCount;
 	}
 	/// <summary>
-	/// Получает вероятность получения токена (используется в голосовании)
+	/// РџРѕР»СѓС‡Р°РµС‚ РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ РїРѕР»СѓС‡РµРЅРёСЏ С‚РѕРєРµРЅР° (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
 	/// <returns></returns>
 	float GetProbability() {
 		return this->probability;
 	}
 	/// <summary>
-	/// Получает начало промежутка в цепочке вероятностей (используется в голосовании)
+	/// РџРѕР»СѓС‡Р°РµС‚ РЅР°С‡Р°Р»Рѕ РїСЂРѕРјРµР¶СѓС‚РєР° РІ С†РµРїРѕС‡РєРµ РІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№ (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
 	/// <returns></returns>
 	float GetProbabilityFrom() {
 		return this->probabilityFrom;
 	}
 	/// <summary>
-	/// Получает конец промежутка в цепочке вероятностей (используется в голосовании)
+	/// РџРѕР»СѓС‡Р°РµС‚ РєРѕРЅРµС† РїСЂРѕРјРµР¶СѓС‚РєР° РІ С†РµРїРѕС‡РєРµ РІРµСЂРѕСЏС‚РЅРѕСЃС‚РµР№ (РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё)
 	/// </summary>
 	/// <returns></returns>
 	float GetProbabilityTo() {
 		return this->probabilityTo;
 	}
 	/// <summary>
-	/// Задает процент голосов, 
-	/// который набрал клиент в голосовании
+	/// Р—Р°РґР°РµС‚ РїСЂРѕС†РµРЅС‚ РіРѕР»РѕСЃРѕРІ, 
+	/// РєРѕС‚РѕСЂС‹Р№ РЅР°Р±СЂР°Р» РєР»РёРµРЅС‚ РІ РіРѕР»РѕСЃРѕРІР°РЅРёРё
 	/// </summary>
 	float GetVotesPercent() {
 		return this->votesPercent;
@@ -221,14 +221,14 @@ public:
 
 #pragma region Add
 	/// <summary>
-	/// Добавляет указанное количество токенов в кошелек
+	/// Р”РѕР±Р°РІР»СЏРµС‚ СѓРєР°Р·Р°РЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРєРµРЅРѕРІ РІ РєРѕС€РµР»РµРє
 	/// </summary>
 	/// <param name="tokensCount"></param>
 	void AddTokens(int tokensCount) {
 		this->tokensCount += tokensCount;
 	}
 	/// <summary>
-	/// Добавляет один голос
+	/// Р”РѕР±Р°РІР»СЏРµС‚ РѕРґРёРЅ РіРѕР»РѕСЃ
 	/// </summary>
 	void AddVote() {
 		this->votesCount++;
@@ -262,8 +262,8 @@ public:
 
 
 
-#pragma region Операторы
-bool operator==(Client& c1, Client& c2) {
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
+bool operator==(const Client& c1, const Client& c2) {
 	return c1.GetId() == c2.GetId();
 }
 ostream& operator<<(ostream& os, Client c) {

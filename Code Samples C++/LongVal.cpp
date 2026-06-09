@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "LongVal.h"
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 LongVal::LongVal()
 {
 	Init("0");
@@ -33,7 +33,7 @@ LongVal::~LongVal()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 string LongVal::ToStr()
 {
 	string str = "";

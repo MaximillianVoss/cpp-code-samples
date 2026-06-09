@@ -1,25 +1,25 @@
 #pragma once
 /// <summary>
-/// Описание вершины дерева
+/// РћРїРёСЃР°РЅРёРµ РІРµСЂС€РёРЅС‹ РґРµСЂРµРІР°
 /// </summary>
 class TreeNode
 {
 public:
 	/// <summary>
-	/// полезные данные (ключ) 
+	/// РїРѕР»РµР·РЅС‹Рµ РґР°РЅРЅС‹Рµ (РєР»СЋС‡) 
 	/// </summary>
 	int  key;
 	/// <summary>
-	/// указатели на сыновей   
+	/// СѓРєР°Р·Р°С‚РµР»Рё РЅР° СЃС‹РЅРѕРІРµР№   
 	/// </summary>
 	struct TreeNode *left, *right;
 	TreeNode();
 	/// <summary>
-	/// конструктор с параметрами
+	/// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	/// </summary>
-	/// <param name="_key">ключ вершины</param>
-	/// <param name="left">левый потомок</param>
-	/// <param name="right">правый потомок</param>
+	/// <param name="_key">РєР»СЋС‡ РІРµСЂС€РёРЅС‹</param>
+	/// <param name="left">Р»РµРІС‹Р№ РїРѕС‚РѕРјРѕРє</param>
+	/// <param name="right">РїСЂР°РІС‹Р№ РїРѕС‚РѕРјРѕРє</param>
 	TreeNode(int _key, TreeNode *_left, TreeNode *_right);
 	~TreeNode();
 };

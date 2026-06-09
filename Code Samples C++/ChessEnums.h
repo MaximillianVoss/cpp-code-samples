@@ -1,6 +1,6 @@
 #pragma once
 /// <summary>
-/// типы угроз
+/// С‚РёРїС‹ СѓРіСЂРѕР·
 /// </summary>
 enum Danger {
 	cross = 1,
@@ -9,7 +9,7 @@ enum Danger {
 	minus
 };
 /// <summary>
-/// направления
+/// РЅР°РїСЂР°РІР»РµРЅРёСЏ
 /// </summary>
 enum Directions {
 	up,

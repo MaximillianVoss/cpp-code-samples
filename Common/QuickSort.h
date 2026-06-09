@@ -3,23 +3,23 @@
 #include "pch.h"
 template<typename T>
 ///<summary>
-/// Быстрая сортировка для примитивных типов
+/// Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР° РґР»СЏ РїСЂРёРјРёС‚РёРІРЅС‹С… С‚РёРїРѕРІ
 ///</summary>
 class QuickSort
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// разбиение
-	/// исходник:
+	/// СЂР°Р·Р±РёРµРЅРёРµ
+	/// РёСЃС…РѕРґРЅРёРє:
 	/// https://appdividend.com/2019/05/02/quick-sort-in-c-tutorial-with-example-c-quick-sort-program/
 	/// </summary>
-	/// <param name="a">указатель на массив</param>
+	/// <param name="a">СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РјР°СЃСЃРёРІ</param>
 	/// <param name="start"></param>
 	/// <param name="end"></param>
 	/// <returns></returns>
@@ -47,11 +47,11 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	void Quicksort(vector<T> a, int start, int end)
 	{
 		if (start < end)
@@ -72,16 +72,16 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	QuickSort() {};
 	~QuickSort() {};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

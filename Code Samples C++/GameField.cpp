@@ -1,31 +1,31 @@
 #include "pch.h"
 #include "GameField.h"
 
-bool Field::Check(int coord)
+bool GameField::Check(int coord)
 {
 	return coord > -1 && coord < size;
 }
 
-bool Field::Check(Cell cell)
+bool GameField::Check(Cell cell)
 {
 	return Check(cell.column) && Check(cell.row);
 }
 
-Field::Field(Field *field) {
+GameField::GameField(GameField *field) {
 	a = field->a;
 	size = field->size;
 }
 
-Field::Field()
+GameField::GameField()
 {
 }
 
-Field::Field(vector<vector<Cell>> _a)
+GameField::GameField(vector<vector<Cell>> _a)
 {
 	a = _a;
 }
 
-Field::Field(vector<vector<int>> _a)
+GameField::GameField(vector<vector<int>> _a)
 {
 	size = _a.size();
 	a.resize(size);
@@ -36,7 +36,7 @@ Field::Field(vector<vector<int>> _a)
 	}
 }
 
-Field::Field(size_t _size)
+GameField::GameField(size_t _size)
 {
 	size = _size;
 	a.resize(size);
@@ -47,7 +47,7 @@ Field::Field(size_t _size)
 	}
 }
 
-Field::Field(string str)
+GameField::GameField(string str)
 {
 	StrHelper strHelper;
 	vector<string>lines = strHelper.Split(str, string("| \n"), string(""));
@@ -62,35 +62,35 @@ Field::Field(string str)
 	}
 }
 
-Field::~Field()
+GameField::~GameField()
 {
 }
 
-Cell Field::GetItem(size_t row, size_t column) {
+Cell GameField::GetItem(size_t row, size_t column) {
 	if (Check(row) && Check(column))
 		return a[row][column];
 	else
 		return Cell(-1, -1, CellTypes::notFound);
 }
 
-bool Field::SetItem(Cell cell, int value)
+bool GameField::SetItem(Cell cell, int value)
 {
 	return SetItem(cell.row, cell.column, value);
 }
 
-bool Field::SetItem(Cell cell, CellTypes type, int value)
+bool GameField::SetItem(Cell cell, CellTypes type, int value)
 {
 	return SetItem(cell.row, cell.column, type, value);
 }
 
-bool Field::SetItem(size_t row, size_t column, int value) {
+bool GameField::SetItem(size_t row, size_t column, int value) {
 	bool success = Check(row) && Check(column);
 	if (success)
 		a[row][column].value = value;
 	return success;
 }
 
-bool Field::SetItem(size_t row, size_t column, CellTypes type, int value) {
+bool GameField::SetItem(size_t row, size_t column, CellTypes type, int value) {
 	bool success = Check(row) && Check(column);
 	if (success) {
 		a[row][column].type = type;
@@ -99,12 +99,12 @@ bool Field::SetItem(size_t row, size_t column, CellTypes type, int value) {
 	return success;
 }
 
-Cell Field::GetItem(Cell cell)
+Cell GameField::GetItem(Cell cell)
 {
 	return GetItem(cell.row, cell.column);
 }
 
-Field Field::operator+(Field & b)
+GameField GameField::operator+(GameField & b)
 {
 	for (int i = 0; i < min(size, b.size); i++) {
 		for (int j = 0; j < min(size, b.size); j++)
@@ -115,7 +115,7 @@ Field Field::operator+(Field & b)
 	return *this;
 }
 
-string Field::GetStr() {
+string GameField::GetStr() {
 	string str = "";
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++)
@@ -128,7 +128,7 @@ string Field::GetStr() {
 	return str;
 }
 
-Field Field::Shift(Directions direction)
+GameField GameField::Shift(Directions direction)
 {
 	switch (direction) {
 	case Directions::up:
@@ -156,5 +156,5 @@ Field Field::Shift(Directions direction)
 		}
 		break;
 	}
-	return Field(a);
+	return GameField(a);
 }

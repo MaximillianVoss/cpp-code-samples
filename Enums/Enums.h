@@ -1,6 +1,6 @@
 #pragma once
 /// <summary>
-/// Язык
+/// РЇР·С‹Рє
 /// </summary>
 enum Language {
 	RUS,
@@ -8,7 +8,7 @@ enum Language {
 	byDefault
 };
 /// <summary>
-/// Цвета в консоли
+/// Р¦РІРµС‚Р° РІ РєРѕРЅСЃРѕР»Рё
 /// </summary>
 enum ConsoleColors {
 	/// <summary>

@@ -4,11 +4,11 @@ class Block
 {
 private:
 	/// <summary>
-	/// ID в виде хэш SHA-1
+	/// ID РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
 	string id;
 	/// <summary>
-	/// ID владельца в виде хэш SHA-1 
+	/// ID РІР»Р°РґРµР»СЊС†Р° РІ РІРёРґРµ С…СЌС€ SHA-1 
 	/// </summary>
 	string ownerId;
 	string idStr = "ID:";
@@ -19,10 +19,10 @@ public:
 		this->ownerId = "";
 	}
 	/// <summary>
-	/// Создает блок с указанным ID и ID владельца
+	/// РЎРѕР·РґР°РµС‚ Р±Р»РѕРє СЃ СѓРєР°Р·Р°РЅРЅС‹Рј ID Рё ID РІР»Р°РґРµР»СЊС†Р°
 	/// </summary>
-	/// <param name="id">ID в виде хэш SHA-1</param>
-	/// <param name="ownerId">ID владельца в виде хэш SHA-1 </param>
+	/// <param name="id">ID РІ РІРёРґРµ С…СЌС€ SHA-1</param>
+	/// <param name="ownerId">ID РІР»Р°РґРµР»СЊС†Р° РІ РІРёРґРµ С…СЌС€ SHA-1 </param>
 	Block(string id, string ownerId) {
 		this->id = id;
 		this->ownerId = ownerId;
@@ -45,28 +45,28 @@ public:
 		return ss.str();
 	}
 	/// <summary>
-	/// Задает ID в виде хэш SHA-1
+	/// Р—Р°РґР°РµС‚ ID РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
-	/// <param name="id">ID в виде хэш SHA-1</param>
+	/// <param name="id">ID РІ РІРёРґРµ С…СЌС€ SHA-1</param>
 	void SetId(string id) {
 		this->id = id;
 	}
 	/// <summary>
-	/// Получает ID в виде хэш SHA-1
+	/// РџРѕР»СѓС‡Р°РµС‚ ID РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
 	/// <returns></returns>
 	string GetId() {
 		return this->id;
 	}
 	/// <summary>
-	/// Задает ID владельца в виде хэш SHA-1
+	/// Р—Р°РґР°РµС‚ ID РІР»Р°РґРµР»СЊС†Р° РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
-	/// <param name="ownerId">ID владельца в виде хэш SHA-1 </param>
+	/// <param name="ownerId">ID РІР»Р°РґРµР»СЊС†Р° РІ РІРёРґРµ С…СЌС€ SHA-1 </param>
 	void SetOwnerId(string ownerId) {
 		this->ownerId = ownerId;
 	}
 	/// <summary>
-	/// Получает ID владельца в виде хэш SHA-1
+	/// РџРѕР»СѓС‡Р°РµС‚ ID РІР»Р°РґРµР»СЊС†Р° РІ РІРёРґРµ С…СЌС€ SHA-1
 	/// </summary>
 	/// <returns></returns>
 	string GetOwnerId() {
@@ -75,7 +75,7 @@ public:
 };
 
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 bool operator==(Block& b1, Block& b2) {
 	return b1.GetId() == b2.GetId();
 }

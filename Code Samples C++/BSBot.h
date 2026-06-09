@@ -1,7 +1,7 @@
 #include "Player.h"
 #pragma once
 /// <summary>
-/// бот морского боя
+/// Р±РѕС‚ РјРѕСЂСЃРєРѕРіРѕ Р±РѕСЏ
 /// </summary>
 class BSBot : public Player
 {
@@ -15,15 +15,15 @@ public:
 	/// 
 	/// </summary>
 	/// <param name="_field"></param>
-	BSBot(Field * _field);
+	BSBot(GameField * _field);
 	/// <summary>
-	/// Создает бота с указанными параметрами
+	/// РЎРѕР·РґР°РµС‚ Р±РѕС‚Р° СЃ СѓРєР°Р·Р°РЅРЅС‹РјРё РїР°СЂР°РјРµС‚СЂР°РјРё
 	/// </summary>
-	/// <param name="_startShips">начальное число кораблей</param>
-	/// <param name="_field">ссылка поле</param>
-	BSBot(int _ships, Field * _field);
+	/// <param name="_startShips">РЅР°С‡Р°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РєРѕСЂР°Р±Р»РµР№</param>
+	/// <param name="_field">СЃСЃС‹Р»РєР° РїРѕР»Рµ</param>
+	BSBot(int _ships, GameField * _field);
 	/// <summary>
-	///  получает клетку с координатами для стрельбы
+	///  РїРѕР»СѓС‡Р°РµС‚ РєР»РµС‚РєСѓ СЃ РєРѕРѕСЂРґРёРЅР°С‚Р°РјРё РґР»СЏ СЃС‚СЂРµР»СЊР±С‹
 	/// </summary>
 	Cell BSBot::GetCoords();
 	/// <summary>

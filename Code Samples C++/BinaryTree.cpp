@@ -19,14 +19,14 @@ TreeNode * BinaryTree::GetRoot()
 TreeNode* BinaryTree::MakeTree(int *data, int start, int end) {
 	TreeNode *Tree;
 	int n1, n2;
-	// îãğàíè÷åíèå ğåêóğñèè 
+	// Ğ¾Ğ³Ñ€Ğ°Ğ½Ğ¸Ñ‡ĞµĞ½Ğ¸Ğµ Ñ€ĞµĞºÑƒÑ€ÑĞ¸Ğ¸ 
 	if (end == 0)
 		return NULL;
-	// âûäåëèòü ïàìÿòü ïîä âåğøèíó 
+	// Ğ²Ñ‹Ğ´ĞµĞ»Ğ¸Ñ‚ÑŒ Ğ¿Ğ°Ğ¼ÑÑ‚ÑŒ Ğ¿Ğ¾Ğ´ Ğ²ĞµÑ€ÑˆĞ¸Ğ½Ñƒ 
 	Tree = new  TreeNode;
-	// çàïèñàòü äàííûå (êëş÷) 
+	// Ğ·Ğ°Ğ¿Ğ¸ÑĞ°Ñ‚ÑŒ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ (ĞºĞ»ÑÑ‡) 
 	Tree->key = data[start];
-	// ğàçìåğû ïîääåğåâüåâ 
+	// Ñ€Ğ°Ğ·Ğ¼ĞµÑ€Ñ‹ Ğ¿Ğ¾Ğ´Ğ´ĞµÑ€ĞµĞ²ÑŒĞµĞ² 
 	n1 = end / 2;
 	n2 = end - n1 - 1;
 	Tree->left = MakeTree(data, start + 1, n1);

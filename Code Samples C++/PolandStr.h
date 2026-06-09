@@ -4,42 +4,42 @@
 #include <string>
 #pragma once
 /// <summary>
-/// Составляет обратную польскую запись выражения
+/// РЎРѕСЃС‚Р°РІР»СЏРµС‚ РѕР±СЂР°С‚РЅСѓСЋ РїРѕР»СЊСЃРєСѓСЋ Р·Р°РїРёСЃСЊ РІС‹СЂР°Р¶РµРЅРёСЏ
 /// </summary>
 class PolandStr
 {
 private:
 	/// <summary>
-	/// поддерживаемые команды
+	/// РїРѕРґРґРµСЂР¶РёРІР°РµРјС‹Рµ РєРѕРјР°РЅРґС‹
 	/// </summary>
 	string commands = "";
 	StrHelper strWizard = StrHelper();
 public:
 	/// <summary>
-	/// Инициализирует генератор
+	/// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ РіРµРЅРµСЂР°С‚РѕСЂ
 	/// </summary>
-	/// <param name="_commands">поддерживаемые команды, например "+-*/^()"</param>
+	/// <param name="_commands">РїРѕРґРґРµСЂР¶РёРІР°РµРјС‹Рµ РєРѕРјР°РЅРґС‹, РЅР°РїСЂРёРјРµСЂ "+-*/^()"</param>
 	PolandStr(string _commands);
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~PolandStr();
 	/// <summary>
-	/// получает приоритет команды
+	/// РїРѕР»СѓС‡Р°РµС‚ РїСЂРёРѕСЂРёС‚РµС‚ РєРѕРјР°РЅРґС‹
 	/// </summary>
-	/// <param name="command">команда</param>
-	/// <returns>приоритет команды</returns>
+	/// <param name="command">РєРѕРјР°РЅРґР°</param>
+	/// <returns>РїСЂРёРѕСЂРёС‚РµС‚ РєРѕРјР°РЅРґС‹</returns>
 	int GetPriority(string command);
 	/// <summary>
-	/// Вставляет строку в указанное место
+	/// Р’СЃС‚Р°РІР»СЏРµС‚ СЃС‚СЂРѕРєСѓ РІ СѓРєР°Р·Р°РЅРЅРѕРµ РјРµСЃС‚Рѕ
 	/// </summary>
-	/// <param name="lexems">список лексем</param>
-	/// <param name="idx">индекс</param>
-	/// <param name="value">строка</param>
+	/// <param name="lexems">СЃРїРёСЃРѕРє Р»РµРєСЃРµРј</param>
+	/// <param name="idx">РёРЅРґРµРєСЃ</param>
+	/// <param name="value">СЃС‚СЂРѕРєР°</param>
 	/// <returns></returns>
 	vector<string> Insert(vector<string> lexems, int idx, string value);
 	/// <summary>
-	/// Заменят лексемы
+	/// Р—Р°РјРµРЅСЏС‚ Р»РµРєСЃРµРјС‹
 	/// -5 -> (-5)
 	/// 5-6 -> 5+(-6)
 	/// </summary>
@@ -47,11 +47,11 @@ public:
 	/// <returns></returns>
 	vector<string> LexemReplace(vector<string> lexems);
 	/// <summary>
-	/// составляет польскую запись для выражения
+	/// СЃРѕСЃС‚Р°РІР»СЏРµС‚ РїРѕР»СЊСЃРєСѓСЋ Р·Р°РїРёСЃСЊ РґР»СЏ РІС‹СЂР°Р¶РµРЅРёСЏ
 	/// https://goo.gl/eaph5V
 	/// </summary>
-	/// <param name="str">строка с выражением</param>
-	/// <returns>обратная польская запись выражения</returns>
+	/// <param name="str">СЃС‚СЂРѕРєР° СЃ РІС‹СЂР°Р¶РµРЅРёРµРј</param>
+	/// <returns>РѕР±СЂР°С‚РЅР°СЏ РїРѕР»СЊСЃРєР°СЏ Р·Р°РїРёСЃСЊ РІС‹СЂР°Р¶РµРЅРёСЏ</returns>
 	vector<string> GetPolandStr(string str);
 };
 

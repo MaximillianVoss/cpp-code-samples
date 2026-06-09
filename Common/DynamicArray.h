@@ -2,39 +2,39 @@
 #include "pch.h"
 #include "Constants.h"
 ///<summary>
-/// Динамический массив-контейнер
+/// Р”РёРЅР°РјРёС‡РµСЃРєРёР№ РјР°СЃСЃРёРІ-РєРѕРЅС‚РµР№РЅРµСЂ
 ///</summary>
 template<typename T>
 class DynamicArray
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Количество элементов
+	/// РљРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ
 	/// </summary>
 	size_t count;
 	/// <summary>
-	/// Элементы массива
+	/// Р­Р»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°
 	/// </summary>
 	T* items;
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Добавляет элемент в список
+	/// Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ СЃРїРёСЃРѕРє
 	/// </summary>
-	/// <param name="item">элемент для добавления</param>
+	/// <param name="item">СЌР»РµРјРµРЅС‚ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ</param>
 	void Add(T item) {
 		if (this->items) {
 			T* copy = new T[this->count + 1];
@@ -50,10 +50,10 @@ public:
 		}
 	}
 	/// <summary>
-	/// Втавляет элемент по указаному иднексу
+	/// Р’С‚Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РїРѕ СѓРєР°Р·Р°РЅРѕРјСѓ РёРґРЅРµРєСЃСѓ
 	/// </summary>
-	/// <param name="item">элемент для вставки</param>
-	/// <param name="index">индекс где будет размещен элемент</param>
+	/// <param name="item">СЌР»РµРјРµРЅС‚ РґР»СЏ РІСЃС‚Р°РІРєРё</param>
+	/// <param name="index">РёРЅРґРµРєСЃ РіРґРµ Р±СѓРґРµС‚ СЂР°Р·РјРµС‰РµРЅ СЌР»РµРјРµРЅС‚</param>
 	void Insert(T item, size_t index) {
 		if (items) {
 			if (index < this->count) {
@@ -71,9 +71,9 @@ public:
 			this->Add(item);
 	}
 	/// <summary>
-	/// Удаляет элемент списка по индексу
+	/// РЈРґР°Р»СЏРµС‚ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР° РїРѕ РёРЅРґРµРєСЃСѓ
 	/// </summary>
-	/// <param name="index">индеск элемента</param>
+	/// <param name="index">РёРЅРґРµСЃРє СЌР»РµРјРµРЅС‚Р°</param>
 	void Delete(size_t index) {
 		if (index < this->count)
 		{
@@ -88,9 +88,9 @@ public:
 		}
 	}
 	/// <summary>
-	/// Получает элемент списка  по индексу
+	/// РџРѕР»СѓС‡Р°РµС‚ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°  РїРѕ РёРЅРґРµРєСЃСѓ
 	/// </summary>
-	/// <param name="index">индекс элемента</param>
+	/// <param name="index">РёРЅРґРµРєСЃ СЌР»РµРјРµРЅС‚Р°</param>
 	/// <returns></returns>
 	T Get(size_t index) {
 		if (index < this->count)
@@ -100,14 +100,14 @@ public:
 		throw exception(Constants::Strings::Errors::Lists::incorrectIndex);
 	}
 	/// <summary>
-	/// Возвращает длину списка
+	/// Р’РѕР·РІСЂР°С‰Р°РµС‚ РґР»РёРЅСѓ СЃРїРёСЃРєР°
 	/// </summary>
 	/// <returns></returns>
 	size_t GetCount() {
 		return this->count;
 	}
 	/// <summary>
-	/// Сериализует список
+	/// РЎРµСЂРёР°Р»РёР·СѓРµС‚ СЃРїРёСЃРѕРє
 	/// </summary>
 	/// <returns></returns>
 	string ToString(string separator = " ") {
@@ -118,7 +118,7 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	DynamicArray() {
 		this->count = 0;
 		this->items = NULL;
@@ -126,11 +126,11 @@ public:
 	~DynamicArray() {};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

@@ -1,6 +1,6 @@
 #pragma once
 /// <summary>
-/// Язык
+/// РЇР·С‹Рє
 /// </summary>
 enum Language {
 	RUS,
@@ -8,7 +8,7 @@ enum Language {
 	byDefault
 };
 /// <summary>
-/// Цвета в консоли
+/// Р¦РІРµС‚Р° РІ РєРѕРЅСЃРѕР»Рё
 /// </summary>
 enum ConsoleColor {
 	/// <summary>
@@ -77,20 +77,20 @@ enum ConsoleColor {
 	white
 };
 /// <summary>
-/// формат сериализации объектов
+/// С„РѕСЂРјР°С‚ СЃРµСЂРёР°Р»РёР·Р°С†РёРё РѕР±СЉРµРєС‚РѕРІ
 /// </summary>
 enum OutputFormat {
 	/// <summary>
-	/// выводить поля и их значения
+	/// РІС‹РІРѕРґРёС‚СЊ РїРѕР»СЏ Рё РёС… Р·РЅР°С‡РµРЅРёСЏ
 	/// </summary>
 	fields,
 	/// <summary>
-	/// вывести в формете xml
+	/// РІС‹РІРµСЃС‚Рё РІ С„РѕСЂРјРµС‚Рµ xml
 	/// </summary>
 	xml
 };
 /// <summary>
-/// Направления
+/// РќР°РїСЂР°РІР»РµРЅРёСЏ
 /// </summary>
 enum Direction {
 	ascending,

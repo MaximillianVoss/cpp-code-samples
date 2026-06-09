@@ -4,17 +4,17 @@
 #include "Sorts.h"
 template<typename T>
 ///<summary>
-/// Бинарный поиск для примитивных типов
+/// Р‘РёРЅР°СЂРЅС‹Р№ РїРѕРёСЃРє РґР»СЏ РїСЂРёРјРёС‚РёРІРЅС‹С… С‚РёРїРѕРІ
 ///</summary>
 class BinarySearch
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	T GetMiddle(vector<T>items) {
 		return items[items.size() / 2];
 	}
@@ -45,11 +45,11 @@ private:
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	int	Find(vector<T>items, T item) {
 		Sorts<T> sorts;
 		items = sorts.QuickSort(items);
@@ -60,15 +60,15 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 

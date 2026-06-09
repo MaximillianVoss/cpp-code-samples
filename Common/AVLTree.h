@@ -6,11 +6,11 @@ template<typename T>
 class AVLTree {
 private:
 	/// <summary>
-	/// Шаблон для листа
+	/// РЁР°Р±Р»РѕРЅ РґР»СЏ Р»РёСЃС‚Р°
 	/// </summary>
 	TreeNode<T> sentinel = TreeNode<T>();// { NIL, NIL, 0, BLACK, 0 };
 	/// <summary>
-	/// Балансировка после удаления
+	/// Р‘Р°Р»Р°РЅСЃРёСЂРѕРІРєР° РїРѕСЃР»Рµ СѓРґР°Р»РµРЅРёСЏ
 	/// </summary>
 	/// <param name="x"></param>
 	void DeleteFixup(TreeNode<T>* x) {
@@ -71,7 +71,7 @@ private:
 		x->color = BLACK;
 	}
 	/// <summary>
-	/// Балансировка после вставки
+	/// Р‘Р°Р»Р°РЅСЃРёСЂРѕРІРєР° РїРѕСЃР»Рµ РІСЃС‚Р°РІРєРё
 	/// </summary>
 	/// <param name="x"></param>
 	void InsertFixup(TreeNode<T>* x) {
@@ -131,7 +131,7 @@ private:
 		root->color = BLACK;
 	}
 	/// <summary>
-	/// Левый поворот
+	/// Р›РµРІС‹Р№ РїРѕРІРѕСЂРѕС‚
 	/// </summary>
 	/// <param name="x"></param>
 	void RotateLeft(TreeNode<T>* x) {
@@ -158,7 +158,7 @@ private:
 		if (x != NIL) x->parent = y;
 	}
 	/// <summary>
-	/// Правы поворот
+	/// РџСЂР°РІС‹ РїРѕРІРѕСЂРѕС‚
 	/// </summary>
 	/// <param name="x"></param>
 	void RotateRight(TreeNode<T>* x) {
@@ -186,14 +186,14 @@ private:
 	}
 public:
 	/// <summary>
-	/// Корень дерева
+	/// РљРѕСЂРµРЅСЊ РґРµСЂРµРІР°
 	/// </summary>
 	TreeNode<T>* root;
 	AVLTree() {
 		this->root = NULL;
 	}
 	/// <summary>
-	/// Добавляет вершину
+	/// Р”РѕР±Р°РІР»СЏРµС‚ РІРµСЂС€РёРЅСѓ
 	/// </summary>
 	/// <param name="data"></param>
 	/// <returns></returns>
@@ -235,7 +235,7 @@ public:
 		return(x);
 	}
 	/// <summary>
-	/// Удаляет вершину
+	/// РЈРґР°Р»СЏРµС‚ РІРµСЂС€РёРЅСѓ
 	/// </summary>
 	/// <param name="z"></param>
 	void Delete(TreeNode<T>* z) {
@@ -277,7 +277,7 @@ public:
 		free(y);
 	}
 	/// <summary>
-	/// Возвращает указатель на вершину, если такая есть в дереве
+	/// Р’РѕР·РІСЂР°С‰Р°РµС‚ СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РІРµСЂС€РёРЅСѓ, РµСЃР»Рё С‚Р°РєР°СЏ РµСЃС‚СЊ РІ РґРµСЂРµРІРµ
 	/// </summary>
 	/// <param name="data"></param>
 	/// <returns></returns>

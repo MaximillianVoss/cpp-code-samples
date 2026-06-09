@@ -3,42 +3,42 @@
 #include "pch.h"
 #include "LogItem.h"
 ///<summary>
-/// Логирует сообщения
+/// Р›РѕРіРёСЂСѓРµС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
 ///</summary>
 class Log
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Лимит сообшений лога
+	/// Р›РёРјРёС‚ СЃРѕРѕР±С€РµРЅРёР№ Р»РѕРіР°
 	/// </summary>
 	size_t logLimit;
 	/// <summary>
-	/// записи
+	/// Р·Р°РїРёСЃРё
 	/// </summary>
 	vector<LogItem> items;
 	/// <summary>
-	/// текущий Id элемента
+	/// С‚РµРєСѓС‰РёР№ Id СЌР»РµРјРµРЅС‚Р°
 	/// </summary>
 	int currentItemId;
 	/// <summary>
-	/// Разделитель сообщений лога
+	/// Р Р°Р·РґРµР»РёС‚РµР»СЊ СЃРѕРѕР±С‰РµРЅРёР№ Р»РѕРіР°
 	/// </summary>
 	string logSpacer = "__________________";
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	void Add(string message) {
 		this->items.push_back(LogItem(this->currentItemId++, message));
 	}
@@ -68,7 +68,7 @@ public:
 	}
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	Log(int limit = 1000) {
 		this->logLimit = limit;
 		this->currentItemId = 1;
@@ -76,18 +76,18 @@ public:
 	~Log() {};
 #pragma endregion
 
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 
 #pragma endregion
 
-#pragma region Обработчики событий
+#pragma region РћР±СЂР°Р±РѕС‚С‡РёРєРё СЃРѕР±С‹С‚РёР№
 
 #pragma endregion
 
 
 
 };
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 ostream& operator<<(ostream& os, Log log)
 {
 	os << log.ToString();

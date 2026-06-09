@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Converter.h"
 
-#pragma region Конструктор/Деструктор
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 
 Converter::Converter()
 {
@@ -13,7 +13,7 @@ Converter::~Converter()
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 int Converter::Convert(char c)
 {

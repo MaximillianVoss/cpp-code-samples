@@ -3,11 +3,11 @@ template<typename T>
 class Fraction {
 private:
 	/// <summary>
-	/// числитель
+	/// С‡РёСЃР»РёС‚РµР»СЊ
 	/// </summary>
 	T numerator;
 	/// <summary>
-	/// делитель
+	/// РґРµР»РёС‚РµР»СЊ
 	/// </summary>
 	T denominator;
 	T GetGCD(T a, T b) {
@@ -28,10 +28,10 @@ public:
 		}
 	}
 	/// <summary>
-	/// Создает дробь с указанными значениями
+	/// РЎРѕР·РґР°РµС‚ РґСЂРѕР±СЊ СЃ СѓРєР°Р·Р°РЅРЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё
 	/// </summary>
-	/// <param name="numerator">числитель</param>
-	/// <param name="denominator">знаменатель</param>
+	/// <param name="numerator">С‡РёСЃР»РёС‚РµР»СЊ</param>
+	/// <param name="denominator">Р·РЅР°РјРµРЅР°С‚РµР»СЊ</param>
 	Fraction(T numerator, T denominator) {
 		this->numerator = numerator;
 		this->denominator = denominator;

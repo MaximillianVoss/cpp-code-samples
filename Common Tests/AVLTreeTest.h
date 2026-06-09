@@ -3,15 +3,15 @@
 #pragma once
 #include "UnitTest.h"
 #include "AVLTree.h"
-#pragma region Тесты
+#pragma region РўРµСЃС‚С‹
 
-#pragma region Добавление
+#pragma region Р”РѕР±Р°РІР»РµРЅРёРµ
 ///<summary>
-/// Добавление
+/// Р”РѕР±Р°РІР»РµРЅРёРµ
 ///</summary>
 class AVLTreeAddTest :public UnitTest<string> {
 public:
-	AVLTreeAddTest(vector<string>values) :UnitTest("Добавление", values) {
+	AVLTreeAddTest(vector<string>values) :UnitTest("Р”РѕР±Р°РІР»РµРЅРёРµ", values) {
 
 	}
 	void Test() override {
@@ -19,22 +19,22 @@ public:
 		vector<string> items = { "0","1","5","/","/" };
 		for (int i = 0; i < items.size(); i++)
 			tree.Add(items[i]);
-		//this->Add(vector<string>items) для добавления результатов
-		//сравнение результатов в конце 
+		//this->Add(vector<string>items) РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+		//СЃСЂР°РІРЅРµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ РІ РєРѕРЅС†Рµ 
 		UnitTest::Compare();
 	}
 };
 #pragma endregion
 #pragma endregion
-#pragma region Тесты АВЛ дерева
+#pragma region РўРµСЃС‚С‹ РђР’Р› РґРµСЂРµРІР°
 ///<summary>
-/// Тесты АВЛ дерева
+/// РўРµСЃС‚С‹ РђР’Р› РґРµСЂРµРІР°
 ///</summary>
 class AVLTreeTests :UnitTests {
 public:
-	AVLTreeTests() : UnitTests("Тесты АВЛ дерева") {}
+	AVLTreeTests() : UnitTests("РўРµСЃС‚С‹ РђР’Р› РґРµСЂРµРІР°") {}
 	void Start()override {
-		//Запуск одного теста: TestsClassName(vector<type>items).Start();
+		//Р—Р°РїСѓСЃРє РѕРґРЅРѕРіРѕ С‚РµСЃС‚Р°: TestsClassName(vector<type>items).Start();
 	}
 };
 #pragma endregion

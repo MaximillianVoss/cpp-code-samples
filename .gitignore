@@ -40,3 +40,8 @@ Win32/
 *.lnk
 Thumbs.db
 Desktop.ini
+
+# Runtime sample outputs
+BlockChainExcecutable/*Log.txt
+CryptoTests/bcLog.txt
+CryptoTests/commonPlot*Log.txt

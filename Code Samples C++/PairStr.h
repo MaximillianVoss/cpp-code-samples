@@ -5,31 +5,31 @@ class PairStr
 private:
 public:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// ключ
+	/// РєР»СЋС‡
 	/// </summary>
 	string key;
 	/// <summary>
-	/// значение
+	/// Р·РЅР°С‡РµРЅРёРµ
 	/// </summary>
 	string value;
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	PairStr();
 	/// <summary>
-	/// создает пару с указанным ключом и значением
+	/// СЃРѕР·РґР°РµС‚ РїР°СЂСѓ СЃ СѓРєР°Р·Р°РЅРЅС‹Рј РєР»СЋС‡РѕРј Рё Р·РЅР°С‡РµРЅРёРµРј
 	/// </summary>
-	/// <param name="_key">ключ</param>
-	/// <param name="_value">значение</param>
+	/// <param name="_key">РєР»СЋС‡</param>
+	/// <param name="_value">Р·РЅР°С‡РµРЅРёРµ</param>
 	PairStr(string _key, string _value);
 	~PairStr();
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// преобразует в строку
+	/// РїСЂРµРѕР±СЂР°Р·СѓРµС‚ РІ СЃС‚СЂРѕРєСѓ
 	/// </summary>
 	/// <returns></returns>
 	string GetStr();

@@ -5,78 +5,78 @@ class MapArray
 {
 private:
 
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// массив элементов типа ( ключ , значение )
+	/// РјР°СЃСЃРёРІ СЌР»РµРјРµРЅС‚РѕРІ С‚РёРїР° ( РєР»СЋС‡ , Р·РЅР°С‡РµРЅРёРµ )
 	/// </summary>
 	vector<Pair> values;
 #pragma endregion
 
 public:
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// добавляет элемент
+	/// РґРѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚
 	/// </summary>
-	/// <param name="key">ключ</param>
-	/// <param name="value">значение</param>
+	/// <param name="key">РєР»СЋС‡</param>
+	/// <param name="value">Р·РЅР°С‡РµРЅРёРµ</param>
 	/// <returns></returns>
 	bool Add(string key, string value);
 	/// <summary>
-	/// добавляет элемент
+	/// РґРѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚
 	/// </summary>
-	/// <param name="pair">пара типа ( ключ , значение )</param>
+	/// <param name="pair">РїР°СЂР° С‚РёРїР° ( РєР»СЋС‡ , Р·РЅР°С‡РµРЅРёРµ )</param>
 	/// <returns></returns>
 	bool Add(Pair pair);
 	/// <summary>
-	/// удаляет значение по ключу
+	/// СѓРґР°Р»СЏРµС‚ Р·РЅР°С‡РµРЅРёРµ РїРѕ РєР»СЋС‡Сѓ
 	/// </summary>
 	/// <param name="key"></param>
 	/// <returns></returns>
 	bool Remove(string key);
 	/// <summary>
-	/// ищет значение по ключу
+	/// РёС‰РµС‚ Р·РЅР°С‡РµРЅРёРµ РїРѕ РєР»СЋС‡Сѓ
 	/// </summary>
 	/// <param name="key"></param>
 	/// <returns></returns>
 	bool Find(string key);
 	/// <summary>
-	/// получает размер
+	/// РїРѕР»СѓС‡Р°РµС‚ СЂР°Р·РјРµСЂ
 	/// </summary>
 	/// <returns></returns>
 	size_t GetSize();
 	/// <summary>
-	/// задает значение элемента по индексу
+	/// Р·Р°РґР°РµС‚ Р·РЅР°С‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РїРѕ РёРЅРґРµРєСЃСѓ
 	/// </summary>
 	/// <param name="index"></param>
 	/// <param name="item"></param>
 	void SetItem(size_t index, Pair item);
 	/// <summary>
-	/// получает элемент по ключу
+	/// РїРѕР»СѓС‡Р°РµС‚ СЌР»РµРјРµРЅС‚ РїРѕ РєР»СЋС‡Сѓ
 	/// </summary>
 	/// <param name="key"></param>
 	/// <returns></returns>
 	Pair* GetItem(string key);
 	/// <summary>
-	/// олучает элемент по индексу
+	/// РѕР»СѓС‡Р°РµС‚ СЌР»РµРјРµРЅС‚ РїРѕ РёРЅРґРµРєСЃСѓ
 	/// </summary>
 	/// <param name="index"></param>
 	/// <returns></returns>
 	Pair* GetItem(size_t index);
 	/// <summary>
-	/// преобразует в строку
+	/// РїСЂРµРѕР±СЂР°Р·СѓРµС‚ РІ СЃС‚СЂРѕРєСѓ
 	/// </summary>
 	/// <returns></returns>
 	string GetStr();
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// конструктор
+	/// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	MapArray();
 	/// <summary>
-	/// деструктор
+	/// РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~MapArray();
 #pragma endregion
