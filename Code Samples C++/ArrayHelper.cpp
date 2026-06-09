@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "ArrayHelper.h"
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 ArrayHelper::ArrayHelper()
 {
 }
@@ -11,7 +11,7 @@ ArrayHelper::~ArrayHelper()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 template <typename T>
 T ArrayHelper::Sum(const T * a, int count)
 {

@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Player.h"
 
 Player::Player()
@@ -7,7 +7,7 @@ Player::Player()
 	isAI = false;
 }
 
-Player::Player(int _ships, Field * _field)
+Player::Player(int _ships, GameField * _field)
 {
 	ships = _ships;
 	field = _field;
@@ -38,8 +38,8 @@ Cell Player::GetCoords()
 {
 	if (!isAI) {
 		int row = -1, col = -1;
-		io.Get(row, "Ââåäèòå ñòðîêó:");
-		io.Get(col, "Ââåäèòå ñòîëáåö:");
+		io.Get(row, "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ñ€Ð¾ÐºÑƒ:");
+		io.Get(col, "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð»Ð±ÐµÑ†:");
 		return Cell(row - 1, col - 1);
 	}
 	return Cell(rand() % (field->size), rand() % (field->size));

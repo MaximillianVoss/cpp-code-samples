@@ -3,27 +3,27 @@
 #include "BSSettingMenu.h"
 #pragma once
 /// <summary>
-/// меню игры
+/// РјРµРЅСЋ РёРіСЂС‹
 /// </summary>
 class BSMainMenu : public Menu
 {
 public:
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 	BSMainMenu(BSGame *_game);
 	BSMainMenu();
 	~BSMainMenu();
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma endregion
 private:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	virtual bool Action(int action);
 
 	void Init();

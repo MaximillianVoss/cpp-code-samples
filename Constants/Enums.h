@@ -1,6 +1,6 @@
 #pragma once
 /// <summary>
-/// ����
+/// Язык
 /// </summary>
 enum Language {
 	RUS,
@@ -8,7 +8,7 @@ enum Language {
 	byDefault
 };
 /// <summary>
-/// ����� � �������
+/// Цвета в консоли
 /// </summary>
 enum ConsoleColor {
 	/// <summary>
@@ -75,4 +75,28 @@ enum ConsoleColor {
 	/// 15
 	/// </summary>
 	white
+};
+/// <summary>
+/// формат сериализации объектов
+/// </summary>
+enum OutputFormat {
+	/// <summary>
+	/// выводить поля и их значения
+	/// </summary>
+	fields,
+	/// <summary>
+	/// вывести в формете xml
+	/// </summary>
+	xml
+};
+/// <summary>
+/// Направления
+/// </summary>
+enum Direction {
+	ascending,
+	descending,
+	up,
+	down,
+	left,
+	right
 };

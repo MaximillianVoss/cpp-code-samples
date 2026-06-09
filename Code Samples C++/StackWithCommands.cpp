@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include <Windows.h>
 #include <vector>
 #include <stdio.h>
@@ -8,7 +8,7 @@
 #pragma warning(disable : 4996)
 using namespace std;
 
-#pragma region Струткура для стека
+#pragma region РЎС‚СЂСѓС‚РєСѓСЂР° РґР»СЏ СЃС‚РµРєР°
 struct StackAdv
 {
 private:
@@ -22,8 +22,8 @@ public:
 		size = 0;
 		data = new char[maxSize];
 	}
-	///<summary>Добавление элемента в стек</summary>
-	///<param name="c">Элемент для добавления</param>
+	///<summary>Р”РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РІ СЃС‚РµРє</summary>
+	///<param name="c">Р­Р»РµРјРµРЅС‚ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ</param>
 	int push(char c)
 	{
 		if (size < maxSize)
@@ -34,7 +34,7 @@ public:
 		}
 		return 0;
 	}
-	///<summary>Извлечение элемента из стека</summary>
+	///<summary>РР·РІР»РµС‡РµРЅРёРµ СЌР»РµРјРµРЅС‚Р° РёР· СЃС‚РµРєР°</summary>
 	char pop()
 	{
 		if (size > 0)
@@ -48,7 +48,7 @@ public:
 
 
 	}
-	///<summary>Проверка стека на заполненность</summary>
+	///<summary>РџСЂРѕРІРµСЂРєР° СЃС‚РµРєР° РЅР° Р·Р°РїРѕР»РЅРµРЅРЅРѕСЃС‚СЊ</summary>
 	int full()
 	{
 		if (size == maxSize)
@@ -56,7 +56,7 @@ public:
 		else
 			return 0;
 	}
-	///<summary>Проверка стека на путоту</summary>
+	///<summary>РџСЂРѕРІРµСЂРєР° СЃС‚РµРєР° РЅР° РїСѓС‚РѕС‚Сѓ</summary>
 	int empty()
 	{
 		if (size > 0)
@@ -64,7 +64,7 @@ public:
 		else
 			return 1;
 	}
-	///<summary>Считывание элемента из верхушки стека</summary>
+	///<summary>РЎС‡РёС‚С‹РІР°РЅРёРµ СЌР»РµРјРµРЅС‚Р° РёР· РІРµСЂС…СѓС€РєРё СЃС‚РµРєР°</summary>
 	char top()
 	{
 		if (size > 0)
@@ -75,8 +75,8 @@ public:
 };
 #pragma endregion
 
-#pragma region система управления стеком
-//структура для команд
+#pragma region СЃРёСЃС‚РµРјР° СѓРїСЂР°РІР»РµРЅРёСЏ СЃС‚РµРєРѕРј
+//СЃС‚СЂСѓРєС‚СѓСЂР° РґР»СЏ РєРѕРјР°РЅРґ
 struct Command
 {
 	int value;
@@ -87,9 +87,9 @@ struct Command
 		command = _command;
 	}
 };
-///<summary>Преобразует текстовую команду в число</summary>
-///<param name="commands">список команд</param>
-///<param name="command">команда в текстовом виде</param>
+///<summary>РџСЂРµРѕР±СЂР°Р·СѓРµС‚ С‚РµРєСЃС‚РѕРІСѓСЋ РєРѕРјР°РЅРґСѓ РІ С‡РёСЃР»Рѕ</summary>
+///<param name="commands">СЃРїРёСЃРѕРє РєРѕРјР°РЅРґ</param>
+///<param name="command">РєРѕРјР°РЅРґР° РІ С‚РµРєСЃС‚РѕРІРѕРј РІРёРґРµ</param>
 int GetCommand(vector<Command> commands, char* command)
 {
 	for each (Command item in commands)
@@ -99,19 +99,19 @@ int GetCommand(vector<Command> commands, char* command)
 	}
 	return 0;
 }
-///<summary>Вывод текстового сообщения в консоль</summary>
-///<param name="message">сообщение для вывода</param>
+///<summary>Р’С‹РІРѕРґ С‚РµРєСЃС‚РѕРІРѕРіРѕ СЃРѕРѕР±С‰РµРЅРёСЏ РІ РєРѕРЅСЃРѕР»СЊ</summary>
+///<param name="message">СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РІС‹РІРѕРґР°</param>
 void Message(string message)
 {
 	printf("%s\n", message.c_str());
 }
-///<summary>Вывод символа в консоль</summary>
-///<param name="message">символ для вывода</param>
+///<summary>Р’С‹РІРѕРґ СЃРёРјРІРѕР»Р° РІ РєРѕРЅСЃРѕР»СЊ</summary>
+///<param name="message">СЃРёРјРІРѕР» РґР»СЏ РІС‹РІРѕРґР°</param>
 void Message(char message)
 {
 	printf("%c\n", message);
 }
-///<summary>Меню для работы со стеком</summary>
+///<summary>РњРµРЅСЋ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃС‚РµРєРѕРј</summary>
 void Menu()
 {
 	vector<Command> commands = { Command(1,"push"), Command(2,"pop"), Command(3,"top"), Command(4,"empty"), Command(5,"full"), Command(6,"help") };
@@ -126,51 +126,51 @@ void Menu()
 		case 1:
 			scanf("%s", &value);
 			if (queue.push(value) == 1)
-				Message("Добавлено в стек");
+				Message("Р”РѕР±Р°РІР»РµРЅРѕ РІ СЃС‚РµРє");
 			else
-				Message("Стек переполнен");
+				Message("РЎС‚РµРє РїРµСЂРµРїРѕР»РЅРµРЅ");
 			break;
 		case 2:
 
 			value = queue.pop();
 			if (value != '-')
 			{
-				Message("Извлечено из стека:");
+				Message("РР·РІР»РµС‡РµРЅРѕ РёР· СЃС‚РµРєР°:");
 				Message(value);
 			}
 			else
-				Message("Стек пуст");
+				Message("РЎС‚РµРє РїСѓСЃС‚");
 			break;
 		case 3:
 			value = queue.top();
 			if (value != '-')
 			{
-				Message("Извлечено из стека:");
+				Message("РР·РІР»РµС‡РµРЅРѕ РёР· СЃС‚РµРєР°:");
 				Message(value);
 			}
 			else
-				Message("Стек пуст");
+				Message("РЎС‚РµРє РїСѓСЃС‚");
 			break;
 		case 4:
 			if (queue.empty() == 1)
-				Message("Стек пуст");
+				Message("РЎС‚РµРє РїСѓСЃС‚");
 			else
-				Message("Стек не пуст");
+				Message("РЎС‚РµРє РЅРµ РїСѓСЃС‚");
 			break;
 		case 5:
 			if (queue.full() == 1)
-				Message("Стек переполнен");
+				Message("РЎС‚РµРє РїРµСЂРµРїРѕР»РЅРµРЅ");
 			else
-				Message("Стек не переполнен");
+				Message("РЎС‚РµРє РЅРµ РїРµСЂРµРїРѕР»РЅРµРЅ");
 			break;
 		case 6:
-			Message("Список доступных команд:\n");
+			Message("РЎРїРёСЃРѕРє РґРѕСЃС‚СѓРїРЅС‹С… РєРѕРјР°РЅРґ:\n");
 			for each(Command item in commands)
 			{
 				if (item.command != "help")
 				{
 					if (item.command == "push")
-						printf("%s <символ для добавленя>\n", item.command.c_str());
+						printf("%s <СЃРёРјРІРѕР» РґР»СЏ РґРѕР±Р°РІР»РµРЅСЏ>\n", item.command.c_str());
 					else
 						printf("%s\n", item.command.c_str());
 				}
@@ -179,7 +179,7 @@ void Menu()
 			Message("\n");
 			break;
 		default:
-			Message("Неизвестная команда");
+			Message("РќРµРёР·РІРµСЃС‚РЅР°СЏ РєРѕРјР°РЅРґР°");
 			break;
 		}
 		scanf("%s", command);
@@ -187,7 +187,7 @@ void Menu()
 }
 #pragma endregion
 
-#pragma region Точка входа(расскоменить для использования)
+#pragma region РўРѕС‡РєР° РІС…РѕРґР°(СЂР°СЃСЃРєРѕРјРµРЅРёС‚СЊ РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ)
 //int main()
 //{
 //	SetConsoleCP(1251);

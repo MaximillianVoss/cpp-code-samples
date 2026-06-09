@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "BSInGameMenu.h"
 
 
@@ -7,9 +7,9 @@ BSInGameMenu::BSInGameMenu(BSGame * _game)
 	game = _game;
 	menuItems =
 	{
-		{ ActionsInGame::shoot,"Выстрелить" },
-		{ ActionsInGame::save,"Сохранить" },
-		{ ActionsInGame::goBack,"Назад" }
+		{ ActionsInGame::shoot,"Р’С‹СЃС‚СЂРµР»РёС‚СЊ" },
+		{ ActionsInGame::save,"РЎРѕС…СЂР°РЅРёС‚СЊ" },
+		{ ActionsInGame::goBack,"РќР°Р·Р°Рґ" }
 	};
 }
 
@@ -34,12 +34,12 @@ bool BSInGameMenu::Action(int action)
 		game->Shoot(game->GetPlayer(game->GetPlayer())->GetCoords());
 		if (game->CheckWin()) {
 			game->Finish();
-			cout << "Победил игрок:" << game->GetWinner() + 1 << endl;
+			cout << "РџРѕР±РµРґРёР» РёРіСЂРѕРє:" << game->GetWinner() + 1 << endl;
 			system("pause");
 		}
 		return game->IsStarted();
 	case ActionsInGame::goBack:
-		io.Print("Вы точно хотите выйти?");
+		io.Print("Р’С‹ С‚РѕС‡РЅРѕ С…РѕС‚РёС‚Рµ РІС‹Р№С‚Рё?");
 		io.Get(&ans);
 		if (ans) {
 			game->Finish();
@@ -55,7 +55,7 @@ bool BSInGameMenu::Action(int action)
 Cell  BSInGameMenu::GetCoords() {
 
 	int row = -1, col = -1;
-	io.Get(row, "Введите строку:");
-	io.Get(col, "Введите столбец:");
+	io.Get(row, "Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ:");
+	io.Get(col, "Р’РІРµРґРёС‚Рµ СЃС‚РѕР»Р±РµС†:");
 	return Cell(row - 1, col - 1);
 }

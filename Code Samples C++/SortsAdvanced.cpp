@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "SortsAdvanced.h"
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 SortsAdvanced::SortsAdvanced()
 {
 }
@@ -12,7 +12,7 @@ SortsAdvanced::~SortsAdvanced()
 }
 #pragma endregion
 
-#pragma region Вспомогательные методы
+#pragma region Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅС‹Рµ РјРµС‚РѕРґС‹
 bool SortsAdvanced::cmp(int a, int b, int &cmpsCounter)
 {
 	cmpsCounter++;
@@ -23,7 +23,7 @@ bool SortsAdvanced::cmp(int a, int b, int &cmpsCounter)
 void SortsAdvanced::PrintTable(vector<Result>results, string message)
 {
 	printf("%s\n", string(78, '_').c_str());
-	printf("%25s %25s %25s\n", "Название сортировки", "Количество сравнений", "Количество перестановок");
+	printf("%25s %25s %25s\n", "РќР°Р·РІР°РЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё", "РљРѕР»РёС‡РµСЃС‚РІРѕ СЃСЂР°РІРЅРµРЅРёР№", "РљРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє");
 	printf("%s\n", string(78, '_').c_str());
 	for (size_t i = 0; i < results.size(); i++)
 	{
@@ -37,7 +37,7 @@ void SortsAdvanced::PrintStatistics(int cmps, int swaps)
 }
 #pragma endregion
 
-#pragma region Сортировки
+#pragma region РЎРѕСЂС‚РёСЂРѕРІРєРё
 void SortsAdvanced::BubbleSort_Abs(vector<int>&a, int &cmpsCounter, int &swapsCounter)
 {
 	bool flag = 1;
@@ -169,7 +169,7 @@ void SortsAdvanced::QSort_Abs(int* a, int size, int &cmpsCounter, int &swapsCoun
 }
 #pragma endregion
 
-#pragma region Тестовые примеры
+#pragma region РўРµСЃС‚РѕРІС‹Рµ РїСЂРёРјРµСЂС‹
 /*vector<int> sample0 = { 1,2,3,4,5,6,7,8,9,10 };
 vector<int> sample1 = { 1,2,3,4,5,6,7,8,9,10 };
 vector<int> sample2 = { 7,3,0,2,8,6,1,9 };
@@ -184,19 +184,19 @@ Print(sample3);
 PrintStatistics(cmpsCounter, swapsCounter);
 */
 /*
-//здесь можно сравнить сортировки  Шелла из примера
-//и передаланные мной
-//sample2 и sample3 - одинаковые массивы, сделано из -за тоого чтобы в ShellSort_Abs
-//не попал отсортированный sample2 методом  ShellSortExample
+//Р·РґРµСЃСЊ РјРѕР¶РЅРѕ СЃСЂР°РІРЅРёС‚СЊ СЃРѕСЂС‚РёСЂРѕРІРєРё  РЁРµР»Р»Р° РёР· РїСЂРёРјРµСЂР°
+//Рё РїРµСЂРµРґР°Р»Р°РЅРЅС‹Рµ РјРЅРѕР№
+//sample2 Рё sample3 - РѕРґРёРЅР°РєРѕРІС‹Рµ РјР°СЃСЃРёРІС‹, СЃРґРµР»Р°РЅРѕ РёР· -Р·Р° С‚РѕРѕРіРѕ С‡С‚РѕР±С‹ РІ ShellSort_Abs
+//РЅРµ РїРѕРїР°Р» РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ sample2 РјРµС‚РѕРґРѕРј  ShellSortExample
 ShellSortExample(sample2);
 Print(sample2);
 ShellSort_Abs(sample3, cmpsCounter, swapsCounter);
 Print(sample3);
 PrintStatistics(cmpsCounter, swapsCounter);
 */
-/* Тут можно рассомментить и сравнить как работают сортировки и убедиться что все ок
-HlopQSort - перенес сортировку из кода
-QSort_Abs - передалана под абсолютное значение
+/* РўСѓС‚ РјРѕР¶РЅРѕ СЂР°СЃСЃРѕРјРјРµРЅС‚РёС‚СЊ Рё СЃСЂР°РІРЅРёС‚СЊ РєР°Рє СЂР°Р±РѕС‚Р°СЋС‚ СЃРѕСЂС‚РёСЂРѕРІРєРё Рё СѓР±РµРґРёС‚СЊСЃСЏ С‡С‚Рѕ РІСЃРµ РѕРє
+HlopQSort - РїРµСЂРµРЅРµСЃ СЃРѕСЂС‚РёСЂРѕРІРєСѓ РёР· РєРѕРґР°
+QSort_Abs - РїРµСЂРµРґР°Р»Р°РЅР° РїРѕРґ Р°Р±СЃРѕР»СЋС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ
 
 HlopQSort(&sample0[0], 7);
 PrintStatistics(cp, cs);
@@ -207,7 +207,7 @@ Print(sample2);
 */
 #pragma endregion
 
-#pragma region Тесты сортировок
+#pragma region РўРµСЃС‚С‹ СЃРѕСЂС‚РёСЂРѕРІРѕРє
 void SortsAdvanced::Test() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
@@ -215,54 +215,54 @@ void SortsAdvanced::Test() {
 	vector<int> Sizes = { 150,300,450,600,750,900,1050 };
 	for each (int size in Sizes)
 	{
-#pragma region Настройка
-		printf("Размер матрицы:%i\n", size);
+#pragma region РќР°СЃС‚СЂРѕР№РєР°
+		printf("Р Р°Р·РјРµСЂ РјР°С‚СЂРёС†С‹:%i\n", size);
 		Matrix m(size, size, Matrix::MatrixType::zero);
 		vector<vector<int>> matrix = m.matrix;
 		vector<vector<int>> reserveCopy = matrix;
 		vector<Result> results;
 #pragma endregion
 
-#pragma region Пузырек
+#pragma region РџСѓР·С‹СЂРµРє
 		for (size_t i = 0; i < matrix.size(); i++)
 			BubbleSort_Abs(matrix[i], cmpsCounter, swapsCounter);
 		matrix = reserveCopy;
-		results.push_back(Result("Сортировка Пузырьком", cmpsCounter, swapsCounter));
+		results.push_back(Result("РЎРѕСЂС‚РёСЂРѕРІРєР° РџСѓР·С‹СЂСЊРєРѕРј", cmpsCounter, swapsCounter));
 		cmpsCounter = 0, swapsCounter = 0;
 #pragma endregion
 
-#pragma region Сортировка отбором
+#pragma region РЎРѕСЂС‚РёСЂРѕРІРєР° РѕС‚Р±РѕСЂРѕРј
 		for (size_t i = 0; i < matrix.size(); i++)
 			SelectSort_Abs(matrix[i], cmpsCounter, swapsCounter);
 		matrix = reserveCopy;
-		results.push_back(Result("Сортировка отбором", cmpsCounter, swapsCounter));
+		results.push_back(Result("РЎРѕСЂС‚РёСЂРѕРІРєР° РѕС‚Р±РѕСЂРѕРј", cmpsCounter, swapsCounter));
 		cmpsCounter = 0, swapsCounter = 0;
 #pragma endregion
 
-#pragma region Сортировка вставками
+#pragma region РЎРѕСЂС‚РёСЂРѕРІРєР° РІСЃС‚Р°РІРєР°РјРё
 		for (size_t i = 0; i < matrix.size(); i++)
 			Insertsort_Abs(matrix[i], cmpsCounter, swapsCounter);
 		matrix = reserveCopy;
-		results.push_back(Result("Сортировка вставками", cmpsCounter, swapsCounter));
+		results.push_back(Result("РЎРѕСЂС‚РёСЂРѕРІРєР° РІСЃС‚Р°РІРєР°РјРё", cmpsCounter, swapsCounter));
 		cmpsCounter = 0, swapsCounter = 0;
 #pragma endregion
 
-#pragma region Сортировка Шелла
+#pragma region РЎРѕСЂС‚РёСЂРѕРІРєР° РЁРµР»Р»Р°
 		for (size_t i = 0; i < matrix.size(); i++)
 			ShellSort_Abs(matrix[i], cmpsCounter, swapsCounter);
 		matrix = reserveCopy;
-		results.push_back(Result("Сортировка Шелла", cmpsCounter, swapsCounter));
+		results.push_back(Result("РЎРѕСЂС‚РёСЂРѕРІРєР° РЁРµР»Р»Р°", cmpsCounter, swapsCounter));
 		cmpsCounter = 0, swapsCounter = 0;
 #pragma endregion
 
-#pragma region Быстрая сортировка
+#pragma region Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°
 		for (size_t i = 0; i < matrix.size(); i++)
 			QSort_Abs(&matrix[i][0], matrix[0].size(), cmpsCounter, swapsCounter);
 		matrix = reserveCopy;
-		results.push_back(Result("Быстрая сортировка", cmpsCounter, swapsCounter));
+		results.push_back(Result("Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°", cmpsCounter, swapsCounter));
 		cmpsCounter = 0, swapsCounter = 0;
 #pragma endregion
-		PrintTable(results, "Таблица сравнений:");
+		PrintTable(results, "РўР°Р±Р»РёС†Р° СЃСЂР°РІРЅРµРЅРёР№:");
 	}
 }
 #pragma endregion

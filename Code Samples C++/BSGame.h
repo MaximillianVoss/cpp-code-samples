@@ -1,6 +1,6 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "BShip.h"
-#include "Field.h"
+#include "GameField.h"
 #include "Enums.h"
 #include "Pair.h"
 #include "Serializator.h"
@@ -8,46 +8,46 @@
 #include  "ArrayHelper.h"
 #pragma once
 /// <summary>
-/// ядро игры
+/// СЏРґСЂРѕ РёРіСЂС‹
 /// </summary>
 class BSGame {
 public:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// карта соответствия цветов типу клеток
-	/// корабли подсвечены
+	/// РєР°СЂС‚Р° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЏ С†РІРµС‚РѕРІ С‚РёРїСѓ РєР»РµС‚РѕРє
+	/// РєРѕСЂР°Р±Р»Рё РїРѕРґСЃРІРµС‡РµРЅС‹
 	/// </summary>
 	map<CellTypes, ConsoleColor> colorsMap;
 	/// <summary>
-	/// карта соответствия цветов типу клеток
-	/// корабли скрыты
+	/// РєР°СЂС‚Р° СЃРѕРѕС‚РІРµС‚СЃС‚РІРёСЏ С†РІРµС‚РѕРІ С‚РёРїСѓ РєР»РµС‚РѕРє
+	/// РєРѕСЂР°Р±Р»Рё СЃРєСЂС‹С‚С‹
 	/// </summary>
 	map<CellTypes, ConsoleColor>colorMapHidden;
 #pragma endregion
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
 		/// 
 		/// </summary>
 	BSGame();
 	/// <summary>
-	/// создает игру с параметрами
+	/// СЃРѕР·РґР°РµС‚ РёРіСЂСѓ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	/// </summary>
-	/// <param name="_size">размер полей</param>
+	/// <param name="_size">СЂР°Р·РјРµСЂ РїРѕР»РµР№</param>
 	BSGame(int _size);
 	/// <summary>
-	/// создает игру с параметрами
+	/// СЃРѕР·РґР°РµС‚ РёРіСЂСѓ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 	/// </summary>
-	/// <param name="_ships">начальное число кораблей</param>
-	/// <param name="_size">размер полей</param>
+	/// <param name="_ships">РЅР°С‡Р°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РєРѕСЂР°Р±Р»РµР№</param>
+	/// <param name="_size">СЂР°Р·РјРµСЂ РїРѕР»РµР№</param>
 	BSGame(int _ships, int _size);
 	/// <summary>
-	/// деструктор
+	/// РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~BSGame();
 #pragma endregion 
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 #pragma region Start
 	/// <summary>
@@ -55,9 +55,9 @@ public:
 	/// </summary>
 	void Start();
 	/// <summary>
-	///  Запускает игру
+	///  Р—Р°РїСѓСЃРєР°РµС‚ РёРіСЂСѓ
 	/// </summary>
-	/// <param name="_debugMode">режим отладки, true - включить</param>
+	/// <param name="_debugMode">СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё, true - РІРєР»СЋС‡РёС‚СЊ</param>
 	void Start(bool _debugMode);
 	/// <summary>
 	/// 
@@ -82,9 +82,9 @@ public:
 	/// <returns></returns>
 	int GetNextPLayer();
 	/// <summary>
-	/// Получет игрока по индексу
+	/// РџРѕР»СѓС‡РµС‚ РёРіСЂРѕРєР° РїРѕ РёРЅРґРµРєСЃСѓ
 	/// </summary>
-	/// <param name="i">номер игрока</param>
+	/// <param name="i">РЅРѕРјРµСЂ РёРіСЂРѕРєР°</param>
 	/// <returns></returns>
 	Player* GetPlayer(int i);
 #pragma endregion
@@ -95,7 +95,7 @@ public:
 	/// </summary>
 	/// <param name="player"></param>
 	/// <returns></returns>
-	Field GetField(int player);
+	GameField GetField(int player);
 	/// <summary>
 	/// 
 	/// </summary>
@@ -108,12 +108,12 @@ public:
 	/// <returns></returns>
 	bool Shoot(Cell cell);
 	/// <summary>
-	/// проверяет условие победы
+	/// РїСЂРѕРІРµСЂСЏРµС‚ СѓСЃР»РѕРІРёРµ РїРѕР±РµРґС‹
 	/// </summary>
 	/// <returns></returns>
 	bool CheckWin();
 	/// <summary>
-	/// находит победителя
+	/// РЅР°С…РѕРґРёС‚ РїРѕР±РµРґРёС‚РµР»СЏ
 	/// </summary>
 	/// <returns></returns>
 	int GetWinner();
@@ -121,45 +121,45 @@ public:
 
 #pragma region Save/Load
 	/// <summary>
-	/// сохранияет иргу
+	/// СЃРѕС…СЂР°РЅРёСЏРµС‚ РёСЂРіСѓ
 	/// </summary>
 	void Save();
 	/// <summary>
-	/// загружает игру
+	/// Р·Р°РіСЂСѓР¶Р°РµС‚ РёРіСЂСѓ
 	/// </summary>
 	void Load();
 #pragma endregion
 
 #pragma region Settings
 	/// <summary>
-	/// возвращает состояние режима отладки
+	/// РІРѕР·РІСЂР°С‰Р°РµС‚ СЃРѕСЃС‚РѕСЏРЅРёРµ СЂРµР¶РёРјР° РѕС‚Р»Р°РґРєРё
 	/// </summary>
-	/// <returns>true - если в режиме отладки</returns>
+	/// <returns>true - РµСЃР»Рё РІ СЂРµР¶РёРјРµ РѕС‚Р»Р°РґРєРё</returns>
 	bool isInDebugMode();
 	/// <summary>
-	/// установить режим отладки
+	/// СѓСЃС‚Р°РЅРѕРІРёС‚СЊ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё
 	/// </summary>
-	/// <param name="value">true- режим отладки,false - без отладки</param>
+	/// <param name="value">true- СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё,false - Р±РµР· РѕС‚Р»Р°РґРєРё</param>
 	void SetDebugMode(bool value);
 	/// <summary>
-	/// включает бота в игру
-	/// игра становится PvAI
+	/// РІРєР»СЋС‡Р°РµС‚ Р±РѕС‚Р° РІ РёРіСЂСѓ
+	/// РёРіСЂР° СЃС‚Р°РЅРѕРІРёС‚СЃСЏ PvAI
 	/// </summary>
-	/// <param name="_player">номер игрока</param>
+	/// <param name="_player">РЅРѕРјРµСЂ РёРіСЂРѕРєР°</param>
 	void EnableBot(int _player);
 	/// <summary>
-	/// удаляет бота из игры
-	/// игра становится PvP
+	/// СѓРґР°Р»СЏРµС‚ Р±РѕС‚Р° РёР· РёРіСЂС‹
+	/// РёРіСЂР° СЃС‚Р°РЅРѕРІРёС‚СЃСЏ PvP
 	/// </summary>
-	/// <param name="_player">номер игрока</param>
+	/// <param name="_player">РЅРѕРјРµСЂ РёРіСЂРѕРєР°</param>
 	void DisableBot(int _player);
 	/// <summary>
-	/// показывает включен бот или нет
+	/// РїРѕРєР°Р·С‹РІР°РµС‚ РІРєР»СЋС‡РµРЅ Р±РѕС‚ РёР»Рё РЅРµС‚
 	/// </summary>
-	/// <param name="_player">номер игрока</param>
+	/// <param name="_player">РЅРѕРјРµСЂ РёРіСЂРѕРєР°</param>
 	bool IsBotEnabled(int _player);
 	/// <summary>
-	/// устанавливает режим отладки
+	/// СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё
 	/// </summary>
 	void SetDebugMode();
 #pragma endregion
@@ -167,52 +167,52 @@ public:
 #pragma endregion
 
 private:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// количество кораблей по умолчанию
-	/// посчитывается именно чило 
-	/// клеток занимается кораблями
+	/// РєРѕР»РёС‡РµСЃС‚РІРѕ РєРѕСЂР°Р±Р»РµР№ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
+	/// РїРѕСЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РёРјРµРЅРЅРѕ С‡РёР»Рѕ 
+	/// РєР»РµС‚РѕРє Р·Р°РЅРёРјР°РµС‚СЃСЏ РєРѕСЂР°Р±Р»СЏРјРё
 	/// </summary>
 	int defaultShips = 10;
 	/// <summary>
-	/// размер поля по умолчанию
+	/// СЂР°Р·РјРµСЂ РїРѕР»СЏ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	int defaultSize = 10;
 	/// <summary>
-	/// размер полей игроков
+	/// СЂР°Р·РјРµСЂ РїРѕР»РµР№ РёРіСЂРѕРєРѕРІ
 	/// </summary>
 	int size;
 	/// <summary>
-	/// указывает на номер 
-	/// активного игрока в данный момент:
-	/// 0 - первый
-	/// 1- второй 
-	/// и т.д.
+	/// СѓРєР°Р·С‹РІР°РµС‚ РЅР° РЅРѕРјРµСЂ 
+	/// Р°РєС‚РёРІРЅРѕРіРѕ РёРіСЂРѕРєР° РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚:
+	/// 0 - РїРµСЂРІС‹Р№
+	/// 1- РІС‚РѕСЂРѕР№ 
+	/// Рё С‚.Рґ.
 	/// </summary>
 	int player;
 	/// <summary>
-	/// игроки
+	/// РёРіСЂРѕРєРё
 	/// </summary>
 	vector<Player> players;
 	/// <summary>
 	/// 
 	/// </summary>
-	vector<Field> fields;
+	vector<GameField> fields;
 	/// <summary>
-	/// true -если игра началась
+	/// true -РµСЃР»Рё РёРіСЂР° РЅР°С‡Р°Р»Р°СЃСЊ
 	/// </summary>
 	bool gameStarted;
 	/// <summary>
-	/// режим отладки 
-	/// в нем показываются корабли противника
+	/// СЂРµР¶РёРј РѕС‚Р»Р°РґРєРё 
+	/// РІ РЅРµРј РїРѕРєР°Р·С‹РІР°СЋС‚СЃСЏ РєРѕСЂР°Р±Р»Рё РїСЂРѕС‚РёРІРЅРёРєР°
 	/// </summary>
 	bool debugMode;
 	/// <summary>
-	/// начальное число кораблей
+	/// РЅР°С‡Р°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РєРѕСЂР°Р±Р»РµР№
 	/// </summary>
 	int startShips;
 	/// <summary>
-	/// содержит имена основных полей
+	/// СЃРѕРґРµСЂР¶РёС‚ РёРјРµРЅР° РѕСЃРЅРѕРІРЅС‹С… РїРѕР»РµР№
 	/// </summary>
 	vector<string> fieldNames = {
 		"size",
@@ -224,26 +224,26 @@ private:
 		"startShips"
 	};
 	/// <summary>
-	/// размеры кораблей
+	/// СЂР°Р·РјРµСЂС‹ РєРѕСЂР°Р±Р»РµР№
 	/// </summary>
 	vector<int>sizes = { 4,3,3,2,2,2,1,1,1,1 };
 	/// <summary>
-	/// имя сохранения
+	/// РёРјСЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ
 	/// </summary>
 	string savegameFile = "savegame.txt";
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Инициализирует игру
+	/// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ РёРіСЂСѓ
 	/// </summary>
-	/// <param name="size">размер полей</param>
+	/// <param name="size">СЂР°Р·РјРµСЂ РїРѕР»РµР№</param>
 	void Init(int _size);
 	/// <summary>
-	/// Инициализирует игру
+	/// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ РёРіСЂСѓ
 	/// </summary>
-	/// <param name="_ships">начальное число кораблей</param>
-	/// <param name="_size">размер полей</param>
+	/// <param name="_ships">РЅР°С‡Р°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ РєРѕСЂР°Р±Р»РµР№</param>
+	/// <param name="_size">СЂР°Р·РјРµСЂ РїРѕР»РµР№</param>
 	void Init(int _ships, int _size);
 	/// <summary>
 	/// 

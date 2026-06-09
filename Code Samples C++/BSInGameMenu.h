@@ -4,23 +4,23 @@ class BSInGameMenu : public Menu
 {
 private:
 	/// <summary>
-	/// корректный высстрел или нет
+	/// РєРѕСЂСЂРµРєС‚РЅС‹Р№ РІС‹СЃСЃС‚СЂРµР» РёР»Рё РЅРµС‚
 	/// </summary>
 	bool correctShoot;
 	/// <summary>
-	/// завершать игру или нет
-	/// true - да
-	/// false - нет
+	/// Р·Р°РІРµСЂС€Р°С‚СЊ РёРіСЂСѓ РёР»Рё РЅРµС‚
+	/// true - РґР°
+	/// false - РЅРµС‚
 	/// </summary>
 	bool close;
 public:
 	BSInGameMenu(BSGame *_game);
 	BSInGameMenu();
 	~BSInGameMenu();
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	virtual bool Action(int action);
 	/// <summary>
-	/// получить координату у пользователя
+	/// РїРѕР»СѓС‡РёС‚СЊ РєРѕРѕСЂРґРёРЅР°С‚Сѓ Сѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 	/// </summary>
 	/// <returns></returns>
 	Cell GetCoords();

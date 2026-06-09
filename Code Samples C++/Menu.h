@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "InfoIO.h"
 #include "FileIO.h"
 #include "BSGame.h"
@@ -7,98 +7,98 @@
 #include "Cell.h"
 #pragma once
 /// <summary>
-/// Базоввый класс меню
+/// Р‘Р°Р·РѕРІРІС‹Р№ РєР»Р°СЃСЃ РјРµРЅСЋ
 /// </summary>
 class Menu
 {
 private:
 public:
 	/// <summary>
-	/// закрывать данное меню или нет
+	/// Р·Р°РєСЂС‹РІР°С‚СЊ РґР°РЅРЅРѕРµ РјРµРЅСЋ РёР»Рё РЅРµС‚
 	/// </summary>
 	bool closeMenu;
 	/// <summary>
-	/// завершать игру или нет
-	/// true - да
-	/// false - нет
+	/// Р·Р°РІРµСЂС€Р°С‚СЊ РёРіСЂСѓ РёР»Рё РЅРµС‚
+	/// true - РґР°
+	/// false - РЅРµС‚
 	/// </summary>
 	bool closeGame;
 	/// <summary>
-	/// ядро игры
+	/// СЏРґСЂРѕ РёРіСЂС‹
 	/// </summary>
 	BSGame *game;
 	/// <summary>
-	/// пункты меню
+	/// РїСѓРЅРєС‚С‹ РјРµРЅСЋ
 	/// </summary>
 	vector<MenuItem> menuItems;
 	/// <summary>
-	/// ввод вывод
+	/// РІРІРѕРґ РІС‹РІРѕРґ
 	/// </summary>
 	IO io = IO();
 	/// <summary>
-	/// файловый ввод вывод
+	/// С„Р°Р№Р»РѕРІС‹Р№ РІРІРѕРґ РІС‹РІРѕРґ
 	/// </summary>
 	FileIO fileIO = FileIO();
 	/// <summary>
-	/// показывает меню
+	/// РїРѕРєР°Р·С‹РІР°РµС‚ РјРµРЅСЋ
 	/// </summary>
-	/// <param name="items">элементы меню</param>
-	/// <param name="clear">true-очистить экран</param>
+	/// <param name="items">СЌР»РµРјРµРЅС‚С‹ РјРµРЅСЋ</param>
+	/// <param name="clear">true-РѕС‡РёСЃС‚РёС‚СЊ СЌРєСЂР°РЅ</param>
 	void ShowMenu(vector<MenuItem> items, bool clear);
 	/// <summary>
-	/// показывает меню не очищая экран
+	/// РїРѕРєР°Р·С‹РІР°РµС‚ РјРµРЅСЋ РЅРµ РѕС‡РёС‰Р°СЏ СЌРєСЂР°РЅ
 	/// </summary>
 	/// <param name="items"></param>
 	void ShowMenu(vector<MenuItem> items);
 	/// <summary>
-	/// запускает меню
+	/// Р·Р°РїСѓСЃРєР°РµС‚ РјРµРЅСЋ
 	/// </summary>
 	bool Start();
 	/// <summary>
-	/// запускает меню
+	/// Р·Р°РїСѓСЃРєР°РµС‚ РјРµРЅСЋ
 	/// </summary>
-	/// <param name="showField">показывать ли игровые поля</param>
+	/// <param name="showField">РїРѕРєР°Р·С‹РІР°С‚СЊ Р»Рё РёРіСЂРѕРІС‹Рµ РїРѕР»СЏ</param>
 	/// <returns></returns>
 	bool Start(bool showField);
 	/// <summary>
-	/// задает действия для каждого пункта меню
+	/// Р·Р°РґР°РµС‚ РґРµР№СЃС‚РІРёСЏ РґР»СЏ РєР°Р¶РґРѕРіРѕ РїСѓРЅРєС‚Р° РјРµРЅСЋ
 	/// </summary>
-	/// <param name="action">код действия</param>
+	/// <param name="action">РєРѕРґ РґРµР№СЃС‚РІРёСЏ</param>
 	/// <returns></returns>
 	virtual bool Action(int action);
 	/// <summary>
-	/// получает номер пункта меню от пользователя
+	/// РїРѕР»СѓС‡Р°РµС‚ РЅРѕРјРµСЂ РїСѓРЅРєС‚Р° РјРµРЅСЋ РѕС‚ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ
 	/// </summary>
-	/// <returns>true - надо закрывать меню</returns>
+	/// <returns>true - РЅР°РґРѕ Р·Р°РєСЂС‹РІР°С‚СЊ РјРµРЅСЋ</returns>
 	bool GetAction();
 	/// <summary>
 	/// 
 	/// </summary>
 	Menu();
 	/// <summary>
-	/// создает меню/подменю игры
+	/// СЃРѕР·РґР°РµС‚ РјРµРЅСЋ/РїРѕРґРјРµРЅСЋ РёРіСЂС‹
 	/// </summary>
-	/// <param name="game">ссылка на игру</param>
+	/// <param name="game">СЃСЃС‹Р»РєР° РЅР° РёРіСЂСѓ</param>
 	Menu(BSGame *_game);
 	/// <summary>
-	/// деструктор
+	/// РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~Menu();
 	/// <summary>
-	/// печатает поле
+	/// РїРµС‡Р°С‚Р°РµС‚ РїРѕР»Рµ
 	/// </summary>
-	/// <param name="player">номер игрока</param>
-	/// <param name="colorsMap">цветовая схема</param>
+	/// <param name="player">РЅРѕРјРµСЂ РёРіСЂРѕРєР°</param>
+	/// <param name="colorsMap">С†РІРµС‚РѕРІР°СЏ СЃС…РµРјР°</param>
 	void PrintField(int player, map<CellTypes, ConsoleColor> colorsMap);
 	/// <summary>
-	/// печатает поле
+	/// РїРµС‡Р°С‚Р°РµС‚ РїРѕР»Рµ
 	/// </summary>
-	/// <param name="player">номер игрока</param>
+	/// <param name="player">РЅРѕРјРµСЂ РёРіСЂРѕРєР°</param>
 	void PrintField(int player);
 	/// <summary>
-	/// выводит на экран номер текущего игрока
+	/// РІС‹РІРѕРґРёС‚ РЅР° СЌРєСЂР°РЅ РЅРѕРјРµСЂ С‚РµРєСѓС‰РµРіРѕ РёРіСЂРѕРєР°
 	/// </summary>
-	/// <param name="player">номер</param>
+	/// <param name="player">РЅРѕРјРµСЂ</param>
 	void PrintPlayer(int player);
 };
 

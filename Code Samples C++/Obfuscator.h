@@ -1,65 +1,65 @@
-#include "stdafx.h"
+#include "pch.h"
 #pragma once
 class Obfuscator
 {
 private:
-#pragma region Константы
+#pragma region РљРѕРЅСЃС‚Р°РЅС‚С‹
 	const string input = "input";
 	const string output = "output";
 	const string keywords = "keywords";
 	const string dummy = "dummy";
 #pragma endregion
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	string configFileName = "config.txt";
 	string inputFileName = "";
 	string outputFileName = "";
 	string dummyFileName = "";
 	string keyWordsFileName = "";
 #pragma endregion
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// Удаление символов табуляции
+	/// РЈРґР°Р»РµРЅРёРµ СЃРёРјРІРѕР»РѕРІ С‚Р°Р±СѓР»СЏС†РёРё
 	/// </summary>
-	/// <param name="a">массив со строками</param>
-	/// <returns>строки с удаленной табуляцией</returns>
+	/// <param name="a">РјР°СЃСЃРёРІ СЃРѕ СЃС‚СЂРѕРєР°РјРё</param>
+	/// <returns>СЃС‚СЂРѕРєРё СЃ СѓРґР°Р»РµРЅРЅРѕР№ С‚Р°Р±СѓР»СЏС†РёРµР№</returns>
 	vector<string> RemoveTabs(vector<string> a);
 	/// <summary>
-	/// переименование переменных
+	/// РїРµСЂРµРёРјРµРЅРѕРІР°РЅРёРµ РїРµСЂРµРјРµРЅРЅС‹С…
 	/// </summary>
-	/// <param name="a">список строк</param>
+	/// <param name="a">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 	/// <returns></returns>
 	vector<string> RenameVariables(vector<string> a);
 	/// <summary>
-	/// Добавляет подставные функции и переменные
+	/// Р”РѕР±Р°РІР»СЏРµС‚ РїРѕРґСЃС‚Р°РІРЅС‹Рµ С„СѓРЅРєС†РёРё Рё РїРµСЂРµРјРµРЅРЅС‹Рµ
 	/// </summary>
-	/// <param name="a">список строк</param>
+	/// <param name="a">СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</param>
 	/// <returns></returns>
 	vector<string> AddDummyVariables(vector<string> a);
 	/// <summary>
-	/// Обфусцирует код
+	/// РћР±С„СѓСЃС†РёСЂСѓРµС‚ РєРѕРґ
 	/// </summary>
-	/// <returns>измененый список строк</returns>
+	/// <returns>РёР·РјРµРЅРµРЅС‹Р№ СЃРїРёСЃРѕРє СЃС‚СЂРѕРє</returns>
 	vector<string> Obfuscate(vector<string> a);
 #pragma endregion
 public:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 
 #pragma endregion
-#pragma region Конструктор/Деструктор 
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ 
 	/// <summary>
-	/// Создает обфукатор
+	/// РЎРѕР·РґР°РµС‚ РѕР±С„СѓРєР°С‚РѕСЂ
 	/// </summary>
-	/// <param name="_configFileName">путь до файла конфигурации</param>
+	/// <param name="_configFileName">РїСѓС‚СЊ РґРѕ С„Р°Р№Р»Р° РєРѕРЅС„РёРіСѓСЂР°С†РёРё</param>
 	Obfuscator(string _configFileName);
 	~Obfuscator();
 #pragma endregion
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 	/// <summary>
-	/// Обфусцирует указанный файл с кодом
+	/// РћР±С„СѓСЃС†РёСЂСѓРµС‚ СѓРєР°Р·Р°РЅРЅС‹Р№ С„Р°Р№Р» СЃ РєРѕРґРѕРј
 	/// </summary>
-	/// <param name="inFileName">имя входного файла</param>
-	/// <param name="outFileName">имя выходного файла</param>
+	/// <param name="inFileName">РёРјСЏ РІС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°</param>
+	/// <param name="outFileName">РёРјСЏ РІС‹С…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р°</param>
 	void Obfuscate();
 #pragma endregion
 };

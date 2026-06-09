@@ -2,74 +2,74 @@
 #include "pch.h"
 template <typename T>
 /// <summary>
-/// Элемент связного списка
+/// Р­Р»РµРјРµРЅС‚ СЃРІСЏР·РЅРѕРіРѕ СЃРїРёСЃРєР°
 /// </summary>
 class LLItem {
 public:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Данные
+	/// Р”Р°РЅРЅС‹Рµ
 	/// </summary>
 	T data;
 	/// <summary>
-	/// Следующий элемент
+	/// РЎР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚
 	/// </summary>
 	LLItem* next;
 	/// <summary>
-	/// Предыдущий элемент
+	/// РџСЂРµРґС‹РґСѓС‰РёР№ СЌР»РµРјРµРЅС‚
 	/// </summary>
 	LLItem* prev;
 #pragma endregion
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// Создает элемент списка с указанными динными и соседями
+	/// РЎРѕР·РґР°РµС‚ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР° СЃ СѓРєР°Р·Р°РЅРЅС‹РјРё РґРёРЅРЅС‹РјРё Рё СЃРѕСЃРµРґСЏРјРё
 	/// </summary>
-	/// <param name="data">данные</param>
-	/// <param name="next">следующий элемент</param>
-	/// <param name="prev">предыдущий элемент</param>
+	/// <param name="data">РґР°РЅРЅС‹Рµ</param>
+	/// <param name="next">СЃР»РµРґСѓСЋС‰РёР№ СЌР»РµРјРµРЅС‚</param>
+	/// <param name="prev">РїСЂРµРґС‹РґСѓС‰РёР№ СЌР»РµРјРµРЅС‚</param>
 	LLItem(T data, LLItem * next = NULL, LLItem * prev = NULL) {
 		this->data = data;
 		this->next = next;
 		this->prev = prev;
 	}
 	/// <summary>
-	/// Копирует указанный элемент
+	/// РљРѕРїРёСЂСѓРµС‚ СѓРєР°Р·Р°РЅРЅС‹Р№ СЌР»РµРјРµРЅС‚
 	/// </summary>
-	/// <param name="item">элемент для копирования</param>
+	/// <param name="item">СЌР»РµРјРµРЅС‚ РґР»СЏ РєРѕРїРёСЂРѕРІР°РЅРёСЏ</param>
 	LLItem(LLItem<T>* item) {
 		this->data = item->data;
 		this->next = item->next;
 		this->prev = item->prev;
 	}
 	/// <summary>
-	/// Создает элемент списка, 
-	/// для данных вызывается конструктор по умолчанию
+	/// РЎРѕР·РґР°РµС‚ СЌР»РµРјРµРЅС‚ СЃРїРёСЃРєР°, 
+	/// РґР»СЏ РґР°РЅРЅС‹С… РІС‹Р·С‹РІР°РµС‚СЃСЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	/// </summary>
 	LLItem() :LLItem(T()) {
 
 	}
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~LLItem() {
 		this->next = NULL;
 		this->prev = NULL;
 	}
 #pragma endregion
-#pragma region Методы	
+#pragma region РњРµС‚РѕРґС‹	
 	/// <summary>
-	/// Соединяет два элемента
+	/// РЎРѕРµРґРёРЅСЏРµС‚ РґРІР° СЌР»РµРјРµРЅС‚Р°
 	/// </summary>
-	/// <param name="item">указатель на элемент(добавляется следом)</param>
+	/// <param name="item">СѓРєР°Р·Р°С‚РµР»СЊ РЅР° СЌР»РµРјРµРЅС‚(РґРѕР±Р°РІР»СЏРµС‚СЃСЏ СЃР»РµРґРѕРј)</param>
 	void Add(LLItem* item) {
 		this->next = item;
 		if (item)
 			item->prev = this;
 	}
 	/// <summary>
-	/// Преобразует элемент в строку
+	/// РџСЂРµРѕР±СЂР°Р·СѓРµС‚ СЌР»РµРјРµРЅС‚ РІ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="showDetails">true - отображать всю информацию:данные + соседи</param>
+	/// <param name="showDetails">true - РѕС‚РѕР±СЂР°Р¶Р°С‚СЊ РІСЃСЋ РёРЅС„РѕСЂРјР°С†РёСЋ:РґР°РЅРЅС‹Рµ + СЃРѕСЃРµРґРё</param>
 	/// <returns></returns>
 	string ToString(bool showDetails = false) {
 		stringstream ss;
@@ -83,7 +83,7 @@ public:
 		return ss.str();
 	}
 #pragma endregion
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 	//friend ostream& operator<< <>(ostream& os, LLItem<T>& item)
 	//{
 	//	//os << item.data;

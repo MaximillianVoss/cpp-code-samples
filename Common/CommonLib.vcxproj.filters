@@ -28,6 +28,45 @@
     <Filter Include="Исходные файлы\Polynom">
       <UniqueIdentifier>{00b48078-fd8a-4048-9fea-dc2463fef1f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Graph">
+      <UniqueIdentifier>{17c0afd1-2412-4c7c-89f2-f9c7881b5211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Tree">
+      <UniqueIdentifier>{eeea643f-6134-453d-9e2a-7f8f37de1f99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Search">
+      <UniqueIdentifier>{fa62f632-82e4-4f69-ad82-391916f42cd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Sorts">
+      <UniqueIdentifier>{fc656e48-5bda-4bd1-8acf-f1eed9bf8160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Container">
+      <UniqueIdentifier>{2559d138-a431-46fc-b970-f308de4de45f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Legacy">
+      <UniqueIdentifier>{a17f7cf8-9463-4c61-8493-7115614a6d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Legacy\Converter">
+      <UniqueIdentifier>{0b59c185-9d73-48fc-b501-7758e80ca029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Legacy\Plot">
+      <UniqueIdentifier>{2e2ab30d-1308-4cef-9f88-30ed1c78f358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Log">
+      <UniqueIdentifier>{afb814e2-4656-49cd-88b5-48d60a744819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Plot">
+      <UniqueIdentifier>{e405421d-16da-4891-98b5-398c6516b250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Operators">
+      <UniqueIdentifier>{7a6746ac-fa00-42cd-9d4a-80b8e7928a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Converter">
+      <UniqueIdentifier>{b51d7d35-8a9e-41ec-84d9-df3c845d4348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Namespaces">
+      <UniqueIdentifier>{9f954933-0d3d-4f32-a40a-d5355d6f4a8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -53,6 +92,81 @@
     </ClInclude>
     <ClInclude Include="Polynom.h">
       <Filter>Исходные файлы\Polynom</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Исходные файлы\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Исходные файлы\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Edge.h">
+      <Filter>Исходные файлы\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>Исходные файлы\Search</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSort.h">
+      <Filter>Исходные файлы\Sorts</Filter>
+    </ClInclude>
+    <ClInclude Include="Container.h">
+      <Filter>Исходные файлы\Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorts.h">
+      <Filter>Исходные файлы\Sorts</Filter>
+    </ClInclude>
+    <ClInclude Include="SortsAdv.h">
+      <Filter>Исходные файлы\Sorts</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphItem.h">
+      <Filter>Исходные файлы\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Исходные файлы\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="LogItem.h">
+      <Filter>Исходные файлы\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Namespaces.h">
+      <Filter>Исходные файлы\Namespaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPack.h">
+      <Filter>Исходные файлы\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="Operators.h">
+      <Filter>Исходные файлы\Operators</Filter>
+    </ClInclude>
+    <ClInclude Include="Plotter.h">
+      <Filter>Исходные файлы\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="SField.h">
+      <Filter>Исходные файлы\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="SObject.h">
+      <Filter>Исходные файлы\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="SLoader.h">
+      <Filter>Исходные файлы\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPack_Backup.h">
+      <Filter>Исходные файлы\Legacy\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Исходные файлы\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter_Old.h">
+      <Filter>Исходные файлы\Legacy\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTree.h">
+      <Filter>Исходные файлы\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>Исходные файлы\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicArray.h">
+      <Filter>Исходные файлы\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicStack.h">
+      <Filter>Исходные файлы\Lists</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

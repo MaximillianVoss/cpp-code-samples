@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Sorts.h"
 
-#pragma region Конструктор/Деструктор
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 Sorts::Sorts()
 {
 }

@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "PairStr.h"
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 PairStr::PairStr()
 {
 }

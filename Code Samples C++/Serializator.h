@@ -2,49 +2,49 @@
 #include "Pair.h"
 #include "StrHelper.h"
 #pragma once
-class Serializator
+class SerializatorOld
 {
 private:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// разделитель
+	/// СЂР°Р·РґРµР»РёС‚РµР»СЊ
 	/// </summary>
 	string delimiter = ":";
 	/// <summary>
-	/// для работы с файлами
+	/// РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ С„Р°Р№Р»Р°РјРё
 	/// </summary>
 	FileIO fileIO = FileIO();
 	/// <summary>
-	/// для работы со строками
+	/// РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃС‚СЂРѕРєР°РјРё
 	/// </summary>
 	StrHelper strHelper = StrHelper();
 #pragma endregion
 
 public:
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	/// <summary>
-	/// сериализует поля объекта
+	/// СЃРµСЂРёР°Р»РёР·СѓРµС‚ РїРѕР»СЏ РѕР±СЉРµРєС‚Р°
 	/// </summary>
-	/// <param name="fileName">файл для сохранения</param>
-	/// <param name="fieldsValues">поля и значения</param>
+	/// <param name="fileName">С„Р°Р№Р» РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ</param>
+	/// <param name="fieldsValues">РїРѕР»СЏ Рё Р·РЅР°С‡РµРЅРёСЏ</param>
 	void Serialize(string fileName, vector<Pair> fieldsValues);
 	/// <summary>
-	/// десериализует поля объекта
+	/// РґРµСЃРµСЂРёР°Р»РёР·СѓРµС‚ РїРѕР»СЏ РѕР±СЉРµРєС‚Р°
 	/// </summary>
-	/// <param name="fileName">файл для загрузки</param>
+	/// <param name="fileName">С„Р°Р№Р» РґР»СЏ Р·Р°РіСЂСѓР·РєРё</param>
 	/// <returns></returns>
 	vector<Pair>Deserialize(string fileName);
 #pragma endregion
 
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// конструктор
+	/// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
-	Serializator();
+	SerializatorOld();
 	/// <summary>
-	/// деструктор
+	/// РґРµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
-	~Serializator();
+	~SerializatorOld();
 #pragma endregion
 };
 

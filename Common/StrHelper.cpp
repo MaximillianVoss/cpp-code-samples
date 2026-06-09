@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "StrHelper.h"
 
-#pragma region Конструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 StrHelper::StrHelper()
 {
 }
@@ -11,7 +11,7 @@ StrHelper::~StrHelper()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 
 string StrHelper::Join(vector<string> lines)
 {

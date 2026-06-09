@@ -6,7 +6,7 @@ public:
 	BSSettingMenu(BSGame *_game);
 	BSSettingMenu();
 	~BSSettingMenu();
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 	virtual bool Action(int action);
 #pragma endregion
 };

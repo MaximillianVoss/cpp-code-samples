@@ -1,0 +1,62 @@
+#pragma once
+
+#include "AVLTree.h"
+#include "BinarySearch.h"
+#include "Container.h"
+#include "Converter.h"
+#include "DataPack.h"
+#include "DynamicArray.h"
+#include "DynamicStack.h"
+#include "Edge.h"
+#include "Graph.h"
+#include "GraphItem.h"
+#include "IO.h"
+#include "LL.h"
+#include "LLItem.h"
+#include "Log.h"
+#include "LogItem.h"
+#include "Node.h"
+#include "OWLL.h"
+#include "Plotter.h"
+#include "Polynom.h"
+#include "QuickSort.h"
+#include "SField.h"
+#include "SLoader.h"
+#include "SObject.h"
+#include "Sorts.h"
+#include "SortsAdv.h"
+#include "StrHelper.h"
+#include "TreeNode.h"
+#include "TWLL.h"
+
+namespace code_samples::common
+{
+	using ::AVLTree;
+	using ::BinarySearch;
+	using ::Container;
+	using ::Converter;
+	using ::DataPack;
+	using ::DynamicArray;
+	using ::DynamicStack;
+	using ::Edge;
+	using ::Graph;
+	using ::GraphItem;
+	using ::IO;
+	using ::LL;
+	using ::LLItem;
+	using ::Log;
+	using ::LogItem;
+	using ::Node;
+	using ::OWLL;
+	using ::Plotter;
+	using ::Polynom;
+	using ::QuickSort;
+	using ::SField;
+	using ::SLoader;
+	using ::SObject;
+	using ::Sorts;
+	using ::SortsAdv;
+	using ::StrHelper;
+	using ::TreeNode;
+	using ::TWLL;
+}

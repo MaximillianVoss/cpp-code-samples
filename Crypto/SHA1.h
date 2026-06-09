@@ -2,39 +2,39 @@
 #include "pch.h"
 
 /// <summary>
-/// Хэш функция SHA1
+/// РҐСЌС€ С„СѓРЅРєС†РёСЏ SHA1
 /// </summary>
 class SHA1
 {
 public:
 	/// <summary>
-	/// СОздает хэш функцию
+	/// РЎРћР·РґР°РµС‚ С…СЌС€ С„СѓРЅРєС†РёСЋ
 	/// </summary>
 	SHA1() {
 		this->reset(digest, buffer, transforms);
 	}
 	/// <summary>
-	/// Получает хэш из файла
+	/// РџРѕР»СѓС‡Р°РµС‚ С…СЌС€ РёР· С„Р°Р№Р»Р°
 	/// </summary>
-	/// <param name="fileStream">двоичный поток на файл</param>
+	/// <param name="fileStream">РґРІРѕРёС‡РЅС‹Р№ РїРѕС‚РѕРє РЅР° С„Р°Р№Р»</param>
 	/// <returns></returns>
 	string GetHash(ifstream fileStream) {
 		this->update(fileStream);
 		return this->final();
 	}
 	/// <summary>
-	/// Получает хэш из строки
+	/// РџРѕР»СѓС‡Р°РµС‚ С…СЌС€ РёР· СЃС‚СЂРѕРєРё
 	/// </summary>
-	/// <param name="message">строка</param>
+	/// <param name="message">СЃС‚СЂРѕРєР°</param>
 	/// <returns></returns>
 	string GetHash(string message) {
 		this->update(message);
 		return this->final();
 	}
 	/// <summary>
-	/// Получает двоичный поток на файл
+	/// РџРѕР»СѓС‡Р°РµС‚ РґРІРѕРёС‡РЅС‹Р№ РїРѕС‚РѕРє РЅР° С„Р°Р№Р»
 	/// </summary>
-	/// <param name="filename">имя файла</param>
+	/// <param name="filename">РёРјСЏ С„Р°Р№Р»Р°</param>
 	/// <returns></returns>
 	ifstream GetFileStream(string filename) {
 		return 	ifstream(filename.c_str(), ios::binary);
@@ -45,7 +45,7 @@ private:
 	/// </summary>
 	size_t BLOCK_INTS = 16;
 	/// <summary>
-	/// блок байт
+	/// Р±Р»РѕРє Р±Р°Р№С‚
 	/// </summary>
 	size_t BLOCK_BYTES = BLOCK_INTS * 4;
 	uint32_t digest[5];

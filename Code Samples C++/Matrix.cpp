@@ -1,7 +1,7 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Matrix.h"
 
-#pragma region Контсруктор
+#pragma region РљРѕРЅС‚СЃСЂСѓРєС‚РѕСЂ
 Matrix::Matrix(int n, int m, Matrix::MatrixType type)
 {
 	CreateMatrix(n, m, type);
@@ -15,7 +15,7 @@ Matrix::~Matrix()
 }
 #pragma endregion
 
-#pragma region Методы
+#pragma region РњРµС‚РѕРґС‹
 void Matrix::CreateMatrix(int rowsCount, int columnCount, Matrix::MatrixType type)
 {
 	srand(time(NULL));

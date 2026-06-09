@@ -5,23 +5,23 @@
 template <typename T>
 class TWLList : public LL<T> {
 public:
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// Создает пустой список
-	/// начала списка - пустой указатель
+	/// РЎРѕР·РґР°РµС‚ РїСѓСЃС‚РѕР№ СЃРїРёСЃРѕРє
+	/// РЅР°С‡Р°Р»Р° СЃРїРёСЃРєР° - РїСѓСЃС‚РѕР№ СѓРєР°Р·Р°С‚РµР»СЊ
 	/// </summary>
 	TWLList() :LL<T>() {
 	}
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~TWLList() {
 	}
 #pragma endregion
-#pragma region Методы
-#pragma region Добавление
+#pragma region РњРµС‚РѕРґС‹
+#pragma region Р”РѕР±Р°РІР»РµРЅРёРµ
 	void Add(T data) override {
-		if (!head)
+		if (!this->head)
 			this->head = new  LLItem<T>(data);
 		else
 			this->GetLast()->Add(new LLItem<T>(data));
@@ -31,7 +31,7 @@ public:
 
 	};
 	void Add(LLItem<T>* item)override {
-		if (!head)
+		if (!this->head)
 			this->head = item;
 		else
 			this->GetLast()->Add(item);
@@ -48,7 +48,7 @@ public:
 		this->Add(*list);
 	}
 #pragma endregion
-#pragma region Удаление
+#pragma region РЈРґР°Р»РµРЅРёРµ
 	void Delete()override {
 		LLItem<T>* last = this->GetLast();
 		if (last) {
@@ -65,7 +65,7 @@ public:
 	void Delete(LLItem<T>* item) override { throw exception(Constants::Strings::Errors::notImplemented); };
 #pragma endregion
 #pragma endregion
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 	TWLList<T>& operator+(TWLList<T>& list) {
 		TWLList<T>* result = new TWLList<T>();
 		*result += *this;

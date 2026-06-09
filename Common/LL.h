@@ -5,28 +5,28 @@
 template <typename T>
 class LL {
 private:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Текущая длина списка
+	/// РўРµРєСѓС‰Р°СЏ РґР»РёРЅР° СЃРїРёСЃРєР°
 	/// </summary>
 	int length;
 #pragma endregion
 public:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	/// <summary>
-	/// Начало списка
+	/// РќР°С‡Р°Р»Рѕ СЃРїРёСЃРєР°
 	/// </summary>
 	LLItem<T>* head;
 	/// <summary>
-	/// Конец списка
+	/// РљРѕРЅРµС† СЃРїРёСЃРєР°
 	/// </summary>
 	LLItem<T>* tail;
 #pragma endregion
-#pragma region Конструкторы/Деструкторы
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹/Р”РµСЃС‚СЂСѓРєС‚РѕСЂС‹
 	/// <summary>
-	/// Создает пустой список
-	/// начала списка - пустой указатель
-	/// конец списка - пустой указатель
+	/// РЎРѕР·РґР°РµС‚ РїСѓСЃС‚РѕР№ СЃРїРёСЃРѕРє
+	/// РЅР°С‡Р°Р»Р° СЃРїРёСЃРєР° - РїСѓСЃС‚РѕР№ СѓРєР°Р·Р°С‚РµР»СЊ
+	/// РєРѕРЅРµС† СЃРїРёСЃРєР° - РїСѓСЃС‚РѕР№ СѓРєР°Р·Р°С‚РµР»СЊ
 	/// </summary>
 	LL() {
 		this->head = NULL;
@@ -34,7 +34,7 @@ public:
 		this->length = 0;
 	}
 	/// <summary>
-	/// Деструктор
+	/// Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// </summary>
 	~LL() {
 		try {
@@ -57,46 +57,46 @@ public:
 		}
 	}
 #pragma endregion
-#pragma region Методы
-#pragma region Добавление/Удаление
+#pragma region РњРµС‚РѕРґС‹
+#pragma region Р”РѕР±Р°РІР»РµРЅРёРµ/РЈРґР°Р»РµРЅРёРµ
 	/// <summary>
-	/// Добавляет элемент в конец списка
+	/// Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РєРѕРЅРµС† СЃРїРёСЃРєР°
 	/// </summary>
 	void virtual Add(T data) { throw exception(Constants::Strings::Errors::notImplemented); };
 	/// <summary>
-	/// Добавляет элемент по указанному индексу
+	/// Р”РѕР±Р°РІР»СЏРµС‚ СЌР»РµРјРµРЅС‚ РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ РёРЅРґРµРєСЃСѓ
 	/// </summary>
 	void virtual Add(T data, size_t index) { throw exception(Constants::Strings::Errors::notImplemented); };
 	/// <summary>
-	/// Добавляет копию в конец списка
+	/// Р”РѕР±Р°РІР»СЏРµС‚ РєРѕРїРёСЋ РІ РєРѕРЅРµС† СЃРїРёСЃРєР°
 	/// </summary>
 	void virtual Add(LLItem<T>* item) { throw exception(Constants::Strings::Errors::notImplemented); }
 	/// <summary>
-	/// Удаляет элемент в конце списка
+	/// РЈРґР°Р»СЏРµС‚ СЌР»РµРјРµРЅС‚ РІ РєРѕРЅС†Рµ СЃРїРёСЃРєР°
 	/// </summary>
 	void virtual Delete() { throw exception(Constants::Strings::Errors::notImplemented); };
 	/// <summary>
-	/// Удаляет элемент по указанному индексу
+	/// РЈРґР°Р»СЏРµС‚ СЌР»РµРјРµРЅС‚ РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ РёРЅРґРµРєСЃСѓ
 	/// </summary>
 	void virtual Delete(size_t index) { throw exception(Constants::Strings::Errors::notImplemented); };
 	/// <summary>
-	/// Удаляет элемент с указанным значением
+	/// РЈРґР°Р»СЏРµС‚ СЌР»РµРјРµРЅС‚ СЃ СѓРєР°Р·Р°РЅРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј
 	/// </summary>
 	void virtual Delete(LLItem<T>* item) { throw exception(Constants::Strings::Errors::notImplemented); };
 	/// <summary>
-	/// Очистка списка
+	/// РћС‡РёСЃС‚РєР° СЃРїРёСЃРєР°
 	/// </summary>
 	void Clear() {
 		while (this->head)
 			this->Delete();
 	}
 #pragma endregion
-#pragma region Поиск
+#pragma region РџРѕРёСЃРє
 	/// <summary>
-	/// Поиск указанного элемента в списке (поле data)
+	/// РџРѕРёСЃРє СѓРєР°Р·Р°РЅРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РІ СЃРїРёСЃРєРµ (РїРѕР»Рµ data)
 	/// </summary>
-	/// <param name="item">Указатель на элемент</param>
-	/// <returns>NULL-если элемента не существует</returns>
+	/// <param name="item">РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЌР»РµРјРµРЅС‚</param>
+	/// <returns>NULL-РµСЃР»Рё СЌР»РµРјРµРЅС‚Р° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚</returns>
 	LLItem<T>* Find(LLItem<T>* item) {
 		LLItem<T>* current = this->head;
 		while (current)
@@ -108,10 +108,10 @@ public:
 		return NULL;
 	}
 	/// <summary>
-	/// Поиск указанного элемента в списке (поле data)
+	/// РџРѕРёСЃРє СѓРєР°Р·Р°РЅРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РІ СЃРїРёСЃРєРµ (РїРѕР»Рµ data)
 	/// </summary>
-	/// <param name="data">Данные</param>
-	/// <returns>NULL-если элемента не существует</returns>
+	/// <param name="data">Р”Р°РЅРЅС‹Рµ</param>
+	/// <returns>NULL-РµСЃР»Рё СЌР»РµРјРµРЅС‚Р° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚</returns>
 	LLItem<T>* Find(T data) {
 		LLItem<T>* current = this->head;
 		while (current)
@@ -123,10 +123,10 @@ public:
 		return NULL;
 	}
 	/// <summary>
-	/// Поиск элемента по индексу
+	/// РџРѕРёСЃРє СЌР»РµРјРµРЅС‚Р° РїРѕ РёРЅРґРµРєСЃСѓ
 	/// </summary>
 	/// <param name="index"></param>
-	///<returns>NULL-если элемента не существует</returns>
+	///<returns>NULL-РµСЃР»Рё СЌР»РµРјРµРЅС‚Р° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚</returns>
 	LLItem<T>* Find(size_t index) {
 		if (this->length < index)
 			return NULL;
@@ -142,39 +142,39 @@ public:
 		return NULL;
 	}
 	/// <summary>
-	/// Получает последний элемент в списке
+	/// РџРѕР»СѓС‡Р°РµС‚ РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚ РІ СЃРїРёСЃРєРµ
 	/// </summary>
 	/// <returns></returns>
 	LLItem<T>* GetLast() {
 		return this->Find(size_t(this->GetLength() - 1));
 	}
 #pragma endregion
-#pragma region Длина
+#pragma region Р”Р»РёРЅР°
 	/// <summary>
-	/// Увеличивает длину списка
+	/// РЈРІРµР»РёС‡РёРІР°РµС‚ РґР»РёРЅСѓ СЃРїРёСЃРєР°
 	/// </summary>
 	void IncLength() {
 		this->length++;
 	}
 	/// <summary>
-	/// Уменьшает длину списка
+	/// РЈРјРµРЅСЊС€Р°РµС‚ РґР»РёРЅСѓ СЃРїРёСЃРєР°
 	/// </summary>
 	void DecLength() {
 		this->length--;
 	}
 	/// <summary>
-	/// Получает длину списка
+	/// РџРѕР»СѓС‡Р°РµС‚ РґР»РёРЅСѓ СЃРїРёСЃРєР°
 	/// </summary>
 	/// <returns></returns>
 	int GetLength() {
 		return this->length;
 	}
 #pragma endregion
-#pragma region Вывод
+#pragma region Р’С‹РІРѕРґ
 	/// <summary>
-	/// Преобразует список в строку
+	/// РџСЂРµРѕР±СЂР°Р·СѓРµС‚ СЃРїРёСЃРѕРє РІ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="showDetails">показывать каждый элемент подробно</param>
+	/// <param name="showDetails">РїРѕРєР°Р·С‹РІР°С‚СЊ РєР°Р¶РґС‹Р№ СЌР»РµРјРµРЅС‚ РїРѕРґСЂРѕР±РЅРѕ</param>
 	/// <returns></returns>
 	string ToString(bool showDetails = false) {
 		LLItem<T>* current = this->head;
@@ -184,7 +184,7 @@ public:
 			{
 				ss << current->ToString(showDetails);
 				if (current->next)
-					ss << Constants::Strings::Separators::arrow;
+					ss << Constants::Strings::Separators::arrowRight;
 				current = current->next;
 			}
 			return ss.str();
@@ -193,9 +193,9 @@ public:
 			return Constants::Strings::Errors::Lists::empty;
 	}
 	/// <summary>
-	/// Экспортирует данные из списка в массив
+	/// Р­РєСЃРїРѕСЂС‚РёСЂСѓРµС‚ РґР°РЅРЅС‹Рµ РёР· СЃРїРёСЃРєР° РІ РјР°СЃСЃРёРІ
 	/// </summary>
-	/// <returns>vector с данными</returns>
+	/// <returns>vector СЃ РґР°РЅРЅС‹РјРё</returns>
 	vector<T> ToList() {
 		vector<T> items;
 		LLItem<T>* current = this->head;
@@ -208,7 +208,7 @@ public:
 #pragma endregion
 #pragma endregion
 };
-#pragma region Операторы
+#pragma region РћРїРµСЂР°С‚РѕСЂС‹
 template<typename T>
 ostream& operator<<(ostream& os, LL<T>& list)
 {

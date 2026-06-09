@@ -5,13 +5,13 @@ public:
 	BinarySearch();
 	~BinarySearch();
 	/// <summary>
-	/// ищет указанное число 
-	/// в массиве
+	/// РёС‰РµС‚ СѓРєР°Р·Р°РЅРЅРѕРµ С‡РёСЃР»Рѕ 
+	/// РІ РјР°СЃСЃРёРІРµ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="value">искомое значение</param>
-	/// <param name="start">начало отрезка</param>
-	/// <param name="end">конец отрезка</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="value">РёСЃРєРѕРјРѕРµ Р·РЅР°С‡РµРЅРёРµ</param>
+	/// <param name="start">РЅР°С‡Р°Р»Рѕ РѕС‚СЂРµР·РєР°</param>
+	/// <param name="end">РєРѕРЅРµС† РѕС‚СЂРµР·РєР°</param>
 	/// <returns></returns>
 	bool Search(int *a, int value, int start, int end);
 };

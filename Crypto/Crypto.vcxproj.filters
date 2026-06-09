@@ -22,6 +22,12 @@
     <Filter Include="Исходные файлы\SHA">
       <UniqueIdentifier>{73d85be4-290f-46b3-8fcf-372703d611b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Blockchain\Backup">
+      <UniqueIdentifier>{47da9f3c-06ad-485d-b951-b5eefad353fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Namespaces">
+      <UniqueIdentifier>{22313a1d-b8c2-475b-960e-c5468df88835}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShamirsSecretSharing.h">
@@ -39,11 +45,22 @@
     <ClInclude Include="SHA1.h">
       <Filter>Исходные файлы\SHA</Filter>
     </ClInclude>
-    <ClInclude Include="Log.h">
-      <Filter>Исходные файлы\Blockchain</Filter>
+    <ClInclude Include="Namespaces.h">
+      <Filter>Исходные файлы\Namespaces</Filter>
     </ClInclude>
-    <ClInclude Include="LogItem.h">
-      <Filter>Исходные файлы\Blockchain</Filter>
+    <ClInclude Include="ClientBackup.h">
+      <Filter>Исходные файлы\Blockchain\Backup</Filter>
     </ClInclude>
+    <ClInclude Include="BlockBackup.h">
+      <Filter>Исходные файлы\Blockchain\Backup</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockChainBackup.h">
+      <Filter>Исходные файлы\Blockchain\Backup</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BlockChainOld.txt">
+      <Filter>Исходные файлы\Blockchain\Backup</Filter>
+    </Text>
   </ItemGroup>
 </Project>

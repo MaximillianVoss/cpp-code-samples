@@ -7,37 +7,37 @@ public:
 
 	template<typename T>
 	/// <summary>
-	/// Суммирует все элементы в массиве
+	/// РЎСѓРјРјРёСЂСѓРµС‚ РІСЃРµ СЌР»РµРјРµРЅС‚С‹ РІ РјР°СЃСЃРёРІРµ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="count">число элементов</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="count">С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ</param>
 	/// <returns></returns>
 	T Sum(const T * a, int count);
 
 	template <typename T>
 	/// <summary>
-	/// Суммирует все элементы в массиве
+	/// РЎСѓРјРјРёСЂСѓРµС‚ РІСЃРµ СЌР»РµРјРµРЅС‚С‹ РІ РјР°СЃСЃРёРІРµ
 	/// </summary>
-	/// <param name="a">массив</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
 	/// <returns></returns>
 	T Sum(vector<T> a);
 
 	template<typename T>
 	/// <summary>
-	/// Находит среднее 
-	/// арифметическое элементов
+	/// РќР°С…РѕРґРёС‚ СЃСЂРµРґРЅРµРµ 
+	/// Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="count">число элементов</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="count">С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ</param>
 	/// <returns></returns>
 	float Avg(const T * a, int count);
 
 	template <typename T>
 	/// <summary>
-	/// Находит среднее 
-	/// арифметическое элементов
+	/// РќР°С…РѕРґРёС‚ СЃСЂРµРґРЅРµРµ 
+	/// Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ
 	/// </summary>
-	/// <param name="a">массив</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
 	/// <returns></returns>
 	float Avg(vector<T>a);
 
@@ -60,18 +60,18 @@ public:
 
 	template<typename T>
 	/// <summary>
-	/// Находит минимум в массиве
+	/// РќР°С…РѕРґРёС‚ РјРёРЅРёРјСѓРј РІ РјР°СЃСЃРёРІРµ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="count">число элементов</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="count">С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ</param>
 	/// <returns></returns>
 	T GetMin(const T * a, int count);
 
 	template<typename T>
 	/// <summary>
-	/// Находит минимум в массиве
+	/// РќР°С…РѕРґРёС‚ РјРёРЅРёРјСѓРј РІ РјР°СЃСЃРёРІРµ
 	/// </summary>
-	/// <param name="a">массив</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
 	/// <returns></returns>
 	T GetMin(vector<T> a);
 };

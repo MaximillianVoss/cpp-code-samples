@@ -16,7 +16,7 @@ public:
 
 class SSSTests :UnitTests {
 public:
-	SSSTests() : UnitTests("Тест Разделения секрета Шамира") {}
+	SSSTests() : UnitTests("РўРµСЃС‚ Р Р°Р·РґРµР»РµРЅРёСЏ СЃРµРєСЂРµС‚Р° РЁР°РјРёСЂР°") {}
 	void Start()override {
 	}
 };

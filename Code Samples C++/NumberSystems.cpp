@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "NumberSystems.h"
 
 NumberSystems::NumberSystems()
@@ -54,7 +54,7 @@ char* NumberSystems::Convert(int a, int b)
 	}
 	else
 	{
-		throw exception("Основание должно быть больше 1\n");
+		throw exception("РћСЃРЅРѕРІР°РЅРёРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 1\n");
 	}
 }
 
@@ -67,7 +67,7 @@ int NumberSystems::ConvertToDecimal(char * value, int base)
 		if (item >= 0)
 			result += item * pow(base, i);
 		else
-			throw exception("Обнаружены недопустимые символы!");
+			throw exception("РћР±РЅР°СЂСѓР¶РµРЅС‹ РЅРµРґРѕРїСѓСЃС‚РёРјС‹Рµ СЃРёРјРІРѕР»С‹!");
 	}
 	return result;
 }

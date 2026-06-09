@@ -1,4 +1,4 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "BShip.h"
 
 bool BShip::Check(Cell cell)
@@ -18,7 +18,7 @@ BShip::BShip()
 
 }
 
-BShip::BShip(int _size, Field * _field)
+BShip::BShip(int _size, GameField * _field)
 {
 	size = _size;
 	field = _field;

@@ -1,33 +1,33 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "Matrix.h"
 #pragma once
 class SortsAdvanced
 {
 private:
-#pragma region Структура для результатов	
+#pragma region РЎС‚СЂСѓРєС‚СѓСЂР° РґР»СЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ	
 	/// <summary>
-	///Струткура для хранения 
-	///конкретного результата сортировки
+	///РЎС‚СЂСѓС‚РєСѓСЂР° РґР»СЏ С…СЂР°РЅРµРЅРёСЏ 
+	///РєРѕРЅРєСЂРµС‚РЅРѕРіРѕ СЂРµР·СѓР»СЊС‚Р°С‚Р° СЃРѕСЂС‚РёСЂРѕРІРєРё
 	/// </summary>
 	struct Result {
 		/// <summary>
-		/// название сортировки 
+		/// РЅР°Р·РІР°РЅРёРµ СЃРѕСЂС‚РёСЂРѕРІРєРё 
 		/// </summary>
 		string name;
 		/// <summary>
-		/// количесвто сравнений
+		/// РєРѕР»РёС‡РµСЃРІС‚Рѕ СЃСЂР°РІРЅРµРЅРёР№
 		/// </summary>
 		int cmpsValue;
 		/// <summary>
-		/// количесвто перестановок
+		/// РєРѕР»РёС‡РµСЃРІС‚Рѕ РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє
 		/// </summary>
 		int swapsValue;
 		/// <summary>
-		/// Создает результат с указанными параметрами
+		/// РЎРѕР·РґР°РµС‚ СЂРµР·СѓР»СЊС‚Р°С‚ СЃ СѓРєР°Р·Р°РЅРЅС‹РјРё РїР°СЂР°РјРµС‚СЂР°РјРё
 		/// </summary>
-		/// <param name="_name">имя</param>
-		/// <param name="cmps">количесвто сравнений</param>
-		/// <param name="swaps">количесвто перестановок</param>
+		/// <param name="_name">РёРјСЏ</param>
+		/// <param name="cmps">РєРѕР»РёС‡РµСЃРІС‚Рѕ СЃСЂР°РІРЅРµРЅРёР№</param>
+		/// <param name="swaps">РєРѕР»РёС‡РµСЃРІС‚Рѕ РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 		Result(string _name, int cmps, int swaps)
 		{
 			name = _name;
@@ -37,75 +37,75 @@ private:
 	};
 #pragma endregion
 	/// <summary>
-	/// сравнивает два элемента
+	/// СЃСЂР°РІРЅРёРІР°РµС‚ РґРІР° СЌР»РµРјРµРЅС‚Р°
 	/// </summary>
-	/// <param name="a">первый элемент</param>
-	/// <param name="b">второй элемент</param>
-	/// <param name="cmpsCounter">счетчик сравнений</param>
-	/// <returns>true если первый больше второго</returns>
+	/// <param name="a">РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚</param>
+	/// <param name="b">РІС‚РѕСЂРѕР№ СЌР»РµРјРµРЅС‚</param>
+	/// <param name="cmpsCounter">СЃС‡РµС‚С‡РёРє СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <returns>true РµСЃР»Рё РїРµСЂРІС‹Р№ Р±РѕР»СЊС€Рµ РІС‚РѕСЂРѕРіРѕ</returns>
 	bool cmp(int a, int b, int & cmpsCounter);
 
 public:
 	SortsAdvanced();
 	~SortsAdvanced();
 	/// <summary>
-	/// Сортировка пузырьком
-	/// сортировка происходит по абсолютному значению
+	/// РЎРѕСЂС‚РёСЂРѕРІРєР° РїСѓР·С‹СЂСЊРєРѕРј
+	/// СЃРѕСЂС‚РёСЂРѕРІРєР° РїСЂРѕРёСЃС…РѕРґРёС‚ РїРѕ Р°Р±СЃРѕР»СЋС‚РЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="cmpsCounter">счетчик сравнений</param>
-	/// <param name="swapsCounter">счетчик перестановок</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="cmpsCounter">СЃС‡РµС‚С‡РёРє СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <param name="swapsCounter">СЃС‡РµС‚С‡РёРє РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 	void BubbleSort_Abs(vector<int>& a, int & cmpsCounter, int & swapsCounter);
 	/// <summary>
-	/// Сортировка выбором
-	/// сортировка происходит по абсолютному значению
+	/// РЎРѕСЂС‚РёСЂРѕРІРєР° РІС‹Р±РѕСЂРѕРј
+	/// СЃРѕСЂС‚РёСЂРѕРІРєР° РїСЂРѕРёСЃС…РѕРґРёС‚ РїРѕ Р°Р±СЃРѕР»СЋС‚РЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="cmpsCounter">счетчик сравнений</param>
-	/// <param name="swapsCounter">счетчик перестановок</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="cmpsCounter">СЃС‡РµС‚С‡РёРє СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <param name="swapsCounter">СЃС‡РµС‚С‡РёРє РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 	void SelectSort_Abs(vector<int>& a, int & cmpsCounter, int & swapsCounter);
 	/// <summary>
-	/// Сортировка вставками
-	/// сортировка происходит по абсолютному значению
+	/// РЎРѕСЂС‚РёСЂРѕРІРєР° РІСЃС‚Р°РІРєР°РјРё
+	/// СЃРѕСЂС‚РёСЂРѕРІРєР° РїСЂРѕРёСЃС…РѕРґРёС‚ РїРѕ Р°Р±СЃРѕР»СЋС‚РЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="cmpsCounter">счетчик сравнений</param>
-	/// <param name="swapsCounter">счетчик перестановок</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="cmpsCounter">СЃС‡РµС‚С‡РёРє СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <param name="swapsCounter">СЃС‡РµС‚С‡РёРє РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 	void Insertsort_Abs(vector<int>& a, int & cmpsCounter, int & swapsCounter);
 	/// <summary>
-	/// Сортировка Шелла
-	/// сортировка происходит по абсолютному значению
+	/// РЎРѕСЂС‚РёСЂРѕРІРєР° РЁРµР»Р»Р°
+	/// СЃРѕСЂС‚РёСЂРѕРІРєР° РїСЂРѕРёСЃС…РѕРґРёС‚ РїРѕ Р°Р±СЃРѕР»СЋС‚РЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="cmpsCounter">счетчик сравнений</param>
-	/// <param name="swapsCounter">счетчик перестановок</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="cmpsCounter">СЃС‡РµС‚С‡РёРє СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <param name="swapsCounter">СЃС‡РµС‚С‡РёРє РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 	void ShellSort_Abs(vector<int>& a, int & cmpsCounter, int & swapsCounter);
 	/// <summary>
-	/// Быстрая сортировка
-	/// сортировка происходит по абсолютному значению
+	/// Р‘С‹СЃС‚СЂР°СЏ СЃРѕСЂС‚РёСЂРѕРІРєР°
+	/// СЃРѕСЂС‚РёСЂРѕРІРєР° РїСЂРѕРёСЃС…РѕРґРёС‚ РїРѕ Р°Р±СЃРѕР»СЋС‚РЅРѕРјСѓ Р·РЅР°С‡РµРЅРёСЋ
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="cmpsCounter">счетчик сравнений</param>
-	/// <param name="swapsCounter">счетчик перестановок</param>
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="cmpsCounter">СЃС‡РµС‚С‡РёРє СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <param name="swapsCounter">СЃС‡РµС‚С‡РёРє РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 	void QSort_Abs(int * a, int size, int & cmpsCounter, int & swapsCounter);
 	/// <summary>
-	/// наглядно тестирует 
-	/// все сортировкив классе
+	/// РЅР°РіР»СЏРґРЅРѕ С‚РµСЃС‚РёСЂСѓРµС‚ 
+	/// РІСЃРµ СЃРѕСЂС‚РёСЂРѕРІРєРёРІ РєР»Р°СЃСЃРµ
 	/// </summary>
 	void Test();
 	/// <summary>
-	/// Печатает таблицу со 
-	/// статистикой для сортировок
+	/// РџРµС‡Р°С‚Р°РµС‚ С‚Р°Р±Р»РёС†Сѓ СЃРѕ 
+	/// СЃС‚Р°С‚РёСЃС‚РёРєРѕР№ РґР»СЏ СЃРѕСЂС‚РёСЂРѕРІРѕРє
 	/// </summary>
-	/// <param name="results">результаты сортировок</param>
-	/// <param name="message">подпись</param>
+	/// <param name="results">СЂРµР·СѓР»СЊС‚Р°С‚С‹ СЃРѕСЂС‚РёСЂРѕРІРѕРє</param>
+	/// <param name="message">РїРѕРґРїРёСЃСЊ</param>
 	void PrintTable(vector<Result> results, string message);
 	/// <summary>
-	/// Выводи количество 
-	/// сравнений и перестановок
+	/// Р’С‹РІРѕРґРё РєРѕР»РёС‡РµСЃС‚РІРѕ 
+	/// СЃСЂР°РІРЅРµРЅРёР№ Рё РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє
 	/// </summary>
-	/// <param name="cmps">количество сравнений</param>
-	/// <param name="swaps">количество перестановок</param>
+	/// <param name="cmps">РєРѕР»РёС‡РµСЃС‚РІРѕ СЃСЂР°РІРЅРµРЅРёР№</param>
+	/// <param name="swaps">РєРѕР»РёС‡РµСЃС‚РІРѕ РїРµСЂРµСЃС‚Р°РЅРѕРІРѕРє</param>
 	void PrintStatistics(int cmps, int swaps);
 };
 

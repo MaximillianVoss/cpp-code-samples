@@ -1,7 +1,7 @@
 #pragma once
 #include "pch.h"
 /// <summary>
-/// Схема разделения секрета Шамира
+/// РЎС…РµРјР° СЂР°Р·РґРµР»РµРЅРёСЏ СЃРµРєСЂРµС‚Р° РЁР°РјРёСЂР°
 /// </summary>
 class ShamirsSecretSharing {
 private:
