@@ -102,12 +102,6 @@
     <ClInclude Include="Container.h">
       <Filter>Исходные файлы\Contianer</Filter>
     </ClInclude>
-    <ClInclude Include="QuckSortAdv.h">
-      <Filter>Исходные файлы\Sorts</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySortAdv.h">
-      <Filter>Исходные файлы\Search</Filter>
-    </ClInclude>
     <ClInclude Include="Sorts.h">
       <Filter>Исходные файлы\Sorts</Filter>
     </ClInclude>

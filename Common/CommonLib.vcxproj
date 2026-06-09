@@ -130,7 +130,6 @@
   <ItemGroup>
     <ClInclude Include="AVLTree.h" />
     <ClInclude Include="BinarySearch.h" />
-    <ClInclude Include="BinarySortAdv.h" />
     <ClInclude Include="Container.h" />
     <ClInclude Include="Converter.h" />
     <ClInclude Include="Converter_Old.h" />
@@ -153,7 +152,6 @@
     <ClInclude Include="pch.h" />
     <ClInclude Include="Plotter.h" />
     <ClInclude Include="Polynom.h" />
-    <ClInclude Include="QuckSortAdv.h" />
     <ClInclude Include="QuickSort.h" />
     <ClInclude Include="SField.h" />
     <ClInclude Include="SLoader.h" />
