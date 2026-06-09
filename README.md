@@ -45,13 +45,15 @@ The facade headers provide a migration path toward namespaced code without break
 
 ## Build
 
-Recommended local build:
+Recommended local build uses the latest Visual Studio/MSBuild instance installed on the machine:
 
 ```powershell
-& 'C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\MSBuild.exe' 'Code Samples C++.sln' /t:Build /p:Configuration=Debug /p:Platform=x64 /m
+$vs = & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.Component.MSBuild -property installationPath
+$msbuild = Join-Path $vs 'MSBuild\Current\Bin\MSBuild.exe'
+& $msbuild 'Code Samples C++.sln' /t:Build /p:Configuration=Debug /p:Platform=x64 /m
 ```
 
-Build outputs are redirected by `Directory.Build.props` into `build/<Platform>/<Configuration>/`.
+The solution is aligned with Visual Studio 2026 / MSBuild 18 and C++ `PlatformToolset` `v145`. `WindowsTargetPlatformVersion` is kept as `10.0` so MSBuild selects the latest installed Windows SDK. Build outputs are redirected by `Directory.Build.props` into `build/<Platform>/<Configuration>/`.
 
 ## Preservation
 
