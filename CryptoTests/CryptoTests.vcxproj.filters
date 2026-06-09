@@ -16,6 +16,9 @@
     <Filter Include="Исходные файлы\Tests">
       <UniqueIdentifier>{9fd041ad-ebd2-4cce-85de-5e0327c588e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Legacy">
+      <UniqueIdentifier>{81a548a4-cde4-4c4f-ac11-793fbcd264f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -33,7 +36,7 @@
       <Filter>Исходные файлы\Tests</Filter>
     </ClInclude>
     <ClInclude Include="BlockchainTestsBackup.h">
-      <Filter>Исходные файлы\Tests</Filter>
+      <Filter>Исходные файлы\Legacy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
