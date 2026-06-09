@@ -277,9 +277,9 @@ public:
 		return this->Compare(this->actual, this->expected);
 	}
 	/// <summary>
-	/// Запцск теста
+	/// Запуск теста
 	/// </summary>
-	void Start() {
+	bool Start() {
 		this->SetColor(ConsoleColor::black, ConsoleColor::white);
 		cout << this->name << endl;
 		this->ResetColor();
@@ -297,6 +297,7 @@ public:
 				cout << Constants::Strings::Messages::UnitTest::passed << this->prefixMs << ' ' << ms << this->postfixMs << endl;
 				this->ResetColor();
 				this->Plot();
+				return true;
 			}
 			else {
 				this->SetColor(ConsoleColor::white, ConsoleColor::light_red);
@@ -306,12 +307,13 @@ public:
 				this->Print(this->expected, this->incorectIndex);
 				cout << Constants::Strings::Messages::UnitTest::actual << endl;
 				this->Print(this->actual, this->incorectIndex);
+				return false;
 			}
 		}
-		catch (exception ex) {
+		catch (const exception& ex) {
 			cout << ex.what() << endl;
+			return false;
 		}
-
 	}
 };
 /// <summary>

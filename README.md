@@ -55,6 +55,16 @@ $msbuild = Join-Path $vs 'MSBuild\Current\Bin\MSBuild.exe'
 
 The solution is aligned with Visual Studio 2026 / MSBuild 18 and C++ `PlatformToolset` `v145`. `WindowsTargetPlatformVersion` is kept as `10.0` so MSBuild selects the latest installed Windows SDK. Build outputs are redirected by `Directory.Build.props` into `build/<Platform>/<Configuration>/`.
 
+## Unit Tests
+
+The deterministic common helper tests are wired through the `Common Tests` project. After building `Debug|x64`, run:
+
+```powershell
+& '.\build\x64\Debug\bin\Common Tests.exe'
+```
+
+The test runner returns a non-zero exit code when any unit test fails.
+
 ## Preservation
 
 Pre-refactor preservation points:

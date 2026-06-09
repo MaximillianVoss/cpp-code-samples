@@ -94,6 +94,17 @@ public:
 		UnitTest::Compare();
 	}
 };
+class SHSplitCharTest :public UnitTest<string> {
+public:
+	StrHelper sh = StrHelper();
+	SHSplitCharTest(string title, vector<string>values) :UnitTest(title, values) {
+
+	}
+	void Test() override {
+		this->Add(sh.Split("alpha;beta;gamma", ';'));
+		UnitTest::Compare();
+	}
+};
 class SHRemoveCopiesTest :public UnitTest<string> {
 public:
 	StrHelper sh = StrHelper();
@@ -103,6 +114,19 @@ public:
 	void Test() override {
 		this->Add(sh.RemoveCopies({ "1","2","3","4","5","6","3","4" }));
 		this->Add(sh.RemoveCopies({ "lol","kek","kek","lol","some text" }));
+		UnitTest::Compare();
+	}
+};
+class SHFormatTest :public UnitTest<string> {
+public:
+	StrHelper sh = StrHelper();
+	SHFormatTest(string title, vector<string>values) :UnitTest(title, values) {
+
+	}
+	void Test() override {
+		this->Add(sh.AddQoute("text"));
+		this->Add(sh.BoolToStr(true));
+		this->Add(sh.BoolToStr(false));
 		UnitTest::Compare();
 	}
 };
@@ -117,6 +141,8 @@ public:
 		SHGetNumbersTest("GetNumbers", { "123","456","4.5" }).Start();
 		SHIsNumberTest("IsNumber", { true,false,true,false,true,true,false,false }).Start();
 		SHSplitTest("Split", { "one","two","three","1","2","3","4","5","one",".","two","." }).Start();
+		SHSplitCharTest("Split by char", { "alpha","beta","gamma" }).Start();
 		SHRemoveCopiesTest("RemoveCopies", { "1","2","3","4","5","6","lol","kek","some text" }).Start();
+		SHFormatTest("Format helpers", { "\"text\"","true","false" }).Start();
 	}
 };
