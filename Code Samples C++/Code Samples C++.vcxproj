@@ -175,6 +175,7 @@
     <ClInclude Include="Menu.h" />
     <ClInclude Include="MenuITem.h" />
     <ClInclude Include="Messages.h" />
+    <ClInclude Include="Namespaces.h" />
     <ClInclude Include="NumberSystems.h" />
     <ClInclude Include="Obfuscator.h" />
     <ClInclude Include="Pair.h" />

@@ -1,0 +1,97 @@
+#pragma once
+
+#include "ArrayHelper.h"
+#include "BinarySearch.h"
+#include "BinaryTree.h"
+#include "BSBot.h"
+#include "BSGame.h"
+#include "BShip.h"
+#include "BSInGameMenu.h"
+#include "BSMainMenu.h"
+#include "BSSettingMenu.h"
+#include "Calculator.h"
+#include "Cell.h"
+#include "Chess.h"
+#include "ChessFigure.h"
+#include "Converter.h"
+#include "FileIO.h"
+#include "Fraction.h"
+#include "GameField.h"
+#include "Hamming.h"
+#include "InfoIO.h"
+#include "Knight.h"
+#include "LongCalc.h"
+#include "LongVal.h"
+#include "MapArray.h"
+#include "Matrix.h"
+#include "MatrixTemplate.h"
+#include "Menu.h"
+#include "MenuITem.h"
+#include "Messages.h"
+#include "NumberSystems.h"
+#include "Obfuscator.h"
+#include "Pair.h"
+#include "PairStr.h"
+#include "Player.h"
+#include "PolandStr.h"
+#include "Random.h"
+#include "Serializator.h"
+#include "SField.h"
+#include "Sorts.h"
+#include "SortsAdvanced.h"
+#include "Stack.h"
+#include "StrHelper.h"
+#include "String.h"
+#include "TemplateClass.h"
+#include "TreeNode.h"
+#include "Zebra.h"
+
+namespace code_samples::samples
+{
+	using ::ArrayHelper;
+	using ::BinarySearch;
+	using ::BinaryTree;
+	using ::BSBot;
+	using ::BSGame;
+	using ::BShip;
+	using ::BSInGameMenu;
+	using ::BSMainMenu;
+	using ::BSSettingMenu;
+	using ::Calculator;
+	using ::Cell;
+	using ::Chess;
+	using ::ChessFigure;
+	using ::Converter;
+	using ::Exceptions;
+	using ::FileIO;
+	using ::Fraction;
+	using ::GameField;
+	using ::Hamming;
+	using ::IO;
+	using ::Knight;
+	using ::LongCalc;
+	using ::LongVal;
+	using ::MapArray;
+	using ::Matrix;
+	using ::MatrixTemplate;
+	using ::Menu;
+	using ::MenuItem;
+	using ::Messages;
+	using ::NumberSystems;
+	using ::Obfuscator;
+	using ::Pair;
+	using ::PairStr;
+	using ::Player;
+	using ::PolandStr;
+	using ::Random;
+	using ::SerializatorOld;
+	using ::SField;
+	using ::Sorts;
+	using ::SortsAdvanced;
+	using ::Stack;
+	using ::StrHelper;
+	using ::String;
+	using ::TemplateCall;
+	using ::TreeNode;
+	using ::Zebra;
+}

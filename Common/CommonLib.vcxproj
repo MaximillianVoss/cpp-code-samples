@@ -146,6 +146,7 @@
     <ClInclude Include="LL.h" />
     <ClInclude Include="Log.h" />
     <ClInclude Include="LogItem.h" />
+    <ClInclude Include="Namespaces.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Operators.h" />
     <ClInclude Include="OWLL.h" />

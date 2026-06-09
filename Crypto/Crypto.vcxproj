@@ -156,6 +156,7 @@
     <ClInclude Include="BlockChainBackup.h" />
     <ClInclude Include="Client.h" />
     <ClInclude Include="ClientBackup.h" />
+    <ClInclude Include="Namespaces.h" />
     <ClInclude Include="SHA1.h" />
     <ClInclude Include="ShamirsSecretSharing.h" />
   </ItemGroup>

@@ -169,6 +169,9 @@
     <Filter Include="Исходные файлы\Classes\Сообщения">
       <UniqueIdentifier>{bd94a282-d33d-42f3-8223-50333d6634a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Namespaces">
+      <UniqueIdentifier>{0ab34e36-3a44-4f75-8fd6-05763c41c3ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -296,6 +299,9 @@
     </ClInclude>
     <ClInclude Include="Messages.h">
       <Filter>Исходные файлы\Classes\Сообщения</Filter>
+    </ClInclude>
+    <ClInclude Include="Namespaces.h">
+      <Filter>Исходные файлы\Namespaces</Filter>
     </ClInclude>
     <ClInclude Include="PairStr.h">
       <Filter>Исходные файлы\Classes\Пары</Filter>

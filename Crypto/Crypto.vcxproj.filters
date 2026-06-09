@@ -25,6 +25,9 @@
     <Filter Include="Исходные файлы\Blockchain\Backup">
       <UniqueIdentifier>{47da9f3c-06ad-485d-b951-b5eefad353fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Namespaces">
+      <UniqueIdentifier>{22313a1d-b8c2-475b-960e-c5468df88835}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ShamirsSecretSharing.h">
@@ -41,6 +44,9 @@
     </ClInclude>
     <ClInclude Include="SHA1.h">
       <Filter>Исходные файлы\SHA</Filter>
+    </ClInclude>
+    <ClInclude Include="Namespaces.h">
+      <Filter>Исходные файлы\Namespaces</Filter>
     </ClInclude>
     <ClInclude Include="ClientBackup.h">
       <Filter>Исходные файлы\Blockchain\Backup</Filter>

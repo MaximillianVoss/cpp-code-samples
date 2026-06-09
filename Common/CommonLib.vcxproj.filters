@@ -55,6 +55,9 @@
     <Filter Include="Исходные файлы\Converter">
       <UniqueIdentifier>{b51d7d35-8a9e-41ec-84d9-df3c845d4348}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Namespaces">
+      <UniqueIdentifier>{9f954933-0d3d-4f32-a40a-d5355d6f4a8b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -119,6 +122,9 @@
     </ClInclude>
     <ClInclude Include="LogItem.h">
       <Filter>Исходные файлы\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Namespaces.h">
+      <Filter>Исходные файлы\Namespaces</Filter>
     </ClInclude>
     <ClInclude Include="DataPack.h">
       <Filter>Исходные файлы\Plot</Filter>
