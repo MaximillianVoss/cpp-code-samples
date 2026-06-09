@@ -1,14 +1,42 @@
+# Visual Studio user state
+.vs/
+*.user
+*.suo
+
+# Build outputs
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+Win32/
+**/x64/
+**/x86/
+**/Win32/
+**/[Dd]ebug/
+**/[Rr]elease/
+
+# C/C++ intermediate files
+*.obj
+*.iobj
+*.ipdb
+*.pdb
+*.idb
+*.ilk
+*.pch
 *.ipch
-*.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/e103853b57077c/UNITTEST.ipch
-*.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/f4168b3dd78e9975/MAIN.ipch
-*.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/e103853b57077c/UNITTEST.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/e103853b57077c/UNITTEST.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/f4168b3dd78e9975/MAIN.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/c64a9d99e33c23fc/IO.ipch
-.vs/Code Samples C++/v16/ipch/AutoPCH/f4168b3dd78e9975/MAIN.ipch
-C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\.vs\Code Samples C++\v16\ipch\AutoPCH\e103853b57077c\UNITTEST.ipch
-C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\.vs\Code Samples C++\v16\ipch\AutoPCH\f4168b3dd78e9975\MAIN.ipch
-C:\Users\Александр\OneDrive\Репетиторство\Программирование\C++\Code Samples C++\.vs\Code Samples C++\v16\ipch\AutoPCH\c64a9d99e33c23fc\IO.ipch
+*.tlog
+*.lastbuildstate
+*.recipe
+*.log
+
+# Binaries and libraries
+*.exe
+*.dll
+*.lib
+*.exp
+
+# Local shortcuts and OS noise
+*.lnk
+Thumbs.db
+Desktop.ini
