@@ -41,5 +41,17 @@
     <ClInclude Include="SearchTests.h">
       <Filter>Исходные файлы\Tests</Filter>
     </ClInclude>
+    <ClInclude Include="SObjectTests.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SFieldTests.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPackTest.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTreeTest.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

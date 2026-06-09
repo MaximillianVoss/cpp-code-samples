@@ -2,7 +2,7 @@
 #include "Serializator.h"
 
 #pragma region Методы
-void Serializator::Serialize(string fileName, vector<Pair>fieldsValues)
+void SerializatorOld::Serialize(string fileName, vector<Pair>fieldsValues)
 {
 	vector<string> values;
 	for (int i = 0; i < fieldsValues.size(); i++)
@@ -10,7 +10,7 @@ void Serializator::Serialize(string fileName, vector<Pair>fieldsValues)
 	fileIO.WriteLinesLn(fileName, values);
 }
 
-vector<Pair> Serializator::Deserialize(string fileName)
+vector<Pair> SerializatorOld::Deserialize(string fileName)
 {
 	vector<Pair> values;
 	vector<string> lines = fileIO.ReadLines(fileName);
@@ -27,11 +27,11 @@ vector<Pair> Serializator::Deserialize(string fileName)
 #pragma endregion
 
 #pragma region Конструкторы/Деструкторы
-Serializator::Serializator()
+SerializatorOld::SerializatorOld()
 {
 }
 
-Serializator::~Serializator()
+SerializatorOld::~SerializatorOld()
 {
 }
 #pragma endregion

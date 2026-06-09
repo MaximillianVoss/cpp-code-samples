@@ -3,6 +3,7 @@
 #include "GraphItem.h"
 #include "Enums.h"
 #include "Constants.h"
+#include "StrHelper.h"
 template<typename T>
 ///<summary>
 /// Вершина графа
@@ -66,7 +67,7 @@ public:
 			ss << "data:" << this->GetData() << endl;
 		}
 		else if (format == OutputFormat::xml) {
-			StrHelper sh;
+			StrHelper sh = StrHelper();
 			ss << "<node positionX=" + sh.AddQoute(to_string(x)) +
 				" positionY=" + sh.AddQoute(to_string(y)) +
 				" id=" + sh.AddQoute(this->GetId()) +

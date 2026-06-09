@@ -21,7 +21,7 @@ public:
 #pragma region Методы
 #pragma region Добавление
 	void Add(T data) override {
-		if (!head)
+		if (!this->head)
 			this->head = new  LLItem<T>(data);
 		else
 			this->GetLast()->Add(new LLItem<T>(data));
@@ -31,7 +31,7 @@ public:
 
 	};
 	void Add(LLItem<T>* item)override {
-		if (!head)
+		if (!this->head)
 			this->head = item;
 		else
 			this->GetLast()->Add(item);

@@ -218,7 +218,7 @@ int BSGame::GetWinner()
 }
 
 void BSGame::Save() {
-	Serializator s;
+	SerializatorOld s;
 	vector<Pair> values;
 	values.push_back(Pair(fieldNames[0], to_string(size)));
 	values.push_back(Pair(fieldNames[1], to_string(player)));
@@ -236,7 +236,7 @@ void BSGame::Save() {
 }
 
 void BSGame::Load() {
-	Serializator s;
+	SerializatorOld s;
 
 	vector<Pair> values = s.Deserialize(savegameFile);
 	for (int i = 0; i < values.size(); i++) {

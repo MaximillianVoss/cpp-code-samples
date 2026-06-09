@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -160,7 +160,11 @@
     <ClInclude Include="ChessFigure.h" />
     <ClInclude Include="Converter.h" />
     <ClInclude Include="Enums.h" />
-    <ClInclude Include="Field.h" />
+    <ClInclude Include="Fraction.h" />
+    <ClInclude Include="MatrixTemplate.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="SField.h" />
+    <ClInclude Include="GameField.h" />
     <ClInclude Include="FileIO.h" />
     <ClInclude Include="Hamming.h" />
     <ClInclude Include="InfoIO.h" />
@@ -180,11 +184,13 @@
     <ClInclude Include="PolandStr.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="Serializator.h" />
+    <ClInclude Include="SObject.h" />
     <ClInclude Include="Sorts.h" />
     <ClInclude Include="SortsAdvanced.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="StrHelper.h" />
+    <ClInclude Include="String.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TemplateClass.h" />
     <ClInclude Include="TreeNode.h" />
@@ -207,7 +213,7 @@
     <ClCompile Include="ChessFigure.cpp" />
     <ClCompile Include="Code Samples C++.cpp" />
     <ClCompile Include="Converter.cpp" />
-    <ClCompile Include="Field.cpp" />
+    <ClCompile Include="GameField.cpp" />
     <ClCompile Include="FileIO.cpp" />
     <ClCompile Include="Hamming.cpp" />
     <ClCompile Include="infoIO.cpp" />
@@ -228,7 +234,6 @@
     <ClCompile Include="SortsAdvanced.cpp" />
     <ClCompile Include="Stack.cpp" />
     <ClCompile Include="StackWithCommands.cpp" />
-    <ClCompile Include="StrHelper.cpp" />
     <ClCompile Include="SumArray.cpp" />
     <ClCompile Include="TemplateClass.cpp" />
     <ClCompile Include="TreeNode.cpp" />

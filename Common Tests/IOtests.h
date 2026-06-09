@@ -6,14 +6,17 @@
 //IO io = IO();
 //string a = io.GetStr();
 //io.WriteLines("lol.txt", { a });
-class InIntTest :public UnitTest<int> {
+class InIntTest :public UnitTest<int>
+{
 public:
 	IO io = IO();
-	InIntTest(string title, vector<int> values) :UnitTest(title, values) {
+	InIntTest(string title, vector<int> values) :UnitTest(title, values)
+	{
 
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		string input = Constants::Strings::Messages::Inputs::inputValue;
 		input += " ";
 		this->actual.push_back(io.Get<int>(input + "1" + io.endInstruction));
@@ -22,14 +25,17 @@ public:
 		UnitTest::Compare();
 	}
 };
-class InDoubleTest :public UnitTest<double> {
+class InDoubleTest :public UnitTest<double>
+{
 public:
 	IO io = IO();
-	InDoubleTest(string title, vector<double> values) :UnitTest(title, values) {
+	InDoubleTest(string title, vector<double> values) :UnitTest(title, values)
+	{
 
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		string input = Constants::Strings::Messages::Inputs::inputValue;
 		input += " ";
 		this->actual.push_back(io.Get<double>(input + "1.0" + io.endInstruction));
@@ -38,14 +44,17 @@ public:
 		UnitTest::Compare();
 	}
 };
-class InStringTest :public UnitTest<string> {
+class InStringTest :public UnitTest<string>
+{
 public:
 	IO io = IO();
-	InStringTest(string title, vector<string> values) :UnitTest(title, values) {
+	InStringTest(string title, vector<string> values) :UnitTest(title, values)
+	{
 
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		string input = Constants::Strings::Messages::Inputs::inputValue;
 		input += " ";
 		this->actual.push_back(io.Get<string>(input + "hello" + io.endInstruction));
@@ -54,14 +63,17 @@ public:
 		UnitTest::Compare();
 	}
 };
-class FileCreateRemoveTest :public UnitTest<bool> {
+class FileCreateRemoveTest :public UnitTest<bool>
+{
 public:
 	IO io = IO();
-	FileCreateRemoveTest(string title, vector<bool> values) :UnitTest(title, values) {
+	FileCreateRemoveTest(string title, vector<bool> values) :UnitTest(title, values)
+	{
 
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		string fileName = this->name + io.txtExtension;
 		io.AddFile(fileName);
 		this->actual.push_back(io.IsExists(fileName));
@@ -70,28 +82,34 @@ public:
 		UnitTest::Compare();
 	}
 };
-class FileIOTest :public UnitTest<string> {
+class FileIOTest :public UnitTest<string>
+{
 public:
 	IO io = IO();
-	FileIOTest(string title, vector<string> values) :UnitTest(title, values) {
+	FileIOTest(string title, vector<string> values) :UnitTest(title, values)
+	{
 
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		string fileName = this->name + io.txtExtension;
 		io.WriteLines(fileName, this->expected, true);
 		this->actual = io.ReadLines(fileName);
 		UnitTest::Compare();
 	}
 };
-class FileAppendTest :public UnitTest<string> {
+class FileAppendTest :public UnitTest<string>
+{
 public:
 	IO io = IO();
-	FileAppendTest(string title, vector<string> values) :UnitTest(title, values) {
+	FileAppendTest(string title, vector<string> values) :UnitTest(title, values)
+	{
 
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		string fileName = this->name + io.txtExtension;
 		if (io.IsExists(fileName))
 			io.ClearLines(fileName);
@@ -100,13 +118,16 @@ public:
 		UnitTest::Compare();
 	}
 };
-class OutTest :public UnitTest<bool> {
+class OutTest :public UnitTest<bool>
+{
 public:
 	IO io = IO();
-	OutTest(string title, vector<bool> values) :UnitTest(title, values) {
+	OutTest(string title, vector<bool> values) :UnitTest(title, values)
+	{
 	}
 
-	void Test() override {
+	void Test() override
+	{
 		io.SetColor(ConsoleColor::dark_red, ConsoleColor::black);
 		io.Print("Красная строка на черном фоне", true);
 		io.SetColor(ConsoleColor::dark_green, ConsoleColor::white);
@@ -121,7 +142,8 @@ public:
 		io.Print(items, "Вывод вектора 1-10:", false, false, ",");
 		io.Print(items, "Вывод вектора 1-10:", true, true);
 		vector<vector<int>> matrix;
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 10; i++)
+		{
 			matrix.push_back(vector<int>());
 			for (int j = 0; j < 10; j++)
 				matrix[i].push_back(rand() % 100);
@@ -130,20 +152,37 @@ public:
 		UnitTest::Compare();
 	}
 };
-class IOTests {
+class OpenFileDialogTest : public UnitTest<bool>
+{
 public:
-	IOTests() {
+	IO io = IO();
+	OpenFileDialogTest(string title, vector<bool> values) :UnitTest(title, values)
+	{
 	}
-	void Start() {
+	void Test() override
+	{
+		string path = io.GetFilePath();
+		int f = 0;
+	}
+};
+class IOTests
+{
+public:
+	IOTests()
+	{
+	}
+	void Start()
+	{
 		//Тесты на вывод данных
-		FileCreateRemoveTest("Создание и удаление файлов", { true,true,false }).Start();
-		FileIOTest("Запись чтение файлов", { "hello","lol","abc defgh" }).Start();
-		FileAppendTest("Добавление строк в файл", { "hello","lol","abc defgh" }).Start();
-		OutTest("Вывод в консоль", {}).Start();
+		//FileCreateRemoveTest("Создание и удаление файлов", { true,true,false }).Start();
+		//FileIOTest("Запись чтение файлов", { "hello","lol","abc defgh" }).Start();
+		//FileAppendTest("Добавление строк в файл", { "hello","lol","abc defgh" }).Start();
+		//OutTest("Вывод в консоль", {}).Start();
 		//Тесты на ввод данных
 		//InIntTest("Ввод целочисленных данных", { 1,22,333 }).Start();
 		//InDoubleTest("Ввод вещественных данных", { 1.0,2.3,4.55 }).Start();
 		//InStringTest("Ввод строковых данных", { "hello","lol","abc def" }).Start();
+		OpenFileDialogTest("", {}).Start();
 
 	}
 };

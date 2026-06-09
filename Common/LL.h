@@ -184,7 +184,7 @@ public:
 			{
 				ss << current->ToString(showDetails);
 				if (current->next)
-					ss << Constants::Strings::Separators::arrow;
+					ss << Constants::Strings::Separators::arrowRight;
 				current = current->next;
 			}
 			return ss.str();

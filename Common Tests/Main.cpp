@@ -6,7 +6,12 @@
 #include "SortsTests.h"
 #include "GraphTests.h"
 #include "SearchTests.h"
-int main() {
+#include "SFieldTests.h"
+#include "SObjectTests.h"
+#include "DataPackTest.h"
+#include "AVLTreeTest.h"
+int main()
+{
 	srand(time(NULL));
 	IO io = IO();
 	io.SetRusIO();
@@ -14,9 +19,13 @@ int main() {
 	//IOTests().Start();
 	//LLTests().Start();
 	//StrHelperTests().Start();
-	SortsTests().Start();
-	SearchTests().Start();
-	GraphTests().Start();
+	//SortsTests().Start();
+	//SearchTests().Start();
+	//GraphTests().Start();
+	//SFieldTests().Start();
+	//SObjectsTests().Start();
+	//DataPackTests().Start();
+	//AVLTreeTests().Start();
 
 	io.Pause();
 	return 0;

@@ -1,5 +1,6 @@
 #pragma once
 #include "pch.h"
+#include "SHA1.h"
 class Block
 {
 private:
@@ -14,17 +15,22 @@ private:
 	string idStr = "ID:";
 	string ownerIdStr = "onwer id:";
 public:
-	Block() {
-		this->id = "";
-		this->ownerId = "";
-	}
 	/// <summary>
 	/// Создает блок с указанным ID и ID владельца
 	/// </summary>
 	/// <param name="id">ID в виде хэш SHA-1</param>
 	/// <param name="ownerId">ID владельца в виде хэш SHA-1 </param>
-	Block(string id, string ownerId) {
+	Block(string id = Constants::Strings::undefined, string ownerId = Constants::Strings::undefined) {
 		this->id = id;
+		this->ownerId = ownerId;
+	}
+	/// <summary>
+	/// Создает блок с указанным ID и ID владельца
+	/// </summary>
+	/// <param name="id">ID в виде целого числа</param>
+	/// <param name="ownerId">ID владельца в виде хэш SHA-1 </param>
+	Block(long id, string ownerId = Constants::Strings::undefined) {
+		this->id = SHA1().GetHash(to_string(id));
 		this->ownerId = ownerId;
 	}
 	/// <summary>

@@ -216,9 +216,6 @@
     <ClInclude Include="LongCalc.h">
       <Filter>Исходные файлы\Classes\Алгоритмы\Длинная арифметика</Filter>
     </ClInclude>
-    <ClInclude Include="Field.h">
-      <Filter>Исходные файлы\Classes\Игры\Поле для игр</Filter>
-    </ClInclude>
     <ClInclude Include="XOGame.h">
       <Filter>Исходные файлы\Classes\Игры\Крестики-нолики</Filter>
     </ClInclude>
@@ -309,6 +306,27 @@
     <ClInclude Include="pch.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="SObject.h">
+      <Filter>Исходные файлы\Classes\Сериализатор</Filter>
+    </ClInclude>
+    <ClInclude Include="GameField.h">
+      <Filter>Исходные файлы\Classes\Игры\Поле для игр</Filter>
+    </ClInclude>
+    <ClInclude Include="SField.h">
+      <Filter>Исходные файлы\Classes\Сериализатор</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixTemplate.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Матрица</Filter>
+    </ClInclude>
+    <ClInclude Include="Fraction.h">
+      <Filter>Исходные файлы\Classes\Структуры данных\Матрица</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Исходные файлы\Classes\Строки</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser.h">
+      <Filter>Исходные файлы\Classes\Строки</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Code Samples C++.cpp">
@@ -353,17 +371,11 @@
     <ClCompile Include="ArrayHelper.cpp">
       <Filter>Исходные файлы\Classes\Структуры данных\Массивы</Filter>
     </ClCompile>
-    <ClCompile Include="StrHelper.cpp">
-      <Filter>Исходные файлы\Classes\Строки</Filter>
-    </ClCompile>
     <ClCompile Include="LongCalc.cpp">
       <Filter>Исходные файлы\Classes\Алгоритмы\Длинная арифметика</Filter>
     </ClCompile>
     <ClCompile Include="XOGame.cpp">
       <Filter>Исходные файлы\Classes\Игры\Крестики-нолики</Filter>
-    </ClCompile>
-    <ClCompile Include="Field.cpp">
-      <Filter>Исходные файлы\Classes\Игры\Поле для игр</Filter>
     </ClCompile>
     <ClCompile Include="Hamming.cpp">
       <Filter>Исходные файлы\Classes\Алгоритмы\Код Хэмминга</Filter>
@@ -436,6 +448,9 @@
     </ClCompile>
     <ClCompile Include="PairStr.cpp">
       <Filter>Исходные файлы\Classes\Пары</Filter>
+    </ClCompile>
+    <ClCompile Include="GameField.cpp">
+      <Filter>Исходные файлы\Classes\Игры\Поле для игр</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

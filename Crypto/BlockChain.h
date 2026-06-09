@@ -7,7 +7,7 @@
 #include "Log.h"
 /// <summary>
 /// Тип клиентов
-/// </summary>
+/// </summary> 
 enum ClientsType {
 	/// <summary>
 	/// всех
@@ -34,6 +34,9 @@ enum ClientsType {
 	/// </summary>
 	nonZeroOnline
 };
+/// <summary>
+/// Голос участвующего в голосовании
+/// </summary>
 class Vote {
 public:
 	Client* client;
@@ -43,6 +46,7 @@ public:
 		this->votesCount = votesCount;
 	}
 };
+
 /// <summary>
 /// Блокчейн
 /// </summary>
@@ -56,57 +60,62 @@ private:
 	/// </summary>
 	string delimeter = ".";
 	/// <summary>
-	/// счетчик клиентов
+	/// Лог событий
 	/// </summary>
-	size_t clientsCounter;
-	/// <summary>
-	/// счетчик блоков
-	/// </summary>
-	size_t blocksCounter;
-	/// <summary>
-	/// счетчик клиентов онлайн
-	/// </summary>
-	size_t onlineCounter;
+	Log log;
+#pragma region Данные
 	/// <summary>
 	/// 
 	/// </summary>
-	TWLList<Block> blocks;
+	TWLList<Block>* blocks;
 	/// <summary>
 	/// Граф клиентов
 	/// </summary>
 	Graph<Client> clients;
-	/// <summary>
-	/// Минимальный порог для победы
-	/// </summary>
-	size_t voteMin = 60;
-	/// <summary>
-	/// Максимальное значение для голосования
-	/// </summary>
-	size_t voteMax = 100;
-	/// <summary>
-	///Количество первых этапов голосования
-	/// </summary>
-	size_t votingFirstCounter = 0;
-	/// <summary>
-	/// Общее количество голосований
-	/// </summary>
-	size_t votingTotalCounter = 0;
-	/// <summary>
-	/// счетчик успешных голосований
-	/// </summary>
-	size_t votingSuccessCounter = 0;
-	/// <summary>
-	/// счетчик неудачных голосаний
-	/// </summary>
-	size_t votingFailCounter = 0;
+#pragma endregion
+
+#pragma region Параметры для голосования
 	/// <summary>
 	///Процент голосов для победы
 	/// </summary>
 	float votesPercent = 0.51;
+#pragma endregion
+
+#pragma region Счетчики
 	/// <summary>
-	/// Лог событий
+	/// счетчик клиентов
 	/// </summary>
-	Log log;
+	size_t counterClients;
+	/// <summary>
+	/// счетчик блоков
+	/// </summary>
+	size_t counterBlocks;
+	/// <summary>
+	/// счетчик клиентов онлайн
+	/// </summary>
+	size_t counterOnline;
+	/// <summary>
+	///Количество первых этапов голосования
+	/// </summary>
+	size_t counterVotingFirstStage;
+	/// <summary>
+	/// Общее количество голосований
+	/// </summary>
+	size_t counterVotingTotal;
+	/// <summary>
+	/// счетчик успешных голосований
+	/// </summary>
+	size_t counterVotingCompleted;
+	/// <summary>
+	/// счетчик неудачных голосаний
+	/// </summary>
+	size_t counterVotingFailed;
+	/// <summary>
+	/// счетчик для слуаев, когда набралось больше двух победителей
+	/// </summary>
+	size_t counterVotingMultWinners;
+#pragma endregion
+
 #pragma endregion
 
 #pragma region Методы
@@ -118,7 +127,7 @@ private:
 	/// <param name="id">ИД</param>
 	/// <returns></returns>
 	Block* GetBlock(string id) {
-		return &this->blocks.Find(Block(id, ""))->data;
+		return &this->blocks->Find(Block(id, ""))->data;
 	}
 	/// <summary>
 	/// Получает клиента с указанными ИД
@@ -140,11 +149,10 @@ private:
 	/// </summary>
 	/// <param name="block">указатель на блок</param>
 	bool Add(Block* block) {
-		SHA1 sha;
 		if (block != NULL && !this->GetBlock(block->GetId()) && block->GetOwnerId() != "")
 		{
-			this->blocks.Add(*block);
-			this->blocksCounter++;
+			this->blocks->Add(*block);
+			this->counterBlocks++;
 			return true;
 		}
 		return false;
@@ -156,7 +164,7 @@ private:
 	bool Add(Client* client) {
 		if (GetClient(client->GetId()) == NULL) {
 			this->clients.Add(*client);
-			this->clientsCounter = this->clients.GetNodesCount();
+			this->counterClients = this->clients.GetNodesCount();
 			return true;
 		}
 		return false;
@@ -169,7 +177,7 @@ private:
 /// </summary>
 /// <param name="client">указатель на клиента</param>
 	void Ledger(Client* client) {
-		LLItem<Block>* currentBlock = this->blocks.head;
+		LLItem<Block>* currentBlock = this->blocks->head;
 		client->SetTokensCount(0);
 		while (currentBlock) {
 			if (currentBlock->data.GetOwnerId() == client->GetId())
@@ -181,31 +189,34 @@ private:
 	/// Подсчет леджинга у всех клиентов
 	/// </summary>
 	void Ledger() {
-		//for (int i = 0; i < this->clients.GetNodesCount(); i++)
+		//for (int i = 0; i < this->clients.GetNodesCount(); i++) {
 		parallel_for(size_t(0), this->clients.GetNodesCount(), [&](size_t i) {
 			this->Ledger(this->clients.GetNode(i)->GetDataP());
 			});
+		//}
 	}
 	/// <summary>
 	/// Голосование по распределению блоков
 	/// </summary>
-	/// <returns></returns>
-	void Voting(Block* block, vector<Client>clientsForVoting = {}) {
-		this->votingTotalCounter++;
+	/// <param name="block">блок для подписи</param>
+	/// <param name="clientsForVoting">клиенты, учавствующие в голосовании</param>
+	/// <param name="onlyOneRound">только одн раунд госования(да/нет)</param>
+	void Voting(Block* block, vector<Client>clientsForVoting = {}, bool onlyOneRound = false) {
+		this->counterVotingTotal++;
 		if (clientsForVoting.size() == 0)
 		{
-			//возможно неправильно возвращает голосующих!
-			//проверить!
-			clientsForVoting = this->GetClients(ClientsType::nonZeroOnline);
-			/// проверка если не найдено ни одного клиента, то надо 
-			/// сообщать о провале голосования и выходить
-			this->Ledger();
+			this->counterVotingFailed++;
+			this->log.Add("Голосование провалено, блок не подписан!");
+			this->log.Add("Всего голосовавших:" + to_string(clientsForVoting.size()));
+			return;
 		}
-		int tokensCount = 0;
+
+		float tokensCount = 0;
 		parallel_for(size_t(0), clientsForVoting.size(), [&](size_t i) {
 			tokensCount += clientsForVoting[i].GetTokensCount();
 			});
-		if (tokensCount == 0)
+		float tokensCountAvg = tokensCount / (float)clientsForVoting.size();
+		if (tokensCountAvg <= 10.0)
 			parallel_for(size_t(0), clientsForVoting.size(), [&](size_t i) {
 			clientsForVoting[i].SetProbability(1.0 / clientsForVoting.size());
 				});
@@ -223,47 +234,50 @@ private:
 				clientsForVoting[i].SetProbabilityTo(clientsForVoting[i - 1].GetProbabilityTo() + clientsForVoting[i].GetProbability());
 			}
 		}
-		size_t maxVotes = 0;
-		//for (int i = 0; i < clientsForVoting.size(); i++) {
 		parallel_for(size_t(0), clientsForVoting.size(), [&](size_t i) {
-			float value = (float)(rand() % 100) / 100;
+			float value = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
 			for (int j = 0; j < clientsForVoting.size(); j++)
 				if ((value >= clientsForVoting[j].GetProbabilityFrom()) && (clientsForVoting[j].GetProbabilityTo() >= value)) {
 					clientsForVoting[j].AddVote();
-					if (clientsForVoting[j].GetVotes() > maxVotes)
-						maxVotes = clientsForVoting[j].GetVotes();
 					break;
 				}
 			});
-		//}
+		//счетчик считает количество клиентов, 
+		//набравших больше порогового значения
 		for (int i = 0; i < clientsForVoting.size(); i++) {
-			if (clientsForVoting[i].GetVotes() != maxVotes) {
+			float percent = (float)clientsForVoting[i].GetVotes() / (float)clientsForVoting.size();
+			clientsForVoting[i].SetVotesPercent(percent);
+		}
+		for (int i = 0; i < clientsForVoting.size(); i++) {
+			if (clientsForVoting[i].GetVotesPercent() < this->votesPercent) {
 				clientsForVoting.erase(clientsForVoting.begin() + i);
 				i--;
 			}
 		}
+		if (clientsForVoting.size() > 1)
+			this->counterVotingMultWinners++;
 		if (clientsForVoting.size() == 1) {
 			block->SetOwnerId(clientsForVoting[0].GetId());
 			this->GetClient(block->GetOwnerId())->AddTokens(1);
 			this->log.Add("Голосование прошло успешно блок:" + block->GetId() + " владелец:" + block->GetOwnerId());
-			this->votingSuccessCounter++;
+			this->counterVotingCompleted++;
 		}
 		else {
 
-			if ((float)maxVotes / (float)clientsForVoting.size() < this->votesPercent) {
+
+			if (onlyOneRound) {
+				//Voting(block, {});
+				return;
+			}
+			else {
 				this->log.Add("Следующий этап голосования");
-				//for (int i = 0; i < clientsForVoting.size(); i++)
 				parallel_for(size_t(0), clientsForVoting.size(), [&](size_t i) {
 					clientsForVoting[i].SetVotes(0);
 					});
-				this->votingFailCounter++;
 				Voting(block, clientsForVoting);
 			}
-			else {
-				this->log.Add("Голосование провалено, блок не подписан!");
-				this->log.Add("Всего голосовавших:" + to_string(clientsForVoting.size()));
-				this->log.Add("Максимум голосов:" + to_string(maxVotes));
-			}
+
+
 		}
 	}
 
@@ -282,35 +296,75 @@ private:
 public:
 #pragma region Конструкторы
 	BlockChain() {
-		this->blocksCounter = 0;
-		this->clientsCounter = 0;
+		this->counterBlocks = 0;
+		this->counterClients = 0;
+		this->counterVotingFirstStage = 0;
+		this->counterVotingTotal = 0;
+		this->counterVotingCompleted = 0;
+		this->counterVotingFailed = 0;
+		this->counterVotingMultWinners = 0;
+		this->blocks = new TWLList<Block>();
 	}
 	~BlockChain() {
 	}
 #pragma endregion
 
 #pragma region Методы
+
 #pragma region Добавление
 	Block* Add(string blockId, string blockOwnerId) {
 		Block* block = new Block(blockId, blockOwnerId);
-		if (this->Add(block))
+		if (this->Add(block)) {
+			Client* client = this->GetClient(blockOwnerId);
+			if (client)
+				client->AddTokens(1);
 			return block;
+		}
 		return NULL;
 	}
 	Client* Add(string password) {
 		SHA1 sha;
-		Client* client = new Client(sha.GetHash(to_string(++this->clientsCounter)), sha.GetHash(password));
+		Client* client = new Client(sha.GetHash(to_string(++this->counterClients)), sha.GetHash(password));
 		if (this->Add(client))
 			return client;
 		return NULL;
 	}
 #pragma endregion
 
+#pragma region Удаление
+	void Delete(Block* block) {
+		//this->blocks->D
+		throw exception(Constants::Strings::Errors::notImplemented);
+	}
+	void Delete(string blockId) {
+		/*LLItem<Block>* current = this->blocks->head;
+		if (current)
+			while (current) {
+				if(current->data.GetId()==blockId)
+					this->blocks->Delete
+			}*/
+		throw exception(Constants::Strings::Errors::notImplemented);
+	}
+	void Delete() {
+		this->blocks->Delete();
+	}
+#pragma endregion
+
 #pragma region Генерация блока
-	Block* GenerateBlock() {
-		Block* block = new Block(SHA1().GetHash(to_string(this->blocksCounter + 1)), "");
-		this->votingFirstCounter++;
-		Voting(block);
+	/// <summary>
+	/// Генерирует блок и распределяет с помощью голосования
+	/// </summary>
+	/// <param name="onlyOneRound">только одн раунд госования(да/нет)</param>
+	/// <returns></returns>
+	Block* GenerateBlock(bool onlyOneRound = false) {
+		Block* block = new Block(this->counterBlocks + 1);
+		this->counterVotingFirstStage++;
+		this->Ledger();
+		vector<Client> nonZero = this->GetClients(ClientsType::nonZeroOnline);
+		if ((float)nonZero.size() / (float)this->counterClients > 0.5)
+			Voting(block, this->GetClients(ClientsType::nonZeroOnline), onlyOneRound);
+		else
+			Voting(block, this->GetClients(ClientsType::all), onlyOneRound);
 		if (this->Add(block))
 			return block;
 		else
@@ -318,7 +372,7 @@ public:
 		return NULL;
 	}
 	Block* GenerateBlock(string blockOwnerId) {
-		return this->Add(SHA1().GetHash(to_string(this->blocksCounter + 1)), blockOwnerId);
+		return this->Add(SHA1().GetHash(to_string(this->counterBlocks + 1)), blockOwnerId);
 	}
 #pragma endregion
 
@@ -333,7 +387,7 @@ public:
 		Client* client = this->GetClient(id);
 		if (client && client->GetHash() == SHA1().GetHash(password)) {
 			client->SetOnline(true);
-			this->onlineCounter++;
+			this->counterOnline++;
 		}
 		return client;
 	}
@@ -363,14 +417,28 @@ public:
 		if (clientPointer) {
 			this->clients.Disconnect(node->GetId());
 			client->SetOnline(false);
-			this->onlineCounter--;
+			this->counterOnline--;
 		}
 		return client;
 	}
 #pragma endregion
 
 #pragma region SET
-
+	/// <summary>
+	/// Устанавливает порог для голосования:
+	/// процент голосов, который необходимо набрать, чтобы получить токен
+	/// </summary>
+	/// <param name="votesPercent"></param>
+	void SetVotesPercent(float votesPercent) {
+		this->votesPercent = votesPercent;
+	}
+	/// <summary>
+	/// Задает значение проваленных голосований
+	/// </summary>
+	/// <returns></returns>
+	void SetVotingFailCount(size_t votingFailCounter) {
+		this->counterVotingFailed = votingFailCounter;
+	}
 #pragma endregion
 
 #pragma region GET
@@ -431,10 +499,10 @@ public:
 			return this->clients.GetNodesCount();
 		}
 		if (type == ClientsType::ofline) {
-			return this->clients.GetNodesCount() - this->onlineCounter;
+			return this->clients.GetNodesCount() - this->counterOnline;
 		}
 		if (type == ClientsType::online) {
-			return this->onlineCounter;
+			return this->counterOnline;
 		}
 		else {
 			return this->GetClients(type).size();
@@ -452,7 +520,7 @@ public:
 	/// </summary>
 	/// <returns></returns>
 	size_t GetBlocksCount() {
-		return this->blocks.GetLength();
+		return this->blocks->GetLength();
 	}
 	/// <summary>
 	/// Получает лог в виде строки
@@ -465,35 +533,50 @@ public:
 	/// Получает количество голосовний в блокчейне(первичных этапов)
 	/// </summary>
 	/// <returns></returns>
-	size_t GetVotingFirstCount() {
-		return this->votingFirstCounter;
+	size_t GetCounterVotingFirstStage() {
+		return this->counterVotingFirstStage;
 	}
 	/// <summary>
 	/// Получает общее число голосований
 	/// </summary>
 	/// <returns></returns>
-	size_t GetVotingTotalCount() {
-		return this->votingTotalCounter;
+	size_t GetCounterVotingTotal() {
+		return this->counterVotingTotal;
 	}
 	/// <summary>
 	/// Получает значение успешных голосований
 	/// </summary>
 	/// <returns></returns>
-	size_t GetVotingSuccessCount() {
-		return this->votingSuccessCounter;
+	size_t GetCounterVotingCompleted() {
+		return this->counterVotingCompleted;
 	}
 	/// <summary>
 	/// Получает значение проваленных голосований
 	/// </summary>
 	/// <returns></returns>
-	size_t GetVotingFailCount() {
-		return this->votingFailCounter;
+	size_t GetCounterVotingFailed() {
+		return this->counterVotingFailed;
+	}
+	/// <summary>
+	/// Возвращает значение счетчика 
+	/// для слуаев, когда набралось больше двух победителей
+	/// </summary>
+	size_t GetCounterVotingMultWinners() {
+		return this->counterVotingMultWinners;
+	}
+	/// <summary>
+	/// Получает порог для голосования:
+	/// процент голосов, который необходимо набрать, чтобы получить токен
+	/// </summary>
+	/// <returns></returns>
+	float GetVotesPercent() {
+		return this->votesPercent;
 	}
 #pragma endregion
 
 #pragma region Сериализация
 	string ToString() {
-		return this->blocks.ToString();
+		return this->blocks->ToString();
 	}
 	string ToString(OutputFormat format = OutputFormat::fields) {
 		return this->clients.ToString(format);

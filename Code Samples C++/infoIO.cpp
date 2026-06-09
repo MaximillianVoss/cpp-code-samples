@@ -75,7 +75,6 @@ void IO::Print(vector<vector<int>> matrix, string message)
 //	else
 //		SetColor(ConsoleColors::White, ConsoleColors::Black);
 //}
-
 void IO::PrintSeparator(int count)
 {
 	for (int i = 0; i < count; i++)

@@ -29,6 +29,11 @@ private:
 	/// </summary>
 	size_t votesCount;
 	/// <summary>
+	/// Процент голосов, 
+	/// который набрал клиент в голосовании
+	/// </summary>
+	float votesPercent;
+	/// <summary>
 	/// Вероятность получения токена (используется в голосовании)
 	/// Например: от 0.2
 	/// </summary>
@@ -71,6 +76,7 @@ public:
 		this->probability = 0;
 		this->probabilityFrom = 0;
 		this->probabilityTo = 0;
+		this->votesPercent = 0;
 	}
 	/// <summary>
 	/// Деструктор
@@ -137,6 +143,14 @@ public:
 	void SetProbabilityTo(float probability) {
 		this->probabilityTo = probability;
 	}
+	/// <summary>
+	/// Задает процент голосов, 
+	/// который набрал клиент в голосовании
+	/// </summary>
+	/// <param name="votesPercent">процент голосов</param>
+	void SetVotesPercent(float votesPercent) {
+		this->votesPercent = votesPercent;
+	}
 #pragma endregion
 
 #pragma region Get
@@ -195,6 +209,13 @@ public:
 	/// <returns></returns>
 	float GetProbabilityTo() {
 		return this->probabilityTo;
+	}
+	/// <summary>
+	/// Задает процент голосов, 
+	/// который набрал клиент в голосовании
+	/// </summary>
+	float GetVotesPercent() {
+		return this->votesPercent;
 	}
 #pragma endregion
 

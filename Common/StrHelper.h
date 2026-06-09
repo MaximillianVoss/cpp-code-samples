@@ -1,11 +1,13 @@
 #include "pch.h"
 #pragma once
 /// <summary>
-/// Класс для работы со строками
+/// Упрощает работу со строками
 /// </summary>
 class StrHelper
 {
 private:
+
+#pragma region Методы
 	/// <summary>
 	/// Ищет вхождение указанноу подстроки в коллекции
 	/// </summary>
@@ -18,17 +20,10 @@ private:
 				return true;
 		return false;
 	}
-public:
-#pragma region Конструкторы/Деструкторы
-	/// <summary>
-	/// Конструктор
-	/// </summary>
-	StrHelper() {}
-	/// <summary>
-	/// Деструктор
-	/// </summary>
-	~StrHelper() {}
 #pragma endregion
+
+public:
+
 #pragma region Методы
 	/// <summary>
 	/// Объединяет строки с списке в одну строку
@@ -60,7 +55,7 @@ public:
 		return str;
 	}
 	/// <summary>
-	/// Удаляет вхождения данного символа в строке
+	/// Удаляет вхождения данной подстроки в строке
 	/// </summary>
 	/// <param name="str">строка</param>
 	/// <param name="subStr">подстрока для удаления</param>
@@ -70,6 +65,17 @@ public:
 		while ((pos = str.find(subStr)) != std::string::npos)
 			str.erase(pos, subStr.length());
 		return str;
+	}
+	/// <summary>
+	/// Удаляет вхождения данного символа в строке
+	/// </summary>
+	/// <param name="str">строка</param>
+	/// <param name="subStr">символ для удаления</param>
+	/// <returns>строка с удаленными символами</returns>
+	string Remove(string str, char c) {
+		string subStr = "";
+		subStr += c;
+		return this->Remove(str, subStr);
 	}
 	/// <summary>
 	/// Проверяет содержит ли строка указанную коллекцию строк
@@ -152,10 +158,22 @@ public:
 		return res;
 	}
 	/// <summary>
-/// 
-/// </summary>
-/// <param name="values"></param>
-/// <returns></returns>
+	/// разбивает строку по разделителям
+	/// </summary>
+	/// <param name="str">строка</param>
+	/// <param name="delimiter">разделитель</param>
+	/// /// <param name="notDelete">строка с элементами, которые не нужно удалять</param>
+	/// <returns>массив строк</returns>
+	vector<string>Split(string str, char delimiter = ' ', string notDelete = "") {
+		string strDelimeter = "";
+		strDelimeter += delimiter;
+		return this->Split(str, strDelimeter, notDelete);
+	}
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <param name="values"></param>
+	/// <returns></returns>
 	vector<string> RemoveCopies(vector<string> values) {
 		vector<string>result;
 		for (string item : values)
@@ -184,5 +202,16 @@ public:
 		else
 			return "false";
 	}
+#pragma endregion
+
+#pragma region Конструкторы/Деструкторы
+	/// <summary>
+	/// Конструктор
+	/// </summary>
+	StrHelper() {}
+	/// <summary>
+	/// Деструктор
+	/// </summary>
+	~StrHelper() {}
 #pragma endregion
 };

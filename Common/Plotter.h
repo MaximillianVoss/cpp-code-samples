@@ -5,7 +5,7 @@ template<typename T>
 ///<summary>
 /// Строит график по точкам
 ///</summary>
-class Plotter
+class Plotter : public  SObject<string>
 {
 private:
 
@@ -18,6 +18,13 @@ private:
 	/// Путь до файла python, который построит графики
 	/// </summary>
 	string pathToPyton = "C:\\Users\\Александр\\PycharmProjects\\GraphicsPlotter\\main.py";
+
+	vector<string> fieldsName = {
+		"title",
+		"data"
+	};
+	string titleFieldName = fieldsName[0];
+	string dataFieldName = fieldsName[1];
 #pragma endregion
 
 #pragma region Методы
@@ -38,12 +45,18 @@ public:
 #pragma endregion
 
 #pragma region Методы
+	void Add(DataPack<T> datapack) {
+		this->data.push_back(datapack);
+	}
+	void FromString() {
+
+	}
 	string ToString() {
 		stringstream ss;
-		ss << this->title << endl;
-		for (DataPack<T> pack : this->data)
-			ss << pack.ToString();
-		return ss.str();
+		this->fields.clear();
+		this->fields.push_back(SField<string>(this->titleFieldName, this->title));
+		this->fields.push_back(SField<string>(this->dataFieldName, Converter<DataPack<T>>::Lists().Convert(this->data)));
+		return SObject<string>::ToString();
 	}
 #pragma endregion
 
@@ -63,7 +76,7 @@ public:
 	/// </summary>
 	/// <param name="name">имя</param>
 	/// <param name="data">данные</param>
-	Plotter(string title, vector<DataPack<T>>data) {
+	Plotter(string title, vector<DataPack<T>>data = {}) {
 		this->title = title;
 		this->data = data;
 	}

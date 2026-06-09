@@ -1,37 +1,70 @@
+
 #pragma once
 #include "pch.h"
+#include "SObject.h"
+#include "Converter.h"
 template<typename T>
 ///<summary>
-/// Набор данных
+/// Описание_класса
 ///</summary>
-class DataPack
+class DataPack : public  SObject<string>
 {
 private:
 
 #pragma region Поля
-	/// <summary>
-	/// Название набора данных
-	/// </summary>
-	string title;
-	/// <summary>
-	/// Подпись оси X
-	/// </summary>
-	string xTitle;
-	/// <summary>
-	/// Подпись оси Y
-	/// </summary>
-	string yTitle;
-	/// <summary>
-	/// Данные по X
-	/// </summary>
-	vector<T>xValues;
-	/// <summary>
-	/// Данные по Y
-	/// </summary>
-	vector<T>yValues;
+	vector<string> fieldsName = {
+		"title",
+		"xTitle",
+		"yTitle",
+		"group",
+		"xData",
+		"yData"
+	};
+	string titleFieldName = this->fieldsName[0];
+	string xTitleFieldName = this->fieldsName[1];
+	string yTitleFieldName = this->fieldsName[2];
+	string groupFieldName = this->fieldsName[3];
+	string xDataFieldName = this->fieldsName[4];
+	string yDataFieldName = this->fieldsName[5];
 #pragma endregion
 
 #pragma region Методы
+	vector<T> ConvertVector(string vectorStr) {
+		vector<T>result;
+		vector<string> itemsStr = StrHelper().Split(vectorStr);
+		for (string item : itemsStr)
+			result.push_back(Convert(item));
+		return result;
+	}
+	T Convert(string& str)
+	{
+		std::istringstream ss(str);
+		T num;
+		ss >> num;
+		return num;
+	}
+	bool Find(string fieldName) {
+		for (string name : this->fieldsName)
+			if (name == fieldName)
+				reuturn true;
+		return false;
+	}
+	void Init(string title, string xTitle, string yTitle, int group, vector<T> xData, vector<T> yData) {
+		SetTitle(title);
+		SetXTitle(xTitle);
+		SetYTitle(yTitle);
+		SetGroup(group);
+		SetXData(xData);
+		SetYData(yData);
+	}
+	void Init(string title, string xTitle, string yTitle, int group, string xData, string yData) {
+		SetTitle(title);
+		SetXTitle(xTitle);
+		SetYTitle(yTitle);
+		SetGroup(group);
+		SetXData(xData);
+		SetYData(yData);
+	}
 
 #pragma endregion
 
@@ -43,77 +76,74 @@ public:
 
 #pragma region Методы
 
-#pragma region Get
-	string GetTitle() {
-		return this->title;
+#pragma region SET
+	void SetTitle(string value) {
+		this->Set(this->titleFieldName, value);
 	}
+	void SetXTitle(string value) {
+		this->Set(this->xTitleFieldName, value);
+	}
+	void SetYTitle(string value) {
+		this->Set(this->yTitleFieldName, value);
+	}
+	void SetGroup(int value) {
+		this->Set(this->groupFieldName, to_string(value));
+	}
+	void SetXData(string value) {
+		this->Set(this->xDataFieldName, value);
+	}
+	void SetXData(vector<T> values) {
+		this->Set(this->xDataFieldName, Converter<T>::Lists().Convert(values));
+	}
+	void SetYData(string value) {
+		this->Set(this->yDataFieldName, value);
+	}
+	void SetYData(vector<T> values) {
+		this->Set(this->yDataFieldName, Converter<T>::Lists().Convert(values));
+	}
+#pragma endregion
+
+#pragma region GET
 	string GetXTitle() {
-		return this->xTitle;
+		return this->Get(this->xTitleFieldName)->value;
 	}
 	string GetYTitle() {
-		return this->yTitle;
-	}
-	vector<T>GetXValues() {
-		return this->xValues;
-	}
-	vector<T>GetYValues() {
-		return this->yValues;
+		return this->Get(this->yTitleFieldName)->value;
 	}
 #pragma endregion
 
-#pragma region Set
-	void SetTitle(string title) {
-		this->title = title;
-	}
-	void SetXTitle(string title) {
-		this->xTitle = title;
-	}
-	void SetYTitle(string title) {
-		this->yTitle = title;
-	}
-	void SetXValues(vector<T> data) {
-		this->xValues = data;
-	}
-	void SetYValues(vector<T> data) {
-		this->yValues = data;
-	}
-#pragma endregion
 
 #pragma region Add
-	void AddXValue(T value) {
-		this->xValues.push_back(value);
-	}
-	void AddYValue(T value)
-	{
-		this->yValues.push_back(value);
-	}
 	void AddPoint(T x, T y) {
-		this->AddXValue(x);
-		this->AddYValue(y);
-	}
-	void AddPoint(vector<T> values) {
-		if (values.size() == 2)
-			this->AddPoint(values[0], values[1]);
-		else {
-			char message[80];
-			sprintf(message, Constants::Strings::Errors::Lists::incorrectSize, 2, values.size());
-			throw exception(message);
-		}
+		Converter<T> converter = Converter<T>();
+		vector<T> xValues = Converter<T>::Lists().Convert(this->Get(this->xDataFieldName)->value);
+		vector<T> yValues = Converter<T>::Lists().Convert(this->Get(this->yDataFieldName)->value);
+		xValues.push_back(x);
+		yValues.push_back(y);
+		this->Set(this->xDataFieldName, Converter<T>::Lists().Convert(xValues));
+		this->Set(this->yDataFieldName, Converter<T>::Lists().Convert(yValues));
 	}
 #pragma endregion
-	string ToString() {
-		stringstream ss;
-		ss << this->title << endl;
-		ss << this->xTitle << endl;
-		ss << this->yTitle << endl;
-		for (T value : this->xValues)
-			ss << value << " ";
-		ss << endl;
-		for (T value : this->yValues)
-			ss << value << " ";
-		ss << endl;
-		return ss.str();
+
+
+
+#pragma region Десериализация
+	void FromString(string str) {
+		SObject<string> obj = SObject<string>(str);
+		string val = obj.Get(this->groupFieldName)->value;
+		bool separate = (val == "1");
+		Init(
+			obj.Get(this->titleFieldName)->value,
+			obj.Get(this->xTitleFieldName)->value,
+			obj.Get(this->yTitleFieldName)->value,
+			separate,
+			obj.Get(this->xDataFieldName)->value,
+			obj.Get(this->yDataFieldName)->value
+		);
 	}
+#pragma endregion
+
+
 #pragma endregion
 
 #pragma region Конструкторы/Деструкторы
@@ -127,25 +157,16 @@ public:
 #pragma region Обработчики событий
 
 #pragma endregion
-	/// <summary>
-	/// Создает набор данных с указанными значениями
-	/// </summary>
-	/// <param name="title">Название набора данных</param>
-	/// <param name="xTitle">Подпись оси X</param>
-	/// <param name="yTitle">Подпись оси Y</param>
-	/// <param name="xValues">Данные по X</param>
-	/// <param name="yValues">Данные по Y</param>
-	DataPack(string title, string xTitle, string yTitle, vector<T>xValues = {}, vector<T>yValues = {}) {
-		this->title = title;
-		this->xTitle = xTitle;
-		this->yTitle = yTitle;
-		this->xValues = xValues;
-		this->yValues = yValues;
+
+	DataPack() :DataPack("", "", "", true, {}, {}) {
+
 	};
-	/// <summary>
-	/// Создает набор данных по умолчанию
-	/// </summary>
-	DataPack() :DataPack(Constants::Strings::undefined, Constants::Strings::undefined, Constants::Strings::undefined, {}, {}) {};
+	DataPack(string title, string xTitle, string yTitle, int group = 1, vector<T> xData = {}, vector<T> yData = {}) {
+		this->Init(title, xTitle, yTitle, group, xData, yData);
+	}
+	DataPack(string serializedStr) {
+		this->FromString(serializedStr);
+	}
 	~DataPack() {};
 
 };

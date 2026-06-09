@@ -3,9 +3,9 @@
 #include "StrHelper.h"
 #pragma once
 /// <summary>
-/// класс игрового поля
+/// Игровое поле
 /// </summary>
-class Field
+class GameField
 {
 private:
 	/// <summary>
@@ -26,33 +26,33 @@ public:
 	/// <summary>
 	/// 
 	/// </summary>
-	Field();
+	GameField();
 	/// <summary>
 	/// 
 	/// </summary>
 	/// <param name="_a"></param>
-	Field(vector<vector<Cell>> _a);
+	GameField(vector<vector<Cell>> _a);
 	/// <summary>
 	/// 
 	/// </summary>
 	/// <param name="a"></param>
-	Field(vector<vector<int>> _a);
+	GameField(vector<vector<int>> _a);
 	/// <summary>
 	/// Создает поле указанного размера
 	/// </summary>
 	/// <param name="_size">размер поля</param>
-	Field(size_t _size);
+	GameField(size_t _size);
 	/// <summary>
 	/// генерирует поле из строки вида:
 	/// {0,0},{1,1},
 	/// {1,1),{2,2}
 	/// </summary>
 	/// <param name="str">строка с данными</param>
-	Field(string str);
+	GameField(string str);
 	/// <summary>
 	/// Деструктор
 	/// </summary>
-	~Field();
+	~GameField();
 	/// <summary>
 	/// Устанвлиает значение в указной строке и столбце
 	/// </summary>
@@ -84,7 +84,7 @@ public:
 	/// <summary>
 	/// оператор сложения
 	/// </summary>
-	Field operator+(Field & a);
+	GameField operator+(GameField & a);
 	/// <summary>
 	/// преобразует в строку
 	/// </summary>
@@ -93,13 +93,13 @@ public:
 	/// <summary>
 	/// смещает матрицу
 	/// </summary>
-	Field Shift(Directions direction);
+	GameField Shift(Directions direction);
 	/// <summary>
 	/// проверяет клетку на принадлежность полю
 	/// </summary>
 	/// <param name="cell"></param>
 	/// <returns></returns>
 	bool Check(Cell cell);
-	Field(Field * field);
+	GameField(GameField * field);
 };
 

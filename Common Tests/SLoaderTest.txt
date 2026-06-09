@@ -1,0 +1,1 @@
+{	name:Alex;	age:123 456;	details:LOL;},{	name:Ivan;	age:789 012;	details:KEK;},{	name:Vladimir;	lastname:Putin;	details:Pecheneg;}

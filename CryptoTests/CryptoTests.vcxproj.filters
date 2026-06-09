@@ -32,5 +32,8 @@
     <ClInclude Include="ShamirSecretTests.h">
       <Filter>Исходные файлы\Tests</Filter>
     </ClInclude>
+    <ClInclude Include="BlockchainTestsBackup.h">
+      <Filter>Исходные файлы\Tests</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

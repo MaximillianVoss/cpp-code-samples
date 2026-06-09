@@ -3,39 +3,44 @@
 #include "pch.h"
 #pragma once
 /// <summary>
-/// Ввод/вывод информации в консоль и файлы
+/// Р’РІРѕРґ/РІС‹РІРѕРґ РёРЅС„РѕСЂРјР°С†РёРё РІ РєРѕРЅСЃРѕР»СЊ Рё С„Р°Р№Р»С‹
 /// </summary>
 class IO
 {
 private:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
+
 #pragma endregion
-#pragma region Методы
-#pragma region Ввод
+#pragma region РњРµС‚РѕРґС‹
+#pragma region Р’РІРѕРґ
 	/// <summary>
-	/// Считывает значение указанного типа из консоли
+	/// РЎС‡РёС‚С‹РІР°РµС‚ Р·РЅР°С‡РµРЅРёРµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ С‚РёРїР° РёР· РєРѕРЅСЃРѕР»Рё
 	/// </summary>
-	///<param name="value">значение</param>
-	///<param name="message">сообщение</param>
+	///<param name="value">Р·РЅР°С‡РµРЅРёРµ</param>
+	///<param name="message">СЃРѕРѕР±С‰РµРЅРёРµ</param>
 	template<typename T>
-	bool Get(T& value, string message = "") {
+	bool Get(T& value, string message = "")
+	{
 		this->Print(message, true);
 		cin >> value;
-		if (!cin.good()) {
+		if (!cin.good())
+		{
 			cin.clear();
 			cin.ignore();
 			return false;
 		}
 		return true;
 	}
-	bool Get(string& value, string message = "") {
+	bool Get(string& value, string message = "")
+	{
 		this->Print(message, true);
 		cin.clear();
 		cin.ignore();
-		char buffer[Constants::Ints::strMaxLength];
+		char buffer[Constants::Ints::Strings::maxLength];
 		cin.getline(buffer, sizeof(buffer));
 		value = buffer;
-		if (!cin.good()) {
+		if (!cin.good())
+		{
 			cin.clear();
 			cin.ignore();
 			return false;
@@ -43,74 +48,116 @@ private:
 		return true;
 	}
 #pragma endregion 
-#pragma region Вывод
-	char PutGetNext(char c, FILE* input, FILE* output) {
+#pragma region Р’С‹РІРѕРґ
+	char PutGetNext(char c, FILE* input, FILE* output)
+	{
 		fputc(c, output);
 		return fgetc(input);
 	}
 #pragma endregion
 #pragma endregion
 public:
-#pragma region Поля
+#pragma region РџРѕР»СЏ
 	string txtExtension = ".txt";
 	string endInstruction = ":";
 #pragma endregion
-#pragma region Конструктор/Деструктор
+#pragma region РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ/Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
 	/// <summary>
 	/// 
 	/// </summary>
-	IO() {
+	IO()
+	{
 
 	}
 	/// <summary>
 	/// 
 	/// </summary>
-	~IO() {
+	~IO()
+	{
 
 	}
 #pragma endregion
-#pragma region Методы
-#pragma region Ввод
-#pragma region Консоль
+#pragma region РњРµС‚РѕРґС‹
+#pragma region Р’РІРѕРґ
+#pragma region РљРѕРЅСЃРѕР»СЊ
 	template<typename T>
 	/// <summary>
-	/// Считывает значение указанного типа из консоли
+	/// РЎС‡РёС‚С‹РІР°РµС‚ Р·РЅР°С‡РµРЅРёРµ СѓРєР°Р·Р°РЅРЅРѕРіРѕ С‚РёРїР° РёР· РєРѕРЅСЃРѕР»Рё
 	/// </summary>
-	///<param name="message">сообщение</param>
-	T Get(string message = "") {
+	///<param name="message">СЃРѕРѕР±С‰РµРЅРёРµ</param>
+	T Get(string message = "")
+	{
 		T value;
 		if (this->Get<T>(value, message))
 			return value;
-		else {
+		else
+		{
 			this->Print(Constants::Strings::Errors::IO::input);
 			return Get<T>(message);
 		}
 	}
-	string GetLine(string message = "") {
+	string GetLine(string message = "")
+	{
 		string value;
 		if (this->Get(value, message))
 			return value;
-		else {
+		else
+		{
 			this->Print(Constants::Strings::Errors::IO::input);
 			return this->GetLine(message);
 		}
 	}
+	string GetFilePath()
+	{
+		OPENFILENAME ofn;       // common dialog box structure
+		char szFile[260];       // buffer for file name
+		HWND hwnd;              // owner window
+		HANDLE hf;              // file handle
+		// Initialize OPENFILENAME
+		ZeroMemory(&ofn, sizeof(ofn));
+		ofn.lStructSize = sizeof(ofn);
+		ofn.hwndOwner = hwnd;
+		ofn.lpstrFile = szFile;
+		// Set lpstrFile[0] to '\0' so that GetOpenFileName does not 
+		// use the contents of szFile to initialize itself.
+		ofn.lpstrFile[0] = '\0';
+		ofn.nMaxFile = sizeof(szFile);
+		ofn.lpstrFilter = "All\0*.*\0Text\0*.TXT\0";
+		ofn.nFilterIndex = 1;
+		ofn.lpstrFileTitle = NULL;
+		ofn.nMaxFileTitle = 0;
+		ofn.lpstrInitialDir = NULL;
+		ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST;
+		// Display the Open dialog box. 
+		if (GetOpenFileName(&ofn) == TRUE)
+			return ofn.lpstrFile;
+		else
+			return "";
+	}
 #pragma endregion
-#pragma region Файл
-	FILE* OpenRead(string fileName) {
+#pragma region Р¤Р°Р№Р»
+	FILE* OpenRead(string fileName)
+	{
 		FILE* file = NULL;
 		fopen_s(&file, fileName.c_str(), "r");
 		return file;
 	}
-	FILE* OpenWrite(string fileName) {
+	FILE* OpenWrite(string fileName)
+	{
 		FILE* file = NULL;
 		fopen_s(&file, fileName.c_str(), "w");
 		return file;
 	}
-	void  Close(FILE* file) {
+	void  Close(FILE* file)
+	{
 		if (file != NULL)
 			fclose(file);
 	}
+	/// <summary>
+	/// РЎС‡РёС‚С‹РІР°РµС‚ РІСЃРµ СЃС‚РѕРєРё РёР· С„Р°Р№Р»Р°
+	/// </summary>
+	/// <param name="fileName">РїСѓС‚СЊ РґРѕ С„Р°Р№Р»Р°</param>
+	/// <returns></returns>
 	vector<string> ReadLines(string fileName)
 	{
 		fstream stream(&fileName[0]);
@@ -121,7 +168,8 @@ public:
 		stream.close();
 		return result;
 	}
-	string ReadString(string fileName) {
+	string ReadString(string fileName)
+	{
 		string res = "";
 		vector<string> lines = ReadLines(fileName);
 		for (int i = 0; i < lines.size(); i++)
@@ -130,102 +178,111 @@ public:
 	}
 #pragma endregion
 #pragma endregion
-#pragma region Вывод
-#pragma region Консоль
+#pragma region Р’С‹РІРѕРґ
+#pragma region РљРѕРЅСЃРѕР»СЊ
 	/// <summary>
-	/// Устанавлвает цвет в консоли
+	/// РЈСЃС‚Р°РЅР°РІР»РІР°РµС‚ С†РІРµС‚ РІ РєРѕРЅСЃРѕР»Рё
 	/// </summary>
-	/// <param name="text">цвет текста</param>
-	/// <param name="background">цвет фона</param>
+	/// <param name="text">С†РІРµС‚ С‚РµРєСЃС‚Р°</param>
+	/// <param name="background">С†РІРµС‚ С„РѕРЅР°</param>
 	void SetColor(int text, int background)
 	{
 		HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 		SetConsoleTextAttribute(hStdOut, (WORD)((background << 4) | text));
 	}
 	/// <summary>
-	/// Устанавливает одинаковый цвет для 
-	/// фона и текста
+	/// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ РѕРґРёРЅР°РєРѕРІС‹Р№ С†РІРµС‚ РґР»СЏ 
+	/// С„РѕРЅР° Рё С‚РµРєСЃС‚Р°
 	/// </summary>
-	/// <param name="color">цвет и текста и заднего фона</param>
-	void SetColor(int color) {
+	/// <param name="color">С†РІРµС‚ Рё С‚РµРєСЃС‚Р° Рё Р·Р°РґРЅРµРіРѕ С„РѕРЅР°</param>
+	void SetColor(int color)
+	{
 		SetColor(color, color);
 	}
 	/// <summary>
-	/// печатает разделитель в консоли 
+	/// РїРµС‡Р°С‚Р°РµС‚ СЂР°Р·РґРµР»РёС‚РµР»СЊ РІ РєРѕРЅСЃРѕР»Рё 
 	/// </summary>
-	/// <param name="separator">символ разделителя</param>
-	/// <param name="length">число разделителей</param>
-	void PrintSeparator(char separator = '_', int length = Constants::Ints::strMaxLength) {
+	/// <param name="separator">СЃРёРјРІРѕР» СЂР°Р·РґРµР»РёС‚РµР»СЏ</param>
+	/// <param name="length">С‡РёСЃР»Рѕ СЂР°Р·РґРµР»РёС‚РµР»РµР№</param>
+	void PrintSeparator(char separator = '_', int length = Constants::Ints::Strings::maxLength)
+	{
 		for (int i = 0; i < length; i++)
 			cout << separator;
 		cout << endl;
 	}
 	/// <summary>
-	/// Выводит указанную строку в консоль
+	/// Р’С‹РІРѕРґРёС‚ СѓРєР°Р·Р°РЅРЅСѓСЋ СЃС‚СЂРѕРєСѓ РІ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
-	/// <param name="message">сообщение для вывода</param>
+	/// <param name="message">СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РІС‹РІРѕРґР°</param>
 	void Print(string message, bool newLine = false)
 	{
 		this->Print(message.c_str(), newLine);
 	}
 	/// <summary>
-	/// Выводит указанную строку в консоль
+	/// Р’С‹РІРѕРґРёС‚ СѓРєР°Р·Р°РЅРЅСѓСЋ СЃС‚СЂРѕРєСѓ РІ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
-	/// <param name="message">сообщение для вывода</param>
+	/// <param name="message">СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РІС‹РІРѕРґР°</param>
 	void Print(const char* message, bool newLine = false)
 	{
-		if (strlen(message) > 0) {
+		if (strlen(message) > 0)
+		{
 			if (newLine)
 				cout << endl;
 			printf("%s", message);
 		}
 	}
 	/// <summary>
-	/// вывести значение целого типа в консоль
+	/// РІС‹РІРµСЃС‚Рё Р·РЅР°С‡РµРЅРёРµ С†РµР»РѕРіРѕ С‚РёРїР° РІ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
-	/// <param name="value">значение</param>
-	/// <param name="newLine">true - добавить перенос на новую строку</param>
-	void Print(int value, bool newLine = false) {
+	/// <param name="value">Р·РЅР°С‡РµРЅРёРµ</param>
+	/// <param name="newLine">true - РґРѕР±Р°РІРёС‚СЊ РїРµСЂРµРЅРѕСЃ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ</param>
+	void Print(int value, bool newLine = false)
+	{
 		if (newLine)
 			cout << endl;
 		cout << value;
 	}
 	/// <summary>
-	/// вывести значение вещественного типа в консоль
+	/// РІС‹РІРµСЃС‚Рё Р·РЅР°С‡РµРЅРёРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ С‚РёРїР° РІ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
-	/// <param name="value">значение</param>
-	/// <param name="newLine">true - добавить перенос на новую строку</param>
-	void Print(float value, bool newLine = false) {
+	/// <param name="value">Р·РЅР°С‡РµРЅРёРµ</param>
+	/// <param name="newLine">true - РґРѕР±Р°РІРёС‚СЊ РїРµСЂРµРЅРѕСЃ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ</param>
+	void Print(float value, bool newLine = false)
+	{
 		if (newLine)
 			cout << endl;
 		cout << value;
 	}
 	/// <summary>
-	/// вывести значение вещественного типа в консоль
+	/// РІС‹РІРµСЃС‚Рё Р·РЅР°С‡РµРЅРёРµ РІРµС‰РµСЃС‚РІРµРЅРЅРѕРіРѕ С‚РёРїР° РІ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
-	/// <param name="value">значение</param>
-	/// <param name="newLine">true - добавить перенос на новую строку</param>
-	void Print(double value, bool newLine = false) {
+	/// <param name="value">Р·РЅР°С‡РµРЅРёРµ</param>
+	/// <param name="newLine">true - РґРѕР±Р°РІРёС‚СЊ РїРµСЂРµРЅРѕСЃ РЅР° РЅРѕРІСѓСЋ СЃС‚СЂРѕРєСѓ</param>
+	void Print(double value, bool newLine = false)
+	{
 		if (newLine)
 			cout << endl;
 		cout << value;
 	}
 	template <typename T>
 	/// <summary>
-	/// выводит массив на экан 
-	/// в строку(4 пробела на элемент)
+	/// РІС‹РІРѕРґРёС‚ РјР°СЃСЃРёРІ РЅР° СЌРєР°РЅ 
+	/// РІ СЃС‚СЂРѕРєСѓ(4 РїСЂРѕР±РµР»Р° РЅР° СЌР»РµРјРµРЅС‚)
 	/// </summary>
-	/// <param name="a">массив</param>
-	/// <param name="size">размер</param>	
+	/// <param name="a">РјР°СЃСЃРёРІ</param>
+	/// <param name="size">СЂР°Р·РјРµСЂ</param>	
 	void Print(T* a, int size, string message = "", bool newLine = false, bool numerate = false, string separator = "")
 	{
 		this->Print(message, true);
-		for (size_t i = 0; i < size; i++) {
-			if (numerate) {
+		for (size_t i = 0; i < size; i++)
+		{
+			if (numerate)
+			{
 				this->Print(to_string(i + 1) + '.', newLine);
 				this->Print(a[i], !newLine);
 			}
-			else {
+			else
+			{
 				this->Print(a[i], newLine);
 			}
 			if (i < size - 1)
@@ -235,12 +292,13 @@ public:
 	}
 	template <typename T>
 	/// <summary>
-	/// Выводит матрицу в консоль
+	/// Р’С‹РІРѕРґРёС‚ РјР°С‚СЂРёС†Сѓ РІ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
-	/// <param name="a">матрица</param>
-	/// <param name="row">строки</param>
-	/// <param name="cols">столбцы</param>
-	void Print(T** a, size_t rows, size_t cols, string message = "", string separator = "") {
+	/// <param name="a">РјР°С‚СЂРёС†Р°</param>
+	/// <param name="row">СЃС‚СЂРѕРєРё</param>
+	/// <param name="cols">СЃС‚РѕР»Р±С†С‹</param>
+	void Print(T** a, size_t rows, size_t cols, string message = "", string separator = "")
+	{
 		this->Print(message, true);
 		throw exception(Constants::Strings::Errors::notImplemented);
 		//for (size_t i = 0; i < rows; i++)
@@ -248,19 +306,19 @@ public:
 	}
 	template <typename T>
 	/// <summary>
-	/// выводим вектор на экран в строку
+	/// РІС‹РІРѕРґРёРј РІРµРєС‚РѕСЂ РЅР° СЌРєСЂР°РЅ РІ СЃС‚СЂРѕРєСѓ
 	/// </summary>
-	/// <param name="a">вектор для вывода</param>
-	/// <param name="message">сообщение</param>
+	/// <param name="a">РІРµРєС‚РѕСЂ РґР»СЏ РІС‹РІРѕРґР°</param>
+	/// <param name="message">СЃРѕРѕР±С‰РµРЅРёРµ</param>
 	void Print(vector<T> a, string message = "", bool newLine = false, bool numerate = false, string separator = "")
 	{
 		this->Print(&a[0], a.size(), message, newLine, numerate, separator);
 	}
 	template <typename T>
 	/// <summary>
-	/// выводим матрицу на экран в квадратном виде
+	/// РІС‹РІРѕРґРёРј РјР°С‚СЂРёС†Сѓ РЅР° СЌРєСЂР°РЅ РІ РєРІР°РґСЂР°С‚РЅРѕРј РІРёРґРµ
 	/// </summary>
-	/// <param name="matrix">матрица для вывода</param>
+	/// <param name="matrix">РјР°С‚СЂРёС†Р° РґР»СЏ РІС‹РІРѕРґР°</param>
 	void Print(vector<vector<T>> matrix, string message = "", string separator = "")
 	{
 		this->Print(message, true);
@@ -274,19 +332,21 @@ public:
 		//}
 	}
 #pragma endregion
-#pragma region Файлы
+#pragma region Р¤Р°Р№Р»С‹
 	/// <summary>
-	/// Создает файл с указанным именем
+	/// РЎРѕР·РґР°РµС‚ С„Р°Р№Р» СЃ СѓРєР°Р·Р°РЅРЅС‹Рј РёРјРµРЅРµРј
 	/// </summary>
-	/// <param name="fileName">имя файла</param>
-	void AddFile(string fileName) {
+	/// <param name="fileName">РёРјСЏ С„Р°Р№Р»Р°</param>
+	void AddFile(string fileName)
+	{
 		this->WriteLines(fileName, {});
 	}
 	/// <summary>
-	/// Удаляет файл
+	/// РЈРґР°Р»СЏРµС‚ С„Р°Р№Р»
 	/// </summary>
-	/// <param name="fileName">имя файла</param>
-	bool RemoveFile(string fileName) {
+	/// <param name="fileName">РёРјСЏ С„Р°Р№Р»Р°</param>
+	bool RemoveFile(string fileName)
+	{
 		if (remove(fileName.c_str()) != 0)
 			return false;
 		return true;
@@ -295,27 +355,31 @@ public:
 	/// 
 	/// </summary>
 	/// <param name="fileName"></param>
-	void ClearLines(string fileName) {
+	void ClearLines(string fileName)
+	{
 		this->AddFile(fileName);
 	}
 	/// <summary>
-	/// Проверяет существует файл или нет
+	/// РџСЂРѕРІРµСЂСЏРµС‚ СЃСѓС‰РµСЃС‚РІСѓРµС‚ С„Р°Р№Р» РёР»Рё РЅРµС‚
 	/// </summary>
-	/// <param name="fileName">Имя файла</param>
+	/// <param name="fileName">РРјСЏ С„Р°Р№Р»Р°</param>
 	/// <returns></returns>
-	bool IsExists(string fileName) {
+	bool IsExists(string fileName)
+	{
 		ifstream f(fileName.c_str());
 		return f.good();
 	}
 	/// <summary>
-	/// Записывает строки в файл
+	/// Р—Р°РїРёСЃС‹РІР°РµС‚ СЃС‚СЂРѕРєРё РІ С„Р°Р№Р»
 	/// </summary>
-	///<param name="fileName">имя файла</param>
-	/// <param name="lines">строки для записи</param>
-	/// <param name="addNewline">true-добавить перенос строки</param>
-	void WriteLines(string fileName, vector<string>lines, bool addNewline = false) {
+	///<param name="fileName">РёРјСЏ С„Р°Р№Р»Р°</param>
+	/// <param name="lines">СЃС‚СЂРѕРєРё РґР»СЏ Р·Р°РїРёСЃРё</param>
+	/// <param name="addNewline">true-РґРѕР±Р°РІРёС‚СЊ РїРµСЂРµРЅРѕСЃ СЃС‚СЂРѕРєРё</param>
+	void WriteLines(string fileName, vector<string>lines, bool addNewline = false)
+	{
 		ofstream stream(&fileName[0]);
-		for (string line : lines) {
+		for (string line : lines)
+		{
 			if (addNewline)
 				line += '\n';
 			stream.write(line.c_str(), line.size());
@@ -323,24 +387,26 @@ public:
 		stream.close();
 	}
 	/// <summary>
-	/// Добавляет указанные строки в конец файла
+	/// Р”РѕР±Р°РІР»СЏРµС‚ СѓРєР°Р·Р°РЅРЅС‹Рµ СЃС‚СЂРѕРєРё РІ РєРѕРЅРµС† С„Р°Р№Р»Р°
 	/// </summary>
-	void Append(string filename, vector<string>lines, bool addNewline = false) {
+	void Append(string filename, vector<string>lines, bool addNewline = false)
+	{
 		vector<string>currentLines = ReadLines(filename);
 		currentLines.insert(currentLines.end(), lines.begin(), lines.end());
 		WriteLines(filename, currentLines, addNewline);
 	}
 	/// <summary>
-	/// Удаляет комментарии из первого файла и сохраняет результат во втором файле
+	/// РЈРґР°Р»СЏРµС‚ РєРѕРјРјРµРЅС‚Р°СЂРёРё РёР· РїРµСЂРІРѕРіРѕ С„Р°Р№Р»Р° Рё СЃРѕС…СЂР°РЅСЏРµС‚ СЂРµР·СѓР»СЊС‚Р°С‚ РІРѕ РІС‚РѕСЂРѕРј С„Р°Р№Р»Рµ
 	/// </summary>
-	/// <param name="inFile">входной файл</param>
-	/// <param name="outFile">выходной файл</param>
-	void RemoveComments(string inFile, string outFile) {
+	/// <param name="inFile">РІС…РѕРґРЅРѕР№ С„Р°Р№Р»</param>
+	/// <param name="outFile">РІС‹С…РѕРґРЅРѕР№ С„Р°Р№Р»</param>
+	void RemoveComments(string inFile, string outFile)
+	{
 		FILE* input = OpenRead(inFile);
 		FILE* output = OpenWrite(outFile);
 		if (!input)
 		{
-			printf("\nНе удалось открыть файл %s для чтения", inFile.c_str());
+			printf("\nРќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» %s РґР»СЏ С‡С‚РµРЅРёСЏ", inFile.c_str());
 			fclose(output);
 		}
 		char cur = fgetc(input);
@@ -450,30 +516,32 @@ public:
 			}
 		}
 		else
-			printf("\nНе удалось открыть файл %s для чтения", outFile.c_str());
-		printf("\nКомментарии из фалйа %s удалены, выходной файл: %s.\n", inFile.c_str(), outFile.c_str());
+			printf("\nРќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» %s РґР»СЏ С‡С‚РµРЅРёСЏ", outFile.c_str());
+		printf("\nРљРѕРјРјРµРЅС‚Р°СЂРёРё РёР· С„Р°Р»Р№Р° %s СѓРґР°Р»РµРЅС‹, РІС‹С…РѕРґРЅРѕР№ С„Р°Р№Р»: %s.\n", inFile.c_str(), outFile.c_str());
 		Close(input);
 		Close(output);
 	}
 #pragma endregion
 #pragma endregion
-#pragma region Другое
+#pragma region Р”СЂСѓРіРѕРµ
 	/// <summary>
-	/// Устанавливает русский ввод/вывод в консоли
+	/// РЈСЃС‚Р°РЅР°РІР»РёРІР°РµС‚ СЂСѓСЃСЃРєРёР№ РІРІРѕРґ/РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»Рё
 	/// </summary>
-	void SetRusIO() {
+	void SetRusIO()
+	{
 		SetConsoleOutputCP(1251);
 		SetConsoleCP(1251);
 	}
 	/// <summary>
-	/// Ставит программу на паузу, 
-	/// пока не будет нажата любая клавиша
+	/// РЎС‚Р°РІРёС‚ РїСЂРѕРіСЂР°РјРјСѓ РЅР° РїР°СѓР·Сѓ, 
+	/// РїРѕРєР° РЅРµ Р±СѓРґРµС‚ РЅР°Р¶Р°С‚Р° Р»СЋР±Р°СЏ РєР»Р°РІРёС€Р°
 	/// </summary>
-	void Pause() {
+	void Pause()
+	{
 		system("pause");
 	}
 	/// <summary>
-	/// очищает консоль
+	/// РѕС‡РёС‰Р°РµС‚ РєРѕРЅСЃРѕР»СЊ
 	/// </summary>
 	void Clear()
 	{
@@ -483,7 +551,8 @@ public:
 	/// 
 	/// </summary>
 	/// <param name="milliSeconds"></param>
-	void Wait(int milliSeconds) {
+	void Wait(int milliSeconds)
+	{
 		Sleep(milliSeconds);
 	}
 #pragma endregion

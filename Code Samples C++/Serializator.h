@@ -2,7 +2,7 @@
 #include "Pair.h"
 #include "StrHelper.h"
 #pragma once
-class Serializator
+class SerializatorOld
 {
 private:
 #pragma region Поля
@@ -40,11 +40,11 @@ public:
 	/// <summary>
 	/// конструктор
 	/// </summary>
-	Serializator();
+	SerializatorOld();
 	/// <summary>
 	/// деструктор
 	/// </summary>
-	~Serializator();
+	~SerializatorOld();
 #pragma endregion
 };
 

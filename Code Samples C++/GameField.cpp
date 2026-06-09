@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "Field.h"
+#include "GameField.h"
 
 bool Field::Check(int coord)
 {

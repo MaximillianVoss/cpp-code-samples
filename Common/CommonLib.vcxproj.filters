@@ -52,6 +52,9 @@
     <Filter Include="Исходные файлы\Operators">
       <UniqueIdentifier>{7a6746ac-fa00-42cd-9d4a-80b8e7928a58}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Converter">
+      <UniqueIdentifier>{b51d7d35-8a9e-41ec-84d9-df3c845d4348}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -126,13 +129,40 @@
     <ClInclude Include="Plotter.h">
       <Filter>Исходные файлы\Plot</Filter>
     </ClInclude>
+    <ClInclude Include="SField.h">
+      <Filter>Исходные файлы\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="SObject.h">
+      <Filter>Исходные файлы\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="SLoader.h">
+      <Filter>Исходные файлы\Serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPack_Backup.h">
+      <Filter>Исходные файлы\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Исходные файлы\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter_Old.h">
+      <Filter>Исходные файлы\Contianer</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTree.h">
+      <Filter>Исходные файлы\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>Исходные файлы\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicArray.h">
+      <Filter>Исходные файлы\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicStack.h">
+      <Filter>Исходные файлы\Lists</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Простой односвязный список.cpp">
       <Filter>Исходные файлы\Lists</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
