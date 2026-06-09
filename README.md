@@ -3,7 +3,9 @@
 <!-- repository-metadata:start -->
 Target repository name: `cpp-code-samples`
 
-Current GitHub repository: `MaximillianVoss/Code-Samples-C-`
+Current GitHub repository: `MaximillianVoss/cpp-code-samples`
+
+Previous GitHub repository: `MaximillianVoss/Code-Samples-C-`
 
 RU description: Набор учебных и прикладных заготовок на C++: алгоритмы, структуры данных, консольные игры, простые тестовые каркасы и криптографические эксперименты.
 
