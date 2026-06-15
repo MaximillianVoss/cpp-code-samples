@@ -23,52 +23,46 @@ private:
 	/// <param name="a">первый элемент</param>
 	/// <param name="b">второй элемент</param>
 	/// <returns></returns>
-	int Compare(T a, T b) {
+	int Compare(T& a, T& b) {
 		if (a == b)
 			return 0;
 		if (a > b)
 			return 1;
 		return -1;
 	}
-	T* Swap(T* a, int i1, int i2) {
-		if (i1 < 0 || i2 < 0)
+	void Swap(vector<T>& items, size_t i1, size_t i2) {
+		if (i1 >= items.size() || i2 >= items.size())
 			throw exception(Constants::Strings::Errors::Lists::incorrectIndex);
-		else {
-			T temp = a[i1];
-			a[i1] = a[i2];
-			a[i2] = temp;
-			return a;
-		}
+		T temp = items[i1];
+		items[i1] = items[i2];
+		items[i2] = temp;
 	}
-	int Partition(T* a, int startIndex, int endIndex, Direction direction)
+	bool ShouldMoveBeforePivot(T& value, T& pivot, Direction direction)
 	{
-		T pivot = a[endIndex];
-		int pivotIndex = startIndex;
-		int i, t;
-		for (i = startIndex; i < endIndex; i++)
-		{
-			if (Compare(a[i], pivot) == -1 && direction == Direction::ascending)
-			{
-				a = this->Swap(a, i, pivotIndex);
-				pivotIndex++;
-			}
-			if (Compare(a[i], pivot) == 1 && direction == Direction::descending)
-			{
-				a = this->Swap(a, i, pivotIndex);
-				pivotIndex++;
-			}
-		}
-		a = this->Swap(a, endIndex, pivotIndex);
+		const int compareResult = this->Compare(value, pivot);
+		if (direction == Direction::descending)
+			return compareResult == 1;
+		return compareResult == -1;
+	}
+	size_t Partition(vector<T>& items, size_t startIndex, size_t endIndex, Direction direction)
+	{
+		T pivot = items[endIndex];
+		size_t pivotIndex = startIndex;
+		for (size_t i = startIndex; i < endIndex; i++)
+			if (this->ShouldMoveBeforePivot(items[i], pivot, direction))
+				this->Swap(items, i, pivotIndex++);
+		this->Swap(items, endIndex, pivotIndex);
 		return pivotIndex;
 	}
-	vector<T>QuickSort(vector<T>items, int startIndex, int endIndex, Direction direction) {
-		if (startIndex < endIndex)
-		{
-			int P_index = this->Partition(&items[0], startIndex, endIndex, direction);
-			items = this->QuickSort(items, startIndex, P_index - 1, direction);
-			items = this->QuickSort(items, P_index + 1, endIndex, direction);
-		}
-		return items;
+	void QuickSort(vector<T>& items, size_t startIndex, size_t endIndex, Direction direction) {
+		if (startIndex >= endIndex)
+			return;
+
+		const size_t pivotIndex = this->Partition(items, startIndex, endIndex, direction);
+		if (pivotIndex > startIndex)
+			this->QuickSort(items, startIndex, pivotIndex - 1, direction);
+		if (pivotIndex < endIndex)
+			this->QuickSort(items, pivotIndex + 1, endIndex, direction);
 	}
 #pragma endregion
 
@@ -105,7 +99,11 @@ public:
 	/// <returns></returns>
 	vector<T>QuickSort(vector<T>items, Direction direction = Direction::ascending)
 	{
-		return this->QuickSort(items, 0, items.size() - 1, direction);
+		// Public API keeps returning a sorted copy; callers do not lose the original vector.
+		if (items.size() < 2)
+			return items;
+		this->QuickSort(items, 0, items.size() - 1, direction);
+		return items;
 	}
 
 

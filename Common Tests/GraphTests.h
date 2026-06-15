@@ -132,6 +132,37 @@ public:
 };
 #pragma endregion
 
+#pragma region Поиск по ID
+///<summary>
+/// Поиск вершин и ребер по ID после изменения исходных списков
+///</summary>
+class GraphIdLookupTest :public UnitTest<string> {
+public:
+	GraphIdLookupTest(vector<string>values) :UnitTest("Поиск графа по ID", values) {
+
+	}
+	void Test() override {
+		Graph<int> g = Graph<int>();
+		for (int i = 1; i <= 4; i++)
+			g.Add(i);
+		g.Connect("1", "2");
+		g.Connect("2", "3");
+		g.Connect("3", "4");
+
+		g.Set("3", Node<int>("3", 99));
+		g.DeleteEdge("2");
+		this->Add(g.GetNode("3")->GetId());
+		this->Add(to_string(g.GetNode("3")->GetData()));
+		this->Add(g.GetEdge("3")->GetId());
+		this->Add(to_string(g.GetEdgesCount()));
+
+		g.DeleteEdge(GraphItem("1").GetId());
+		this->Add(to_string(g.GetEdgesCount()));
+		UnitTest::Compare();
+	}
+};
+#pragma endregion
+
 #pragma region Соединение вершин
 ///<summary>
 /// Соединение вершин
@@ -219,6 +250,7 @@ public:
 		//Запуск одного теста: TestsClassName(vector<type>items).Start();
 		GraphAddNodeTest({ 10 }).Start();
 		GraphNodeSearchTest({ GraphItem("4").GetId(),GraphItem("5").GetId(),GraphItem("6").GetId() }).Start();
+		GraphIdLookupTest({ GraphItem("3").GetId(),"99",GraphItem("3").GetId(),"2","1" }).Start();
 		GraphAddEdgeTest({ 8 }).Start();
 		GraphDeleteNodeTest({ GraphItem("2").GetId(),GraphItem("5").GetId(),GraphItem("2").GetId(),GraphItem("6").GetId(),"10","9","2" }).Start();
 		GraphDeleteEdgeTest({ GraphItem("5").GetId(),GraphItem("6").GetId(),GraphItem("7").GetId(),GraphItem("8").GetId(),GraphItem("9").GetId() }).Start();

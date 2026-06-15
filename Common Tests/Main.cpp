@@ -26,8 +26,10 @@ bool RunCoreUnitTests()
 	passed &= SHRemoveCopiesTest("RemoveCopies", { "1","2","3","4","5","6","lol","kek","some text" }).Start();
 	passed &= SHFormatTest("Format helpers", { "\"text\"","true","false" }).Start();
 	passed &= QuickSortTest({ 0,1,2,3,4,5,5,4,3,2,1,0 }).Start();
-	passed &= BinarySearchTest1({ 0,1,-1,5,2,2,-1 }).Start();
-	passed &= BinarySearchTest2({ true,true,false,true,false,true,false }).Start();
+	passed &= QuickSortEdgeTest({ true,true,true,true }).Start();
+	passed &= BinarySearchTest1({ 0,1,-1,5,2,2,-1,-1,1 }).Start();
+	passed &= BinarySearchTest2({ true,true,false,true,false,true,false,false,true }).Start();
+	passed &= GraphIdLookupTest({ GraphItem("3").GetId(),"99",GraphItem("3").GetId(),"2","1" }).Start();
 
 	return passed;
 }

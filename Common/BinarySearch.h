@@ -15,31 +15,26 @@ private:
 #pragma endregion
 
 #pragma region Методы
-	T GetMiddle(vector<T>items) {
-		return items[items.size() / 2];
-	}
-	vector<T> GetHalfLeft(vector<T>items) {
-		return vector<T>(items.begin(), items.begin() + items.size() / 2);
-	}
-	vector<T> GetHalfRight(vector<T>items) {
-		return vector<T>(items.begin() + items.size() / 2 + 1, items.end());
-	}
-	int SubFind(vector<T>items, T item, int start = 0) {
-		if (items.size() > 0)
-		{
-			if (item == this->GetMiddle(items))
-				return start + items.size() / 2;
-			else {
-				if (items.size() == 1)
-					return -1;
-				if (this->GetMiddle(items) > item)
-					return this->SubFind(GetHalfLeft(items), item, start);
-				else
-					return this->SubFind(GetHalfRight(items), item, start + items.size() / 2 + 1);
-			}
-		}
-		else
+	int SubFind(vector<T>& items, T item) {
+		if (items.empty())
 			return -1;
+
+		size_t left = 0;
+		size_t right = items.size() - 1;
+		while (left <= right)
+		{
+			const size_t middle = left + (right - left) / 2;
+			if (items[middle] == item)
+				return static_cast<int>(middle);
+			if (items[middle] > item) {
+				if (middle == 0)
+					break;
+				right = middle - 1;
+			}
+			else
+				left = middle + 1;
+		}
+		return -1;
 	}
 #pragma endregion
 
@@ -52,6 +47,7 @@ public:
 #pragma region Методы
 	int	Find(vector<T>items, T item) {
 		Sorts<T> sorts;
+		// Legacy behavior: Find returns the index in the sorted copy, not in the original vector.
 		items = sorts.QuickSort(items);
 		return this->SubFind(items, item);
 	}

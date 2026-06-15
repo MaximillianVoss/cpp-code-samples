@@ -65,6 +65,10 @@ The deterministic common helper tests are wired through the `Common Tests` proje
 
 The test runner returns a non-zero exit code when any unit test fails.
 
+## Refactoring Notes
+
+Current analysis notes and next refactoring targets are tracked in `docs/refactoring-analysis.md`.
+
 ## Preservation
 
 Pre-refactor preservation points:

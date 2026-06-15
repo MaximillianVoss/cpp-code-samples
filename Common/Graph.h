@@ -3,7 +3,6 @@
 #include "pch.h"
 #include "Node.h"
 #include "Edge.h"
-#include "BinarySearch.h"
 ///<summary>
 /// Граф
 /// построение графа онлайн 
@@ -34,6 +33,32 @@ private:
 #pragma endregion
 
 #pragma region Методы
+	int FindNodeIndexById(string id) {
+		// Nodes are stored in insertion order; ID lookup must return an index in this storage.
+		for (size_t i = 0; i < this->nodes.size(); i++)
+			if (this->nodes[i].GetId() == id)
+				return static_cast<int>(i);
+		if (id.length() < 32) {
+			string longId = GraphItem(id).GetId();
+			for (size_t i = 0; i < this->nodes.size(); i++)
+				if (this->nodes[i].GetId() == longId)
+					return static_cast<int>(i);
+		}
+		return -1;
+	}
+	int FindEdgeIndexById(string id) {
+		// Edges can be erased from the middle, so searching the original vector is safer than binary-searching a copy.
+		for (size_t i = 0; i < this->edges.size(); i++)
+			if (this->edges[i].GetId() == id)
+				return static_cast<int>(i);
+		if (id.length() < 32) {
+			string longId = GraphItem(id).GetId();
+			for (size_t i = 0; i < this->edges.size(); i++)
+				if (this->edges[i].GetId() == longId)
+					return static_cast<int>(i);
+		}
+		return -1;
+	}
 	/// <summary>
 	/// Добавляет указанное ребро
 	/// </summary>
@@ -164,8 +189,7 @@ public:
 	/// </summary>
 	/// <param name="nodeId">ID вершины</param>
 	void DeleteNode(string nodeId) {
-		BinarySearch<Node<T>> bs;
-		int index = bs.Find(this->nodes, Node<T>(nodeId));
+		int index = this->FindNodeIndexById(nodeId);
 		if (index != -1) {
 			//this->Disconnect(index);
 			this->DeleteNode(index);
@@ -184,8 +208,7 @@ public:
 	/// </summary>
 	/// <param name="edgeId"></param>
 	void DeleteEdge(string edgeId) {
-		BinarySearch<Edge<T>> bs;
-		int index = bs.Find(this->edges, Edge<T>(edgeId));
+		int index = this->FindEdgeIndexById(edgeId);
 		if (index != -1)
 			DeleteEdge(index);
 	}
@@ -279,8 +302,7 @@ public:
 	/// <param name="id">id</param>
 	/// <returns></returns>
 	Node<T>* GetNode(string id) {
-		BinarySearch<Node<T>> bs;
-		int index = bs.Find(this->nodes, Node<T>(id));
+		int index = this->FindNodeIndexById(id);
 		if (index == -1)
 			return NULL;
 		else
@@ -302,8 +324,7 @@ public:
 	/// <param name="id">id</param>
 	/// <returns></returns>
 	Edge<T>* GetEdge(string id) {
-		BinarySearch<Edge<T>> bs;
-		int index = bs.Find(this->edges, Edge<T>(id));
+		int index = this->FindEdgeIndexById(id);
 		if (index == -1)
 			return NULL;
 		else
@@ -341,7 +362,7 @@ public:
 	void Set(string id, Node<T> node) {
 		Node<T>* _node = this->GetNode(id);
 		if (_node)
-			_node = Node<T>(id, node.GetData());
+			_node->SetData(node.GetData());
 	}
 	/// <summary>
 	/// Заменяет ребро по указанному ID
@@ -351,7 +372,7 @@ public:
 	void Set(string id, Edge<T>edge) {
 		Edge<T>* _edge = this->GetEdge(id);
 		if (_edge) {
-			_edge = Edge<T>(id, edge.GetFrom(), edge.GetTo(), edge.GetWeight(), edge.GetDirection().edge.GetFormat());
+			*_edge = Edge<T>(id, edge.GetFrom(), edge.GetTo(), edge.GetWeight(), edge.GetDirection(), _edge->GetFormat());
 		}
 	}
 	/// <summary>
