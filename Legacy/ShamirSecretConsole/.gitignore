@@ -1,0 +1,6 @@
+/app/.vs/
+/app/**/Debug/
+/app/**/Release/
+/app/**/x64/
+/app/**/data.txt
+/app/**/*.user
