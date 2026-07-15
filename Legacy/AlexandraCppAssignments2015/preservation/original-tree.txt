@@ -1,0 +1,111 @@
+C++\Код C++\Задания Александры\Быстрая сортировка\.vs\Быстрая сортировка\v14\.suo	39424	86cb4d1bd913746813e654c73db7607eb75cdddb9e1187ac17b37da0420b0c86	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка.sdf	36175872	1ccf776bc66280d6fc2534099c47f157a9b4d5731cef198aa8dac9523334247e	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка.sln	1033	a54725695e34cb0c33674562442a636d0a3ab0e635ac78a9b59741fab5d097a2	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Быстрая сортировка.cpp	1611	66435e9f05d989e3646cee376fe05f3206d8a7dc7581564b2ae749f62c741047	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Быстрая сортировка.vcxproj	4628	0f79cae4aba24a34747f36fd6e75c565b090dc180042bd5da80ea96472ec60e6	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Быстрая сортировка.vcxproj.filters	1522	7d7d841f2b922572ef6533db135b51c67d8187698017c974442cd1f313b73378	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\Быстрая сортировка.lastbuildstate	307	83e1f550f321baf6ea79736f3b4a289569123516b16c9f87bd36d0f22e0d6824	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\cl.command.1.tlog	4114	955844ec5dcb4156ab9319cd8ffefe7c4844fa8b1d8462d0f960052a84d4422d	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\CL.read.1.tlog	35152	32b893d687f49f317ae0964dc9e6ed96013704336b734b1e53ae3cc0a2312bf4	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\CL.write.1.tlog	2548	2eb738ad841bbc2ce9552d7662f79cf10a9fe6119992651974f23c5b5672608b	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\link.command.1.tlog	3958	9a684c0a4b8ef5ebb7a41ba81b594e2bf966546446ecae2a477945db949e6e39	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\link.read.1.tlog	3784	6eb3f82e79ad631b43b2adc3b5bd0bacb6070d78daddad42aa04a38fbb6509df	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая .92ED5221.tlog\link.write.1.tlog	1374	7b54c6d3bca3f2b432b6ca321812ab0d777ef39d5b45fbcfb780b22314c8880e	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая сортировка.log	2778	821d5795f40435da991b54cb18d9f7be65ab8ac6760675f1360071b96d3b5182	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая сортировка.obj	72439	caa1f3e4ea090874197a7a0fe8fb3a0ae361fa28e7bb1ec9b30d28debecc601e	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\Быстрая сортировка.pch	4194304	9df994a7e60c0ca9bdd174fb5c076184bf2acae3bf74c0aa92045b9411525707	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\stdafx.obj	14339	74efd9c61be70ee3bb6fe3eff7a158f046041b2392ad4f1345cc09acf607338f	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\vc140.idb	1477632	98cca40cc97118fd0d086c4f12ef24f1405c8edf294f3b8a13eda1dcc3ce0ac1	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\Debug\vc140.pdb	618496	840f73b6833eafabe24849087bb6ce2266e3f80f43b2f14b2e132de3e5841904	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\ReadMe.txt	2819	be3d2e0318b634dd280b89fcf77ffefaca1a2e85df64115ffb6115cadc5cc173	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\stdafx.cpp	365	d3b4901aaf77356ec8b1e239d42351bfd0503d6faf26fd3f521823fd554f89a2	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Быстрая сортировка\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Задания Александры\Быстрая сортировка\Debug\Быстрая сортировка.exe	50176	ceb72ccc34797a64059cbf2843f8c35f4f13d184c38c2b2b3ea340cf33a8c946	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Debug\Быстрая сортировка.ilk	400368	f49776ff4c570df62ed9f9a15599273cf90c8c25ecbf2407044ad9af41f7fc48	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\Debug\Быстрая сортировка.pdb	1183744	9abe31d7433a70d7fcdcb9e609511201c9cfdb0bafdd8a4d07c5047196c57d22	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\ipch\БЫСТРАЯ СОРТИРОВКА-69c6c62a\БЫСТРАЯ СОРТИРОВКА-257ac5dd.ipch	3538944	51e1c3f9683aa49fe51a43efb8c3a9ed0afa4ae828e24f0471a815a821883e51	metadata-only
+C++\Код C++\Задания Александры\Быстрая сортировка\ipch\БЫСТРАЯ СОРТИРОВКА-d95a9cf9\БЫСТРАЯ СОРТИРОВКА-257ac5dd.ipch	3473408	8ff9a9ff2b56f98b7f2118c8ad1ee75d02ff699d828a9e7e9a697ed632290f5f	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\.vs\Вектор C++\v14\.suo	30720	b02b8e1a050dee0927e4fb44840659dfe94068acc940b3f02d4b6ebb3235f76b	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++.opensdf	42	480db674074cb39f7211fee69f1e3fece25b9ce2faa5211ab93cf6d8b2bc28c2	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++.sdf	12320768	750c265a7b820a426fa0d0bc810af6c14c1d9ebbb1e8d2c37ef8d271456b1190	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++.sln	1330	f6a44d522a6f3e69ad5ad49a25d5055f4923be2a26afea75db0ae0b2c3c8d878	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Вектор C++.cpp	3293	ad5eb942cfe47144faf9a1a8222081bfcdbefead4aae63d2355a86ca6cafa5d7	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Вектор C++.vcxproj	8051	4a7f04540015b1e722db87e6444437593dc252086dd9a9b1d1f235198b3b9355	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Вектор C++.vcxproj.filters	1503	1a05b32f1952a9914976e272f9ca0dd93b1a535d9ef89bfcd7e5408b71fe7444	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.log	2045	143877f81dc6e78e3bd485ae619c00ce016d24feebdf06853f108cef1c4b616b	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.obj	164633	6fd15032a44793cb23550a564f470dba8934e742ddbb4fdfcecefe3894e0458d	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.pch	3407872	7e8c70ac0d5b5662e9115c5c96fab3ef39cbb08a14ea8f9754dabce32f6d2b92	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\Вектор C++.lastbuildstate	226	60ed8d7f205e05f6618c602557761fcfedf97bb7c38b3c08854114a6af1b6414	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\CL.command.1.tlog	1746	320565d8b5225f7cc273355a9f344699b958d55c793816f706e9090ebe734713	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\CL.read.1.tlog	17546	43c712d425c4796d8a4bc0a553947631035dace7e9aa4d4874a9a5961f957ef7	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\CL.write.1.tlog	1672	406b3aa976656423c585d5478c939cfb7d40415f5a7093762faf10107051caa9	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\link.command.1.tlog	1638	f1419551ec77f0b0d31a3291859ae3894d4bfb4659a4a7bcf2b04654a5aa4247	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\link.read.1.tlog	3384	5644d6132c68a7ed6df7db533de314a2ff07640e90450d8fde9b0cf217d73947	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\Вектор C++.tlog\link.write.1.tlog	898	7046944467274cdfb95a86cfa95d0873a47384268514a7161364264521b47e84	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\stdafx.obj	12867	4364e7728d369eb6ceacc55303f01fbd778e80d898f6478d8464c3b1c9ca5c93	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\vc140.idb	363520	835898f78046525d30d42e59b716183f6f08298ddfb53a1aa54413ab70ecc3b3	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\Debug\vc140.pdb	503808	ef4d048a8fcd9e0cee498dc335b72d0f9244f065b43e7aedcb3eaa187768b5af	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\ReadMe.txt	2686	39837d1e1b53297e32e107cdf64edf78f3cf7b328a3de5ca9bbb4c23dc806cb9	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\stdafx.cpp	357	be0c120c2afac8cd604d09673e40454fb8324ea2eccb310d4d72ab915067113a	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Вектор C++\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Задания Александры\Вектор C++\Debug\Вектор C++.exe	76288	72c38c9bfc7b1cbf11aeb26e586cbb1716ed415220799dad65cf252ccb4b08d9	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Debug\Вектор C++.ilk	906404	6f62556c445c37f70eebdf64b1241b864359280ee0675dc95440f119165c965c	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\Debug\Вектор C++.pdb	1536000	879f972e57d9ca13b9ee722e3df622041259db5bc8a005057f6be380e4d90360	metadata-only
+C++\Код C++\Задания Александры\Вектор C++\ipch\ВЕКТОР C++-4203a6d4\ВЕКТОР C++-6d68d246.ipch	3538944	4ab967fb68306373797dbb68eaa59be7589e60333bbc7be979cad54259ac6116	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\.vs\Пересечение отрезков\v14\.suo	46080	7e44a9cbdf39830dd218d4d29b56daa58454b629f98e956028c70c0c7bdfd3d4	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков.sdf	69599232	4a0bfe5d2d7b104076178efd19170eb11b9dcf2a1729e1cb645d58c20d2a7ff3	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков.sln	1045	0e305d7a0566849f96cb7941c2ab6c53c12688eea5e491b3816a592c20190038	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Пересечение отрезков.cpp	3510	f6c8bb6f799e9a4ceb2eff0cf5ddcf70ada48f5674b68bd563397704040dff08	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Пересечение отрезков.vcxproj	4636	9678807270414f7faf431457bb8fc5f7f283437fe3be62d226f5af3e9bd149f7	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Пересечение отрезков.vcxproj.filters	1526	ebc9cbef4b67f3eeb25dfb7c29c451484535cabc120ec004ecd168b64a0424f1	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\Пересечение отрезков.lastbuildstate	311	9d87eaab91d2525aa4e4b1547d195c114001db7c9bf717060bb872c643ccff50	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\cl.command.1.tlog	4210	7747baaa402de2cf3b16c999a7b8f11507e803efc7092b5e1cdd75da3187f16e	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\CL.read.1.tlog	38338	a41ce2cb85cfb9d3cb7200c9e150d7c74142cf6fc8785d428054df0fd834f281	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\CL.write.1.tlog	2632	618229c3db6f85567b5e0b07caf8707b57f6607a301588a91ab110d3181f19ef	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\link.command.1.tlog	4054	a4fd546804cef852d368491f45286c3ac9d435bdaedf12987a0c0b46bbbdd977	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\link.read.1.tlog	3920	32f246fb3d850532f31beeb0f66866cac747476227bc43555a5505a8225a0f26	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересече.B60AE33E.tlog\link.write.1.tlog	1418	17874d2f2254bdb03c14a39fa1d71bdbf07176f687ca6ae43f1b3befd1fa4151	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересечение отрезков.log	3650	446021db0e2d97c0e7cc955ea6521f29687a8721391cd728357953554a4802ec	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересечение отрезков.obj	192020	5369e41a6aedfe5a23adaf4b5b1b214728f681f75f605b0927c3ef1b8cee7700	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\Пересечение отрезков.pch	2883584	4640cdd225c27b66b0b598d5f86a3bdef0b0de613e07702b449bc2b1542cd5c1	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\stdafx.obj	14559	1fc8fddb8dff6bfc3fbaf33dcda56be0226a6b37d8d6f3785240b9f236008691	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\vc140.idb	1100800	023d7ea4ea45e4b6298947848df41d5c3f3154bee6dfe26c0e4f6a8d3f6beec9	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\Debug\vc140.pdb	561152	d4da94ef8c8bb3ff87ae496f8b4ce6146f9b0a3ca6489bca96d559504d64499b	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\ReadMe.txt	2847	2849e69efe9ce458f9fa5bee44a1261255a60b1e9d19104564e6d060b102fd39	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\stdafx.cpp	367	2f124b66e28ab1008a29a8abb52218490c34b39bcdaec04864cc1c2bf1b1cb10	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Пересечение отрезков\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Code.txt	3475	848f060f76ff053aeabab0c21c1f5ef416fddbf37344f35e50d82bdfb12c553e	included-exact
+C++\Код C++\Задания Александры\Пересечение отрезков\Debug\Пересечение отрезков.exe	75264	61d9b719e0e89c6a98b07b9e9f50d8b461cd5c05e040f3eeb14c953d160236b1	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Debug\Пересечение отрезков.ilk	594392	ec08f7cfc424a6f26e36ad0dd1d433ebd972fac6dc9c82a2eae61a1ea00f63ba	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\Debug\Пересечение отрезков.pdb	1355776	d1337c025acce1a4478ee07393780a7ab602bce813e583c13618ff0a81180c91	metadata-only
+C++\Код C++\Задания Александры\Пересечение отрезков\ipch\ПЕРЕСЕЧЕНИЕ ОТРЕЗКОВ-aa811948\ПЕРЕСЕЧЕНИЕ ОТРЕЗКОВ-7e12dfe7.ipch	3538944	e2f5e947d17fb770e98e2005d3b8a67e3d2c4baa94e156b9317cac1a14d94af6	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\.vs\Пересечение прямых\v14\.suo	43520	c0e5bbcc5debc34f5b6c78a8bb9d2ad0f46902c166c0d32c80506de4e3e1d8fa	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых.sdf	70254592	c9ce1141611a2e6c204f8351e1cfd02fcf5ae0521f85bba5c853065c83c6cc0b	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых.sln	1033	be4e59bb226a436400cca53c9ed958e94a05f1319567f8bbe3eefb757640023a	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Пересечение прямых.cpp	1155	19b8b52f5934016ec4d3ed9cb13f030767c997fef6ffc3940f432f2a4f6a743c	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Пересечение прямых.vcxproj	4628	eff1d36ea0958f8f7a67a4b2679d47a4f90e895de18b18b94888c0455c2f1f1d	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Пересечение прямых.vcxproj.filters	1522	53e214c73b633b9f41188d0202fc87db9ac069524490150b12825ec0fe6ecee6	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\Пересечение прямых.lastbuildstate	307	abc551eea27a2e1dcc8458efebe8eda5b40815a72e77fcfc59a03f9253561513	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\cl.command.1.tlog	4114	32284881da404d9977ddc76d5d9bae848a46a5bbba534bd17e65757a50994795	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\CL.read.1.tlog	34720	884c579937b227b87f39523b2b7d8096ed3851643ed97b5a3f04ca848eb8ad14	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\CL.write.1.tlog	2548	680b8e24bb1030c1fe3a4543036151bbd2c68ce2fbfd545f581c7c65d2afdae1	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\link.command.1.tlog	3958	212bb64f1acf2476a0b9f756f310cefe2db673f7f291f717b2df2f592141fdbc	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\link.read.1.tlog	3784	e075d97cb7626b0b8fd9e009fd862e4469dc0d800e520da855015ec5ab9aae6e	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересече.406DE0D1.tlog\link.write.1.tlog	1374	76069c42212daa71b193d62e77f978dc5873455b471048663994ddc7bdaeabb1	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересечение прямых.log	3162	3e04166e1850e6c8af14b78ded7e05b785e2d133bc839774244ada625e01ab3b	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересечение прямых.obj	188998	e99a45a2d1ff80c6b898bc9cafdab52de50150957a39cf67bdb009de740153c9	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\Пересечение прямых.pch	4521984	628bdde4f93d2c790808ca38b966b99d9662b723521f588fae43888601e52044	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\stdafx.obj	14339	8035557785f586e08d0e14a5d7d88b4257aa29ec3dd56a1d055792359cc3b1fe	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\vc140.idb	1575936	42df9fb61eb189df925762d1cbd2bfcea0914b3df1026cd50c117ec4066f771c	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\Debug\vc140.pdb	618496	de30678ccdffcb12bd0f1311fbf36cd32b4ea3686203151af514f4aa19ee04b8	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\ReadMe.txt	2819	a112718532d7272b6bad718f456531a9246f9a8a0c932bdb5d110c2547a2eeb7	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\stdafx.cpp	365	170bf5a2f1eff7fada0cb0ff27f6db660d71ad81167f8fa6972d3c53e11ba798	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Пересечение прямых\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Задания Александры\Пересечение прямых\Debug\Пересечение прямых.exe	74752	dc0fb79151befb5fa779ac4d8ad3227e735f841130b8095d42095435898151d1	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Debug\Пересечение прямых.ilk	468916	717b4046f2af62d9814373b0a5c09e56ff15f09af92edd224ca5ecf8ad568f9b	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\Debug\Пересечение прямых.pdb	1323008	060ad66905c847d9e90b6f9887689c109ac1f4db60537dbf6931b13827148b2e	metadata-only
+C++\Код C++\Задания Александры\Пересечение прямых\ipch\ПЕРЕСЕЧЕНИЕ ПРЯМЫХ-85289d4\ПЕРЕСЕЧЕНИЕ ПРЯМЫХ-c7333c2b.ipch	3538944	7204922198b3942651fdc4c3dc8d86f1360947905eb00731c5350c66fb52c79d	metadata-only

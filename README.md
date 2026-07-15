@@ -39,7 +39,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
   recovered 2016 [data-structures course](Legacy/DataStructuresCourse/README.md)
   and [Programming Exercises RC](Legacy/ProgrammingExercisesRC/README.md), plus
   the consolidated [2016-2018 C++ coursework exercises](Legacy/CppCourseworkExercises2016/README.md)
-  and the five-stage [Drunkard card game](Legacy/DrunkardCardGame/README.md) lineage.
+  and the five-stage [Drunkard card game](Legacy/DrunkardCardGame/README.md) lineage,
+  as well as the recovered [2015 Alexandra assignments](Legacy/AlexandraCppAssignments2015/README.md).
 
 Key namespace facade headers:
 
@@ -97,5 +98,9 @@ Pre-refactor preservation points:
 - Byte-exact Drunkard source tag: `original-drunkard-card-game-2016`
 - Original Drunkard names, timestamps, sizes, and hashes:
   [`Legacy/DrunkardCardGame/preservation/file-metadata.csv`](Legacy/DrunkardCardGame/preservation/file-metadata.csv)
+- Recovered Alexandra assignments branch: `archive/alexandra-cpp-assignments-2015`
+- Byte-exact Alexandra assignments tag: `original-alexandra-cpp-assignments-2015`
+- Original assignment names, timestamps, sizes, and hashes:
+  [`Legacy/AlexandraCppAssignments2015/preservation/file-metadata.csv`](Legacy/AlexandraCppAssignments2015/preservation/file-metadata.csv)
 
 The canonical GitHub repository is `MaximillianVoss/cpp-code-samples`.

@@ -1,0 +1,161 @@
+// Пересечение отрезков.cpp: определяет точку входа для консольного приложения.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <windows.h>
+#include <string>
+
+using namespace std;
+
+#pragma region Stuff
+string GetSymbol(int i)
+{
+	switch (i)
+	{
+	case 0:
+		return "x1";
+		break;
+	case 1:
+		return "y1";
+		break;
+	case 2:
+		return "x2";
+		break;
+	case 3:
+		return "y2";
+		break;
+	case 4:
+		return "x3";
+		break;
+	case 5:
+		return "y3";
+		break;
+	case 6:
+		return "x4";
+		break;
+	case 7:
+		return "y4";
+		break;
+	default:
+		break;
+	}
+}
+
+double* GetLine(double x1, double y1, double x2, double y2)
+{
+	double args[2];
+	//args[0] - c, args[1] -k
+	args[0] = (x1*y2 - x2* y1) / (x1 - x2);
+	args[1] = (y1/x1)- (args[0]/x1);
+	return args;
+}
+
+void PrintArray(double * array,int count)
+{
+	for (int i = 0;i < count;i++)
+	{
+		cout << array[i];
+	}
+}
+
+void IsCrossed(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4)
+{
+	double* args1 = GetLine(x1, y1, x2, y2);
+	double* args2 = GetLine(x3, y3, x4, y4);
+	//PrintArray(args1, 2);
+	//PrintArray(args2, 2);
+}
+#pragma endregion
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_CTYPE, "rus");
+	double args[8];
+	for (int i = 0;i < 8;i++)
+	{
+		cout << "Введите " + GetSymbol(i) + "\n";
+		cin >> args[i];
+	}
+	IsCrossed(args[0], args[1], args[2], args[3], args[4], args[5], args[6], args[7]);
+	system("pause");
+	return 0;
+}
+
+
+
+//// with structures
+
+const double EPS = 1E-9;
+struct  Point 
+{
+	double x, y;
+
+	bool operator < (const Point &p) const {
+		return x < p.x - EPS || abs(x - p.x) < EPS && y < p.y - EPS;
+	}
+};
+
+struct Line 
+{
+	double a, b, c;
+	Line() {}
+	Line(Point first, Point second)
+	{
+		a = first.y - second.y;
+		b = second.x - first.x;
+		c = -a*first.x - b * second.y;
+	}
+	double Distance(Point p)
+	{
+		return a * p.x + b * p.y + c;
+	}
+};
+
+
+
+
+/////////////
+bool IsLinesCrosses(int x11, int y11, int x12, int y12, int x21, int y21, int x22, int y22)
+{
+
+	int maxX1 = max(x11, x12), maxY1 = max(y11, y12);
+	int minX1 = min(x11, x12), minY1 = min(y11, y12);
+	int maxX2 = max(x21, x22), maxY2 = max(y21, y22);
+	int minX2 = min(x21, x22), minY2 = min(y21, y22);
+
+	// Момент, когда линии имеют одну общую вершину
+	if (minX1 > maxX2 || maxX1 < minX2 || minY1 > maxY2 || maxY1 < minY2)
+		return FALSE;  
+
+
+	int dx1 = x12 - x11, dy1 = y12 - y11; // Длина проекций первой линии на ось x и y
+	int dx2 = x22 - x21, dy2 = y22 - y21; // Длина проекций второй линии на ось x и y
+	int dxx = x11 - x21, dyy = y11 - y21;
+	int div, mul;
+
+
+	if ((div = (int)((double)dy2*dx1 - (double)dx2*dy1)) == 0)
+		return FALSE; // Линии параллельны...
+	if (div > 0) {
+		if ((mul = (int)((double)dx1*dyy - (double)dy1*dxx)) < 0 || mul > div)
+			return FALSE; // Первый отрезок пересекается за своими границами...
+		if ((mul = (int)((double)dx2*dyy - (double)dy2*dxx)) < 0 || mul > div)
+			return FALSE; // Второй отрезок пересекается за своими границами...
+	}
+
+	if ((mul = -(int)((double)dx1*dyy - (double)dy1*dxx)) < 0 || mul > -div)
+		return FALSE; // Первый отрезок пересекается за своими границами...
+	if ((mul = -(int)((double)dx2*dyy - (double)dy2*dxx)) < 0 || mul > -div)
+		return FALSE; // Второй отрезок пересекается за своими границами...
+
+	return TRUE;
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_CTYPE, "rus");
+
+	system("pause");
+	return 0;
+}
