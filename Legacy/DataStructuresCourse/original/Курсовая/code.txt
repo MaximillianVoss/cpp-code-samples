@@ -1,0 +1,39 @@
+#include <set>
+#include <time.h>
+using namespace std;
+class Tree
+{
+#pragma region Private
+private:
+	multiset<int> data;
+#pragma endregion
+#pragma region Public 
+public:
+	int GetItemByIndex(int index)
+	{
+		int i = 0;
+		multiset<int>::iterator it = data.begin();
+		while (it != data.end())
+		{
+			if (i == index)
+				return  *it;
+			i++;
+			it++;
+		}
+		return -1;
+	}
+	Tree(int size)
+	{
+		srand(time(NULL));
+		for (int i = 0;i < size;i++)
+			data.insert(rand() % 100);
+	}
+	Tree()
+	{
+	}
+	~Tree()
+	{
+	}
+#pragma endregion
+};
+

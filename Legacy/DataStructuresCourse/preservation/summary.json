@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "original_folder": "Архив\\Temp",
+  "recovered_manifest_files": 476,
+  "recovered_manifest_bytes": 517605845,
+  "imported_source_and_document_files": 170,
+  "preserved_deliverables_local_only": 10,
+  "manifest_only_build_files": 296,
+  "archive_repository": "legacy-programming-projects-archive",
+  "private_archive_bundle": "legacy-programming-projects-archive-pre-credential-sanitization-2026-07-15.bundle",
+  "private_archive_bundle_sha256": "700d60aed64da16779d4f0f82d7d397eb2cdbb5db8da5fbc915401186bf1ec46",
+  "archive_branch": "archive/data-structures-course-2016",
+  "source_only_tag": "original-data-structures-course-2016",
+  "original_commit": "173986787f192788cfb3c6a1b16e8e1c256d69d8",
+  "verified_source_files": 170
+}
