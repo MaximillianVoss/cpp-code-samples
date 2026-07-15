@@ -1,0 +1,309 @@
+Архив\Бинарное дерево C++\.vs\Бинарное дерево C++\v14\.suo	28672	bb1bd42d007cfc46f76fa1f163504632263599894fb78773f1b6c6a7d30fe0fb	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++.sln	1381	82c757bd92b7b70f276d3be220096cc5067f350b3bb01c93609214c5e4c7b4ee	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++.VC.db	5701632	eabf21f5c3ff4be85e91f6d00177623542231f80d336b186962aa529a265d9d7	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.cpp	1468	5ca6267f5d0b1362436df70057bf0f4312371ca91a49d344c771e2e35f7a68ae	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.vcxproj	8084	b0e26ac198f25a0181164d27b06e21add530e37db1262778f448262dd2b453dd	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.vcxproj.filters	1520	41da0984ae4648b1fc6a26e5804456b3ecd20171034c16e5a827ba82eb26ec75	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное дерево C++.log	567	955a6108aab23f90b59cd0fed1cef4a09fe98e6f1a4552e44affe310690e714f	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное дерево C++.obj	16197	40edf94ccdf500125e2e332cbdefb42d61df12ea53edcb3748a9fff21729600b	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное дерево C++.pch	3407872	fed288308e3442aaa23f983b4c6899483ef3732337eab8e03a703998d3a97069	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\Бинарное дерево C++.lastbuildstate	276	2eeca3f62006c13015975a7782452e680d0f45a19322c8827179f7d9a462862e	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\CL.command.1.tlog	1962	b405db162be5caf8fddcad6f68c7b9b62837c0c87d4d369d1a9c6f4d66835408	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\CL.read.1.tlog	7070	4526f4e556f9420199c3d82f0546a229c5df5800eacd110ea7728ae3b8645c64	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\CL.write.1.tlog	2050	e2f730cab9d8fdbfc18a5d32f7c8b1b4d5d6f4c41e29955bdfe303d17b45fc5e	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.command.1.tlog	1854	f5e75d18230341a32e817180479574c2e7112ba69b264eb58ce7c771ab86dd8c	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.read.1.tlog	3418	c271fa2a64f51a1d83aaf052744105d9e5e2864d1da4976c52debfed5dcfd06d	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.write.1.tlog	1096	2de4cbdd774b7b32067a07be965161cfe3153676e86d6937c80726e782b08c76	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\stdafx.obj	13405	13bfbc7478b3fa9fa44346e3245dca2ae3cec2b091f81446c284fe7114eb9213	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\vc140.idb	142336	1bc1582f10279dfcc69fae83db2e721e4e7c10b71910858b5abb1f19d054b494	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\Debug\vc140.pdb	159744	837bcd3b6edb3a75f3606a41313c1ab86da4cc0720624ca237ddc212008fdcbd	metadata-only
+Архив\Бинарное дерево C++\Бинарное дерево C++\ReadMe.txt	2805	d74b106b2ed6af2e5e477809db888509c03e4987eecf71baf8621172427511c5	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++\stdafx.cpp	366	3b53b4293a95b4375bcb94ec171da4ba33b047a41d0232cdada1d895af2a6a2d	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\Бинарное дерево C++\Бинарное дерево C++\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\Бинарное дерево C++\Debug\Бинарное дерево C++.exe	44544	eb94ffd35db27461523d233711780d48f194ec5026c6559b1dc7665e1e69fe4c	private-archive-only
+Архив\Бинарное дерево C++\Debug\Бинарное дерево C++.ilk	398032	ea80e5fe99809e135f60d914f69b079785731166960018ef1decba927dc8d8db	metadata-only
+Архив\Бинарное дерево C++\Debug\Бинарное дерево C++.pdb	757760	31e433da554cc2df34abf7f299df7126031531832948f0425747af0939939be9	metadata-only
+Архив\Бинарное дерево C++\ipch\БИНАРНОЕ ДЕРЕВО C++-a529890d\БИНАРНОЕ ДЕРЕВО C++-ec5b6779.ipch	3538944	8c637c7c971ea95b025b79e94ce1c471b76b0099f27c3c9561245b0d3ac367d6	metadata-only
+Архив\Бинарный поиск\.vs\Бинарный поиск\v14\.suo	33792	635964ec35e54a07b0d138345e41289ce23f6a6da57397eca9072454f269a002	metadata-only
+Архив\Бинарный поиск\Бинарный поиск.sdf	12255232	08f818f7c361078b23824be7cd95773286052b025368c21fbf86b563fc1e94a3	metadata-only
+Архив\Бинарный поиск\Бинарный поиск.sln	1363	182f6f67fa9d1c7c005d52947425e0d972db87e423564a5b544c96cc6615e7ca	included-exact
+Архив\Бинарный поиск\Бинарный поиск\Бинарный поиск.cpp	7248	839303e809e522bcf041bee2899aa2f9cfaa66e68801edfd7bc6bd04af643909	included-exact
+Архив\Бинарный поиск\Бинарный поиск\Бинарный поиск.vcxproj	8075	6f0ce63577507313001eb8d399519de244975ddca5bc3901eecc2bcf2da4c90c	included-exact
+Архив\Бинарный поиск\Бинарный поиск\Бинарный поиск.vcxproj.filters	1514	c3f182d5a37928eade35459987b75ff32c42aa20353127d713734cd9db348110	included-exact
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.log	3978	ab06ba2b78621fc9bf249616a01719d167515d65f46ed6db52237c751f3e8c9c	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.obj	548543	25d5ddc05acd7807c8416b1a376627237bb194e2d9b39d9980f536b03c13b8ec	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.pch	3407872	bb8b641eed3e1615f5dea49278f3dce7d7abeb4f5aafc866b10904edf287a8e5	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\Бинарный поиск.lastbuildstate	270	52c600826a8bb955c9860ff511df173c55f76158c48e224a56771594e6b21d4c	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\CL.command.1.tlog	1842	791bd9556418ac37dab4181b995a52f515b1971c06c4fba79327f7db8b482782	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\CL.read.1.tlog	18370	f4e24c4942d394f3e39f116fd045ed77a8fbd5de9890540ff9620bb06fc0b447	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\CL.write.1.tlog	1840	824aa5058f9d1903d258ad66a6aa33acae794f31210752cc90e83cf994e50669	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\link.command.1.tlog	1734	2c2747a5b6fc845538a49c5ad1a53031a09777018f6e08a436f5db30f098bbb6	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\link.read.1.tlog	3464	71042fc10f0ac5d0f4a892f29372cea201b659db839674255e7690fd5d9c91b2	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\link.write.1.tlog	986	1fab9beee661a525a69c0dd142054b0bfddcde4e098bf509274ccea182f17b77	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\stdafx.obj	13224	3dbfd43ad8f86c3e7b04450e4dfe3dedbf63fcc46aa7c83ea0f0c4f9b33e42c3	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\vc140.idb	379904	d323543fe128f95fe53882883effcfb98c0d6820a2cddf962e444cd183f4e4d5	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\Debug\vc140.pdb	479232	d949878d4588b32b3b1a394e531a407d4d6cfaeb41b253439860d9cd24520b1d	metadata-only
+Архив\Бинарный поиск\Бинарный поиск\ReadMe.txt	2763	4f6b32f72a31d61b0250f43d6cb0e607fed971957292eecdc3a456f0f42c645a	included-exact
+Архив\Бинарный поиск\Бинарный поиск\stdafx.cpp	361	f5ff944115682c9f9175d0c5387db4cd0379c204fc9beca03e6c50e724cad34e	included-exact
+Архив\Бинарный поиск\Бинарный поиск\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\Бинарный поиск\Бинарный поиск\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\Бинарный поиск\Debug\Бинарный поиск.exe	137216	269eecd071f1de274b1e4976b8f47efdb378358fe2145f9f2b8bc82ed8d1d065	private-archive-only
+Архив\Бинарный поиск\Debug\Бинарный поиск.ilk	1148584	8b008c3ce4b7c2fc5a529248ed33e336580defd8386d049b10d10fb0aa18f2c8	metadata-only
+Архив\Бинарный поиск\Debug\Бинарный поиск.pdb	2150400	e3bc94065b8e4432d20ed8174ad420542bd082fc9a9cc45a169630a750852b00	metadata-only
+Архив\Бинарный поиск\ipch\БИНАРНЫЙ ПОИСК-2e7c889b\БИНАРНЫЙ ПОИСК-23e8a5d3.ipch	3538944	d0ed932a9be303b3ed4fc187bf966342ba286c7ff891bda8733c9379bfbd5b9e	metadata-only
+Архив\За­да­ние_25_№_4703\.vs\За­да­ние_25_№_4703\v14\.suo	27648	0e07999637323194bbf9a339708015cd8e00c22db8647e576188692be9500a94	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703.sdf	35061760	0d84e996b50f3a0f3d24949151e431a588271b77efb4000fc4a5fe80062fec2f	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703.sln	1372	f0162ebb7b291111fe2965825129ac18fb1ab8eaead484b02862bbc7be3df2ea	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703.VC.db	32309248	f14e87958b8787d4437f4f4f230122c0d753178ac3a7faf09a9dd822cad6c1bf	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\За­да­ние_25_№_4703.cpp	3433	a680bafcd5941cc99d7d9c4e4ab251611841c2322fbeef4b1964b5728a48fa1d	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\За­да­ние_25_№_4703.vcxproj	8082	a76d3f836f1f35153cd1d7c77f0f90578c8332a648e9521fd28ed2477e1ea403	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\За­да­ние_25_№_4703.vcxproj.filters	1517	732c71ab1d162f2273ab873ba0dfdf975738d0c02e0b642b267dc390d010ce53	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\За­да­ние_25_№_4703.lastbuildstate	273	a8c85e72297226b4a5594a6a1fd18bfd281a1a0ba5bcd8900a4a73c29ec9c9bd	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\CL.command.1.tlog	1962	175f3a55f45028b18abc74a2ca7906c1ded4260d6e7a833c4cf3e63cfe2a975d	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\CL.read.1.tlog	34298	52c227dfb2b5f4d008d776691140e6533785fcbe7d6aeb67cda3d64c1d84a7dd	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\CL.write.1.tlog	2050	8294f999bad01945772aede13e5d2b75d1a5f8c8805a01d7b5ae224b4742673d	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\link.command.1.tlog	1854	6cb7065acc4ec647508f530c6fef102db461e3d89d8b7be876b94596078c673b	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\link.read.1.tlog	3564	1631de1d93d7ffc79c98dbecf18f3c02e99c03ffcd2e215b933a1b01ac5e9301	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ни.3C043A28.tlog\link.write.1.tlog	1096	068521ebae0e26ce4d7378350c059fd273d8b60d4059706ba030530305d6ceee	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.Build.CppClean.log	2437	c80c0b1954d9a0ac4554e889bcd7264f5c7967cbbf990f22770f7390cad5b858	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.log	2173	13dbc03c1c0500c979eddcd439661855743e6d470b31369ce0e9ca11d3f0a1fe	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.obj	192770	3654f5a3224f11fd5db7e31c194a421883190b9157e246b3d1a5a200fe04d4da	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.pch	3407872	9ca6b6033a5ed2a9770c28a8c05bc39230de6010de8266dd870a5dbe5da30699	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\stdafx.obj	13283	de728a32f409ebe47eb5adc99b903a0deb88e981ba945f0c8e0063d736558a26	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\vc140.idb	838656	6484a7c8a5e211e066168b35803299d49ce65f240bccc2b8d0d42dc4538c8d77	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\Debug\vc140.pdb	552960	7521c0a968792e38a0009ce3d875ddc7ff5a8bcd14a2fcc22953a1ec613bf889	metadata-only
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\ReadMe.txt	2784	04ed567846f33ffd147e24139554574b24ae234b206b4ac212dc99855e30a61c	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\stdafx.cpp	366	93cc95270df0661802c4f080f9450281b4929ef596becb2f6c403a4d0f2f3a00	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\За­да­ние_25_№_4703\За­да­ние_25_№_4703\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.exe	68096	98b197ff9eedba476df780fb19a10af9dcf849e1c659aca1ac25e693c720a255	private-archive-only
+Архив\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.ilk	443804	b077b1e4622df0b9f6020430ade1a24bd6ec6615f92eb1b33089ead3b6cce490	metadata-only
+Архив\За­да­ние_25_№_4703\Debug\За­да­ние_25_№_4703.pdb	1306624	bc4dc598d38c059841cabc885760c232fda695693b680eebf7d315e86c43bf9a	metadata-only
+Архив\За­да­ние_25_№_4703\ipch\ЗА­ДА­НИЕ_25_№_4703-eba28a4b\ЗА­ДА­НИЕ_25_№_4703-c4fe89e3.ipch	3538944	5a92cb2abbe9ae709d1e679d7332f78ad863bc5f78d2c5dbfc977c867b9add82	metadata-only
+Архив\Объединение статических массивов\.vs\Объединение статических массивов\v14\.suo	36352	5aca9ef364b224f4eccbda34f101838f2cc5c129eecdaec022010df2a01ccfef	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов.sln	1468	35eded468b3fbf88ba0153d2ab73e157350d10ad83166b36b76610305bb37dc7	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов.VC.db	39452672	695fa04493a9b180ca6cdf2398ca945c7875af8b463e671d15cd381c9dc29a84	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Объединение статических массивов.cpp	2779	f8fed511f2c381e73c424c54922db912adecb920fe5b53177247e101cafdc5a8	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов\Объединение статических массивов.vcxproj	8144	cfefe616f1ba15f34c4fd45b30e0dc59d44f86b12b5ed57a39ac48ff742dd27b	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов\Объединение статических массивов.vcxproj.filters	1549	432d7eac2f4394fa64769801e6cc0607a74360bba0fc673fbce2a4fbfdf626a7	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\Объединение статических массивов.lastbuildstate	272	9a2e7d57bd59e53d8ad3b40e1a7e3d59e2f4c67297861f5e977a8b5da7a341d7	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\CL.command.1.tlog	2230	d6a2a4f1149aa1adbf068e278f6d0cdfe2638f92ed8229eff880670c83400f51	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\CL.read.1.tlog	47350	b7e7cd4d96cf1c0f0f13a1a8054d904f29c22af218fa86ce6d714b2ead9e405e	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\CL.write.1.tlog	3684	0d53b4f46cd5a2510a3638d12da8f43e42586fa99944cb5ee46546865d501625	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\link.command.1.tlog	2166	99ca2b933a13ae28b8467526d5f3118dc8752fa71aafeeee091136e9634c688d	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\link.read.1.tlog	4514	7b96d9fd758398ae2711c0a7f90e2d4a2f6f6970380178581e774fc137e01be6	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объедине.DA7B5D8B.tlog\link.write.1.tlog	1382	7b0bbe5d6b0be18039aba2ba0f0c142e868703e7f8bad8e1032a8d27596c0f44	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объединение статических массивов.log	376	2997e5069c66ab17e8e90b186bcd4d7dcb8c427d2e2abb5f873e3f994c2ed18b	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объединение статических массивов.obj	153288	8082d0a95511880656111f2787fda47c2f4e2fffa3e251d1d8c90d231979bb4a	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\Объединение статических массивов.pch	1638400	e029ce0401222ebd339ddd55c1d9efb054209ddc8eb1eed961e5f71ee6c1889b	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\stdafx.obj	14348	cdbdbc9ef379ed64730047a29c0cd88d9deabc740b1592910c306df3e8967b1e	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\vc120.idb	732160	761cb2a1c1ae553cad715843efb69006939053d408040e18c7bc0bdcbf767fc2	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\vc120.pdb	487424	bf888b99fae4bfa09688894b594011e5e12f7a509f70d42e23f93c35645cfd06	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\vc140.idb	797696	cdf2b569d50ff1c63436896744b3640013df063fae2a8ee489970d41cd6435f7	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\Debug\vc140.pdb	487424	bbebf9ebd45056f0d9a0c024c0299244747ecbd8506c0908a11507e7c10064db	metadata-only
+Архив\Объединение статических массивов\Объединение статических массивов\ReadMe.txt	3008	5d3a858f20a3de3c7a54fbd44f325d0aa878dbd80b5ed3b1e34f6c1bc14a8ab8	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов\stdafx.cpp	379	07ce3a6c6198dde4b44da7ea134ea2e9d4f4f963f2b38e59367f2f8d20a7882a	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\Объединение статических массивов\Объединение статических массивов\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\Объединение статических массивов\Debug\Объединение статических массивов.exe	63488	cc8d428c0dca63a714e218591477174d01d9b844efe84f2121036b7d643b44c0	private-archive-only
+Архив\Объединение статических массивов\Debug\Объединение статических массивов.ilk	332804	b1943d6cb2dbcadf8f86b60694b2b8c67f24741d43f2700e3f5f51b36a5a89b5	metadata-only
+Архив\Объединение статических массивов\Debug\Объединение статических массивов.pdb	1282048	1425e261b47627a55deb0919184a9a6421682774c883b13bdf5a95a6e169b7a0	metadata-only
+Архив\Объединение статических массивов\ipch\ОБЪЕДИНЕНИЕ СТАТИЧЕСКИХ МАССИВОВ-4ade1d43\ОБЪЕДИНЕНИЕ СТАТИЧЕСКИХ МАССИВОВ-51c1520b.ipch	3538944	d51fb7d729fcd78c52929e23b5946f4c9750228584c922de6a298435347372b5	metadata-only
+Архив\Односвязный список  C++\.vs\Односвязный список  C++\v14\.suo	37888	9142f3e96f288f9e38be5ebe0bd145abc5d2db184acefcb414f06411a93d8802	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++.sln	1402	6f6f641bcae917e2242c965c897d71c6413fd9db35a6740a8f1cad3be78b39a7	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++.VC.db	32309248	d39b2ccbdb5ca3e2f79c75fff485d7f499df94fa4582d0aa7658d770c01b0446	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Односвязный список  C++.cpp	2743	51276113f88c0cee27ed73aad9c092dbad45b9dd3f77c80b63cd0d694f318f9e	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++\Односвязный список  C++.vcxproj	8097	138b249d850c8b369afbe6f87f72d538926da695b7716ab70a5d47154089dfff	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++\Односвязный список  C++.vcxproj.filters	1527	39b75e620981962366f1ff20aa736139e462a0f1d3e4fa8bf5016a125a9b7674	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\Односвязный список  C++.lastbuildstate	283	15e1824a97443416a264a6b206f142a6c9be89627f9bf508bf001da163adbee1	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\CL.command.1.tlog	2058	3c993c484c3bcab9bfbdb8e142ad350d19592a29e3d782b7595e941612394dfc	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\CL.read.1.tlog	34686	d6e0ace1ba1ac84d7e804ddd7e9d45996213ca81c1e496f4805229e473a9dd4a	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\CL.write.1.tlog	2218	a0d931e9a4507776d9aa45426683ec0df59da95f60ffb5c12ad9b808281917bc	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\link.command.1.tlog	1950	48dbdc5c35635f1c9163f6d1d598e11d6ec9a6b3ff8849d2dd33052cfb4eb784	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\link.read.1.tlog	3644	f678cc06d1b0465ee6e54705d4068211376d7786dda84d1a5db2849423ecf9e6	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\link.write.1.tlog	1184	a24505b3df6a8eef1cbee87d3cb38b4a1ee95065ac721fbe533efa4d6dbfe9d1	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвязный список  C++.log	274	894ac7372c49d25d27481e091d49dd83519e382cdf1bc6baa1f7109818987d63	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвязный список  C++.obj	191052	5e4fd8e16c6a7702726e776a6aa1a9f51777d949d221e5f453542317b7b826aa	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\Односвязный список  C++.pch	3407872	0289ce64b7a9d81349b230737026d737c9e3f6c4fff6c37118b76664acf2b5f6	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\stdafx.obj	13603	c525ab49993020d8b118ae9299a5c3706cff031ab1071fc859aff547f7fe5f32	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\vc140.idb	838656	6065728a824a36c0de3ffa591a276b7937ed2c91fa1784f4b92dc598edee0dcb	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\Debug\vc140.pdb	552960	67aa55f914bfd02c3354fa05d6f783053877c4a2a13e90e182a2481b5acfd589	metadata-only
+Архив\Односвязный список  C++\Односвязный список  C++\ReadMe.txt	2854	41f7ec60aad41bc93177acd46e4de8de193b3d9519e8e8b013f394716ce23229	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++\stdafx.cpp	370	0d43f56bfe231bfc8d9d0b62336a6c7f9686f87ffe0c5a6b6857212b6e50756e	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\Односвязный список  C++\Односвязный список  C++\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\Односвязный список  C++\Debug\Односвязный список  C++.exe	66048	b06a9c60238b20c5341c4218b2add19b3997afbae321c5225523a478c3ab6447	private-archive-only
+Архив\Односвязный список  C++\Debug\Односвязный список  C++.ilk	497632	989fecb9e9ea107446dd2c00adacc0beb04eafe361adf90f1f84f7c510821532	metadata-only
+Архив\Односвязный список  C++\Debug\Односвязный список  C++.pdb	1339392	861b0f82de8f391e99b7d389b0ce8af4a8b06feef7fff3aa74543566b421dea9	metadata-only
+Архив\Односвязный список  C++\ipch\ОДНОСВЯЗНЫЙ СПИСОК  C++-26385659\ОДНОСВЯЗНЫЙ СПИСОК  C++-58a9863d.ipch	3538944	a0c2029ef80670b197ffd7c5f6c1ae9d7cd5f1ad58560612af7629357ed59130	metadata-only
+Архив\Перестановка солбцов и строк в матрице\.vs\Перестановка солбцов и строк в матрице\v14\.suo	35328	978ac10733d552e59c34c9e124d23065198db369d4b2ff216fc4f9ef73cfea2d	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице.sdf	38404096	26ef13f911617fec1051b88aa4fde973c8314fcfa967a3252b1e4e2b84f88ad5	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице.sln	1495	1791ce24b38d326653c35d4a43eae78b915398bda75dd41a75c4d0ba34a6db25	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице.VC.db	32374784	a910d284db740a874ef3a79426f3a9ca363b88ef1b298c7ef2c4ff47be4c1f96	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице.cpp	2511	3652ec2b724013947d0e765efca15637dbf8b49bcd42a07fc6928bd9063bb276	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице.vcxproj	8159	4d75a46b25e41c5e09280cc3d6a34de8b25e9b5f72f9c02b5e8110498f617f11	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице.vcxproj.filters	1558	5fee18d53d4e0164dcc4aa657f27e3ea9dcc28fb664c4af5a50ee5811f0b4f48	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\Перестановка солбцов и строк в матрице.lastbuildstate	314	d004e41e01a30e14ca59204fd627036589e16d5f6b27668002b1d7da93430340	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\CL.command.1.tlog	2418	5a2cb58f2dd1e3b6c21be8692bc3987d1e3b77a7b0569c14e0bd207eb7cb779b	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\CL.read.1.tlog	35336	d403ab6bf3624804555c3959cb1f8c6e4b5f3f5e2ed942a05653930f3c116715	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\CL.write.1.tlog	2848	9d15c73ebddb642dca21eecda782496cfd8d5540f72df2032cf650121c617a8d	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\link.command.1.tlog	2310	2ea2110499ef66979f61577cb0875596597f9079bea583285847e05aa04da915	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\link.read.1.tlog	3944	1599c6f73534eda4f93c89110c4e02adf50df92b33f63da59013757737aeaf22	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестан.6323787B.tlog\link.write.1.tlog	1514	4dd23f3b9c4453d0ae86ce196f686eebafe189f663065d4337ffe771a1a0ba45	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестановка солбцов и строк в матрице.log	2855	242ef296100e6ff9cb5623940889a477db89474b067f53d6f0b8a70f48d63e00	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестановка солбцов и строк в матрице.obj	468121	3f3b82c00ae7a426c5a711eb67835a6926c3ba19f85b3d776a08cdc4c862b8de	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\Перестановка солбцов и строк в матрице.pch	3407872	0d6536f6096f6f75d48918b30c533c32858a27a2307420f24d82cd655efea9f1	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\stdafx.obj	14513	331cb0f9bf7dcc563ef3b83c00ce99bbe3e6d3d2d4695507f354b21c16007374	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\vc140.idb	838656	238bb20ed3a3eb6b3106690686356a012d1bd68eb60216b3daaa35b0c88bc7b3	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\Debug\vc140.pdb	552960	b10f249a17800c2b1853da3556541dae5fee226bc7a942d698bba00967ed20c1	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\ReadMe.txt	3071	a272882c5c1def43d1f036a59540012fccbf19cb71274b6f0bcf863a7c2443f7	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\stdafx.cpp	385	95f9d166937a9aa738ca27402126c70cb694518e35b7f07578dc1f84fb8db493	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\Перестановка солбцов и строк в матрице\Перестановка солбцов и строк в матрице\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\Перестановка солбцов и строк в матрице\Debug\Перестановка солбцов и строк в матрице.exe	110080	1bab03a16ddd9b32701e153ee5e7df7c771150f486c09fbfb8b60eb9ca8c166d	private-archive-only
+Архив\Перестановка солбцов и строк в матрице\Debug\Перестановка солбцов и строк в матрице.ilk	1420088	875660c054a66ce79c7f0d6dfe6a609399ddf58ff75155cafeaf6d4c54026e6f	metadata-only
+Архив\Перестановка солбцов и строк в матрице\Debug\Перестановка солбцов и строк в матрице.pdb	2527232	8f1994b142b1edf676305f26d5536376ab30fab19d38b7c48f808cd29e512892	metadata-only
+Архив\Перестановка солбцов и строк в матрице\ipch\ПЕРЕСТАНОВКА СОЛБЦОВ И СТРОК В МАТРИЦЕ-b1d77094\ПЕРЕСТАНОВКА СОЛБЦОВ И СТРОК В МАТРИЦЕ-63db6d06.ipch	3538944	a9f1a687f7fb24ed8f4ee4c11b3d9480f0622b406d35e1df08035aba17ab611b	metadata-only
+Архив\Практика Си\.vs\Практика Си\v14\.suo	32256	f749eea4ea42998e99239384da7ca666d33d411016d4bfb134a02bfeb0fded60	metadata-only
+Архив\Практика Си\Практика Си.sdf	2686976	8b1b99a743ba9fdf86e6f3ce9fca782445f19c1c057d5637713129e04da3d525	metadata-only
+Архив\Практика Си\Практика Си.sln	1345	979c8e82b1e124c06c4a96677d293b53f8be4f241ee4f6c082d54e39cb416b54	included-exact
+Архив\Практика Си\Практика Си.VC.db	11403264	ae2bcbde79bd2a1cdbd5a1f9b343cb292e723beb7b874982c1c316bb077c4557	metadata-only
+Архив\Практика Си\Практика Си\Практика Си.vcxproj	7390	60f4d1f0a07e33e72923ba46522c2af224eea01c0b40f8cb9d3b3112bc1cc54e	included-exact
+Архив\Практика Си\Практика Си\Практика Си.vcxproj.filters	1044	20d229e68a2b9786fe8df8574b0f80ddc85185d32cfe9386551fb6efc6c7bfdc	included-exact
+Архив\Практика Си\Практика Си\Debug\Практика Си.log	181	47db861c6f618e68a3647a082a54df8bbfb7bfd3adbb0db0c0e473b9929f756a	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\Практика Си.lastbuildstate	264	370ac9d85703fedfadd4352a5d4e6a82ab30354fd9ef76f230d383951df82b9a	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\CL.command.1.tlog	786	d5860e51ceba08e5b9e1e200115e698494ddad3b45de2122243062e529016101	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\CL.read.1.tlog	2024	af2e813957099b45d6e0e1928a41ea04e1c1fd859b795da24b25578b39f8935b	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\CL.write.1.tlog	744	f0f79a27a0c12061b554f2cec1572ba7387131769ce2f301f01296e4bbd2cf6f	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\link.command.1.tlog	1418	b3a34c1b6b55fabd674684b78e75d09389b9fe3c6c58532b731ee1515f2cc89b	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\link.read.1.tlog	2860	fd0c087ab7caea33c41e9ce2cf9091a4f221120ae9eeca4f2e3d5d49c580794e	metadata-only
+Архив\Практика Си\Практика Си\Debug\Практика Си.tlog\link.write.1.tlog	722	6bc730bee2c35c00fd5797cb55cfcc3a7c8039e8d8fb44f00411cbb917024402	metadata-only
+Архив\Практика Си\Практика Си\Debug\Source.obj	5813	c21d60c05374601cd2c91826c269fb82f2e2ae1fdd63a0d4eefbbc06b9472f8e	metadata-only
+Архив\Практика Си\Практика Си\Debug\vc140.idb	35840	769bcea85ceb7bc4e6fc732bc385dab5c08ddbe9618a8bd47683c83bdb4a0197	metadata-only
+Архив\Практика Си\Практика Си\Debug\vc140.pdb	77824	4df05c60177e2fc3d5d71b6316baa08a94a7dbc1b85bd5d7fd1b056a89b8aa64	metadata-only
+Архив\Практика Си\Практика Си\Source.c	603	5c75de728329c9719f0e06ae55e3756e77cf42a73c7174a145cc1392aab3b8b9	included-exact
+Архив\Практика Си\Debug\Практика Си.exe	36864	9f8709c0fa6a79088c564e60f77f378977130d27d479fdba0fb6509d22ccde15	private-archive-only
+Архив\Практика Си\Debug\Практика Си.ilk	291480	dff6563e07f9a132d2214448635f6a4ed6212833a1503843507e21c050707f51	metadata-only
+Архив\Практика Си\Debug\Практика Си.pdb	643072	4e454a5b98a32ea833155cc399d137d630c7a1162e01c1da0f32a76f7efb9d78	metadata-only
+Архив\C++ taine\.vs\C++ taine\v14\.suo	35328	831d3fb11d8aac94eaacca3013b7f6386ef0ad588942db14431d2c64f5b5d9e6	metadata-only
+Архив\C++ taine\C++ taine.sln	1309	582c71be6425b4022ed55ae6cb1415fe356a9cf5fdc8b81113b50b1ad174b3f4	included-exact
+Архив\C++ taine\C++ taine.VC.db	32374784	2ee0ce91e6cf341e9ba4776f0e28fe79ef8cbdb645d8e34d32bfdd939a3b6991	metadata-only
+Архив\C++ taine\C++ taine\C++ taine.cpp	3105	43685ada3576b900ef997cb1611180a2344f7eefa12d6e887c945bc6b2ed423d	included-exact
+Архив\C++ taine\C++ taine\C++ taine.vcxproj	8037	16eeaff41834e8e0d5b60bd2dd7c77568204959987c0c9b44e3516abf0fd5f84	included-exact
+Архив\C++ taine\C++ taine\C++ taine.vcxproj.filters	1496	5a2b17398ed6177f512d317f734cc301d35d497d9132377191a4ccbef1bfc3ad	included-exact
+Архив\C++ taine\C++ taine\Debug\C++ taine.log	1038	7fb1e82fe0a054420ccde8a3b93ce7b07beea3519cf154ea9c345c7d798cbd59	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.obj	272519	59640a25a45c957d8123bcf1ab4f61820bc7a10c1535e54bc0d8a2fd57e19f4c	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.pch	3407872	c55c0c70f6f8998b56d6a92e4dd775a28ca7908c0948e7b791b63f1b28436208	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\C++ taine.lastbuildstate	252	fe195cbb8f2e443b400b6643d6c8f95c961cc5f5f8cdcdb8b8e9d1bb7f0dd77e	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\CL.command.1.tlog	1722	b51165d61500caf0a49488a12fa24ab7eb327f78819096b881d6436165ef090d	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\CL.read.1.tlog	34640	e922a470c824102f2a8198186c54c8228d91e823e06a90b4baba9ee3852ae415	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\CL.write.1.tlog	1630	651d22d005a4248a24004ece32867debe75c593ba8bddcdbad74ef821b63ae63	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\link.command.1.tlog	1614	b5a87eb6f4351cab4d8d26da0a2d3e9c5dc4c6e23f694c5c863eb789657ac912	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\link.read.1.tlog	3364	d554cb9d6720c282c0be919f437766bc622af84df4dad914ed221064c7988d55	metadata-only
+Архив\C++ taine\C++ taine\Debug\C++ taine.tlog\link.write.1.tlog	876	003755a20ddb5c29acddc7ad466748e8b4507dd68e4851f42d7493aaceb26b64	metadata-only
+Архив\C++ taine\C++ taine\Debug\stdafx.obj	12653	e2189507deea01641907eb1f8ee339ae4b0c30670c93f5778f37e4aca5d65310	metadata-only
+Архив\C++ taine\C++ taine\Debug\vc140.idb	830464	aa87a5c646bda6065a0bff8902c8e09d9426b539f239344deac07fb2b09b5cb8	metadata-only
+Архив\C++ taine\C++ taine\Debug\vc140.pdb	528384	bc1e826a94a6df1da1d3636683a8cdb80c12b75e17757b72f9a0070fc3f2be8c	metadata-only
+Архив\C++ taine\C++ taine\ReadMe.txt	2637	7cf7f052f43b306dc76b2f415233fa967acfc8a9a88ac89f3d704171cdd32b7d	included-exact
+Архив\C++ taine\C++ taine\stdafx.cpp	356	6e89875d0022f3eca41e21240e44f4047642aee8a6a34bf284525214c75f6ae7	included-exact
+Архив\C++ taine\C++ taine\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\C++ taine\C++ taine\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\C++ taine\Debug\C++ taine.exe	91136	dd0fcc919f78dbca6df03535d1f885fb9bdafbb46c21cc49b513fa149bf07850	private-archive-only
+Архив\C++ taine\Debug\C++ taine.ilk	735740	f6ca603f7ec4f16a745772c0800fd72196f6dd0fc8ad7b0b5c123497d1245da1	metadata-only
+Архив\C++ taine\Debug\C++ taine.pdb	1601536	fa78b623e16f2344d975d1814aa561a1f229fdaf71434b2e9aecf6a12bf265a3	metadata-only
+Архив\C++ taine\ipch\C++ TAINE-af2e9824\C++ TAINE-6e2a2396.ipch	3538944	3cfc0610107d3d4a14a2d130b168b8c78c7a02d25589b2a5a18def3501bb7a2f	metadata-only
+C++\Код C++\Бинарное дерево C++\.vs\Бинарное дерево C++\v14\.suo	26624	69fb032ca912d813950cd41551b5b9049694e99ed7fd08e646478e2c11865097	metadata-only
+C++\Код C++\Бинарное дерево C++\.vs\Бинарное дерево C++\v15\.suo	46080	b3ed566e118529ebce5bd06a63aadeb482d774ab6571e0614c54c70507183f69	metadata-only
+C++\Код C++\Бинарное дерево C++\.vs\Бинарное дерево C++\v15\Browse.VC.db	6144000	66f07688e650369b8e480058984b68d81ccbc252650d07c776c273ca70fbdd22	metadata-only
+C++\Код C++\Бинарное дерево C++\.vs\Бинарное дерево C++\v15\ipch\a235f873a5326bd4.ipch	3670016	1e7246085f3aedfda8664b0875de1d8be32d970b1d3dd0bd8477237206290a8a	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++.sln	1381	82c757bd92b7b70f276d3be220096cc5067f350b3bb01c93609214c5e4c7b4ee	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++.VC.db	12255232	7033b06723ec62f72ff41d2d40f0c8fc8f6a11ccdbbd55e9b0e65bcc9707eddd	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.cpp	2019	cbc1c2debe2d61aee0931a7cf28983abd7c62534fc96ed252f7da6c4d5743b39	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.vcxproj	8093	1d91365228e34b1d686a5a04d3d8f8f5386e6cffeb082a9ee99d8d956538375d	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.vcxproj.filters	1520	41da0984ae4648b1fc6a26e5804456b3ecd20171034c16e5a827ba82eb26ec75	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Бинарное дерево C++.vcxproj.user	165	e953b026d0f383188c753487df0a4d879fa5da5ba82ac979aa877db84e89a060	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное дерево C++.log	653	4ada7a5e53a54e5503f9ccae1bdcb7d5a4dc2b2cccc8837c44ccba521db17793	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное дерево C++.obj	52027	df8634395241fb22862f0310954bab95c5903e1187a9fcc18559c453a17d2fc4	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное дерево C++.pch	3276800	2f8136a326ba585f95a5e04360ec17e23c78bfb3db7d97e8fd4651708d76759f	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\Бинарное дерево C++.lastbuildstate	321	41649ed251eec84aca69d2f0183f7e4d29c6a19f806b8045ea3c4004b8886052	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\CL.command.1.tlog	4170	a4949d4cfa3fd8a7c0886ae8abee1e23b5119c878ee4cef54d93a202d642e087	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\CL.read.1.tlog	40686	59218e6cafb7df04e06defb45abd21203a245bf5d074ab46c0e7b5f94edbcfc7	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\CL.write.1.tlog	4422	54a48ef0ca5c400c5b124f37fb10108fa9fee578f837166b1cdb077e8350d346	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.command.1.tlog	3904	f221f5ff8eb39be7902966595b497d137f0cffd1276b50d86b46153f9862d7dc	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.delete.1.tlog	1244	b61dc1caf0ab07aef539973c402bfa6eccf61e091a277d2ec9d6265fab2ce0e4	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.read.1.tlog	8302	85cba305709577f74d7856f10043f9db6ae1078d5b9a6843c5e28af2725f23d5	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\Бинарное.6BF2FAB0.tlog\link.write.1.tlog	2370	0e67cd0e1737e096a39c4467fe7b185aeb11cf7539fb3197876a46f11825fd4f	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\stdafx.obj	14982	2d8f81316cddf648c8ab8537fb12a2b3df24aa954afa2285e90cb1e9a9ce7126	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\vc140.idb	388096	7bcd5b0a9886dc26ed6a3db5e889ed56b6ecb98e0ddce86f06844ddaa9d44898	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\vc140.pdb	544768	3771dc51f86baeae830c78916e93261efa80bf82c3ac529b57685e76d2e4ecca	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\vc141.idb	191488	666585f1446122aea35b04a6d947a7343e091610deb08f80fb0f5c008aac78ac	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\Debug\vc141.pdb	479232	61501cbb452c572c0f99123d839af8d67e8e16ff99cbaea2c300de488fdba02a	metadata-only
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\ReadMe.txt	2805	d74b106b2ed6af2e5e477809db888509c03e4987eecf71baf8621172427511c5	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\stdafx.cpp	366	3b53b4293a95b4375bcb94ec171da4ba33b047a41d0232cdada1d895af2a6a2d	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Бинарное дерево C++\Бинарное дерево C++\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Бинарное дерево C++\Debug\Бинарное дерево C++.exe	50688	3e0eb9d0c3bacd1256b16abe9ace0e89a4fde39a28485e5363a7b4a935ccacb4	metadata-only
+C++\Код C++\Бинарное дерево C++\Debug\Бинарное дерево C++.ilk	401124	8a663d5fe71c39a28856a3312edd0a014705573034aaad2172150ceedb9e0bf8	metadata-only
+C++\Код C++\Бинарное дерево C++\Debug\Бинарное дерево C++.pdb	536576	0395269b77421e83100e5812ae3b231fae39cde00e4bf1e4a06e44d2b6069fb1	metadata-only
+C++\Код C++\Бинарное дерево C++\ipch\БИНАРНОЕ ДЕРЕВО C++-a529890d\БИНАРНОЕ ДЕРЕВО C++-ec5b6779.ipch	3538944	abb99b53a0caa7e1008e14e22f59d7627df4bb34a0215392246dc7ad0a9c2d37	metadata-only
+C++\Код C++\Бинарный поиск\.vs\Бинарный поиск\v14\.suo	39424	18a731b5af1de640b0f9986dec0c36d8d24d716f73319680edbd51cee74cc0be	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск.sdf	12386304	74735478b7b6c9db82befcf67b7b28e57ef5b63018620b1159481af8e5088112	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск.sln	1363	182f6f67fa9d1c7c005d52947425e0d972db87e423564a5b544c96cc6615e7ca	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\Бинарный поиск.cpp	8400	7d2ff77803bd74befc53210a93d14fa0813aed425d0552da1eb8757d67886457	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\Бинарный поиск.vcxproj	8075	6f0ce63577507313001eb8d399519de244975ddca5bc3901eecc2bcf2da4c90c	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\Бинарный поиск.vcxproj.filters	1514	c3f182d5a37928eade35459987b75ff32c42aa20353127d713734cd9db348110	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.log	5252	ac0908dd66108ce27ae5a4b5fbe60f63e4fb61ea2864d6277f56402729c3ea8c	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.obj	583317	773d622cf4efa4fbaf2380662547c2a7138f68caca702be07ba9d4755df2fb1f	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.pch	3866624	aa60d0b647e39f0a99d50da393346caa2209b0e2b3b7a5744ef54e6f2140a9fd	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\Бинарный поиск.lastbuildstate	296	52c7d3597af82d27c32f0a559738baa152709cebc78a8cb772e9eb51efce563b	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\CL.command.1.tlog	3770	8f357a6180a8eec23ab2d6293e5f6afee65cf6930b8c89082dce58cdc043dc9a	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\CL.read.1.tlog	36848	2c2d9f266f8f5d832d415511ceff3447ceb271f971c663376caac502d22395a6	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\CL.write.1.tlog	3876	aba26c4d9343ab4efdf5f287c6dd70e12a0fbd8804003fc55d80ca4fbef0b304	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\link.command.1.tlog	3576	c956192dfd070c7e70b5dfcf8a060cacb66f1baec2da94688f18037c507f2bec	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\link.read.1.tlog	7014	f6943c774f693b8bb2154306ed3f339584d25d8a1049a6a54d6141ea3aea0bd5	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\Бинарный поиск.tlog\link.write.1.tlog	2080	c1f678c5096101fb4acd77cdf0e34698a82d29a6697b8776ceb82d8553c65ac8	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\stdafx.obj	13603	98123aa8eaf9efd068459757fa59f9dc73d2dba1c1967b2e02f73b9e1c9bc69b	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\vc140.idb	502784	fafbd37d2db4253824ba1750a41a221500fbe91d1a442640851d28cd2106ba54	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\Debug\vc140.pdb	487424	95181286c609a3ded7537a88fa47c2a7be1d54119cb81ce952899fdada596c24	metadata-only
+C++\Код C++\Бинарный поиск\Бинарный поиск\ReadMe.txt	2763	4f6b32f72a31d61b0250f43d6cb0e607fed971957292eecdc3a456f0f42c645a	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\stdafx.cpp	361	f5ff944115682c9f9175d0c5387db4cd0379c204fc9beca03e6c50e724cad34e	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Бинарный поиск\Бинарный поиск\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Бинарный поиск\Debug\Бинарный поиск.exe	141824	f5a4301da47151d696a4dd61b1da87c2354bced236968fff04543e1958f8ff12	metadata-only
+C++\Код C++\Бинарный поиск\Debug\Бинарный поиск.ilk	800188	480c5dab9bc276fe78ad1170b3139ec8c957360f625b7208de35248e39afe18a	metadata-only
+C++\Код C++\Бинарный поиск\Debug\Бинарный поиск.pdb	2150400	64a645e75002a673ada6dbbc659e02aec9b71747a2d8160e262fa161525d8c75	metadata-only
+C++\Код C++\Бинарный поиск\ipch\БИНАРНЫЙ ПОИСК-2e7c889b\БИНАРНЫЙ ПОИСК-23e8a5d3.ipch	3538944	74b0d50a19ab7208e177508858f4417c219f87759b9c99c93dd4277ec64d4f15	metadata-only
+C++\Код C++\Бинарный поиск\ipch\БИНАРНЫЙ ПОИСК-91b0b7ba\БИНАРНЫЙ ПОИСК-23e8a5d3.ipch	3538944	53e69d80a301e09b701990242b7b2eb8693c80442abe92c8b78beec6196e2366	metadata-only
+C++\Код C++\Односвязный список  C++\.vs\Односвязный список  C++\v14\.suo	43520	fbc260efbc2593ebd27d5543e5dcd2509bf3144c017b3cc5e99204d575f4cef2	metadata-only
+C++\Код C++\Односвязный список  C++\.vs\Односвязный список  C++\v16\.suo	39936	e315a3cc2cbdb8119d2b24b1a77d2de6b7824c4fbbfa3c2f5c80ea5aea891700	metadata-only
+C++\Код C++\Односвязный список  C++\.vs\Односвязный список  C++\v16\Browse.VC.db	37470208	a996e2941287eb8d9f4f45dd21c889e3c8dca1f94ceeefd854e45b4ca20663aa	metadata-only
+C++\Код C++\Односвязный список  C++\.vs\Односвязный список  C++\v16\ipch\cf0d3e58ba3e4a4.ipch	3735552	9a87d0795a9974386eed6b82521479ccc2787aab2ac092c9d983ce88a87de49a	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++.sln	1402	6f6f641bcae917e2242c965c897d71c6413fd9db35a6740a8f1cad3be78b39a7	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++.VC.db	29564928	9bcb7965ad647bf6e69b212300d6552a473433c17bcc4088df3bf7434c4ef871	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Односвязный список  C++.cpp	2876	88228cae0b202ac26b0e4ac3c9f05a6d92ce0554f395238fe8f7b6701fb3c741	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Односвязный список  C++.vcxproj	8098	5dec61acaecc46d5cd0fa5641317467069f5ef63043951723a60c5e694d658dc	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Односвязный список  C++.vcxproj.filters	1527	39b75e620981962366f1ff20aa736139e462a0f1d3e4fa8bf5016a125a9b7674	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\Односвязный список  C++.lastbuildstate	338	7777e4a321ee8cc6d6330d33b4ca44a0fe15fd5494ee22cd6331b80732716925	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\CL.command.1.tlog	4338	167ecf3fd7beadafe03fd11bec61eea15cd5e138a1de6e7ee1f88bc389004364	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\CL.read.1.tlog	34674	377404dc832cab2cc55f8b6e45e73ecf8a8e94b04a4cb5b420c3c6c7b0c1481a	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\CL.write.1.tlog	2722	9ded9f24f7eaeb686a3943400bc7ac912c4c3ed4b01cf4de738200126e20695f	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\link.command.1.tlog	4178	784e8bf4571e1ed31c59589b24de281f7eb11c4db781de1e7875aecb3e31f03c	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\link.read.1.tlog	3868	415f2cd351ba7a682b306a3cc67804624a22e43a5f5d85ff7faab63ebc87bafe	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвяз.2AAF41BF.tlog\link.write.1.tlog	2646	1c969ba49bd791f57be073cf653b1453fee687dd79c4003f4181ade62ae0c1a9	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвязный список  C++.log	618	fe2585f7c297370bc990afd668e5501df31702c12fed78e7d6b589cf95cd5449	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвязный список  C++.obj	196280	d3924d4e8d1e23b56548240f514c8faf9531420f3b58b4e3f7a22501cda22a57	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\Односвязный список  C++.pch	4194304	d8e7ce9713f969fde204d6b9587f8a68ab8f6ef7d29d3405f01f731e791b4a68	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\stdafx.obj	14362	865a0564827d5ff88e6298a75ec67c2bfe04ec7a3e30df71e14867d790040db0	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\vc140.idb	1174528	9425c318eb87d1620c87b7625477298b526c01e40e271c016c0e35b175995ca2	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\Debug\vc140.pdb	569344	c69384ce556c88c4f41b6041fb29e06807f02acace27caeaf276394743890152	metadata-only
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\ReadMe.txt	2854	41f7ec60aad41bc93177acd46e4de8de193b3d9519e8e8b013f394716ce23229	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\stdafx.cpp	370	0d43f56bfe231bfc8d9d0b62336a6c7f9686f87ffe0c5a6b6857212b6e50756e	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Односвязный список  C++\Односвязный список  C++\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Односвязный список  C++\Debug\Односвязный список  C++.exe	69120	29f86640e83e9a74dbda3bdfdd06c9799b97da2f8baa1c2f384136b7c72d773c	metadata-only
+C++\Код C++\Односвязный список  C++\Debug\Односвязный список  C++.ilk	424992	e92c78603b9fc69a8ed9461b4efbab87c1875feae750346104119e3fcd0a5707	metadata-only
+C++\Код C++\Односвязный список  C++\Debug\Односвязный список  C++.pdb	1363968	a6cf61e2fb8ae98fb157ecc27e12533dcfff158415e9c4096d37ec8c7a3296c7	metadata-only
+C++\Код C++\Односвязный список  C++\ipch\ОДНОСВЯЗНЫЙ СПИСОК  C++-23f989aa\ОДНОСВЯЗНЫЙ СПИСОК  C++-58a9863d.ipch	3538944	a02df783d5fb0e7fd86e14030824dca6b4e5f31025ebe4568da48d077838fb4f	metadata-only
+C++\Код C++\Односвязный список  C++\ipch\ОДНОСВЯЗНЫЙ СПИСОК  C++-26385659\ОДНОСВЯЗНЫЙ СПИСОК  C++-58a9863d.ipch	3538944	a0c2029ef80670b197ffd7c5f6c1ae9d7cd5f1ad58560612af7629357ed59130	metadata-only
+C++\Код C++\Односвязный список  C++\ipch\ОДНОСВЯЗНЫЙ СПИСОК  C++-d44ac0e0\ОДНОСВЯЗНЫЙ СПИСОК  C++-58a9863d.ipch	3538944	2c089986f364eb752bd710c2380a293a816beb2f8b482405e24636d9ac1926b8	metadata-only

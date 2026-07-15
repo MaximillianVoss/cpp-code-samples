@@ -1,0 +1,24 @@
+{
+  "generatedAtUtc": "2026-07-15T20:30:00Z",
+  "originalFolders": 11,
+  "historicalRecords": 309,
+  "historicalBytes": 500046763,
+  "publicExactFiles": 84,
+  "publicExactBytes": 196160,
+  "privateArchiveOnlyExecutables": 8,
+  "metadataOnlyFiles": 217,
+  "sourceArchives": [
+    {
+      "repository": "MaximillianVoss/legacy-programming-projects-archive",
+      "head": "0786de1c7b88204b82144d779d18da391bd7804d",
+      "records": 215,
+      "bytes": 350662199
+    },
+    {
+      "repository": "MaximillianVoss/legacy-native-projects-archive",
+      "head": "54a7410ae04822b5e609059ecaf0f4d56f729b8c",
+      "records": 94,
+      "bytes": 149384564
+    }
+  ]
+}
