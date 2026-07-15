@@ -1,0 +1,99 @@
+Архив\Drunk\.vs\Drunk\v14\.suo	40960	daecd6cb817c870f46144d8f34cbd8b97ed8ec61d4182b456d648b093c10d2d9	metadata-only
+Архив\Drunk\Debug\Drunk.exe	124416	5610c1b3d298989f1b051ca080734011312565e666d7581580db54512cb011c4	private-archive-only
+Архив\Drunk\Debug\Drunk.ilk	639196	6d074018fdde75ebd29fdb2322b2c7984704be251cb8c059bfa39e7ddd51a257	metadata-only
+Архив\Drunk\Debug\Drunk.pdb	1396736	548bcbff5b695b879db1d3270dc4ce2045fa0606c3edb2212dc16f7f1c27ad66	metadata-only
+Архив\Drunk\Drunk.sdf	11862016	9fdb13e730f6caf0768828c0c4c8d9eb33d02cf070b2d29a46d3552e0cb714bb	metadata-only
+Архив\Drunk\Drunk.sln	1297	3b7a646bd667974240d97fd9e6bea4d56be8137014c0c061d077a52813f0a800	included-exact
+Архив\Drunk\Drunk\Debug\Drunk.log	370	18386fdb39ff87142e02b3c579d5cc9353715116b59e912b4e46f90cb4db057b	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.obj	110965	a85a5d3f9930238a1b5a7c4e7e566700e0a409156306bcc24d67ef14e26d7194	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.pch	3407872	1aaa405d4e51131fae132ff4e64db2a3d5fa305be50a5330c2da4c4c0fecb33a	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\CL.command.1.tlog	3046	2c47d08e11a438d286ef1bc6888c1ed624197a08e60fc1eaf76ce8c70792d869	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\CL.read.1.tlog	30778	e32bfb854f517896ddd37a908588c95b8c9e94c2f52f74f8538797d87ee9d840	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\CL.write.1.tlog	3814	e81a58829b55016ddec287e5e8161279d1bb37e91c1048efbb23feec3baff5c3	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\Drunk.lastbuildstate	248	3f600af406a84bf9e0d093c705d3ee2e03c8edf1f9ad44a6a36d8e53aef30b88	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\link.command.1.tlog	1702	a4c6d5b7fb9a6689553425ec6249126a326b247147fafbe8bb32fdf9610ae410	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\link.read.1.tlog	3998	9617dcc5c879496e05016bbaa09ce308d32a79525613145e55dd4217880f0d99	metadata-only
+Архив\Drunk\Drunk\Debug\Drunk.tlog\link.write.1.tlog	948	4471bb57adbc60887b0f2b0a98b5a29a975dcb2d95cdeedf389a2968e87fcd05	metadata-only
+Архив\Drunk\Drunk\Debug\head.obj	327663	db55c847ae9aa394d273ae2a3cd7e3553befe0e7c163e7e1ed837ecc7ccdb347	metadata-only
+Архив\Drunk\Drunk\Debug\stdafx.obj	12533	1b4815aee09e645801257c783ae378a11dec9f11ae28d0ffce000550cc61f5c8	metadata-only
+Архив\Drunk\Drunk\Debug\vc140.idb	478208	1a0d452e9d1586e01e08aa3bd59eca19c6b52648a5e96a53be2baaa05a47790f	metadata-only
+Архив\Drunk\Drunk\Debug\vc140.pdb	495616	5ab8fe4ad0684ec122560fdae1d87719440d6c7bb30fee6dc2b46bc8f45c65cb	metadata-only
+Архив\Drunk\Drunk\Drunk.cpp	2024	cd81bb2b2695b91b96facd2ed578aef06fb8d7de8c5364fc93fa8a888cddffaf	included-exact
+Архив\Drunk\Drunk\Drunk.vcxproj	8106	f79b4d80baec2871b7561d4f6d5b09e352748d26dbd7668ffffcb98413111721	included-exact
+Архив\Drunk\Drunk\Drunk.vcxproj.filters	1721	a70084bc5f300418930703482e0b4e05a266105b1652531de35ca09579636df8	included-exact
+Архив\Drunk\Drunk\head.cpp	7145	5369a9760bb73e534492019ffd53c054fb0886fb598d1c47a6eed66df6ea7c6a	included-exact
+Архив\Drunk\Drunk\head.h	2993	a8ac6f8f5719fe50deb8a2b93d5edd194970ae67d52b506b60769cae49e0885a	included-exact
+Архив\Drunk\Drunk\outputOfDrunkard.txt	2263414	43dfe0aa664f043508729f8fa1fb7f52caedfc4b1c449ef824c55cc7f88bf3ec	private-archive-only
+Архив\Drunk\Drunk\ReadMe.txt	2609	2d1b648651e5617180fb3c5d061498cd70ffe931df0289bffe294c55b0424d01	included-exact
+Архив\Drunk\Drunk\stdafx.cpp	352	8cc8dfa59103dd4e99bbf5ec1492a7a3f8f39c08ae0bbddcf20c4dbe171027ad	included-exact
+Архив\Drunk\Drunk\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+Архив\Drunk\Drunk\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+Архив\Drunk\ipch\DRUNK-357c8132\DRUNK-67ae16f0.ipch	3538944	03fe50e54f1ee7d17bb22fc98416839e73e1dc82b5ed2aab1bf6ca4def26f39c	metadata-only
+C++\Код C++\Drunk 2\.vs\Drunk 2\v14\.suo	69120	04b7fc8224a80de710d8626574dbb860498c3c9cdcfd63e50db3e41fef39c545	metadata-only
+C++\Код C++\Drunk 2\Debug\Drunk 2.exe	82432	79fec60f536a11640e6cee4d893bca7d8498112c23c7ab4d49bf8860208be2c4	metadata-only
+C++\Код C++\Drunk 2\Debug\Drunk 2.ilk	487928	cd245844794ba3c5f14889983e16395b4943deada29a69555e98a5cea8a8f47e	metadata-only
+C++\Код C++\Drunk 2\Debug\Drunk 2.pdb	1265664	da0c0f5750900489693b0b640bfa4d72f7c15e711cab119731f57df5c63e0a48	metadata-only
+C++\Код C++\Drunk 2\Drunk 2.sdf	21430272	3b484a3f5494a5de2e178475af857112fadc60b19f81e93e9b3a8d4290a567d9	metadata-only
+C++\Код C++\Drunk 2\Drunk 2.sln	1303	9499eddba0fc463b77ee826181cdcc5b0a6434178c0600fc7c9a33833160f50f	included-exact
+C++\Код C++\Drunk 2\Drunk 2.VC.db	31916032	9f1852d7d4a0b56391cbfa6c4941df3575a67d08679f79219ae8224bd30858fe	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Card.h	993	f0a44f2a566f125966eda5e90fe4a36fc87f0dc85f6748c9fc453d0384ff6718	included-exact
+C++\Код C++\Drunk 2\Drunk 2\CardNames.h	419	934c36ef502672c0a7062331c0f1cde6e24ade46aa6dc9c0301d843f301299fb	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.Build.CppClean.log	2908	9fb0a12d42545f990b7b040e1930b819724686da19ed006dd52c591c8368a53f	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.log	1420	4ce1b3f794b797ae7485188462b6c12d129c5f837dfa8ac23adfcdc9d46483a0	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.obj	273270	5809f8cad611bbf353fc377e357d074679d85d08c7523dad4860d07113ba1542	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.pch	3407872	d5bc62345d1f7aa053982508518768a5a520e2ca4dac158fb8a3ce492bd0d59e	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.res	32	5e743f477333066c29c3742cc8f9f64a8cb9c54b71dbc8c69af5025d31f8c121	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\CL.command.1.tlog	1762	7cbdeb9d0b7278df4f84a75688649f7ca6b0db5c11307bd0bc45ed4bed0a589a	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\CL.read.1.tlog	32802	e5ed8451165eafdb9e2b5bc206989a60c8d6186c0d366951da86048e78566dce	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\CL.write.1.tlog	1744	d8cf52af7aa5ea59091571b147278bb1147256a4a1c123c61058235085ed6c43	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\Drunk 2.lastbuildstate	276	c8830123ab0a9162bde77bae12b1a309b7c14fa86c92fefde9ee7e621321591e	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\link.command.1.tlog	1910	d024902a58bd175f7b9ba04e982ca8aeeddf4c0ca7abb336c2d5437a65a69ae0	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\link.read.1.tlog	3806	3bb232530d6da945d9dea2b68e35b814d3b8e5d71813133bfc0df2024dfb5f2c	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\link.write.1.tlog	1138	8ef4797df7f36d35263b7dca519dad6a79efc274811b433d2804921e5aecf634	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\rc.command.1.tlog	506	0e55b8045e504c44caa8a5a67d4837520d3bf429195a5a89ce01925a1a14f512	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\rc.read.1.tlog	2350	d66dd838ef5ff8965563a556e4228f6fd42238f376c39585ff4f660e05dbf444	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\Drunk 2.tlog\rc.write.1.tlog	386	50667895e38daad6bac5101813e2dcd2c664f032de55a108706c016a2cf5a1f5	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\stdafx.obj	12987	27f329066f003ba4ee53a4d891921774d82de596d4f77b301c24a039caa0d733	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\vc140.idb	789504	5873a18d863185f715f5a8e8e044a5ed5f47e9919f1e630654fec39e540f112c	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Debug\vc140.pdb	356352	f0cecb99d809a7536cca4e6237a8d004e9ae959be646f7df561822b25433064c	metadata-only
+C++\Код C++\Drunk 2\Drunk 2\Deck.h	771	26a78b0966275acb6098270b9a8038bc07ce86f39354058b28b4a6a418a44c2f	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Drunk 2.cpp	2327	11d19a9bb1391d226b96f4715bfbcb97371b31dd8fb2e157e969bc168aac43c2	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Drunk 2.rc	2908	b75b697984418461d3a38be282ac14d02352dcda81b3f2fd2012123cc3d8a10e	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Drunk 2.vcxproj	8338	67c4d1da4adc63b23f920666fa66c0c0ea3f8a0ec1a61f88b1f2d64dba7bcc43	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Drunk 2.vcxproj.filters	2327	476fe85407568c86eadbc2ba4353d71d7e170a81c0e833fcdfa2670e19b7777a	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Queue.h	1332	49ed4e10a6071ea8daf9b7feaa1735f2f2b4a1b0bab89f5358ff7a7a4aeef094	included-exact
+C++\Код C++\Drunk 2\Drunk 2\ReadMe.txt	2623	d4c9851433927a56f9bf7181faed10ee91f38a43f0f69b158f0b2d9e22a45638	included-exact
+C++\Код C++\Drunk 2\Drunk 2\resource.h	415	d525f34584ce9d507adac79d58ab8d142ef33bb0e5aa48dedb77c0733b2318ff	included-exact
+C++\Код C++\Drunk 2\Drunk 2\stdafx.cpp	354	6bba71de5cd804d04594782de315168337f1543737d81a8f93a2007702937cec	included-exact
+C++\Код C++\Drunk 2\Drunk 2\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Drunk 2\Drunk 2\Suit.h	381	f465f218018dd14d5803a0415d79df2b224f6e280f6907457729f09f4aac7d1c	included-exact
+C++\Код C++\Drunk 2\Drunk 2\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Drunk 2\ipch\DRUNK 2-3b5c6428\DRUNK 2-e8bd2202.ipch	3538944	bc37a92c8595fac8ed947a4f3115bce1f80034132dc88b10be88dab6012fe7e5	metadata-only
+C++\Код C++\Drunk 2\ipch\DRUNK 2-f1ce45e7\DRUNK 2-e8bd2202.ipch	3538944	e8343eefa995a34a0cf4b5f6141541996e24a823714426953aa7d862cdc6001c	metadata-only
+C++\Код C++\Drunk 3\.vs\Drunk 3\v14\.suo	29184	788a9d5177605a692a4c310672fc657bc55eadddc088e0e27013927116fe0abe	metadata-only
+C++\Код C++\Drunk 3\Debug\Drunk 3.exe	54784	29620f3df99096ce854daa6848a37b613e4dabe2158000e109e7cd8e47ea8ccc	metadata-only
+C++\Код C++\Drunk 3\Debug\Drunk 3.ilk	365816	7f1af3ee11e4556c70becdf2e21a66d45613c85025694c8875769d9e50fbaaed	metadata-only
+C++\Код C++\Drunk 3\Debug\Drunk 3.pdb	921600	b9a7712db688c63edfa58f2077592540e89656c1b6430e386f3b8eee1b954ecb	metadata-only
+C++\Код C++\Drunk 3\Drunk 3.sln	1303	8d163acff00d0833691e3e6e09b7d76cd918f1f9784d026a1adab3281eeaded3	included-exact
+C++\Код C++\Drunk 3\Drunk 3.VC.db	32243712	e5981148e1bcec5ece98ec38005671ac581d6f7b62e5593140c2d3dfead15bd0	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.log	142	bb61a8eb780208c05d252035df8f3ed16465ab199f596b335d45860cd209207e	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.obj	102214	cfa67cf31e66404af175b850bbbeed1f996c0f7868ffd99560d3c2dc120b083d	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.pch	3407872	7a520d60bbb001822ba54e04fac1f0141eb5962f2399c58fc5893e9b10929eea	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\CL.command.1.tlog	1674	55ef77fe3f3f3222a9ce43fd713c75fd75a924540dbe2728f7d2e7b855f4091c	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\CL.read.1.tlog	34014	ec6704cd319ac9ec084a825db90ac03cb9488453081cc7e42d5c0a292a0ec46d	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\CL.write.1.tlog	1546	f019ac32ade50467382f624680bf7eb2809425d046b8aa0d351e419558c24df9	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\Drunk 3.lastbuildstate	250	15d2bc1d3dcec56e66bdbfe6c85fb0b8e7e99eca38c79be19a4d6e20a06d1dbd	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\link.command.1.tlog	1566	8e78e97c4ae07f52a0fc4fbee97ff736777c822ffb676a63ddc4a817a30e2e7f	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\link.read.1.tlog	3578	892711a90645a2ea8af8c67dd0ddceac16ad0f2b13f5f9309d1f1734fd308ce6	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\Drunk 3.tlog\link.write.1.tlog	832	736ceb013cee59be0344d65bf547305333af1ebee7e66b76611105c78d8276a3	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\stdafx.obj	12609	d51fbbad7baddcf13e713ab389aa2371e93e35cd834a234b9b45d09b55239574	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\vc140.idb	789504	03a54eb1bc4794137d6390ef5cbe8949f2bce46fa157ac15b333d04de5356ace	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Debug\vc140.pdb	495616	2e0ee1a589c10381a1cc5f50a8de255c5200a124a522eb807c7c0eb74810505e	metadata-only
+C++\Код C++\Drunk 3\Drunk 3\Drunk 3.cpp	7477	e2dd2745dbd28d18beb6b207edb25e14c8f45ce875d2d61ca708c5a5049fe16d	included-exact
+C++\Код C++\Drunk 3\Drunk 3\Drunk 3.vcxproj	8035	5108c7600a5e8887f88c081607d82b14e24b9332521f1dc086df2dc139737bba	included-exact
+C++\Код C++\Drunk 3\Drunk 3\Drunk 3.vcxproj.filters	1494	e3901af8128bcb02cdad0b046fd9184ce4038925843308dc2f840e64c1ca3449	included-exact
+C++\Код C++\Drunk 3\Drunk 3\ReadMe.txt	2623	3410a95d4126929f93576f550a33cd2200d8be88c78828a071d1c66ceb866caa	included-exact
+C++\Код C++\Drunk 3\Drunk 3\stdafx.cpp	354	80e9fef68d04bbdca18954388c50f3a31255bb6d8ae74ed9ca6aeb0c0d726f25	included-exact
+C++\Код C++\Drunk 3\Drunk 3\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Drunk 3\Drunk 3\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Drunk 3\ipch\DRUNK 3-eecb0a2b\DRUNK 3-e8cf3a83.ipch	3538944	10b0754d888d36b8340412ecdf70b6632912fb219ea5b7cf1217753aed4aca4c	metadata-only

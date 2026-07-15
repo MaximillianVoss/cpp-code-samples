@@ -38,7 +38,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
   `ShamirSecretConsole`, the 2014 `FileParsingExperiments` sequence, and the
   recovered 2016 [data-structures course](Legacy/DataStructuresCourse/README.md)
   and [Programming Exercises RC](Legacy/ProgrammingExercisesRC/README.md), plus
-  the consolidated [2016-2018 C++ coursework exercises](Legacy/CppCourseworkExercises2016/README.md).
+  the consolidated [2016-2018 C++ coursework exercises](Legacy/CppCourseworkExercises2016/README.md)
+  and the five-stage [Drunkard card game](Legacy/DrunkardCardGame/README.md) lineage.
 
 Key namespace facade headers:
 
@@ -92,5 +93,9 @@ Pre-refactor preservation points:
 - Byte-exact coursework tag: `original-cpp-coursework-exercises-2016-2018`
 - Original coursework names, timestamps, sizes, and hashes:
   [`Legacy/CppCourseworkExercises2016/preservation/file-metadata.csv`](Legacy/CppCourseworkExercises2016/preservation/file-metadata.csv)
+- Recovered Drunkard game branch: `archive/drunkard-card-game-2016`
+- Byte-exact Drunkard source tag: `original-drunkard-card-game-2016`
+- Original Drunkard names, timestamps, sizes, and hashes:
+  [`Legacy/DrunkardCardGame/preservation/file-metadata.csv`](Legacy/DrunkardCardGame/preservation/file-metadata.csv)
 
 The canonical GitHub repository is `MaximillianVoss/cpp-code-samples`.

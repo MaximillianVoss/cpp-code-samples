@@ -1,0 +1,29 @@
+{
+  "generatedAtUtc": "2026-07-15T21:06:14.7553372Z",
+  "originalFolders": 3,
+  "lineageStages": 5,
+  "historicalRecords": 99,
+  "historicalBytes": 134043400,
+  "publicExactFiles": 33,
+  "publicExactBytes": 74139,
+  "privateArchiveOnlyFiles": 2,
+  "metadataOnlyFiles": 64,
+  "linkedLaterStages": [
+    "Legacy/ProgrammingExercisesRC/original/for3(пьяница).cpp",
+    "Legacy/ProgrammingExercisesRC/original/Пьяница RC"
+  ],
+  "sourceArchives": [
+    {
+      "repository": "MaximillianVoss/legacy-programming-projects-archive",
+      "head": "0786de1c7b88204b82144d779d18da391bd7804d",
+      "records": 31,
+      "bytes": 24770395
+    },
+    {
+      "repository": "MaximillianVoss/legacy-native-projects-archive",
+      "head": "54a7410ae04822b5e609059ecaf0f4d56f729b8c",
+      "records": 68,
+      "bytes": 109273005
+    }
+  ]
+}
