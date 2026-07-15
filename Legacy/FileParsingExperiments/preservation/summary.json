@@ -1,0 +1,35 @@
+{
+  "generatedAtUtc": "2026-07-15T15:27:46.3321515Z",
+  "sourceRecords": 254,
+  "sourceBytes": 621151316,
+  "includedFiles": 48,
+  "includedBytes": 83157,
+  "metadataOnlyRecords": 206,
+  "verifiedSha256Files": 48,
+  "projects": [
+    {
+      "originalProjectPath": "Архив\\Binary Checker",
+      "chronologyStage": "01-Binary Checker",
+      "sourceRecords": 94,
+      "includedFiles": 16
+    },
+    {
+      "originalProjectPath": "Архив\\Binary Checker Console",
+      "chronologyStage": "02-Binary Checker Console",
+      "sourceRecords": 27,
+      "includedFiles": 8
+    },
+    {
+      "originalProjectPath": "Архив\\Xparse(console)",
+      "chronologyStage": "03-Xparse(console)",
+      "sourceRecords": 28,
+      "includedFiles": 8
+    },
+    {
+      "originalProjectPath": "Архив\\Xparser",
+      "chronologyStage": "04-Xparser",
+      "sourceRecords": 105,
+      "includedFiles": 16
+    }
+  ]
+}

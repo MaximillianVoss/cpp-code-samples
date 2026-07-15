@@ -34,7 +34,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
 - `Libraries`: reusable libraries such as `Common`, `Crypto`, `Constants`, and `UnitTest`.
 - `Tests`: simple sample/test projects.
 - `Samples`: standalone snippets and experiments.
-- `Legacy`: documented historical exercises with pre-refactor snapshots, including `ShamirSecretConsole`.
+- `Legacy`: documented historical exercises with pre-refactor snapshots, including
+  `ShamirSecretConsole` and the 2014 `FileParsingExperiments` sequence.
 
 Key namespace facade headers:
 
