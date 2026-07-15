@@ -1,0 +1,140 @@
+C++\Код C++\Трение\.vs\Трение\v14\.suo	32768	27cbb8981966af35a6cfcaf261fd8768fdc3eb48b3d44ae70393eb868e39f936	metadata-only
+C++\Код C++\Трение\Трение.sdf	41418752	44e5a102fd8b210e4680086fdcc24a422a00019120e7ea976f857e87dfed2da0	metadata-only
+C++\Код C++\Трение\Трение.sln	1318	e503652de2ea79eb695b265cbe978560e864b3cc6903fc001bab1f21b59fc66f	included-exact
+C++\Код C++\Трение\Трение.VC.db	31719424	cbfa31f8867960403932ef2415b0d4a023d269826269e9709012b68498de0049	metadata-only
+C++\Код C++\Трение\Трение\Трение.cpp	758	16e9a7783637ebc49042333fe520aaa294d7aaa6efcedb46afdc1c4b7a4a734b	included-exact
+C++\Код C++\Трение\Трение\Трение.vcxproj	8046	6a36efcab2f3dde93b3453e49b29d69de8c349880466000cc60d573107718dd9	included-exact
+C++\Код C++\Трение\Трение\Трение.vcxproj.filters	1499	3962052d527a28a6033fe48cccc4eee3ca911b7089e5eca0a9d426c5aa507f19	included-exact
+C++\Код C++\Трение\Трение\Debug\Трение.log	403	adc656f5f238e5ce170546f960c922eff9080977ee0139103711dd7f391d7b9a	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.obj	36832	11a24e79a3d14d35b147f45767cd37b039d9ecf072f34d7e7503ae31193e9ed6	metadata-only
+C++\Код C++\Трение\Трение\Debug\трение.obj.enc	36810	98830e96c152948cf8cb03e7e0825b92e2855b98b63ee8c29857827d00dd4d2d	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.pch	3407872	ae3da4afd1f45fe804acd32b743185996d53daebc6ef216f96c1a7172e5ae099	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\Трение.lastbuildstate	255	502cb970d29142657658f8c93be4b872464681a6653d35aab92c2f67b4eebbdb	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\CL.command.1.tlog	1650	047fe768f8f86a8c3950b6600120234403fc6b5d239ff2abbb43490ab6847ccf	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\CL.read.1.tlog	31776	906977a98dac7e8607999baf6683931279c7fb27e689fc12e18dbf1ac47b7ff3	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\CL.write.1.tlog	1504	0036f0a4dfd317dff204add679b341e5a94b074c2e09b45a9e6c8777f138a428	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\link.command.1.tlog	1542	9b4cd5e4df6737b97ba1a77656809c541c9da28ad46f7324efce1eb0c0afd335	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\link.read.1.tlog	3304	0015c03ca612d4969897564909249422af762b2c786f9e3da28500edd357f4c5	metadata-only
+C++\Код C++\Трение\Трение\Debug\Трение.tlog\link.write.1.tlog	810	daff01cde449e0d4a51ee662a4b894d4f137b8c332ebded6474f765ea10b701d	metadata-only
+C++\Код C++\Трение\Трение\Debug\stdafx.obj	12779	6f700a194f0568e666bfe13716b8fc1a11ccd51a1ceba70f2be6dc84e7fd118a	metadata-only
+C++\Код C++\Трение\Трение\Debug\vc140.idb	740352	60be79e3df91a88b68f4920590fa2fa5b3f61cb5e19a3638c3f6704b6dc58904	metadata-only
+C++\Код C++\Трение\Трение\Debug\vc140.pdb	299008	06dc74f0eb59b0cf979bebe298dc81f1ff201d7fa4d11d7a617f6580586a76bd	metadata-only
+C++\Код C++\Трение\Трение\ReadMe.txt	2658	d9d943f8aac25955705c36f6f29f98c48249905b318942ded8623018d935dd06	included-exact
+C++\Код C++\Трение\Трение\stdafx.cpp	353	999f75a8c72ab4daf7a74e4d2c919bcb1c12f6ce4962b710bfaeecea0d798edb	included-exact
+C++\Код C++\Трение\Трение\stdafx.h	363	a81406dd759e40f4ecbc93c232a276d82681ca151dede0d6fe5a9ae0c00c2ea5	included-exact
+C++\Код C++\Трение\Трение\targetver.h	342	53a2e8e17f1d4171ab23c2d920d05e269bdfe3a980298335fafb2b49c29ad228	included-exact
+C++\Код C++\Трение\Debug\Трение.exe	36864	1bcd163fa10ba4cf7b24b4f9c63a7ab2fe1213c4c2fa5791610d5d82fa9cfc70	metadata-only
+C++\Код C++\Трение\Debug\Трение.ilk	308500	0a786c3458baaa032d9706d0db771414b67408b0b10158ebe3e50e93c696277e	metadata-only
+C++\Код C++\Трение\Debug\Трение.pdb	856064	434907bdc73c8234a8e29cc80ec2bf7fdb0a1b6d1de6467dcf34350106cf7f7e	metadata-only
+C++\Код C++\Трение\ipch\ТРЕНИЕ-23685c09\ТРЕНИЕ-77e6708d.ipch	3538944	4623c5a4c7b23de0f28c4c11e90bace18322a9034c69dc4750a4a90f16cfe934	metadata-only
+C++\Код C++\Трение\ipch\ТРЕНИЕ-a47e28\ТРЕНИЕ-77e6708d.ipch	3538944	f59841baf85a27c30b3600aa110720a54b724283cd1d067f2e386d5d489e93ab	metadata-only
+C++\Код C++\Windows forms C++ RC\.vs\WF\v14\.suo	72192	879c1a03fe7f5c493e1a29a957c935efccaa5b8ef1d795da9cfce969a75a2e6a	metadata-only
+C++\Код C++\Windows forms C++ RC\Code.txt	5149	b9e6ff6592e6eebc97b828adb79be193391e35ed7d78ad81b004b3f781b3e1bb	included-exact
+C++\Код C++\Windows forms C++ RC\Code2.txt	12770	89ae494b4457685b280d3416fdae09e3e055e84058e628564561b9558cd6bb26	included-exact
+C++\Код C++\Windows forms C++ RC\Debug\WF.exe	1260544	48775fcf3d121a556367b1d27fa437693bbb0d7f30a60fb0386b6756217ed4ab	metadata-only
+C++\Код C++\Windows forms C++ RC\Debug\WF.exe.metagen	1488	4fe150fcaeb85f50270ecc7c4a01782047635966b44a6ef67fc7237043883f81	metadata-only
+C++\Код C++\Windows forms C++ RC\Debug\WF.pdb	4542464	a9cb26db2b4a0339962e9140763ed095e8a85f844a387ffcb629e00d5a2ee0be	metadata-only
+C++\Код C++\Windows forms C++ RC\ipch\WF-4308c610\WF-aada9089.ipch	12451840	896d9595a1eed8cff76ded75ad9368a7bf49f9cba3bd36e3488528ef07cbf654	metadata-only
+C++\Код C++\Windows forms C++ RC\ipch\WF-456a6b\WF-aada9089.ipch	12451840	42411bea0680fbb4a3e7ace7e4c1d5d8b69967976a396a53603a44c0a92a8f8a	metadata-only
+C++\Код C++\Windows forms C++ RC\ipch\WF-4d3fd05f\WF-aada9089.ipch	12451840	873eb45cd592dca1c77a2b1b7c578b7db47eae206fdc3e5c086663d2df9fa692	metadata-only
+C++\Код C++\Windows forms C++ RC\ipch\WF-db03cab1\WF-aada9089.ipch	12451840	49ab5e94b6e8bf9abcfcbaff2a1be52bb8d3d10fbdeef4700f9823342d17f998	metadata-only
+C++\Код C++\Windows forms C++ RC\WF.opensdf	24	6b2a01a218cf2b44afe550572ae1c418e71f63df14c3bd07ffe9ae5221402156	metadata-only
+C++\Код C++\Windows forms C++ RC\WF.sdf	413696	c3ca808f1ea1373687e1102581f6445d0e5f856178d5ebae9cb3228930310cdc	metadata-only
+C++\Код C++\Windows forms C++ RC\WF.sln	950	dcd848dea589ac0965994e7508b089025bab61672a9e777571f91967a84d2d22	included-exact
+C++\Код C++\Windows forms C++ RC\WF.suo	9216	38ebec921d7d8e2401bd404446b042593a7e2ed40f7693bae432abfb51f7d157	metadata-only
+C++\Код C++\Windows forms C++ RC\WF.VC.db	52101120	7350ab93d479075d25261393103522c3275729f8a3be7755b1634733af2538d3	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\app.ico	1078	382cd3997832491be248e19daf00e5881057c7a0818af23649341a2b97e12527	included-exact
+C++\Код C++\Windows forms C++ RC\WF\app.rc	2546	5b79149abaf60f24c566c325be8058d7fa4ca2cd95c117bd6f30c6ade590bb98	included-exact
+C++\Код C++\Windows forms C++ RC\WF\AssemblyInfo.cpp	1320	b598fa537c71ba4e12441f01fd09b06b4aa6709c33aaba537d6a8d4b03f91e23	included-exact
+C++\Код C++\Windows forms C++ RC\WF\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.asm	231	48ee4b7a2f9440fd1626260eb7d41987f10bbb19248074bb54f351fb74dbc662	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.obj	3082	b1019202df01ae6a99adcacf75f441896bfb527fc8a161fe7e77a78c3010ef76	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\app.res	1204	7319d0f81741f02dacd682f14d477cbab62aa5d0b5689422c518e053d353c95c	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\AssemblyInfo.obj	3604	ffdd6a8b02f0c82345f208d5ad38999ef08d51c18eb9f12fff610fb0458129c0	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\stdafx.obj	11748	2e6f3bbf25040b536d0b9879189cff9c5c4d9627431c48f6e0a62f61f83e8691	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\vc140.pdb	544768	790ee17b942909a8543f8e4474e18366420f9f652a9f39ce5b1d0421144403b6	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.Form1.resources	180	e13ed2c59366d0eea74863fd71a81f0cb977cce1edfde304fc538690a4f6ac89	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.log	2460	0e6744a49cbd42b0ed1fe8e64f1a831e80b4919dae8e09cd154c078d2a640c5c	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.obj	992459	dbff75fae8fe809deaf36fcc220ffea96c20e6b558ef006d6a0f69a47262ffbb	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.pch	8257536	8675c51f2aeb4689885914799a85825604c7d86fd238e46c95dfd5b70c8cf472	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\CL.command.1.tlog	33996	24ba81d0ab02e599a6b87ae8dfdf27ff7112140efe18564fda03ff380e9c79c8	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\CL.read.1.tlog	24746	8106dcccab49d360a78ca01c72988c3027d7b5e2fc8ab653c622eb6e24930582	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\CL.write.1.tlog	2904	d3b1742114fe91048080e92db5b6e39febeb243fba713605ac17a4a31ea69b6b	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\link.command.1.tlog	8440	79d83957d11a530bae69c475abe26e03b5352c8f35c7bc37997b1eaf793320d9	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\link.read.1.tlog	4458	2863006fe66dc70decbb75b3bba12bbd3e1a58fbb89698f5d752c6ee039aa784	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\link.write.1.tlog	1532	bc20043e2c8281c12b04f8d17e47f64eac07c880f3ec1e179ddaa1e6f6e1dd10	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\metagen.read.1.tlog	2	b3d510ef04275ca8e698e5b3cbb0ece3949ef9252f0cdc839e9ee347409a2209	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\metagen.write.1.tlog	2	b3d510ef04275ca8e698e5b3cbb0ece3949ef9252f0cdc839e9ee347409a2209	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\rc.command.1.tlog	1830	876e7304265930240c97113a2b5dd6d849d1b337c2caa3df9cbd2dfaacac055e	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\rc.read.1.tlog	590	61fd9a70d9eb06c7e1489802f8e658c8ed3163ca50d76559fb6ff95c340e2abe	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\rc.write.1.tlog	402	0a52172a69c7b2e5d715f1a9fad8c61cb3ba58b5907a9544f0199f503f6201a4	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\TZRES.DLL.bi	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\WF.lastbuildstate	286	50d1026c971db352165288ec880796805bb1e4413e0b0b2cd0c8134656a2264b	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.tlog\WF.write.1u.tlog	10322	c6308e68f7b10420931e0d81ac6b70e51cd8ba99b0423abc679e5e649b19dd96	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.vcxproj.GenerateResource.Cache	939	1d839fe7863073f845668722a7bd87810aaad0b014c0f9c940e707cfe31f211f	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Debug\WF.vcxprojResolveAssemblyReference.cache	1634	c6a436227b56d81b495e99a740801befbc6ce42973745c3f8fbc1183704f78ca	metadata-only
+C++\Код C++\Windows forms C++ RC\WF\Form1.h	18192	2046943acc5e4745c4f30c2d19b3a97cd04d2bc6ce2d307714fe2ae18b744c56	included-exact
+C++\Код C++\Windows forms C++ RC\WF\Form1.resX	5817	4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298	included-exact
+C++\Код C++\Windows forms C++ RC\WF\PlotPoint.h	217	ba285efbd90ee0eaa8e395b1048e98d557d7b7a705d3fe3af799852da3423141	included-exact
+C++\Код C++\Windows forms C++ RC\WF\ReadMe.txt	1702	61c2a0e413e2ecda9a9dd2191e0587c7f8f5a58bc5c1f4f743942fe7a662b972	included-exact
+C++\Код C++\Windows forms C++ RC\WF\resource.h	91	5e9baf9b51080e135f3433396b1359d5a8971406b40f14d6e345bdeacecc1e35	included-exact
+C++\Код C++\Windows forms C++ RC\WF\Results.h	3641	44b6777e2a87e1e44c85eea1e75122c0d468bfc7adf941eb5832d11ac4999791	included-exact
+C++\Код C++\Windows forms C++ RC\WF\stdafx.cpp	202	3526699e4773875b455bdaace882730ca3a3219db4a2f93ce9791b8e98788007	included-exact
+C++\Код C++\Windows forms C++ RC\WF\stdafx.h	242	7dc53a6d68b2eb90c835db886c07f0fb6690310568ef1149548f076f11b8641d	included-exact
+C++\Код C++\Windows forms C++ RC\WF\WF.cpp	395	b4d343849b8cf8427309c59d0b5c262a4458cccdf28afc6e9bad300accd0a0b0	included-exact
+C++\Код C++\Windows forms C++ RC\WF\WF.vcxproj	5276	afa578a61cf92cd657d4c7af6db2489093bf04a6dabae896fb4b23da50b83cb8	included-exact
+C++\Код C++\Windows forms C++ RC\WF\WF.vcxproj.filters	2056	08bfe468facaa046fcd80b412ca49605cac0e64582f969f1c88be7c163e3ae45	included-exact
+C++\Код C++\Windows forms C++ RC\WF\WF.vcxproj.user	143	f2f2e1ebb09bb88b3bc3f57677a31e0ae1b50cad9d5826e00d6b2fcff887974f	metadata-only
+C++\Код C++\Windows Forms C++\.vs\WF\v14\.suo	49664	df5851f60ad6a6aee4282ac4477cb07c7079474db1e2d9536ceab0db89b8983f	metadata-only
+C++\Код C++\Windows Forms C++\Code.txt	5149	b9e6ff6592e6eebc97b828adb79be193391e35ed7d78ad81b004b3f781b3e1bb	included-exact
+C++\Код C++\Windows Forms C++\Debug\WF.exe	1462784	c6661695a7317bf6a877d47631456da328095d1e2ee66174898bb647fd3fc1a9	metadata-only
+C++\Код C++\Windows Forms C++\Debug\WF.exe.metagen	1346	50db99c00a2fa3c75582e528ddc085e5e0a6709d19c7f4c65a771d2254b11f04	metadata-only
+C++\Код C++\Windows Forms C++\Debug\WF.pdb	5230592	ce631168dc12889850c638dd685a33b5fc5ed03d83face310dcb1837be0e8b67	metadata-only
+C++\Код C++\Windows Forms C++\ipch\WF-9af6ad6a\WF-aada9089.ipch	12451840	bd82ed3012931744091cbdec39120b8d193457b2f583feb2aedccb4f1fcc40fd	metadata-only
+C++\Код C++\Windows Forms C++\ipch\WF-e58ce43e\WF-aada9089.ipch	12124160	f3c81b915b7b1014f79dd693de32fbda02d6ec5ddb8bb3c87b2e2680519f06cf	metadata-only
+C++\Код C++\Windows Forms C++\ipch\WF-ee363804\WF-aada9089.ipch	12124160	4d15c4a16e723bda39460a0888048ac69e967949754e76c1558026d9e6218db6	metadata-only
+C++\Код C++\Windows Forms C++\WF.opensdf	24	6b2a01a218cf2b44afe550572ae1c418e71f63df14c3bd07ffe9ae5221402156	metadata-only
+C++\Код C++\Windows Forms C++\WF.sdf	413696	c3ca808f1ea1373687e1102581f6445d0e5f856178d5ebae9cb3228930310cdc	metadata-only
+C++\Код C++\Windows Forms C++\WF.sln	878	c2eccbb6cee56671a3184c370676e01f4b75b485f17385342f3bc1697d160c8c	included-exact
+C++\Код C++\Windows Forms C++\WF.suo	9216	38ebec921d7d8e2401bd404446b042593a7e2ed40f7693bae432abfb51f7d157	metadata-only
+C++\Код C++\Windows Forms C++\WF.VC.db	52101120	6ac03fea193cc95ec6aff2b267e45ad643397298b8aa50b34b3827ab120e860a	metadata-only
+C++\Код C++\Windows Forms C++\WF\app.ico	1078	382cd3997832491be248e19daf00e5881057c7a0818af23649341a2b97e12527	included-exact
+C++\Код C++\Windows Forms C++\WF\app.rc	2546	5b79149abaf60f24c566c325be8058d7fa4ca2cd95c117bd6f30c6ade590bb98	included-exact
+C++\Код C++\Windows Forms C++\WF\AssemblyInfo.cpp	1320	b598fa537c71ba4e12441f01fd09b06b4aa6709c33aaba537d6a8d4b03f91e23	included-exact
+C++\Код C++\Windows Forms C++\WF\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.asm	231	48ee4b7a2f9440fd1626260eb7d41987f10bbb19248074bb54f351fb74dbc662	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.obj	3106	30b2e6fb2f4bd397489a56542dcd4f5dcdcf9a65796feaa99495ba01ec10184c	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\app.res	1204	7319d0f81741f02dacd682f14d477cbab62aa5d0b5689422c518e053d353c95c	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\AssemblyInfo.obj	3541	0a982cc20c8ebfffeed3cccd740adeb841e7860ebf25563621ffd508c1fe72cc	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\stdafx.obj	11581	bfda8d7b62c97c8d6e7bab758c718734a7334f91125e0801fb988968ae9a6ec7	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\vc140.pdb	659456	25bf8f52a9f6a658e7438570285bfe0f338612e5402a538d8b0a3bad76bd9a0e	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.Form1.resources	180	e13ed2c59366d0eea74863fd71a81f0cb977cce1edfde304fc538690a4f6ac89	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.log	2869	01f37a769ad491e44b7d8fa6ad02a4faa18880aef9fcbab537fa0f070123f82a	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.obj	1766400	5011507ff6e8f041ac932ccdce790755628347aac76c7a1a0b5cd398388edbe1	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.pch	7536640	18960c2661c5d0c070679edc9313dae356c27ba556b68d20be9bfefb678bd77b	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\CL.command.1.tlog	8932	095bcf54081d7463defc99ff50c382210df911a6e12be6f305747bbf5439c0b0	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\CL.read.1.tlog	23888	f538b25fe76b1a3bd8bf3326e2ef533f0640f71cb7a60c7b0c3c83af3cf21abb	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\CL.write.1.tlog	3784	4a2ac79e4e453ac9ac2abd0f719ac4393ddd5a83aca942ac4c800af140f49e6e	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\link.command.1.tlog	2262	9aefb1b441707a503708b5dee2da08641d1fe285b1cac4a7d6ba3b834ea2e771	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\link.read.1.tlog	4246	af6680c8393d99935107d9aee28ef6b9b654d8bd4133f5398b34d998cd4ac35f	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\link.write.1.tlog	1490	b7f327759eecfd0ea9a52561884b3bc2312d3e065b4b51bd2894000550d33b75	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\metagen.read.1.tlog	2	b3d510ef04275ca8e698e5b3cbb0ece3949ef9252f0cdc839e9ee347409a2209	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\metagen.write.1.tlog	2	b3d510ef04275ca8e698e5b3cbb0ece3949ef9252f0cdc839e9ee347409a2209	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\rc.command.1.tlog	502	91e2c0a354af87cb69419b2923c8900784b79b2a5daa91c2678d35bd4f61f516	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\rc.read.1.tlog	572	0caefa22b24d3636ab22cde4bb6dab5ffb53265c22218db92a51421b16bf3e49	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\rc.write.1.tlog	390	fed650623d272b5f7f1e246989e4e6d847e936d1d08f51c2be2db5548ee81c79	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\TZRES.DLL.bi	0	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\WF.lastbuildstate	287	0a91cd7af1b5e1a941e4926daa02683de9e51b068a6feded06ccc58cecd4303d	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.tlog\WF.write.1u.tlog	90290	a7db069046f0e3938ba19c5c398add4c4fe7d8a0115fbf3aa111521c05a168d8	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.vcxproj.GenerateResource.Cache	939	7393ef4a00670c20867f4c1397c90da0cf0ff30ca6a5c5c13d2ecf4f3163f515	metadata-only
+C++\Код C++\Windows Forms C++\WF\Debug\WF.vcxprojResolveAssemblyReference.cache	1634	c6a436227b56d81b495e99a740801befbc6ce42973745c3f8fbc1183704f78ca	metadata-only
+C++\Код C++\Windows Forms C++\WF\Form1.h	12176	7503edc18b5e19ba1318fe2c73c1552a223dd3b3e8f6066e1cb1e490df9c8151	included-exact
+C++\Код C++\Windows Forms C++\WF\Form1.resX	5817	4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298	included-exact
+C++\Код C++\Windows Forms C++\WF\PlotPoint.h	217	ba285efbd90ee0eaa8e395b1048e98d557d7b7a705d3fe3af799852da3423141	included-exact
+C++\Код C++\Windows Forms C++\WF\ReadMe.txt	1702	61c2a0e413e2ecda9a9dd2191e0587c7f8f5a58bc5c1f4f743942fe7a662b972	included-exact
+C++\Код C++\Windows Forms C++\WF\resource.h	91	5e9baf9b51080e135f3433396b1359d5a8971406b40f14d6e345bdeacecc1e35	included-exact
+C++\Код C++\Windows Forms C++\WF\Results.h	4034	9a1ddf631bba19783107feb6c8d3646e0ea57bbf259bf0ec3626feff10786a09	included-exact
+C++\Код C++\Windows Forms C++\WF\stdafx.cpp	202	3526699e4773875b455bdaace882730ca3a3219db4a2f93ce9791b8e98788007	included-exact
+C++\Код C++\Windows Forms C++\WF\stdafx.h	242	7dc53a6d68b2eb90c835db886c07f0fb6690310568ef1149548f076f11b8641d	included-exact
+C++\Код C++\Windows Forms C++\WF\WF.cpp	424	1c1abfb3a54c3768cd89fa2cf171d83dbd8c4d7d1274071d4821a41f97b5045e	included-exact
+C++\Код C++\Windows Forms C++\WF\WF.vcxproj	5276	afa578a61cf92cd657d4c7af6db2489093bf04a6dabae896fb4b23da50b83cb8	included-exact
+C++\Код C++\Windows Forms C++\WF\WF.vcxproj.filters	2056	08bfe468facaa046fcd80b412ca49605cac0e64582f969f1c88be7c163e3ae45	included-exact
+C++\Код C++\Windows Forms C++\WF\WF.vcxproj.user	143	f2f2e1ebb09bb88b3bc3f57677a31e0ae1b50cad9d5826e00d6b2fcff887974f	metadata-only

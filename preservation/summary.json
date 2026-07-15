@@ -1,0 +1,20 @@
+{
+  "generatedAtUtc": "2026-07-15T22:21:38.9972679Z",
+  "originalFolders": 3,
+  "lineageStages": 3,
+  "historicalRecords": 140,
+  "historicalBytes": 310356121,
+  "publicExactFiles": 41,
+  "publicExactBytes": 120189,
+  "privateArchiveOnlyFiles": 0,
+  "metadataOnlyFiles": 99,
+  "executableMetadataRecords": 3,
+  "sourceArchives": [
+    {
+      "repository": "MaximillianVoss/legacy-native-projects-archive",
+      "head": "54a7410ae04822b5e609059ecaf0f4d56f729b8c",
+      "records": 140,
+      "bytes": 310356121
+    }
+  ]
+}
