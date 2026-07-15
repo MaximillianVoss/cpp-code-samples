@@ -37,7 +37,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
 - `Legacy`: documented historical exercises with pre-refactor snapshots, including
   `ShamirSecretConsole`, the 2014 `FileParsingExperiments` sequence, and the
   recovered 2016 [data-structures course](Legacy/DataStructuresCourse/README.md)
-  and [Programming Exercises RC](Legacy/ProgrammingExercisesRC/README.md).
+  and [Programming Exercises RC](Legacy/ProgrammingExercisesRC/README.md), plus
+  the consolidated [2016-2018 C++ coursework exercises](Legacy/CppCourseworkExercises2016/README.md).
 
 Key namespace facade headers:
 
@@ -87,5 +88,9 @@ Pre-refactor preservation points:
 - Byte-exact exercises tag: `original-programming-exercises-rc-2016`
 - Original exercise names, timestamps, sizes, and hashes:
   [`Legacy/ProgrammingExercisesRC/preservation/file-metadata.csv`](Legacy/ProgrammingExercisesRC/preservation/file-metadata.csv)
+- Recovered coursework branch: `archive/cpp-coursework-exercises-2016-2018`
+- Byte-exact coursework tag: `original-cpp-coursework-exercises-2016-2018`
+- Original coursework names, timestamps, sizes, and hashes:
+  [`Legacy/CppCourseworkExercises2016/preservation/file-metadata.csv`](Legacy/CppCourseworkExercises2016/preservation/file-metadata.csv)
 
 The canonical GitHub repository is `MaximillianVoss/cpp-code-samples`.
