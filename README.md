@@ -35,7 +35,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
 - `Tests`: simple sample/test projects.
 - `Samples`: standalone snippets and experiments.
 - `Legacy`: documented historical exercises with pre-refactor snapshots, including
-  `ShamirSecretConsole` and the 2014 `FileParsingExperiments` sequence.
+  `ShamirSecretConsole`, the 2014 `FileParsingExperiments` sequence, and the
+  recovered 2016 [data-structures course](Legacy/DataStructuresCourse/README.md).
 
 Key namespace facade headers:
 
@@ -77,5 +78,9 @@ Pre-refactor preservation points:
 
 - Git tag: `codex/pre-refactor-head-2026-06-09`
 - Local preservation bundle: `C:\Users\FossW\OneDrive\Документы\Проекты GitHub\codex-preservation\code-samples-cpp-2026-06-09\committed-history.bundle`
+- Recovered course branch: `archive/data-structures-course-2016`
+- Byte-exact recovered source tag: `original-data-structures-course-2016`
+- Original file names, timestamps, sizes, and hashes:
+  [`Legacy/DataStructuresCourse/preservation/file-metadata.csv`](Legacy/DataStructuresCourse/preservation/file-metadata.csv)
 
-Before renaming or pushing to GitHub, re-check that `MaximillianVoss/cpp-code-samples` is still free and keep the target name exactly as `cpp-code-samples`.
+The canonical GitHub repository is `MaximillianVoss/cpp-code-samples`.
