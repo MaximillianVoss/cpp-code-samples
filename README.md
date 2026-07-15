@@ -40,7 +40,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
   and [Programming Exercises RC](Legacy/ProgrammingExercisesRC/README.md), plus
   the consolidated [2016-2018 C++ coursework exercises](Legacy/CppCourseworkExercises2016/README.md)
   and the five-stage [Drunkard card game](Legacy/DrunkardCardGame/README.md) lineage,
-  as well as the recovered [2015 Alexandra assignments](Legacy/AlexandraCppAssignments2015/README.md).
+  the recovered [2015 Alexandra assignments](Legacy/AlexandraCppAssignments2015/README.md),
+  and the three-stage [inclined-plane friction study](Legacy/InclinedPlaneFrictionStudy/README.md).
 
 Key namespace facade headers:
 
@@ -102,5 +103,9 @@ Pre-refactor preservation points:
 - Byte-exact Alexandra assignments tag: `original-alexandra-cpp-assignments-2015`
 - Original assignment names, timestamps, sizes, and hashes:
   [`Legacy/AlexandraCppAssignments2015/preservation/file-metadata.csv`](Legacy/AlexandraCppAssignments2015/preservation/file-metadata.csv)
+- Recovered friction-study branch: `archive/inclined-plane-friction-study-2016`
+- Byte-exact friction-study tag: `original-inclined-plane-friction-study-2016`
+- Original friction-study names, timestamps, sizes, and hashes:
+  [`Legacy/InclinedPlaneFrictionStudy/preservation/file-metadata.csv`](Legacy/InclinedPlaneFrictionStudy/preservation/file-metadata.csv)
 
 The canonical GitHub repository is `MaximillianVoss/cpp-code-samples`.
