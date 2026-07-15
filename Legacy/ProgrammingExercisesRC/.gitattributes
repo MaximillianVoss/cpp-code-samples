@@ -1,0 +1,4 @@
+original/** -text
+preservation/*.csv text eol=lf
+preservation/*.txt text eol=lf
+preservation/*.json text eol=lf

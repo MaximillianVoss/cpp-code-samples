@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "original_project_key": "0020",
+  "original_path": "Архив\\Программы RC",
+  "metadata_records": 118,
+  "original_bytes": 159128144,
+  "public_source_files": 39,
+  "public_source_bytes": 98395,
+  "excluded_records": 79,
+  "source_tag": "original-programming-exercises-rc-2016",
+  "source_tag_object": "894c0f94e08f86d9b509389dac23873831d0b435",
+  "source_tag_target": "4cee5eae8d0268a6ecd81af17a0d9bfa5dab7457",
+  "hash_mismatches": 0,
+  "verification": "passed"
+}
