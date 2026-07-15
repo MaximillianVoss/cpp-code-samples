@@ -36,7 +36,8 @@ The current pass focuses on reproducible builds, consistent style, and clear Vis
 - `Samples`: standalone snippets and experiments.
 - `Legacy`: documented historical exercises with pre-refactor snapshots, including
   `ShamirSecretConsole`, the 2014 `FileParsingExperiments` sequence, and the
-  recovered 2016 [data-structures course](Legacy/DataStructuresCourse/README.md).
+  recovered 2016 [data-structures course](Legacy/DataStructuresCourse/README.md)
+  and [Programming Exercises RC](Legacy/ProgrammingExercisesRC/README.md).
 
 Key namespace facade headers:
 
@@ -82,5 +83,9 @@ Pre-refactor preservation points:
 - Byte-exact recovered source tag: `original-data-structures-course-2016`
 - Original file names, timestamps, sizes, and hashes:
   [`Legacy/DataStructuresCourse/preservation/file-metadata.csv`](Legacy/DataStructuresCourse/preservation/file-metadata.csv)
+- Recovered exercises branch: `archive/programming-exercises-rc-2016`
+- Byte-exact exercises tag: `original-programming-exercises-rc-2016`
+- Original exercise names, timestamps, sizes, and hashes:
+  [`Legacy/ProgrammingExercisesRC/preservation/file-metadata.csv`](Legacy/ProgrammingExercisesRC/preservation/file-metadata.csv)
 
 The canonical GitHub repository is `MaximillianVoss/cpp-code-samples`.
