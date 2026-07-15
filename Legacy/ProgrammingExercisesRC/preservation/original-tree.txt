@@ -1,0 +1,118 @@
+manifest-only	40960	Класс String\.vs\Класс String\v14\.suo
+copied	1333	Класс String\Класс String.sln
+manifest-only	32571392	Класс String\Класс String.VC.db
+copied	3042	Класс String\Класс String\Класс String.cpp
+copied	8055	Класс String\Класс String\Класс String.vcxproj
+copied	1504	Класс String\Класс String\Класс String.vcxproj.filters
+manifest-only	164	Класс String\Класс String\Debug\Класс String.log
+manifest-only	66061	Класс String\Класс String\Debug\Класс String.obj
+manifest-only	3801088	Класс String\Класс String\Debug\Класс String.pch
+manifest-only	242	Класс String\Класс String\Debug\Класс String.tlog\Класс String.lastbuildstate
+manifest-only	3482	Класс String\Класс String\Debug\Класс String.tlog\CL.command.1.tlog
+manifest-only	17478	Класс String\Класс String\Debug\Класс String.tlog\CL.read.1.tlog
+manifest-only	1522	Класс String\Класс String\Debug\Класс String.tlog\CL.write.1.tlog
+manifest-only	3240	Класс String\Класс String\Debug\Класс String.tlog\link.command.1.tlog
+manifest-only	3320	Класс String\Класс String\Debug\Класс String.tlog\link.read.1.tlog
+manifest-only	812	Класс String\Класс String\Debug\Класс String.tlog\link.write.1.tlog
+manifest-only	12690	Класс String\Класс String\Debug\stdafx.obj
+manifest-only	470016	Класс String\Класс String\Debug\vc140.idb
+manifest-only	421888	Класс String\Класс String\Debug\vc140.pdb
+copied	2693	Класс String\Класс String\ReadMe.txt
+copied	359	Класс String\Класс String\stdafx.cpp
+copied	363	Класс String\Класс String\stdafx.h
+copied	342	Класс String\Класс String\targetver.h
+copied	53248	Класс String\Debug\Класс String.exe
+manifest-only	447500	Класс String\Debug\Класс String.ilk
+manifest-only	1028096	Класс String\Debug\Класс String.pdb
+manifest-only	3538944	Класс String\ipch\КЛАСС STRING-7f04e420\КЛАСС STRING-f80fddca.ipch
+manifest-only	3538944	Класс String\ipch\КЛАСС STRING-86ce5f15\КЛАСС STRING-f80fddca.ipch
+manifest-only	36352	Очерель RC\.vs\Очерель RC\v14\.suo
+copied	1333	Очерель RC\Очерель RC.sln
+manifest-only	11927552	Очерель RC\Очерель RC.VC.db
+copied	1926	Очерель RC\Очерель RC\Очерель RC.cpp
+copied	8055	Очерель RC\Очерель RC\Очерель RC.vcxproj
+copied	1504	Очерель RC\Очерель RC\Очерель RC.vcxproj.filters
+manifest-only	164	Очерель RC\Очерель RC\Debug\Очерель RC.log
+manifest-only	55787	Очерель RC\Очерель RC\Debug\Очерель RC.obj
+manifest-only	3801088	Очерель RC\Очерель RC\Debug\Очерель RC.pch
+manifest-only	242	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\Очерель RC.lastbuildstate
+manifest-only	3386	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\CL.command.1.tlog
+manifest-only	17134	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\CL.read.1.tlog
+manifest-only	1438	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\CL.write.1.tlog
+manifest-only	3144	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\link.command.1.tlog
+manifest-only	3280	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\link.read.1.tlog
+manifest-only	768	Очерель RC\Очерель RC\Debug\Очерель RC.tlog\link.write.1.tlog
+manifest-only	12723	Очерель RC\Очерель RC\Debug\stdafx.obj
+manifest-only	470016	Очерель RC\Очерель RC\Debug\vc140.idb
+manifest-only	421888	Очерель RC\Очерель RC\Debug\vc140.pdb
+copied	2693	Очерель RC\Очерель RC\ReadMe.txt
+copied	357	Очерель RC\Очерель RC\stdafx.cpp
+copied	363	Очерель RC\Очерель RC\stdafx.h
+copied	342	Очерель RC\Очерель RC\targetver.h
+copied	46592	Очерель RC\Debug\Очерель RC.exe
+manifest-only	398476	Очерель RC\Debug\Очерель RC.ilk
+manifest-only	954368	Очерель RC\Debug\Очерель RC.pdb
+manifest-only	3538944	Очерель RC\ipch\ОЧЕРЕЛЬ RC-1fa1721c\ОЧЕРЕЛЬ RC-4fb15117.ipch
+manifest-only	3538944	Очерель RC\ipch\ОЧЕРЕЛЬ RC-d407cae7\ОЧЕРЕЛЬ RC-4fb15117.ipch
+manifest-only	28672	Пьяница RC\.vs\Пьяница RC\v14\.suo
+copied	1333	Пьяница RC\Пьяница RC.sln
+manifest-only	32309248	Пьяница RC\Пьяница RC.VC.db
+copied	7981	Пьяница RC\Пьяница RC\Пьяница RC.cpp
+copied	8055	Пьяница RC\Пьяница RC\Пьяница RC.vcxproj
+copied	1504	Пьяница RC\Пьяница RC\Пьяница RC.vcxproj.filters
+manifest-only	1173	Пьяница RC\Пьяница RC\Debug\Пьяница RC.log
+manifest-only	103285	Пьяница RC\Пьяница RC\Debug\Пьяница RC.obj
+manifest-only	3407872	Пьяница RC\Пьяница RC\Debug\Пьяница RC.pch
+manifest-only	260	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\Пьяница RC.lastbuildstate
+manifest-only	1746	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\CL.command.1.tlog
+manifest-only	34232	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\CL.read.1.tlog
+manifest-only	1672	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\CL.write.1.tlog
+manifest-only	1638	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\link.command.1.tlog
+manifest-only	3384	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\link.read.1.tlog
+manifest-only	898	Пьяница RC\Пьяница RC\Debug\Пьяница RC.tlog\link.write.1.tlog
+manifest-only	12941	Пьяница RC\Пьяница RC\Debug\stdafx.obj
+manifest-only	797696	Пьяница RC\Пьяница RC\Debug\vc140.idb
+manifest-only	495616	Пьяница RC\Пьяница RC\Debug\vc140.pdb
+copied	2693	Пьяница RC\Пьяница RC\ReadMe.txt
+copied	357	Пьяница RC\Пьяница RC\stdafx.cpp
+copied	363	Пьяница RC\Пьяница RC\stdafx.h
+copied	342	Пьяница RC\Пьяница RC\targetver.h
+copied	57856	Пьяница RC\Debug\Пьяница RC.exe
+manifest-only	427536	Пьяница RC\Debug\Пьяница RC.ilk
+manifest-only	1110016	Пьяница RC\Debug\Пьяница RC.pdb
+manifest-only	3538944	Пьяница RC\ipch\ПЬЯНИЦА RC-3440d074\ПЬЯНИЦА RC-b6b35c26.ipch
+manifest-only	35328	Транспонирование\.vs\Транспонирование\v14\.suo
+copied	1378	Транспонирование\Транспонирование.sln
+manifest-only	32309248	Транспонирование\Транспонирование.VC.db
+copied	3012	Транспонирование\Транспонирование\Транспонирование.cpp
+copied	8086	Транспонирование\Транспонирование\Транспонирование.vcxproj
+copied	1519	Транспонирование\Транспонирование\Транспонирование.vcxproj.filters
+manifest-only	538	Транспонирование\Транспонирование\Debug\Транспонирование.log
+manifest-only	35753	Транспонирование\Транспонирование\Debug\Транспонирование.obj
+manifest-only	3735552	Транспонирование\Транспонирование\Debug\Транспонирование.pch
+manifest-only	257	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\Транспонирование.lastbuildstate
+manifest-only	3674	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\CL.command.1.tlog
+manifest-only	48144	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\CL.read.1.tlog
+manifest-only	3612	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\CL.write.1.tlog
+manifest-only	3432	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\link.command.1.tlog
+manifest-only	6864	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\link.read.1.tlog
+manifest-only	1928	Транспонирование\Транспонирование\Debug\Транспонирование.tlog\link.write.1.tlog
+manifest-only	13193	Транспонирование\Транспонирование\Debug\stdafx.obj
+manifest-only	773120	Транспонирование\Транспонирование\Debug\vc140.idb
+manifest-only	241664	Транспонирование\Транспонирование\Debug\vc140.pdb
+copied	2798	Транспонирование\Транспонирование\ReadMe.txt
+copied	363	Транспонирование\Транспонирование\stdafx.cpp
+copied	363	Транспонирование\Транспонирование\stdafx.h
+copied	342	Транспонирование\Транспонирование\targetver.h
+copied	39424	Транспонирование\Debug\Транспонирование.exe
+manifest-only	313352	Транспонирование\Debug\Транспонирование.ilk
+manifest-only	798720	Транспонирование\Debug\Транспонирование.pdb
+manifest-only	3538944	Транспонирование\ipch\ТРАНСПОНИРОВАНИЕ-1f2be74a\ТРАНСПОНИРОВАНИЕ-6e5cec98.ipch
+manifest-only	3538944	Транспонирование\ipch\ТРАНСПОНИРОВАНИЕ-5cf079bf\ТРАНСПОНИРОВАНИЕ-6e5cec98.ipch
+copied	2386	dz1.c
+copied	2778	dz2(транспонирование).cpp
+copied	4613	dz3_final_version.cpp
+copied	1681	dz3.cpp
+copied	1864	dz4_final_version.cpp
+copied	2864	dz5_1.cpp
+copied	7456	for3(пьяница).cpp

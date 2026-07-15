@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-07-15T18:42:47Z",
+  "source_tag": "original-programming-exercises-rc-2016",
+  "source_tag_object": "894c0f94e08f86d9b509389dac23873831d0b435",
+  "source_tag_target": "4cee5eae8d0268a6ecd81af17a0d9bfa5dab7457",
+  "source_files_verified": 39,
+  "source_bytes_verified": 98395,
+  "source_hash_mismatches": 0,
+  "metadata_records": 118,
+  "private_signing_keys": 0,
+  "high_confidence_secret_findings": 0,
+  "modernized_compiler": "MSVC 19.51.36248.0",
+  "modernized_standard": "C++20",
+  "modernized_test_executables": 1,
+  "modernized_tests_passed": 1,
+  "build_output_retained": false,
+  "verification": "passed"
+}
